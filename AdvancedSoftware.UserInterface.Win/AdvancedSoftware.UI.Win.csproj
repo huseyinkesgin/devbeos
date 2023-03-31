@@ -1,0 +1,629 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BF8BDF34-ACCF-4ADC-9321-91A65F6A299F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AdvancedSoftware.UserInterface.Win</RootNamespace>
+    <AssemblyName>AdvancedSoftware.UserInterface.Win</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.CodeParser.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v22.2.UI, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataVisualization.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Diagram.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v22.2.UI, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDiagram.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGantt.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\BaseForms\BaseEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BaseForms\BaseEditForm.Designer.cs">
+      <DependentUpon>BaseEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BaseForms\BaseListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BaseForms\BaseListForm.Designer.cs">
+      <DependentUpon>BaseListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SiparisForms\IlceForms\IlceEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SiparisForms\IlceForms\IlceEditForm.Designer.cs">
+      <DependentUpon>IlceEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SiparisForms\IlceForms\IlceListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SiparisForms\IlceForms\IlceListForm.Designer.cs">
+      <DependentUpon>IlceListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SiparisForms\IlForms\IlEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SiparisForms\IlForms\IlEditForm.Designer.cs">
+      <DependentUpon>IlEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SiparisForms\IlForms\IlListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SiparisForms\IlForms\IlListForm.Designer.cs">
+      <DependentUpon>IlListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SiparisForms\KargoFirmasiForms\KargoFirmasiEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SiparisForms\KargoFirmasiForms\KargoFirmasiEditForm.Designer.cs">
+      <DependentUpon>KargoFirmasiEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SiparisForms\KargoFirmasiForms\KargoFirmasiListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SiparisForms\KargoFirmasiForms\KargoFirmasiListForm.Designer.cs">
+      <DependentUpon>KargoFirmasiListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\FilterFunctions.cs" />
+    <Compile Include="Functions\GeneralFunctions.cs" />
+    <Compile Include="Functions\SelectFunctions.cs" />
+    <Compile Include="GenelForms\AnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenelForms\AnaForm.Designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\IStatusBarAciklama.cs" />
+    <Compile Include="Interfaces\IStatusBarKisaYol.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Show\Interfaces\IBaseFormShow.cs" />
+    <Compile Include="Show\ShowEditForms.cs" />
+    <Compile Include="Show\ShowListForms.cs" />
+    <Compile Include="UserControls\Controls\Grid\MyBandedGridControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\Grid\MyGridControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MyDataLayoutControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MyEmailTextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MyTcKimlikNoTextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MyButtonEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MyCalcEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MyCardEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MyCheckedComboBoxEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MyCheckedEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MyCodeTextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MyComboBoxEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MyDateEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MyFilterControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MyIbanTextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MyMemoEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MyPictureEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MySimpleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MySpinEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MyTelefonNoTextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MyTextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MyToogleSwitch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\Navigators\InsUptNavigator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\Navigators\InsUptNavigator.Designer.cs">
+      <DependentUpon>InsUptNavigator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Controls\Navigators\LongNavigator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\Navigators\LongNavigator.Designer.cs">
+      <DependentUpon>LongNavigator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Controls\Navigators\SmallNavigator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\Navigators\SmallNavigator.Designer.cs">
+      <DependentUpon>SmallNavigator.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\BaseForms\BaseEditForm.resx">
+      <DependentUpon>BaseEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BaseForms\BaseListForm.resx">
+      <DependentUpon>BaseListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SiparisForms\IlceForms\IlceEditForm.resx">
+      <DependentUpon>IlceEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SiparisForms\IlceForms\IlceListForm.resx">
+      <DependentUpon>IlceListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SiparisForms\IlForms\IlEditForm.resx">
+      <DependentUpon>IlEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SiparisForms\IlForms\IlListForm.resx">
+      <DependentUpon>IlListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SiparisForms\KargoFirmasiForms\KargoFirmasiEditForm.resx">
+      <DependentUpon>KargoFirmasiEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SiparisForms\KargoFirmasiForms\KargoFirmasiListForm.resx">
+      <DependentUpon>KargoFirmasiListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenelForms\AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControls\Controls\Navigators\InsUptNavigator.resx">
+      <DependentUpon>InsUptNavigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Controls\Navigators\LongNavigator.resx">
+      <DependentUpon>LongNavigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Controls\Navigators\SmallNavigator.resx">
+      <DependentUpon>SmallNavigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletelist2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletelist2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeheaderandfooter_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeheaderandfooter_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletefooter_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletefooter_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recurrence_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recurrence_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crossdatasourcefiltering _16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reapplyfilter_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reapplyfilter_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weekend_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weekend_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_16x162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_16x163.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment_16x162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_16x164.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment_16x163.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_16x165.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment_16x164.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_16x166.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment_16x165.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_16x167.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment_16x166.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_16x168.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment_16x167.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment_16x168.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_16x169.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment_16x169.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_16x1610.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_16x1611.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_16x1612.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_16x1613.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment_16x1610.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment_16x1611.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_16x1614.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment_16x1612.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_16x1615.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment_16x1613.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_16x1616.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment_16x1614.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_16x1617.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_16x162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletelist_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doublenext_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doubleprev_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\last_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prev_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\last_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prev_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\status_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\status_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment_16x1615.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_16x1618.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AdavancedSoftware.Model\AdavancedSoftware.Model.csproj">
+      <Project>{A2463B18-EA05-4015-8A11-42B098E2C0CB}</Project>
+      <Name>AdavancedSoftware.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AdvancedSoftware.Common\AdvancedSoftware.Common.csproj">
+      <Project>{FB7BF120-E0FF-440F-8D72-5233B98AAAC9}</Project>
+      <Name>AdvancedSoftware.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AdvancedSoftweare.BusinessLayer\AdvancedSoftware.BusinessLayer.csproj">
+      <Project>{1EE51672-7799-4EFF-B761-C38A3335457F}</Project>
+      <Name>AdvancedSoftware.BusinessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttoxlsx_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttoxlsx_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttoxlsx_32x322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttoxlsx_32x323.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttodocx_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttopdf_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttotxt_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doublenext_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doubleprev_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first_16x162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\last_16x162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_16x162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prev_16x162.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
