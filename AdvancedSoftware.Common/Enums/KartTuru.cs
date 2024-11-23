@@ -13,5 +13,8 @@ namespace AdvancedSoftware.Common.Enums
         [Description("İlçe Kaydı")]
         Ilce = 3,
 
+        [Description("Ofis")]
+        Ofis = 1,
+
     }
 }

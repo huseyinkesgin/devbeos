@@ -14,7 +14,7 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
         
         private MyButtonEdit _btnEdit;
         private MyButtonEdit _prmEdit;
-        private KartTuru _kartTuru; 
+        private readonly KartTuru _kartTuru; 
 
         #endregion
 

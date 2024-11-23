@@ -30,6 +30,7 @@ namespace AdnavcedSoftware.Data.Contexts
        public DbSet<Il> Il { get; set; }
        public DbSet<Ilce> Ilce { get; set; }
        public DbSet<KargoFirmasi> KargoFirmasi { get; set; }
+       public DbSet<Ofis> Ofis { get; set; }
 
     }
 

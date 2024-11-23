@@ -8,7 +8,7 @@ using System.Windows.Forms;
 namespace AdvancedSoftware.UserInterface.Win.UserControls.Controls
 {
     [ToolboxItem(true)]
-    public class MyDataLayoutControl: DataLayoutControl
+    public class MyDataLayoutControl : DataLayoutControl
     {
         public MyDataLayoutControl()
         {
@@ -17,21 +17,19 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.Controls
 
         protected override LayoutControlImplementor CreateILayoutControlImplementorCore()
         {
-           return new MyLayoutControlImplementor(this);
+            return new MyLayoutControlImplementor(this);
         }
     }
 
-
     public class MyLayoutControlImplementor : LayoutControlImplementor
     {
-        public MyLayoutControlImplementor(ILayoutControlOwner owner) : base(owner) 
+        public MyLayoutControlImplementor(ILayoutControlOwner owner) : base(owner)
         {
-            
         }
 
         public override BaseLayoutItem CreateLayoutItem(LayoutGroup parent)
         {
-            var item =  base.CreateLayoutItem(parent);
+            var item = base.CreateLayoutItem(parent);
             item.AppearanceItemCaption.ForeColor = Color.Maroon;
             return item;
         }
@@ -45,8 +43,7 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.Controls
             grp.OptionsTableLayoutGroup.ColumnDefinitions[0].Width = 200;
             grp.OptionsTableLayoutGroup.ColumnDefinitions[1].SizeType = SizeType.Percent;
             grp.OptionsTableLayoutGroup.ColumnDefinitions[1].Width = 100;
-            grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Absolute, Width=99 });
-
+            grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Absolute, Width = 99 });
 
             grp.OptionsTableLayoutGroup.RowDefinitions.Clear();
             for (int i = 0; i < 9; i++)
@@ -56,19 +53,16 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.Controls
                     SizeType = SizeType.Absolute,
                     Height = 24
                 });
-                if (i + 1 != 9) continue;
-                grp.OptionsTableLayoutGroup.RowDefinitions.Add(new RowDefinition 
+                if (i + 1 != 9)
+                    continue;
+                grp.OptionsTableLayoutGroup.RowDefinitions.Add(new RowDefinition
                 {
                     SizeType = SizeType.Percent,
-                    Height = 100 
+                    Height = 100
                 });
             }
-
-
-
 
             return grp;
         }
     }
 }
-

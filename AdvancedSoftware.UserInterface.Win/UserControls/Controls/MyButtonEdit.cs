@@ -35,24 +35,21 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.Controls
             {
                 var oldValue = _id;
                 var newValue = value;
-                if (oldValue == newValue) return;
-                _id = value;
 
+                if (newValue == oldValue) return;
+                _id = value;
                 IdChanged?.Invoke(this, new IdChangedEventArgs(oldValue, newValue));
             }
         }
-
         public event EventHandler<IdChangedEventArgs> IdChanged; //= delegate { }; 
         #endregion
     }
-
     public class IdChangedEventArgs : EventArgs 
     {
-
         public IdChangedEventArgs(long? oldValue, long? newValue)
         {
-            oldValue = oldValue ?? 0;
-            newValue = newValue ?? 0;
+            OldValue = oldValue ?? 0;
+            NewValue = newValue ?? 0;
         }
 
         public long? OldValue { get; }
