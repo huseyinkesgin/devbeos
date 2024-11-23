@@ -33,9 +33,7 @@ namespace AdvancedSoftware.DataAccessLayer.Base
         public void Insert(IEnumerable<T> entities)
         {
             foreach (var entity in entities)
-            {
                 _context.Entry(entity).State = EntityState.Added;
-            }
         }
         #endregion
 
@@ -43,7 +41,7 @@ namespace AdvancedSoftware.DataAccessLayer.Base
 
         public void Update(T entity)
         {
-            _context.Entry(entity).State |= EntityState.Modified;
+            _context.Entry(entity).State = EntityState.Modified;
         }
 
         public void Update(T entity, IEnumerable<string> fields)
@@ -51,17 +49,13 @@ namespace AdvancedSoftware.DataAccessLayer.Base
             _dbSet.Attach(entity);
             var entry = _context.Entry(entity);
             foreach (var field in fields)
-            {
                 entry.Property(field).IsModified = true;
-            }
         }
 
         public void Update(IEnumerable<T> entities)
         {
             foreach (var entity in entities)
-            {
                 _context.Entry(entity).State = EntityState.Modified;
-            }
         }
         #endregion
 
@@ -75,9 +69,7 @@ namespace AdvancedSoftware.DataAccessLayer.Base
         public void Delete(IEnumerable<T> entities)
         {
             foreach (var entity in entities)
-            {
                 _context.Entry(entity).State = EntityState.Deleted;
-            }
         }
         #endregion
 
