@@ -1,6 +1,6 @@
 ﻿using AdavancedSoftware.Model.Dto;
-using AdavancedSoftware.Model.Entities.Base;
 using AdavancedSoftware.Model.Entities;
+using AdavancedSoftware.Model.Entities.Base;
 using AdnavcedSoftware.Data.Contexts;
 using AdvancedSoftware.Common.Enums;
 using AdvancedSoftweare.BusinessLayer.Base;
@@ -9,8 +9,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AdvancedSoftweare.BusinessLayer.General

@@ -1,4 +1,5 @@
 ﻿using AdvancedSoftware.Common.Enums;
+using AdvancedSoftware.UserInterface.Win.Forms.OfisForms;
 using AdvancedSoftware.UserInterface.Win.Forms.SiparisForms.KargoFirmasiForms;
 using AdvancedSoftware.UserInterface.Win.Show;
 using DevExpress.XtraBars;
@@ -30,6 +31,10 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
         {
             if (e.Item == btnKargoFirmasi)
                 ShowListForms<KargoFirmasiListForm>.ShowListForm(KartTuru.KargoFirmasi);
+            if (e.Item == btnOfis)
+                ShowListForms<OfisList>.ShowListForm(KartTuru.Ofis);
         }
+
+       
     }
 }
