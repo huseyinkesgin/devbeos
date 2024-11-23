@@ -30,7 +30,7 @@ namespace AdvancedSoftware.DataAccessLayer.Base
             {
 
                 var sqlEx = (SqlException)ex.InnerException?.InnerException;
-                if (sqlEx != null) 
+                if (sqlEx == null) 
                 {
                     Messages.HataMesaji(ex.Message);
                     return false;

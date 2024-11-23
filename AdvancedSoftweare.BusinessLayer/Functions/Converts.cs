@@ -13,11 +13,11 @@ namespace AdvancedSoftweare.BusinessLayer.Functions
             var kaynakProp = source.GetType().GetProperties();
             var hedefProp = typeof(TTarget).GetProperties();  
             
-            foreach ( var kp in kaynakProp )
+            foreach (var kp in kaynakProp)
             {
                 var value = kp.GetValue(source);
                 var hp = hedefProp.FirstOrDefault(x => x.Name == kp.Name);
-                if ( hp != null )
+                if (hp!=null)
                     hp.SetValue(hedef, ReferenceEquals(value, "") ? null : value); 
             }
             return hedef;

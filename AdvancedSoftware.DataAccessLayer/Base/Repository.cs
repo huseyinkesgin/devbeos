@@ -13,6 +13,8 @@ namespace AdvancedSoftware.DataAccessLayer.Base
     {
         private readonly DbContext _context;   
         private readonly DbSet<T> _dbSet;
+        private bool _disposedValue;
+
 
         public Repository(DbContext context)
         {
@@ -20,7 +22,7 @@ namespace AdvancedSoftware.DataAccessLayer.Base
             _context = context;
             _dbSet = _context.Set<T>(); 
         }
-        private bool _disposedValue;
+       
 
 
         #region Ekleme İşlemler
@@ -124,10 +126,10 @@ namespace AdvancedSoftware.DataAccessLayer.Base
             return maxKod == null ? Kod() : YeniKodVer(maxKod);
         }
 
-       
 
+        
         #region Dispose
-        //private bool _disposedValue = false;
+
         protected virtual void Dispose(bool disposing)
         {
             if (!_disposedValue)

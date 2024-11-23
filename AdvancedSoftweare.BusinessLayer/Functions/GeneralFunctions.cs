@@ -21,7 +21,7 @@ namespace AdvancedSoftweare.BusinessLayer.Functions
 
                 if(prop.PropertyType == typeof(byte[]))
                 {
-                    if(string.IsNullOrEmpty(oldEntity.ToString())) 
+                    if(string.IsNullOrEmpty(oldValue.ToString())) 
                         oldValue = new byte[] { 0 };
                     if(string.IsNullOrEmpty(currentEntity.ToString()))
                         currentValue = new byte[] { 0 };
