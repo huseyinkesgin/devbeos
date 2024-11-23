@@ -76,8 +76,8 @@ namespace AdvancedSoftweare.BusinessLayer.Base
 
         public void Dispose()
         {
-            _ctrl.Dispose();
-            _uow.Dispose();
+            _ctrl?.Dispose();
+            _uow?.Dispose();
         } 
 
         #endregion
