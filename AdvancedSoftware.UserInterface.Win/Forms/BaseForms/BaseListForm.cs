@@ -46,7 +46,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
             EventsLoad();
 
             Tablo.OptionsSelection.MultiSelect = MultiSelect;
-           Navigator.NavigatableControl = Tablo.GridControl;
+            Navigator.NavigatableControl = Tablo.GridControl;
 
             Cursor.Current = Cursors.WaitCursor;
             Listele();

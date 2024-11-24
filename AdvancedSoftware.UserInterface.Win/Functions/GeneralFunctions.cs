@@ -3,7 +3,6 @@ using AdvancedSoftware.Common.Enums;
 using AdvancedSoftware.Common.Messages;
 using DevExpress.XtraBars;
 using DevExpress.XtraGrid.Views.Grid;
-using System.Collections.Generic;
 using System;
 
 namespace AdvancedSoftware.UserInterface.Win.Functions
@@ -43,6 +42,7 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
                         oldValue = new byte[] { 0 };
                     if (string.IsNullOrEmpty(currentEntity.ToString()))
                         currentValue = new byte[] { 0 };
+
                     if (((byte[])oldValue).Length != ((byte[])currentValue).Length)
                         return VeriDegisimYeri.Alan;
                 }

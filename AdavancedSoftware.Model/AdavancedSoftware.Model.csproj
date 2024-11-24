@@ -61,6 +61,8 @@
     <Compile Include="Entities\Ilce.cs" />
     <Compile Include="Entities\KargoFirmasi.cs" />
     <Compile Include="Entities\Ofis.cs" />
+    <Compile Include="Entities\PortfoyAltKategori.cs" />
+    <Compile Include="Entities\PortfoyKategori.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

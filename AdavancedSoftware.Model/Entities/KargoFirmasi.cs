@@ -12,7 +12,7 @@ namespace AdavancedSoftware.Model.Entities
         [Required, StringLength(50)]
         public string FirmaAdi { get; set; }
         
-        [Required, StringLength(15)]
+        [Required, StringLength(20)]
         public string Telefon { get; set; }
         
         [Required, StringLength(70)]

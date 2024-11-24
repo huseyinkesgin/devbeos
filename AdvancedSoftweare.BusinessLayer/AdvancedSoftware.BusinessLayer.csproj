@@ -60,6 +60,8 @@
     <Compile Include="General\IlceBll.cs" />
     <Compile Include="General\KargoFirmasiBll.cs" />
     <Compile Include="General\OfisBll.cs" />
+    <Compile Include="General\PortfoyAltKategoriBll.cs" />
+    <Compile Include="General\PortfoyKategoriBll.cs" />
     <Compile Include="Interfaces\IBaseBll.cs" />
     <Compile Include="Interfaces\IBaseGenelBll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

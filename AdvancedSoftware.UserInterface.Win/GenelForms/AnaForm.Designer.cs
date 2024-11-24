@@ -103,7 +103,7 @@
             this.btnOfis.Caption = "Ofis";
             this.btnOfis.Id = 2;
             this.btnOfis.Name = "btnOfis";
-            this.btnOfis.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnOfis_ItemClick);
+           
             // 
             // AnaForm
             // 

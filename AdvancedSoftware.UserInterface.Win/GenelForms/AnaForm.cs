@@ -32,7 +32,7 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
             if (e.Item == btnKargoFirmasi)
                 ShowListForms<KargoFirmasiListForm>.ShowListForm(KartTuru.KargoFirmasi);
             if (e.Item == btnOfis)
-                ShowListForms<OfisList>.ShowListForm(KartTuru.Ofis);
+                ShowListForms<OfisListForm>.ShowListForm(KartTuru.Ofis);
         }
 
        
