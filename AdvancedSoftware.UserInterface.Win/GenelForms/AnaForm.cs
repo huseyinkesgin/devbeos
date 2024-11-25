@@ -29,10 +29,9 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
 
         private void Butonlar_ItemClick(object sender, ItemClickEventArgs e)
         {
-            if (e.Item == btnKargoFirmasi)
-                ShowListForms<KargoFirmasiListForm>.ShowListForm(KartTuru.KargoFirmasi);
             if (e.Item == btnOfis)
                 ShowListForms<OfisList>.ShowListForm(KartTuru.Ofis);
+           
         }
 
        
