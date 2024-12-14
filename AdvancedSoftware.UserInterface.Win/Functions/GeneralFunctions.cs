@@ -1,10 +1,12 @@
 ﻿using AdavancedSoftware.Model.Entities.Base;
 using AdvancedSoftware.Common.Enums;
 using AdvancedSoftware.Common.Messages;
+using AdvancedSoftware.UserInterface.Win.UserControls.Controls;
 using DevExpress.XtraBars;
+using DevExpress.XtraBars.Docking.Paint;
 using DevExpress.XtraGrid.Views.Grid;
-using System.Collections.Generic;
 using System;
+using System.Windows.Forms;
 
 namespace AdvancedSoftware.UserInterface.Win.Functions
 {
@@ -43,6 +45,7 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
                         oldValue = new byte[] { 0 };
                     if (string.IsNullOrEmpty(currentEntity.ToString()))
                         currentValue = new byte[] { 0 };
+
                     if (((byte[])oldValue).Length != ((byte[])currentValue).Length)
                         return VeriDegisimYeri.Alan;
                 }
@@ -63,7 +66,7 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
             btnSil.Enabled = !butonEnabledDurumu;
         }
 
-        public static long IdOlustur(this IslemTuru islemTuru, BaseEntity selectedEntity)
+        public static long IdOlustur(this IslemTuru islemTuru, BaseEntity selectedEntity) //ders 71
         {
             string SifirEkle(string deger)
             {
@@ -99,5 +102,33 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
             var id = Id();
             return islemTuru == IslemTuru.EntityUpdate?selectedEntity.Id : long.Parse(Id());
         }
+    
+        public static void ControlEnabledChange(this MyButtonEdit baseEdit, Control prmEdit)
+        {
+            switch (prmEdit)
+            {
+
+                case MyButtonEdit edt:
+                    edt.Enabled = baseEdit.Id.HasValue && baseEdit.Id > 0;
+                    edt.Id = null;
+                    edt.EditValue =null ;
+                    break;
+            }
+        }
+
+        public static void RowFocus(this GridView tablo, string aranacakKolon, object aranacakDeger)
+        {
+           var rowHandle = 0;
+
+            for (int i = 0; i < tablo.RowCount; i++)
+            {
+               var bulunanDeger = tablo.GetRowCellValue(i, aranacakKolon);
+
+                if(aranacakDeger.Equals(bulunanDeger))
+                    rowHandle = i;
+            }
+            tablo.FocusedRowHandle = rowHandle;
+        }
+
     }
 }

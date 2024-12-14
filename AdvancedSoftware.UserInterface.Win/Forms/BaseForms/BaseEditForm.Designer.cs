@@ -71,7 +71,6 @@
             this.ribbonControl.ExpandCollapseItem.Id = 0;
             this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl.ExpandCollapseItem,
-            this.ribbonControl.SearchEditItem,
             this.btnYeni,
             this.btnKaydet,
             this.btnGeriAl,
@@ -94,7 +93,7 @@
             this.ribbonControl.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide;
             this.ribbonControl.ShowQatLocationSelector = false;
             this.ribbonControl.ShowToolbarCustomizeItem = false;
-            this.ribbonControl.Size = new System.Drawing.Size(1059, 135);
+            this.ribbonControl.Size = new System.Drawing.Size(813, 135);
             this.ribbonControl.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             this.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
@@ -226,10 +225,10 @@
             this.ribbonStatusBar1.ItemLinks.Add(this.statusBarAciklama);
             this.ribbonStatusBar1.ItemLinks.Add(this.statusBarKisaYol);
             this.ribbonStatusBar1.ItemLinks.Add(this.statusBarKisaYolAciklama);
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 591);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 499);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(1059, 24);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(813, 24);
             // 
             // ribbonPage2
             // 
@@ -240,7 +239,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1059, 615);
+            this.ClientSize = new System.Drawing.Size(813, 523);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl);
             this.IconOptions.ShowIcon = false;

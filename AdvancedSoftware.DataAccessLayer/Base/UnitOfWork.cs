@@ -71,6 +71,7 @@ namespace AdvancedSoftware.DataAccessLayer.Base
 
 
         #region Dispose
+
         private bool _disposedValue = false;
         protected virtual void Dispose(bool disposing)
         {
@@ -89,7 +90,7 @@ namespace AdvancedSoftware.DataAccessLayer.Base
         public void Dispose()
         {
 
-            Dispose(disposing: true);
+            Dispose(true);
             GC.SuppressFinalize(this);
         }
 

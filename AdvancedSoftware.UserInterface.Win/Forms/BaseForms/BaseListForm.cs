@@ -34,10 +34,34 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
             //button events
             foreach (BarItem button in ribbonControl.Items)
                 button.ItemClick += Button_ItemClick;
+
             //tablo events
             Tablo.DoubleClick += Tablo_DoubleClick;
             Tablo.KeyDown += Tablo_KeyDown;
+            
             //form events
+            Shown += BaseListForm_Shown;
+        }
+
+        private void BaseListForm_Shown(object sender, EventArgs e)
+        {
+            Tablo.Focus();
+            //ButtonGizleGoster();
+            //SutunGizleGoster();
+
+            if(IsMdiChild || SeciliGelecekId == null ) return;
+
+            Tablo.RowFocus("Id", SeciliGelecekId);
+        }
+
+        private void SutunGizleGoster()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void ButtonGizleGoster()
+        {
+            throw new NotImplementedException();
         }
 
         protected internal void Yukle()
@@ -46,7 +70,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
             EventsLoad();
 
             Tablo.OptionsSelection.MultiSelect = MultiSelect;
-           Navigator.NavigatableControl = Tablo.GridControl;
+            Navigator.NavigatableControl = Tablo.GridControl;
 
             Cursor.Current = Cursors.WaitCursor;
             Listele();
@@ -60,6 +84,16 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
         protected virtual void ShowEditForm(long id)
         {
             var result = FormShow.ShowDialogEditForm(BaseKartTuru, id);
+            ShowEditFormDefault(result);
+        }
+
+        protected void ShowEditFormDefault(long id)
+        {
+            if (id <= 0) return;
+            AktifKartlariGoster = true;
+            FormCaptionAyarla();
+            Tablo.RowFocus("Id", id);
+
         }
         private void EntityDelete()
         {
@@ -87,7 +121,23 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
         }
         private void FormCaptionAyarla()
         {
-            throw new NotImplementedException();
+           if(btnAktifPasifKayit == null)
+            {
+               Listele();
+                return; 
+            }
+           if(AktifKartlariGoster)
+            {
+                btnAktifPasifKayit.Caption = "Pasif Kartlar";
+                Tablo.ViewCaption = Text;           
+            }
+           else
+            {
+                btnAktifPasifKayit.Caption = "Aktif Kartlar";
+                Tablo.ViewCaption = Text + " - Pasif Kartlar";
+            }
+
+            Listele();
         }
         private void IslemTuruSec()
         {
@@ -146,13 +196,13 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
                 FiltreleSec();
             else if (e.Item == btnKolonlar)
             {
-                if (Tablo.CustomizationForm != null)
+                if (Tablo.CustomizationForm != null) //ders 66, 26.dk
                     Tablo.ShowCustomization();
                 else
                     Tablo.HideCustomization();
             }
             else if (e.Item == btnYazdir)
-                   Yazdir();
+                Yazdir();
             else if (e.Item == btnCikis)
                 Close();
             else if (e.Item == btnAktifPasifKayit)

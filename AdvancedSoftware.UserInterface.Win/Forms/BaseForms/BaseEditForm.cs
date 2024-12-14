@@ -5,7 +5,6 @@ using AdvancedSoftware.UserInterface.Win.Functions;
 using AdvancedSoftware.UserInterface.Win.UserControls.Controls;
 using AdvancedSoftweare.BusinessLayer.Interfaces;
 using DevExpress.XtraBars;
-using DevExpress.XtraBars.Docking.Paint;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraEditors;
 using System;
@@ -49,6 +48,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
                 {
                     case MyButtonEdit edt:
                         edt.IdChanged += Control_IdChanged;
+                        edt.EnabledChanged += Control_EnabledChange;
                         edt.ButtonClick += Control_ButtonClick;
                         edt.DoubleClick += Control_DoubleClick;
                         break;
@@ -69,6 +69,8 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
                     foreach (Control ctrl in layout.Controls)
                         ControlEvents(ctrl);
         }
+
+        protected virtual void Control_EnabledChange(object sender, EventArgs e) { }
 
         private void Control_EditValueChanged(object sender, EventArgs e)
         {
@@ -97,6 +99,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
         {
             if(e.KeyCode == Keys.Escape)
                 Close();
+
             if(sender is MyButtonEdit edt)
                 switch (e.KeyCode) 
                 {

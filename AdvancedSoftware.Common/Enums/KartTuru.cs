@@ -16,5 +16,11 @@ namespace AdvancedSoftware.Common.Enums
         [Description("Ofis Kaydı")]
         Ofis = 4,
 
+        [Description("Portföy Kategori Kaydı")]
+        PortfoyKategori = 5,
+
+        [Description("Portföy Alt Kaydı")]
+        PortfoyAltKategori = 6,
+
     }
 }

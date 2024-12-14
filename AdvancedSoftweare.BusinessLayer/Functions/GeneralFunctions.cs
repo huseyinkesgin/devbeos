@@ -13,6 +13,7 @@ namespace AdvancedSoftweare.BusinessLayer.Functions
         public static List<string>DegisenAlanlariGetir<T>(this T oldEntity, T currentEntity)
         {
             List<string> alanlar = new List<string>(); 
+
             foreach (var prop in currentEntity.GetType().GetProperties()) 
             {
                 if (prop.PropertyType.Namespace == "System.Collections.Generic") continue;

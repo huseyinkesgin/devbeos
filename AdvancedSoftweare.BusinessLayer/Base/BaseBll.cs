@@ -62,7 +62,6 @@ namespace AdvancedSoftweare.BusinessLayer.Base
 
             if (mesajVer)
                 if(Messages.SilMesaji(kartTuru.ToName()) != DialogResult.Yes) return false;
-
             _uow.Rep.Delete(entity.EntityConvert<T>());
             return _uow.Save();
         }

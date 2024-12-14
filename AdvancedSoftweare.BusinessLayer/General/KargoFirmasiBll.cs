@@ -13,7 +13,7 @@ using AdvancedSoftweare.BusinessLayer.Interfaces;
 
 namespace AdvancedSoftweare.BusinessLayer.General
 {
-    public class KargoFirmasiBll : BaseBll<KargoFirmasi, DataContext>, IBaseGenelBll
+    public class KargoFirmasiBll : BaseBll<KargoFirmasi, DataContext>
     {
         public KargoFirmasiBll() { }
 

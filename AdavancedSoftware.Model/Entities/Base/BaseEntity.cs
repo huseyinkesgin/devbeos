@@ -8,7 +8,8 @@ namespace AdavancedSoftware.Model.Entities.Base
     {
         [Column(Order = 0), Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
         public long Id { get; set; }
-        [Column(Order = 1),Required, StringLength(20)]
+
+        [Column(Order = 1),Required, StringLength(40)]
         public virtual string Kod { get; set; }
     }
 }

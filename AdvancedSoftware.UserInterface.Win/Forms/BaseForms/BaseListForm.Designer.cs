@@ -127,7 +127,6 @@
             this.ribbonControl.ExpandCollapseItem.Id = 0;
             this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl.ExpandCollapseItem,
-            this.ribbonControl.SearchEditItem,
             this.btnYeni,
             this.btnSil,
             this.btnSec,
@@ -182,7 +181,7 @@
             this.ribbonControl.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide;
             this.ribbonControl.ShowQatLocationSelector = false;
             this.ribbonControl.ShowToolbarCustomizeItem = false;
-            this.ribbonControl.Size = new System.Drawing.Size(1019, 135);
+            this.ribbonControl.Size = new System.Drawing.Size(911, 135);
             this.ribbonControl.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             this.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
@@ -672,27 +671,27 @@
             this.ribbonStatusBar1.ItemLinks.Add(this.barCikis, true);
             this.ribbonStatusBar1.ItemLinks.Add(this.barCikisAciklama);
             this.ribbonStatusBar1.ItemLinks.Add(this.btnAktifPasifKayit);
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 756);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 495);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(1019, 24);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(911, 24);
             // 
             // ribbonPage2
             // 
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "ribbonPage2";
             // 
-            // BaseKartlarForm
+            // BaseListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1019, 780);
+            this.ClientSize = new System.Drawing.Size(911, 519);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl);
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow;
             this.IconOptions.ShowIcon = false;
             this.MinimizeBox = false;
-            this.Name = "BaseKartlarForm";
+            this.Name = "BaseListForm";
             this.Ribbon = this.ribbonControl;
             this.ShowInTaskbar = false;
             this.StatusBar = this.ribbonStatusBar1;

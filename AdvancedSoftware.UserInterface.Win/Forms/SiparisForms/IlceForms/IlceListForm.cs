@@ -31,6 +31,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.SiparisForms.IlceForms
             BaseKartTuru = KartTuru.Ilce;
             //FormShow = new ShowEditForms<IlceEditForm>();
             Navigator = longNavigator.Navigator;
+            Text = Text + $" - ( {_ilAdi} )";
         }
 
         protected override void Listele()

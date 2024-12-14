@@ -3,6 +3,7 @@ using AdavancedSoftware.Model.Entities.Base;
 using AdnavcedSoftware.Data.Contexts;
 using AdvancedSoftware.Common.Enums;
 using AdvancedSoftweare.BusinessLayer.Base;
+using AdvancedSoftweare.BusinessLayer.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -46,5 +47,7 @@ namespace AdvancedSoftweare.BusinessLayer.General
         {
             return BaseYeniKodver(KartTuru.Ilce, x => x.Kod, filter);
         }
+
+      
     }
 }

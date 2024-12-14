@@ -1,6 +1,6 @@
 ﻿namespace AdvancedSoftware.UserInterface.Win.Forms.OfisForms
 {
-    partial class OfisList
+    partial class OfisListForm
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.longNavigator1 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Navigators.longNavigator();
+            this.longNavigator = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Navigators.longNavigator();
             this.grid = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridControl();
             this.tablo = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridView();
             this.colId = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
@@ -50,13 +50,13 @@
             this.ribbonControl.Size = new System.Drawing.Size(948, 135);
             this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             // 
-            // longNavigator1
+            // longNavigator
             // 
-            this.longNavigator1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.longNavigator1.Location = new System.Drawing.Point(0, 569);
-            this.longNavigator1.Name = "longNavigator1";
-            this.longNavigator1.Size = new System.Drawing.Size(948, 24);
-            this.longNavigator1.TabIndex = 3;
+            this.longNavigator.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.longNavigator.Location = new System.Drawing.Point(0, 569);
+            this.longNavigator.Name = "longNavigator";
+            this.longNavigator.Size = new System.Drawing.Size(948, 24);
+            this.longNavigator.TabIndex = 3;
             // 
             // grid
             // 
@@ -144,7 +144,7 @@
             this.colOfisAdi.StatusBarKisaYolAciklama = null;
             this.colOfisAdi.Visible = true;
             this.colOfisAdi.VisibleIndex = 1;
-            this.colOfisAdi.Width = 113;
+            this.colOfisAdi.Width = 164;
             // 
             // colTelefon
             // 
@@ -157,7 +157,7 @@
             this.colTelefon.StatusBarKisaYolAciklama = null;
             this.colTelefon.Visible = true;
             this.colTelefon.VisibleIndex = 2;
-            this.colTelefon.Width = 101;
+            this.colTelefon.Width = 119;
             // 
             // colEposta
             // 
@@ -170,7 +170,7 @@
             this.colEposta.StatusBarKisaYolAciklama = null;
             this.colEposta.Visible = true;
             this.colEposta.VisibleIndex = 3;
-            this.colEposta.Width = 138;
+            this.colEposta.Width = 175;
             // 
             // colIlAdi
             // 
@@ -183,6 +183,7 @@
             this.colIlAdi.StatusBarKisaYolAciklama = null;
             this.colIlAdi.Visible = true;
             this.colIlAdi.VisibleIndex = 4;
+            this.colIlAdi.Width = 96;
             // 
             // colIlceAdi
             // 
@@ -195,7 +196,7 @@
             this.colIlceAdi.StatusBarKisaYolAciklama = null;
             this.colIlceAdi.Visible = true;
             this.colIlceAdi.VisibleIndex = 5;
-            this.colIlceAdi.Width = 92;
+            this.colIlceAdi.Width = 105;
             // 
             // colAdres
             // 
@@ -210,18 +211,18 @@
             this.colAdres.VisibleIndex = 6;
             this.colAdres.Width = 306;
             // 
-            // OfisList
+            // OfisListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(948, 617);
             this.Controls.Add(this.grid);
-            this.Controls.Add(this.longNavigator1);
+            this.Controls.Add(this.longNavigator);
             this.IconOptions.ShowIcon = false;
-            this.Name = "OfisList";
+            this.Name = "OfisListForm";
             this.Text = "Ofis Kartları";
             this.Controls.SetChildIndex(this.ribbonControl, 0);
-            this.Controls.SetChildIndex(this.longNavigator1, 0);
+            this.Controls.SetChildIndex(this.longNavigator, 0);
             this.Controls.SetChildIndex(this.grid, 0);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
@@ -232,7 +233,7 @@
         }
 
         #endregion
-        private UserControls.Controls.Navigators.longNavigator longNavigator1;
+        private UserControls.Controls.Navigators.longNavigator longNavigator;
         private UserControls.Controls.Grid.MyGridControl grid;
         private UserControls.Controls.Grid.MyGridView tablo;
         private UserControls.Controls.Grid.MyGridColumn colId;

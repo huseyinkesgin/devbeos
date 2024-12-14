@@ -13,7 +13,7 @@ namespace AdvancedSoftware.DataAccessLayer.Base
     {
         private readonly DbContext _context;   
         private readonly DbSet<T> _dbSet;
-        private bool _disposedValue;
+        
 
 
         public Repository(DbContext context)
@@ -102,7 +102,7 @@ namespace AdvancedSoftware.DataAccessLayer.Base
                     if (i + 1 < kodDizi.Length - 1)
                         kod += " ";
                 }
-                return kod += "-000001";
+                return kod += "-0001";
             }
             string YeniKodVer(string kod)
             {
@@ -127,9 +127,9 @@ namespace AdvancedSoftware.DataAccessLayer.Base
         }
 
 
-        
-        #region Dispose
 
+        #region Dispose
+        private bool _disposedValue = false;
         protected virtual void Dispose(bool disposing)
         {
             if (!_disposedValue)
@@ -143,11 +143,10 @@ namespace AdvancedSoftware.DataAccessLayer.Base
             }
         }
 
-
         public void Dispose()
-        {
+        { 
 
-            Dispose(disposing: true);
+            Dispose(true);
             GC.SuppressFinalize(this);
         }
         #endregion

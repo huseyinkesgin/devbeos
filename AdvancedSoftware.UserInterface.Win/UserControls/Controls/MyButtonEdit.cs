@@ -26,6 +26,7 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.Controls
         #region Events
 
         private long? _id;
+
         [Browsable(false)]
         public long? Id
         {
@@ -38,10 +39,12 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.Controls
 
                 if (newValue == oldValue) return;
                 _id = value;
-                IdChanged?.Invoke(this, new IdChangedEventArgs(oldValue, newValue));
+                IdChanged(this, new IdChangedEventArgs(oldValue, newValue));
+                EnabledChange(this, EventArgs.Empty);
             }
         }
-        public event EventHandler<IdChangedEventArgs> IdChanged; //= delegate { }; 
+        public event EventHandler<IdChangedEventArgs> IdChanged = delegate { }; 
+        public event EventHandler EnabledChange = delegate { };
         #endregion
     }
     public class IdChangedEventArgs : EventArgs 
@@ -53,6 +56,6 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.Controls
         }
 
         public long? OldValue { get; }
-        public long? NewValue { get;  }
+        public long? NewValue { get; }
     }
 }
