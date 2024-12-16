@@ -3,8 +3,10 @@ using AdvancedSoftware.Common.Enums;
 using AdvancedSoftware.UserInterface.Win.Functions;
 using AdvancedSoftware.UserInterface.Win.Show.Interfaces;
 using AdvancedSoftweare.BusinessLayer.Interfaces;
+using DevExpress.Utils.Extensions;
 using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
+using DevExpress.XtraGrid.Views.Base;
 using DevExpress.XtraGrid.Views.Grid;
 using System;
 using System.Windows.Forms;
@@ -13,21 +15,27 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
 {
     public partial class BaseListForm : DevExpress.XtraBars.Ribbon.RibbonForm
     {
+        private bool _formSablonKayitEdilecek;
+        private bool _tabloSablonKayitEdilecek;
         protected IBaseFormShow FormShow;
         protected KartTuru BaseKartTuru;
         protected internal GridView Tablo;
         protected bool AktifKartlariGoster = true;
+        protected internal bool AktifPasifButonGoster = false;
         protected internal bool MultiSelect;
         protected internal BaseEntity SelectedEntity;
         protected IBaseBll Bll;
         protected ControlNavigator Navigator;
         protected internal long? SeciliGelecekId;
+        protected BarItem[] ShowItems;
+        protected BarItem[] HideItems;
 
 
         public BaseListForm()
         {
             InitializeComponent();
-    
+          
+
         }
         private void EventsLoad()
         {
@@ -38,15 +46,63 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
             //tablo events
             Tablo.DoubleClick += Tablo_DoubleClick;
             Tablo.KeyDown += Tablo_KeyDown;
-            
+            Tablo.MouseUp += Tablo_MouseUp;
+            Tablo.ColumnWidthChanged += Tablo_ColumnWidthChanged;
+            Tablo.ColumnPositionChanged += Tablo_ColumnPositionChanged;
+            Tablo.EndSorting += Tablo_EndSorting;
+
             //form events
             Shown += BaseListForm_Shown;
+            Load += BaseListForm_Load;
+            FormClosing += BaseListForm_FormClosing;
+            LocationChanged += BaseListForm_LocationChanged;
+            SizeChanged += BaseListForm_SizeChanged;
+        }
+
+        private void BaseListForm_SizeChanged(object sender, EventArgs e)
+        {
+            _formSablonKayitEdilecek = true;    
+        }
+
+        private void BaseListForm_LocationChanged(object sender, EventArgs e)
+        {
+           _formSablonKayitEdilecek = true;
+        }
+
+        private void Tablo_EndSorting(object sender, EventArgs e)
+        {
+            _tabloSablonKayitEdilecek = true;
+        }
+
+        private void Tablo_ColumnPositionChanged(object sender, EventArgs e)
+        {
+            _tabloSablonKayitEdilecek = true;
+        }
+
+        private void Tablo_ColumnWidthChanged(object sender, ColumnEventArgs e)
+        {
+            _tabloSablonKayitEdilecek = true;
+        }
+
+        private void BaseListForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SablonKaydet();
+        }
+
+        private void BaseListForm_Load(object sender, EventArgs e)
+        {
+            SablonYukle();
+        }
+
+        private void Tablo_MouseUp(object sender, MouseEventArgs e)
+        {
+            e.SagMenuGoster(sagMenu);
         }
 
         private void BaseListForm_Shown(object sender, EventArgs e)
         {
             Tablo.Focus();
-            //ButtonGizleGoster();
+            ButtonGizleGoster();
             //SutunGizleGoster();
 
             if(IsMdiChild || SeciliGelecekId == null ) return;
@@ -54,15 +110,47 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
             Tablo.RowFocus("Id", SeciliGelecekId);
         }
 
+      
+
+        private void ButtonGizleGoster()
+        {
+            btnSec.Visibility = AktifPasifButonGoster ? BarItemVisibility.Never : IsMdiChild ? BarItemVisibility.Never : BarItemVisibility.Always;
+            barEnter.Visibility = IsMdiChild ? BarItemVisibility.Never : BarItemVisibility.Always;
+            barEnterAciklama.Visibility = IsMdiChild ? BarItemVisibility.Never : BarItemVisibility.Always;
+            btnAktifPasifKayit.Visibility = AktifPasifButonGoster ? BarItemVisibility.Always : !IsMdiChild ? BarItemVisibility.Never : BarItemVisibility.Always;
+
+            //TODO: BURADAKİ KOD İŞLEVİNİ GÖRMÜYOR. GÜNCELLENECEK
+            ShowItems?.ForEach(x => x.Visibility = BarItemVisibility.Always);
+           HideItems?.ForEach(x => x.Visibility = BarItemVisibility.Never);
+
+
+        }
         private void SutunGizleGoster()
         {
             throw new NotImplementedException();
         }
 
-        private void ButtonGizleGoster()
+
+        private void SablonKaydet()
         {
-            throw new NotImplementedException();
+            if (_formSablonKayitEdilecek)
+               Name.FormSablonKaydet(Left, Top, Width, Height, WindowState);
+
+            if (_tabloSablonKayitEdilecek)
+                Tablo.TabloSablonKaydet(IsMdiChild ? Name + " Tablosu" : Name + " TablosuMDI");
         }
+
+        private void SablonYukle()
+        {
+           if(IsMdiChild)
+                Tablo.TabloSablonYukle(Name + " Tablosu");
+            else
+            {
+               Name.FormSablonYukle(this);
+               Tablo.TabloSablonYukle(Name + " TablosuMDI");
+            }
+        }
+
 
         protected internal void Yukle()
         {
@@ -95,9 +183,15 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
             Tablo.RowFocus("Id", id);
 
         }
-        private void EntityDelete()
+        protected virtual void EntityDelete()
         {
-            throw new NotImplementedException();
+            var entity = Tablo.GetRow<BaseEntity>();
+            if (entity == null)
+                return;
+            if (!((IBaseCommonBll)Bll).Delete(entity))
+                return;
+            Tablo.DeleteSelectedRows();
+            Tablo.RowFocus(Tablo.FocusedRowHandle);
         }
         private void SelectEntity()
         {
@@ -201,6 +295,10 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
                 else
                     Tablo.HideCustomization();
             }
+            else if (e.Item == btnBagliKartlar)
+            {
+                BagliKartAc();
+            }
             else if (e.Item == btnYazdir)
                 Yazdir();
             else if (e.Item == btnCikis)
@@ -213,6 +311,9 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
 
             Cursor.Current = DefaultCursor;
         }
+
+        protected virtual void BagliKartAc() {}
+
         private void Tablo_DoubleClick(object sender, EventArgs e)
         {
             Cursor.Current = Cursors.WaitCursor;

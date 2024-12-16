@@ -10,10 +10,11 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AdvancedSoftweare.BusinessLayer.Interfaces;
 
 namespace AdvancedSoftweare.BusinessLayer.General
 {
-    public class PortfoyAltKategoriBll : BaseBll<PortfoyAltKategori, DataContext>
+    public class PortfoyAltKategoriBll : BaseBll<PortfoyAltKategori, DataContext>,IBaseCommonBll
     {
         public PortfoyAltKategoriBll() { }
 

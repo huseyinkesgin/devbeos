@@ -23,6 +23,17 @@ namespace AdvancedSoftware.UserInterface.Win.Show
             frm.Show();
         }
 
+        public static void ShowListForm(KartTuru kartTuru, params object[] prm)
+        {
+            //Yetki Kontrolü
+
+            var frm = (TForm)Activator.CreateInstance(typeof(TForm), prm);
+            frm.MdiParent = Form.ActiveForm;
+
+            frm.Yukle();
+            frm.Show();
+        }
+
         public static BaseEntity ShowDialogListForm(KartTuru kartTuru, long? seciliGelecekId, params object[] prm) 
         {
             //Yetki Kontrolü

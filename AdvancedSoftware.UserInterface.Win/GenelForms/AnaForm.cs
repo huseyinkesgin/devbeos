@@ -1,5 +1,6 @@
 ﻿using AdvancedSoftware.Common.Enums;
 using AdvancedSoftware.UserInterface.Win.Forms.OfisForms;
+using AdvancedSoftware.UserInterface.Win.Forms.SiparisForms.IlForms;
 using AdvancedSoftware.UserInterface.Win.Forms.SiparisForms.KargoFirmasiForms;
 using AdvancedSoftware.UserInterface.Win.Show;
 using DevExpress.XtraBars;
@@ -35,6 +36,9 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
            
             if (e.Item == btnOfis)
                 ShowListForms<OfisListForm>.ShowListForm(KartTuru.Ofis);
+
+            if (e.Item == btnIl)
+                ShowListForms<IlListForm>.ShowListForm(KartTuru.Il);
 
         }
 

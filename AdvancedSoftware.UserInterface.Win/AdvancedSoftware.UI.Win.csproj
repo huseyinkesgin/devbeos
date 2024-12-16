@@ -50,6 +50,7 @@
     <Reference Include="DevExpress.Spreadsheet.v24.1.Core, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v24.1.UI, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpf.Grid.v24.1.Core, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Xpo.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Charts.v24.1.Core, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -149,6 +150,7 @@
     <Compile Include="Forms\SiparisForms\KargoFirmasiForms\KargoFirmasiListForm.Designer.cs">
       <DependentUpon>KargoFirmasiListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Functions\FileFunctions.cs" />
     <Compile Include="Functions\FilterFunctions.cs" />
     <Compile Include="Functions\GeneralFunctions.cs" />
     <Compile Include="Functions\SelectFunctions.cs" />
@@ -636,7 +638,18 @@
   <ItemGroup>
     <None Include="Resources\prev_16x162.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\listmultilevel_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listmultilevel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treeview_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treeview_16x16.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

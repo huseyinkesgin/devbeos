@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace AdvancedSoftweare.BusinessLayer
 {
-    public class PortfoyKategoriBll : BaseBll<PortfoyKategori, DataContext>, IBaseGenelBll
+    public class PortfoyKategoriBll : BaseBll<PortfoyKategori, DataContext>, IBaseGenelBll, IBaseCommonBll
     {
         public PortfoyKategoriBll() { }
 

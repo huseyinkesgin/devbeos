@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem1 = new DevExpress.Utils.ToolTipSeparatorItem();
@@ -72,6 +73,10 @@
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem11 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem11 = new DevExpress.Utils.ToolTipSeparatorItem();
             DevExpress.Utils.ToolTipItem toolTipItem11 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip12 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem12 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem12 = new DevExpress.Utils.ToolTipSeparatorItem();
+            DevExpress.Utils.ToolTipItem toolTipItem12 = new DevExpress.Utils.ToolTipItem();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnYeni = new DevExpress.XtraBars.BarButtonItem();
             this.btnSil = new DevExpress.XtraBars.BarButtonItem();
@@ -95,8 +100,8 @@
             this.barYeniAciklama = new DevExpress.XtraBars.BarStaticItem();
             this.barSil = new DevExpress.XtraBars.BarStaticItem();
             this.barSilAciklama = new DevExpress.XtraBars.BarStaticItem();
-            this.barSec = new DevExpress.XtraBars.BarStaticItem();
-            this.barSecAciklama = new DevExpress.XtraBars.BarStaticItem();
+            this.barEnter = new DevExpress.XtraBars.BarStaticItem();
+            this.barEnterAciklama = new DevExpress.XtraBars.BarStaticItem();
             this.barDuzenle = new DevExpress.XtraBars.BarStaticItem();
             this.barDuzenleAciklama = new DevExpress.XtraBars.BarStaticItem();
             this.barYenile = new DevExpress.XtraBars.BarStaticItem();
@@ -113,11 +118,14 @@
             this.barCikisAciklama = new DevExpress.XtraBars.BarStaticItem();
             this.btnAktifPasifKayit = new DevExpress.XtraBars.BarButtonItem();
             this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
+            this.btnBagliKartlar = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.sagMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sagMenu)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -142,8 +150,8 @@
             this.barYeniAciklama,
             this.barSil,
             this.barSilAciklama,
-            this.barSec,
-            this.barSecAciklama,
+            this.barEnter,
+            this.barEnterAciklama,
             this.barDuzenle,
             this.barDuzenleAciklama,
             this.barYenile,
@@ -166,9 +174,10 @@
             this.btnFormatsizExcelDosyasi,
             this.btnWordDosyasi,
             this.btnPdfDosyasi,
-            this.btnTxtDosyasi});
+            this.btnTxtDosyasi,
+            this.btnBagliKartlar});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 41;
+            this.ribbonControl.MaxItemId = 42;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -461,22 +470,22 @@
             this.barSilAciklama.Id = 15;
             this.barSilAciklama.Name = "barSilAciklama";
             // 
-            // barSec
+            // barEnter
             // 
-            this.barSec.Caption = "Enter :";
-            this.barSec.Id = 16;
-            this.barSec.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.barSec.ItemAppearance.Normal.FontStyleDelta = System.Drawing.FontStyle.Bold;
-            this.barSec.ItemAppearance.Normal.ForeColor = System.Drawing.Color.DarkBlue;
-            this.barSec.ItemAppearance.Normal.Options.UseFont = true;
-            this.barSec.ItemAppearance.Normal.Options.UseForeColor = true;
-            this.barSec.Name = "barSec";
+            this.barEnter.Caption = "Enter :";
+            this.barEnter.Id = 16;
+            this.barEnter.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barEnter.ItemAppearance.Normal.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.barEnter.ItemAppearance.Normal.ForeColor = System.Drawing.Color.DarkBlue;
+            this.barEnter.ItemAppearance.Normal.Options.UseFont = true;
+            this.barEnter.ItemAppearance.Normal.Options.UseForeColor = true;
+            this.barEnter.Name = "barEnter";
             // 
-            // barSecAciklama
+            // barEnterAciklama
             // 
-            this.barSecAciklama.Caption = "Seç";
-            this.barSecAciklama.Id = 17;
-            this.barSecAciklama.Name = "barSecAciklama";
+            this.barEnterAciklama.Caption = "Seç";
+            this.barEnterAciklama.Id = 17;
+            this.barEnterAciklama.Name = "barEnterAciklama";
             // 
             // barDuzenle
             // 
@@ -626,6 +635,23 @@
             this.barSubItem1.Id = 33;
             this.barSubItem1.Name = "barSubItem1";
             // 
+            // btnBagliKartlar
+            // 
+            this.btnBagliKartlar.Caption = "Şube Kartları";
+            this.btnBagliKartlar.Id = 41;
+            this.btnBagliKartlar.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.treeview_16x16;
+            this.btnBagliKartlar.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.treeview_32x32;
+            this.btnBagliKartlar.Name = "btnBagliKartlar";
+            toolTipTitleItem12.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
+            toolTipTitleItem12.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.comment_16x16;
+            toolTipTitleItem12.Text = "<b>Ctrl + B</b>";
+            toolTipItem12.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.suggestion_16x163;
+            toolTipItem12.Text = "Bağlı Kartlar";
+            superToolTip12.Items.Add(toolTipTitleItem12);
+            superToolTip12.Items.Add(toolTipSeparatorItem12);
+            superToolTip12.Items.Add(toolTipItem12);
+            this.btnBagliKartlar.SuperTip = superToolTip12;
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -642,6 +668,7 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.btnYenile);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnFiltrele);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnKolonlar);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnBagliKartlar);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnYazdir);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnGonder);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnCikis);
@@ -654,8 +681,8 @@
             this.ribbonStatusBar1.ItemLinks.Add(this.barYeniAciklama);
             this.ribbonStatusBar1.ItemLinks.Add(this.barSil, true);
             this.ribbonStatusBar1.ItemLinks.Add(this.barSilAciklama);
-            this.ribbonStatusBar1.ItemLinks.Add(this.barSec, true);
-            this.ribbonStatusBar1.ItemLinks.Add(this.barSecAciklama);
+            this.ribbonStatusBar1.ItemLinks.Add(this.barEnter, true);
+            this.ribbonStatusBar1.ItemLinks.Add(this.barEnterAciklama);
             this.ribbonStatusBar1.ItemLinks.Add(this.barDuzenle, true);
             this.ribbonStatusBar1.ItemLinks.Add(this.barDuzenleAciklama);
             this.ribbonStatusBar1.ItemLinks.Add(this.barYenile, true);
@@ -681,6 +708,16 @@
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "ribbonPage2";
             // 
+            // sagMenu
+            // 
+            this.sagMenu.ItemLinks.Add(this.btnYeni);
+            this.sagMenu.ItemLinks.Add(this.btnSec);
+            this.sagMenu.ItemLinks.Add(this.btnSil);
+            this.sagMenu.ItemLinks.Add(this.btnDuzenle);
+            this.sagMenu.ItemLinks.Add(this.btnYenile);
+            this.sagMenu.Name = "sagMenu";
+            this.sagMenu.Ribbon = this.ribbonControl;
+            // 
             // BaseListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -696,6 +733,7 @@
             this.ShowInTaskbar = false;
             this.StatusBar = this.ribbonStatusBar1;
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sagMenu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -721,8 +759,8 @@
         private DevExpress.XtraBars.BarStaticItem barYeniAciklama;
         private DevExpress.XtraBars.BarStaticItem barSil;
         private DevExpress.XtraBars.BarStaticItem barSilAciklama;
-        private DevExpress.XtraBars.BarStaticItem barSec;
-        private DevExpress.XtraBars.BarStaticItem barSecAciklama;
+        private DevExpress.XtraBars.BarStaticItem barEnter;
+        private DevExpress.XtraBars.BarStaticItem barEnterAciklama;
         private DevExpress.XtraBars.BarStaticItem barDuzenle;
         private DevExpress.XtraBars.BarStaticItem barDuzenleAciklama;
         private DevExpress.XtraBars.BarStaticItem barYenile;
@@ -747,5 +785,7 @@
         private DevExpress.XtraBars.BarButtonItem btnPdfDosyasi;
         private DevExpress.XtraBars.BarButtonItem btnTxtDosyasi;
         private DevExpress.XtraBars.BarSubItem barSubItem1;
+        private DevExpress.XtraBars.PopupMenu sagMenu;
+        protected DevExpress.XtraBars.BarButtonItem btnBagliKartlar;
     }
 }

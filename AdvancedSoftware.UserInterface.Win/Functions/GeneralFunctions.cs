@@ -130,5 +130,23 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
             tablo.FocusedRowHandle = rowHandle;
         }
 
+        public static void RowFocus(this GridView tablo, int rowhandle)
+        {
+           
+            if (rowhandle <= 0) return;
+
+            if (rowhandle == tablo.RowCount - 1)
+                tablo.FocusedRowHandle = rowhandle;
+            else
+                tablo.FocusedRowHandle = rowhandle - 1;
+        }
+
+        public static void SagMenuGoster(this MouseEventArgs e, PopupMenu sagMenu)
+        {
+            if (e.Button != MouseButtons.Right)
+                return;
+            sagMenu.ShowPopup(Control.MousePosition);
+        }
+
     }
 }

@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace AdvancedSoftweare.BusinessLayer.General
 {
-    public class OfisBll : BaseBll<Ofis, DataContext>, IBaseGenelBll
+    public class OfisBll : BaseBll<Ofis, DataContext>, IBaseGenelBll, IBaseCommonBll
     {
         public OfisBll() { }
 

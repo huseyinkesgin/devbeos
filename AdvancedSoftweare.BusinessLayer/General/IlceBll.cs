@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace AdvancedSoftweare.BusinessLayer.General
 {
-    public class IlceBll : BaseBll<Ilce, DataContext>
+    public class IlceBll : BaseBll<Ilce, DataContext>, IBaseCommonBll
     {
         public IlceBll() { }
 

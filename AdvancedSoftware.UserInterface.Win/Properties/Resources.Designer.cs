@@ -563,6 +563,26 @@ namespace AdvancedSoftware.UserInterface.Win.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap listmultilevel_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("listmultilevel_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap listmultilevel_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("listmultilevel_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap new_16x16 {
             get {
                 object obj = ResourceManager.GetObject("new_16x16", resourceCulture);
@@ -906,6 +926,26 @@ namespace AdvancedSoftware.UserInterface.Win.Properties {
         internal static System.Drawing.Bitmap suggestion_32x32 {
             get {
                 object obj = ResourceManager.GetObject("suggestion_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap treeview_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("treeview_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap treeview_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("treeview_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -13,7 +13,7 @@ using System.Linq;
 
 namespace AdvancedSoftweare.BusinessLayer.General
 {
-    public class IlBll : BaseBll<Il, DataContext>, IBaseGenelBll
+    public class IlBll : BaseBll<Il, DataContext>, IBaseGenelBll, IBaseCommonBll
     {
         public IlBll() { }
 
