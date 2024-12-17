@@ -2,8 +2,11 @@
 using AdvancedSoftware.Common.Enums;
 using AdvancedSoftware.Common.Messages;
 using AdvancedSoftware.UserInterface.Win.Functions;
+using AdvancedSoftware.UserInterface.Win.Interfaces;
 using AdvancedSoftware.UserInterface.Win.UserControls.Controls;
+using AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid;
 using AdvancedSoftweare.BusinessLayer.Interfaces;
+using DevExpress.CodeParser;
 using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraEditors;
@@ -47,6 +50,8 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
             void ControlEvents(Control control)
             {
                 control.KeyDown += Control_KeyDown;
+                control.GotFocus += Control_GotFocus;
+                control.Leave += Control_Leave;
 
                 switch (control)
                 {
@@ -73,6 +78,32 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
                     foreach (Control ctrl in layout.Controls)
                         ControlEvents(ctrl);
         }
+
+        private void Control_Leave(object sender, EventArgs e)
+        {
+            statusBarKisaYol.Visibility = BarItemVisibility.Never;
+            statusBarKisaYolAciklama.Visibility = BarItemVisibility.Never;
+        }
+
+        private void Control_GotFocus(object sender, EventArgs e)
+        {
+            var type = sender.GetType();
+
+            if(type == typeof(MyButtonEdit) || type == typeof(MyGridView) || type == typeof(MyPictureEdit) || type == typeof(MyComboBoxEdit) || type == typeof(MyDateEdit))
+            {
+                statusBarKisaYol.Visibility = BarItemVisibility.Always;
+                statusBarKisaYolAciklama.Visibility = BarItemVisibility.Always;
+
+                statusBarAciklama.Caption = ((IStatusBarAciklama)sender).StatusBarAciklama;
+                statusBarKisaYol.Caption = ((IStatusBarKisaYol)sender).StatusBarKisaYol;
+                statusBarKisaYolAciklama.Caption = ((IStatusBarKisaYol)sender).StatusBarKisaYolAciklama;
+            }
+            else if(sender is IStatusBarAciklama ctrl)
+            {
+                statusBarAciklama.Caption = ctrl.StatusBarAciklama;
+            }   
+        }
+        
 
         private void BaseEditForm_SizeChanged(object sender, EventArgs e)
         {
@@ -156,7 +187,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
             GuncelNesneOlustur();
             SablonYukle();
             //ButonGizleGoster();
-            Id = BaseIslemTuru.IdOlustur(OldEntity);
+            //Id = BaseIslemTuru.IdOlustur(OldEntity);
 
             //Güncelleme yapılacak
         }
@@ -280,5 +311,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
             GeneralFunctions.ButtonEnabledDurumu(btnYeni, btnKaydet, btnGeriAl, btnSil, OldEntity, CurrentEntity);
 
         }
+
+       
     }
 }

@@ -164,6 +164,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\DosyaTuru.cs" />
     <Compile Include="Enums\ImarDurumu.cs" />
     <Compile Include="Enums\IslemTuru.cs" />
     <Compile Include="Enums\KartTuru.cs" />

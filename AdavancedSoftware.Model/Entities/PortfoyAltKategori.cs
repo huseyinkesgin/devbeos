@@ -1,4 +1,5 @@
-﻿using AdavancedSoftware.Model.Entities.Base;
+﻿using AdavancedSoftware.Model.Attributes;
+using AdavancedSoftware.Model.Entities.Base;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -9,7 +10,7 @@ namespace AdavancedSoftware.Model.Entities
         [Index("IX_Kod", IsUnique = false)]
         public override string Kod { get; set; }
 
-        [Required, StringLength(50)]
+        [Required, StringLength(50), ZorunluAlan("Alt Kategori Adı", "txtAltKategoriAdi")]
         public string AltKategoriAdi { get; set; }
 
         public long PortfoyKategoriId { get; set; }

@@ -88,7 +88,7 @@ namespace AdvancedSoftware.DataAccessLayer.Base
         }
         #endregion
 
-
+      
         public string YeniKodver(KartTuru kartTuru, Expression<Func<T, string>> filter, Expression<Func<T, bool>> where = null)
         {
             string Kod()
@@ -148,6 +148,11 @@ namespace AdvancedSoftware.DataAccessLayer.Base
 
             Dispose(true);
             GC.SuppressFinalize(this);
+        }
+
+        int IRepository<T>.Count(Expression<Func<T, bool>> filter)
+        {
+            return filter == null ? _dbSet.Count() : _dbSet.Count(filter);
         }
         #endregion
     }

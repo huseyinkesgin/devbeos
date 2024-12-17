@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AdavancedSoftware.Model.Entities.Base;
+using AdavancedSoftware.Model.Attributes;
 
 namespace AdavancedSoftware.Model.Entities
 {
@@ -14,7 +15,7 @@ namespace AdavancedSoftware.Model.Entities
         [Index("IX_Kod", IsUnique = true)]
         public override string Kod { get; set; }
 
-        [Required, StringLength(50)]
+        [Required, StringLength(50), ZorunluAlan("Adı Soyadı", "txtAdiSoyadi")]
         public string AdiSoyadi { get; set; }
 
         [Required, StringLength(20)]

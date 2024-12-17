@@ -48,5 +48,20 @@ namespace AdvancedSoftware.Common.Messages
         {
             UyariMesaji("Lütfen bir kayıt seçiniz");
         }
+
+        public static void MukerrerKayitHataMesaji(string alanAdi)
+        {
+            HataMesaji($"Girmiş olduğunuz {alanAdi} Daha Önce Kullanılmıştır.");
+        }
+
+        public static void HataliVeriMesaji(string alanAdi)
+        {
+            HataMesaji($"{alanAdi} Alanına Geçerli Bir Değer Girmelisiniz.");
+        }
+
+        public static DialogResult TabloExportMesaj(string dosyaFormati)
+        {
+            return EvetSeciliEvetHayir($"İlgili Tablo, {dosyaFormati} olarak Dısarı Aktarılacaktır.Onaylıyor musunuz?", "Aktarım Onay");
+        }
     }
 }

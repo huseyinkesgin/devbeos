@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AdavancedSoftware.Model.Attributes;
 
 namespace AdavancedSoftware.Model.Entities
 {
@@ -14,7 +15,7 @@ namespace AdavancedSoftware.Model.Entities
         [Index("IX_Kod", IsUnique = true)]
         public override string Kod { get; set; }
 
-        [Required, StringLength(50)]
+        [Required, StringLength(50), ZorunluAlan("Ofis Adı", "txtOfisAdi")]
         public string OfisAdi { get; set; }
 
         [Required, StringLength(20)]
@@ -23,7 +24,10 @@ namespace AdavancedSoftware.Model.Entities
         [Required, StringLength(70)]
         public string Eposta { get; set; }
 
+        [ZorunluAlan("İl", "txtIl")]
         public long IlId { get; set; }
+
+        [ZorunluAlan("İlçe", "txtIlce")]
         public long IlceId { get; set; }
 
         [StringLength(150)]
