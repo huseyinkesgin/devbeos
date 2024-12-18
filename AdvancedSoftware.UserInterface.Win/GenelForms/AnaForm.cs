@@ -9,6 +9,9 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
 {
     public partial class AnaForm : DevExpress.XtraBars.Ribbon.RibbonForm
     {
+        public static string DonemAdi = "2021-2022";
+        public static string SubeAdi = "Merkez";
+
         public AnaForm()
         {
             InitializeComponent();

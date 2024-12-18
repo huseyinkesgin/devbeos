@@ -22,5 +22,8 @@ namespace AdvancedSoftware.Common.Enums
         [Description("Portföy Alt Kaydı")]
         PortfoyAltKategori = 6,
 
+        [Description("Filtre Kartı")]
+        Filtre = 7,
+
     }
 }

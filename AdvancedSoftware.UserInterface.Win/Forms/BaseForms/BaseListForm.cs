@@ -1,6 +1,10 @@
-﻿using AdavancedSoftware.Model.Entities.Base;
+﻿using AdavancedSoftware.Model.Entities;
+using AdavancedSoftware.Model.Entities.Base;
 using AdvancedSoftware.Common.Enums;
+using AdvancedSoftware.UserInterface.Win.Forms.FiltreForms;
 using AdvancedSoftware.UserInterface.Win.Functions;
+using AdvancedSoftware.UserInterface.Win.GenelForms;
+using AdvancedSoftware.UserInterface.Win.Show;
 using AdvancedSoftware.UserInterface.Win.Show.Interfaces;
 using AdvancedSoftweare.BusinessLayer.Interfaces;
 using DevExpress.Utils.Extensions;
@@ -15,6 +19,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
 {
     public partial class BaseListForm : DevExpress.XtraBars.Ribbon.RibbonForm
     {
+        private long _filtreId;
         private bool _formSablonKayitEdilecek;
         private bool _tabloSablonKayitEdilecek;
         protected IBaseFormShow FormShow;
@@ -50,6 +55,8 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
             Tablo.ColumnWidthChanged += Tablo_ColumnWidthChanged;
             Tablo.ColumnPositionChanged += Tablo_ColumnPositionChanged;
             Tablo.EndSorting += Tablo_EndSorting;
+            Tablo.FilterEditorCreated += Tablo_FilterEditorCreated;
+            Tablo.ColumnFilterChanged += Tablo_ColumnFilterChanged;
 
             //form events
             Shown += BaseListForm_Shown;
@@ -57,6 +64,18 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
             FormClosing += BaseListForm_FormClosing;
             LocationChanged += BaseListForm_LocationChanged;
             SizeChanged += BaseListForm_SizeChanged;
+        }
+
+        private void Tablo_ColumnFilterChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(Tablo.ActiveFilterString))
+                _filtreId = 0;
+        }
+
+        private void Tablo_FilterEditorCreated(object sender, FilterControlEventArgs e)
+        {
+            e.ShowFilterEditor = false;
+            ShowEditForms<FiltreEditForm>.ShowDialogEditForm(KartTuru.Filtre, _filtreId, BaseKartTuru, Tablo.GridControl);
         }
 
         private void BaseListForm_SizeChanged(object sender, EventArgs e)
@@ -207,11 +226,15 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
         protected virtual void Listele() { }
         private void FiltreleSec()
         {
-            throw new NotImplementedException();
+            var entity = (Filtre)ShowListForms<FiltreListForm>.ShowDialogListForm(KartTuru.Filtre, _filtreId, BaseKartTuru,Tablo.GridControl);
+            if(entity == null) return;
+
+            _filtreId = entity.Id;
+            Tablo.ActiveFilterString = entity.FiltreMetni;
         }
-        private void Yazdir()
+        protected virtual void Yazdir()
         {
-            throw new NotImplementedException();
+            TablePrintingFunctions.Yazdir(Tablo, Tablo.ViewCaption, AnaForm.SubeAdi);
         }
         private void FormCaptionAyarla()
         {

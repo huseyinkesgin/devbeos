@@ -41,7 +41,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.SiparisForms.IlceForms
 
         protected override void ShowEditForm(long id)
         {
-            var result = new ShowEditForms<IlceEditForm>().ShowDialogEditForm(KartTuru.Ilce, id, _ilId, _ilAdi);
+            var result = ShowEditForms<IlceEditForm>.ShowDialogEditForm(KartTuru.Ilce, id, _ilId, _ilAdi);
             ShowEditFormDefault(result);
         }
     }

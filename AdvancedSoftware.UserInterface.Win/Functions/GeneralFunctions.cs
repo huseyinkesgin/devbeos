@@ -6,6 +6,9 @@ using DevExpress.XtraBars;
 using DevExpress.XtraBars.Docking.Paint;
 using DevExpress.XtraGrid.Views.Grid;
 using System;
+using System.Collections.Generic;
+using System.Drawing.Printing;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace AdvancedSoftware.UserInterface.Win.Functions
@@ -63,6 +66,16 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
             btnKaydet.Enabled = butonEnabledDurumu;
             btnGeriAl.Enabled = butonEnabledDurumu;
             btnYeni.Enabled = !butonEnabledDurumu;
+            btnSil.Enabled = !butonEnabledDurumu;
+        }
+
+        public static void ButtonEnabledDurumu<T>(BarButtonItem btnKaydet, BarButtonItem btnFarkliKaydet, BarButtonItem btnSil,IslemTuru islemTuru ,T oldEntity, T currentEntity)
+        {
+            var veriDegisimYeri = VeriDegisimYeriGetir(oldEntity, currentEntity);
+            var butonEnabledDurumu = veriDegisimYeri == VeriDegisimYeri.Alan;
+
+            btnKaydet.Enabled = butonEnabledDurumu;
+            btnFarkliKaydet.Enabled = islemTuru != IslemTuru.EntityInsert;
             btnSil.Enabled = !butonEnabledDurumu;
         }
 
@@ -146,6 +159,17 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
             if (e.Button != MouseButtons.Right)
                 return;
             sagMenu.ShowPopup(Control.MousePosition);
+        }
+
+        public static List<string> YazicilariListele()
+        {
+            return PrinterSettings.InstalledPrinters.Cast<string>().ToList();
+        }
+
+        public static string DefaultYazici()
+        {
+            var settings = new PrinterSettings();
+            return settings.PrinterName;
         }
 
     }

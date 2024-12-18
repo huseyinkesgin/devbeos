@@ -11,7 +11,7 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
             return x => x.Durum == aktifKartlariGoster;
         }
 
-        public static Expression<Func<T, bool>> Filter<T>(long id) where T : BaseEntityDurum
+        public static Expression<Func<T, bool>> Filter<T>(long id) where T : BaseEntity
         {
             return x => x.Id == id;
         }

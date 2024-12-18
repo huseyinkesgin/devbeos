@@ -1,4 +1,5 @@
 ﻿using AdavancedSoftware.Model.Entities.Base;
+using AdavancedSoftware.Model.Entities.Base.Interfaces;
 using AdvancedSoftware.Common.Enums;
 using AdvancedSoftware.Common.Messages;
 using AdvancedSoftware.UserInterface.Win.Functions;
@@ -7,6 +8,7 @@ using AdvancedSoftware.UserInterface.Win.UserControls.Controls;
 using AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid;
 using AdvancedSoftweare.BusinessLayer.Interfaces;
 using DevExpress.CodeParser;
+using DevExpress.Utils.Extensions;
 using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraEditors;
@@ -29,6 +31,8 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
         protected BaseEntity CurrentEntity;
         protected bool IsLoaded;
         protected bool KayitSonrasiFormuKapat = true;
+        protected BarItem[] ShowItems;
+        protected BarItem[] HideItems;
 
         public BaseEditForm()
         {
@@ -55,6 +59,13 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
 
                 switch (control)
                 {
+                    case FilterControl edt:
+                        edt.FilterChanged += Control_EditValueChanged;
+                        break;
+                    case ComboBoxEdit edt:
+                        edt.EditValueChanged += Control_EditValueChanged;
+                        edt.SelectedValueChanged += Control_SelectedValueChanged;
+                        break;
                     case MyButtonEdit edt:
                         edt.IdChanged += Control_IdChanged;
                         edt.EnabledChanged += Control_EnabledChange;
@@ -78,6 +89,8 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
                     foreach (Control ctrl in layout.Controls)
                         ControlEvents(ctrl);
         }
+
+        protected virtual void Control_SelectedValueChanged(object sender, EventArgs e) { }
 
         private void Control_Leave(object sender, EventArgs e)
         {
@@ -124,6 +137,8 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
             if (!Kaydet(true))
                 e.Cancel = true;
         }
+
+        protected virtual void FiltreUygula() { }
 
         protected void SablonKaydet()
         {
@@ -186,8 +201,8 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
             IsLoaded = true;
             GuncelNesneOlustur();
             SablonYukle();
-            //ButonGizleGoster();
-            //Id = BaseIslemTuru.IdOlustur(OldEntity);
+            ButtonGizleGoster();
+    
 
             //Güncelleme yapılacak
         }
@@ -204,17 +219,56 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
             }
             else if (e.Item == btnKaydet)
                 Kaydet(false);
+
+            else if (e.Item == btnFarkliKaydet)
+            {
+                // Yetki Kontrolü
+                FarkliKaydet();
+
+            }
+
             else if (e.Item == btnGeriAl)
                 GeriAl();
-            else if(e.Item == btnSil)
+
+
+            else if (e.Item == btnSil)
             {
                 //yetki kontrolü
                 EntityDelete();
             }
-            else if(e.Item == btnCikis)
+
+
+            else if (e.Item == btnUygula)
+                FiltreUygula();
+
+            else if (e.Item == btnYazdir)
+                Yazdir();
+
+            else if (e.Item == btnBaskiOnizleme)
+                BaskiOnizleme();
+           
+
+            else if (e.Item == btnCikis)
                 Close();
 
             Cursor.Current = DefaultCursor;
+        }
+
+        protected virtual void BaskiOnizleme() { }
+
+        protected virtual void Yazdir() { }
+
+
+        private void FarkliKaydet()
+        {
+            if (Messages.EvetSeciliEvetHayir("Bu filtre Referans Alınarak Yeni Bir Filtre Oluşturulacaktır.Onaylıyor musunuz?", "Kayıt Onay") != DialogResult.Yes)
+                return;
+
+            BaseIslemTuru = IslemTuru.EntityInsert;
+            Yukle();
+            if(Kaydet(true))
+                Close();
+
         }
 
         protected virtual void SecimYap(object sender) { }
@@ -224,6 +278,13 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
             if (!((IBaseCommonBll)Bll).Delete(OldEntity)) return;
             RefreshYapilacak = true;
             Close();
+        }
+
+        private void ButtonGizleGoster()
+        {
+            //TODO: BURADAKİ KOD İŞLEVİNİ GÖRMÜYOR. GÜNCELLENECEK
+            ShowItems?.ForEach(x => x.Visibility = BarItemVisibility.Always);
+            HideItems?.ForEach(x => x.Visibility = BarItemVisibility.Never);
         }
 
         private void GeriAl()
@@ -301,6 +362,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
         }
 
         protected internal virtual void Yukle() { }
+        protected internal virtual IBaseEntity ReturnEntity() { return null; }
 
         protected virtual void NesneyiKontrollereBagla() { }
         protected virtual void GuncelNesneOlustur() { }
