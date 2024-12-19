@@ -5,14 +5,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AdavancedSoftware.Model.Entities
 {
-    public class PortfoyKategori : BaseEntityDurum
+    public class MusteriBilgi : BaseEntityDurum
     {
-        [Index("IX_Kod", IsUnique = true)]
+        [Index("IX_Kod",IsUnique =true)]
         public override string Kod { get; set; }
-
-        [Required, StringLength(50), ZorunluAlan("Kategori Adı", "txtKategoriAdi")]
-        public string KategoriAdi { get; set; }
+        [Required,StringLength(50),ZorunluAlan("Bilgi Adı", "txtBilgiAdi")]
+        public string BilgiAdi { get; set; }
         [StringLength(500)]
         public string Aciklama { get; set; }
     }
+    
 }

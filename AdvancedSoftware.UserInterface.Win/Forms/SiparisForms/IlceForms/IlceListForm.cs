@@ -1,7 +1,5 @@
-﻿using AdavancedSoftware.Model.Entities;
-using AdvancedSoftware.Common.Enums;
+﻿using AdvancedSoftware.Common.Enums;
 using AdvancedSoftware.UserInterface.Win.Forms.BaseForms;
-using AdvancedSoftware.UserInterface.Win.Functions;
 using AdvancedSoftware.UserInterface.Win.Show;
 using AdvancedSoftweare.BusinessLayer.General;
 
@@ -29,7 +27,6 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.SiparisForms.IlceForms
         {
             Tablo = tablo;
             BaseKartTuru = KartTuru.Ilce;
-            //FormShow = new ShowEditForms<IlceEditForm>();
             Navigator = longNavigator.Navigator;
             Text = Text + $" - ( {_ilAdi} )";
         }

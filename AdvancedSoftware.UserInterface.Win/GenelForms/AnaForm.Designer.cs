@@ -40,14 +40,14 @@
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnPortfoyTipi = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnTapuTipi = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem17 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem18 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem19 = new DevExpress.XtraBars.BarButtonItem();
@@ -55,6 +55,8 @@
             this.barButtonItem21 = new DevExpress.XtraBars.BarButtonItem();
             this.btnIl = new DevExpress.XtraBars.BarButtonItem();
             this.btnIlce = new DevExpress.XtraBars.BarButtonItem();
+            this.btnMusteriBilgi = new DevExpress.XtraBars.BarButtonItem();
+            this.btnIptalNedeni = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageOfis = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageFinans = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -68,6 +70,7 @@
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageDiger = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageRaporlar = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
@@ -92,23 +95,25 @@
             this.barButtonItem6,
             this.barButtonItem7,
             this.barButtonItem8,
-            this.barButtonItem9,
+            this.btnPortfoyTipi,
             this.barButtonItem10,
             this.barButtonItem11,
             this.barButtonItem12,
             this.barButtonItem13,
             this.barButtonItem14,
             this.barButtonItem15,
-            this.barButtonItem16,
+            this.btnTapuTipi,
             this.barButtonItem17,
             this.barButtonItem18,
             this.barButtonItem19,
             this.barButtonItem20,
             this.barButtonItem21,
             this.btnIl,
-            this.btnIlce});
+            this.btnIlce,
+            this.btnMusteriBilgi,
+            this.btnIptalNedeni});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 26;
+            this.ribbonControl.MaxItemId = 28;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPageOfis,
@@ -183,12 +188,12 @@
             this.barButtonItem8.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.LargeImage")));
             this.barButtonItem8.Name = "barButtonItem8";
             // 
-            // barButtonItem9
+            // btnPortfoyTipi
             // 
-            this.barButtonItem9.Caption = "KATEGORİ";
-            this.barButtonItem9.Id = 11;
-            this.barButtonItem9.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem9.ImageOptions.SvgImage")));
-            this.barButtonItem9.Name = "barButtonItem9";
+            this.btnPortfoyTipi.Caption = "PORTFOY TİPİ";
+            this.btnPortfoyTipi.Id = 11;
+            this.btnPortfoyTipi.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem9.ImageOptions.SvgImage")));
+            this.btnPortfoyTipi.Name = "btnPortfoyTipi";
             // 
             // barButtonItem10
             // 
@@ -232,12 +237,12 @@
             this.barButtonItem15.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem15.ImageOptions.SvgImage")));
             this.barButtonItem15.Name = "barButtonItem15";
             // 
-            // barButtonItem16
+            // btnTapuTipi
             // 
-            this.barButtonItem16.Caption = "TAPU";
-            this.barButtonItem16.Id = 18;
-            this.barButtonItem16.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem16.ImageOptions.SvgImage")));
-            this.barButtonItem16.Name = "barButtonItem16";
+            this.btnTapuTipi.Caption = "TAPU TİPİ";
+            this.btnTapuTipi.Id = 18;
+            this.btnTapuTipi.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnTapuTipi.ImageOptions.SvgImage")));
+            this.btnTapuTipi.Name = "btnTapuTipi";
             // 
             // barButtonItem17
             // 
@@ -286,6 +291,20 @@
             this.btnIlce.Id = 25;
             this.btnIlce.Name = "btnIlce";
             // 
+            // btnMusteriBilgi
+            // 
+            this.btnMusteriBilgi.Caption = "MÜŞTERİ BİLGİ";
+            this.btnMusteriBilgi.Id = 26;
+            this.btnMusteriBilgi.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.newemployee_16x16;
+            this.btnMusteriBilgi.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.newemployee_32x32;
+            this.btnMusteriBilgi.Name = "btnMusteriBilgi";
+            // 
+            // btnIptalNedeni
+            // 
+            this.btnIptalNedeni.Caption = "İPTAL NEDENİ";
+            this.btnIptalNedeni.Id = 27;
+            this.btnIptalNedeni.Name = "btnIptalNedeni";
+            // 
             // ribbonPageOfis
             // 
             this.ribbonPageOfis.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -329,8 +348,8 @@
             // 
             // ribbonPageGroup4
             // 
-            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem9);
-            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem16);
+            this.ribbonPageGroup4.ItemLinks.Add(this.btnPortfoyTipi);
+            this.ribbonPageGroup4.ItemLinks.Add(this.btnTapuTipi);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             // 
             // ribbonPageGroup5
@@ -366,12 +385,14 @@
             this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem18);
             this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem19);
             this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem20);
+            this.ribbonPageGroup7.ItemLinks.Add(this.btnMusteriBilgi);
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
             // 
             // ribbonPageDiger
             // 
             this.ribbonPageDiger.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup9});
+            this.ribbonPageGroup9,
+            this.ribbonPageGroup10});
             this.ribbonPageDiger.Name = "ribbonPageDiger";
             this.ribbonPageDiger.Text = "DİĞER";
             // 
@@ -380,6 +401,11 @@
             this.ribbonPageGroup9.ItemLinks.Add(this.btnIl);
             this.ribbonPageGroup9.ItemLinks.Add(this.btnIlce);
             this.ribbonPageGroup9.Name = "ribbonPageGroup9";
+            // 
+            // ribbonPageGroup10
+            // 
+            this.ribbonPageGroup10.ItemLinks.Add(this.btnIptalNedeni);
+            this.ribbonPageGroup10.Name = "ribbonPageGroup10";
             // 
             // ribbonPageRaporlar
             // 
@@ -454,7 +480,7 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;
         private DevExpress.XtraBars.BarButtonItem barButtonItem8;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem9;
+        private DevExpress.XtraBars.BarButtonItem btnPortfoyTipi;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPagePortfoy;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private DevExpress.XtraBars.BarButtonItem barButtonItem10;
@@ -465,7 +491,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
         private DevExpress.XtraBars.BarButtonItem barButtonItem15;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem16;
+        private DevExpress.XtraBars.BarButtonItem btnTapuTipi;
         private DevExpress.XtraBars.BarButtonItem barButtonItem17;
         private DevExpress.XtraBars.BarButtonItem barButtonItem18;
         private DevExpress.XtraBars.BarButtonItem barButtonItem19;
@@ -481,5 +507,8 @@
         private DevExpress.XtraBars.BarButtonItem btnKargoFirmasi;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPageRaporlar;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
+        private DevExpress.XtraBars.BarButtonItem btnMusteriBilgi;
+        private DevExpress.XtraBars.BarButtonItem btnIptalNedeni;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
     }
 }

@@ -6,11 +6,10 @@ using System.Windows.Forms;
 
 namespace AdvancedSoftweare.BusinessLayer.General
 {
-    public class IlceBll : BaseGenelBll<Ilce>, IBaseCommonBll
+    public class TapuTipiBll : BaseGenelBll<TapuTipi>, IBaseCommonBll
     {
-        public IlceBll():base(KartTuru.Ilce) { }
+        public TapuTipiBll() : base(KartTuru.TapuTipi) { }
 
-        public IlceBll(Control ctrl) : base(ctrl, KartTuru.Ilce) { }
-      
+        public TapuTipiBll(Control ctrl) : base(ctrl, KartTuru.TapuTipi) { }
     }
 }

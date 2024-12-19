@@ -30,6 +30,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.OfisForms
 
             if (BaseIslemTuru != IslemTuru.EntityInsert)
                 return;
+            Id = BaseIslemTuru.IdOlustur(OldEntity);
             txtKod.Text = ((OfisBll)Bll).YeniKodVer();
             txtOfisAdi.Focus();
         }

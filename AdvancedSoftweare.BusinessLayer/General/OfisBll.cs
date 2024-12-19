@@ -13,13 +13,14 @@ using System.Windows.Forms;
 
 namespace AdvancedSoftweare.BusinessLayer.General
 {
-    public class OfisBll : BaseBll<Ofis, DataContext>, IBaseGenelBll, IBaseCommonBll
+    public class OfisBll : BaseGenelBll<Ofis>, IBaseGenelBll, IBaseCommonBll
     {
-        public OfisBll() { }
+        public OfisBll(): base(KartTuru.Ofis) { }
 
-        public OfisBll(Control ctrl) : base(ctrl) { }
+        public OfisBll(Control ctrl) : base(ctrl, KartTuru.Ofis) { }
 
-        public BaseEntity Single(Expression<Func<Ofis, bool>> filter)
+
+        public override BaseEntity Single(Expression<Func<Ofis, bool>> filter)
         {
             return BaseSingle(filter, x => new OfisS
             {
@@ -36,7 +37,9 @@ namespace AdvancedSoftweare.BusinessLayer.General
                 Durum = x.Durum,
             });
         }
-        public IEnumerable<BaseEntity> List(Expression<Func<Ofis, bool>> filter)
+
+       
+        public override IEnumerable<BaseEntity> List(Expression<Func<Ofis, bool>> filter)
         {
             return BaseList(filter, x => new OfisL
             {
@@ -51,24 +54,8 @@ namespace AdvancedSoftweare.BusinessLayer.General
             }).OrderBy(x => x.Kod).ToList();
         }
 
-        public bool Insert(BaseEntity entity)
-        {
-            return BaseInsert(entity, x => x.Kod == entity.Kod);
-        }
+      
 
-        public bool Update(BaseEntity oldEntity, BaseEntity currentEntity)
-        {
-            return BaseUpdate(oldEntity, currentEntity, x => x.Kod == currentEntity.Kod);
-        }
-
-        public bool Delete(BaseEntity entity)
-        {
-            return BaseDelete(entity, KartTuru.Ofis);
-        }
-
-        public string YeniKodVer()
-        {
-            return BaseYeniKodver(KartTuru.Ofis, x => x.Kod);
-        }
+       
     }
 }

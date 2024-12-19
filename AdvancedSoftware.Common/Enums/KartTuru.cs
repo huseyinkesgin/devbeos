@@ -4,26 +4,38 @@ namespace AdvancedSoftware.Common.Enums
 {
     public enum KartTuru: byte
     {
-        [Description("Kargo Firma Kaydı")]
-        KargoFirmasi = 1,
-
         [Description("İl Kaydı")]
-        Il = 2,
+        Il = 1,
 
         [Description("İlçe Kaydı")]
-        Ilce = 3,
+        Ilce = 2,
 
         [Description("Ofis Kaydı")]
-        Ofis = 4,
+        Ofis = 3,
 
         [Description("Portföy Kategori Kaydı")]
-        PortfoyKategori = 5,
+        PortfoyKategori = 4,
 
         [Description("Portföy Alt Kaydı")]
-        PortfoyAltKategori = 6,
+        PortfoyAltKategori = 5,
 
         [Description("Filtre Kartı")]
-        Filtre = 7,
+        Filtre = 6,
+
+        [Description("Müşteri Bilgi Kartı")]
+        MusteriBilgi = 7,
+
+        [Description("İptal Nedeni Kartı")]
+        IptalNedeni = 8,
+
+        [Description("Tapu Tipi Kartı")]
+        TapuTipi = 9,
+
+        [Description("Portföy Tipi Kartı")]
+        PortfoyTipi = 10,
+
+        [Description("İşyeri Tipi Kartı")]
+        IsyeriTipi = 11,
 
     }
 }

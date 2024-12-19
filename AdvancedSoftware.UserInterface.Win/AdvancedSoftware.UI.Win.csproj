@@ -120,6 +120,30 @@
     <Compile Include="Forms\FiltreForms\FiltreListForm.Designer.cs">
       <DependentUpon>FiltreListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\IptalNedeniForms\IptalNedeniEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IptalNedeniForms\IptalNedeniEditForm.Designer.cs">
+      <DependentUpon>IptalNedeniEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IptalNedeniForms\IptalNedeniListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IptalNedeniForms\IptalNedeniListForm.Designer.cs">
+      <DependentUpon>IptalNedeniListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MusteriBilgiForms\MusteriBilgiEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MusteriBilgiForms\MusteriBilgiEditForm.Designer.cs">
+      <DependentUpon>MusteriBilgiEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MusteriBilgiForms\MusteriBilgiListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MusteriBilgiForms\MusteriBilgiListForm.Designer.cs">
+      <DependentUpon>MusteriBilgiListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\OfisForms\OfisEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +155,18 @@
     </Compile>
     <Compile Include="Forms\OfisForms\OfisListForm.Designer.cs">
       <DependentUpon>OfisListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PortfoyTipiForms\PortfoyTipiEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PortfoyTipiForms\PortfoyTipiEditForm.Designer.cs">
+      <DependentUpon>PortfoyTipiEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PortfoyTipiForms\PortfoyTipiListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PortfoyTipiForms\PortfoyTipiListForm.Designer.cs">
+      <DependentUpon>PortfoyTipiListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\SiparisForms\IlceForms\IlceEditForm.cs">
       <SubType>Form</SubType>
@@ -156,17 +192,17 @@
     <Compile Include="Forms\SiparisForms\IlForms\IlListForm.Designer.cs">
       <DependentUpon>IlListForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SiparisForms\KargoFirmasiForms\KargoFirmasiEditForm.cs">
+    <Compile Include="Forms\TapuTipiForms\TapuTipiEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\SiparisForms\KargoFirmasiForms\KargoFirmasiEditForm.Designer.cs">
-      <DependentUpon>KargoFirmasiEditForm.cs</DependentUpon>
+    <Compile Include="Forms\TapuTipiForms\TapuTipiEditForm.Designer.cs">
+      <DependentUpon>TapuTipiEditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SiparisForms\KargoFirmasiForms\KargoFirmasiListForm.cs">
+    <Compile Include="Forms\TapuTipiForms\TapuTipiListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\SiparisForms\KargoFirmasiForms\KargoFirmasiListForm.Designer.cs">
-      <DependentUpon>KargoFirmasiListForm.cs</DependentUpon>
+    <Compile Include="Forms\TapuTipiForms\TapuTipiListForm.Designer.cs">
+      <DependentUpon>TapuTipiListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Functions\FileFunctions.cs" />
     <Compile Include="Functions\FilterFunctions.cs" />
@@ -295,11 +331,29 @@
     <EmbeddedResource Include="Forms\FiltreForms\FiltreListForm.resx">
       <DependentUpon>FiltreListForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IptalNedeniForms\IptalNedeniEditForm.resx">
+      <DependentUpon>IptalNedeniEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IptalNedeniForms\IptalNedeniListForm.resx">
+      <DependentUpon>IptalNedeniListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MusteriBilgiForms\MusteriBilgiEditForm.resx">
+      <DependentUpon>MusteriBilgiEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MusteriBilgiForms\MusteriBilgiListForm.resx">
+      <DependentUpon>MusteriBilgiListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\OfisForms\OfisEditForm.resx">
       <DependentUpon>OfisEditForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\OfisForms\OfisListForm.resx">
       <DependentUpon>OfisListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PortfoyTipiForms\PortfoyTipiEditForm.resx">
+      <DependentUpon>PortfoyTipiEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PortfoyTipiForms\PortfoyTipiListForm.resx">
+      <DependentUpon>PortfoyTipiListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SiparisForms\IlceForms\IlceEditForm.resx">
       <DependentUpon>IlceEditForm.cs</DependentUpon>
@@ -313,11 +367,11 @@
     <EmbeddedResource Include="Forms\SiparisForms\IlForms\IlListForm.resx">
       <DependentUpon>IlListForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SiparisForms\KargoFirmasiForms\KargoFirmasiEditForm.resx">
-      <DependentUpon>KargoFirmasiEditForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\TapuTipiForms\TapuTipiEditForm.resx">
+      <DependentUpon>TapuTipiEditForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SiparisForms\KargoFirmasiForms\KargoFirmasiListForm.resx">
-      <DependentUpon>KargoFirmasiListForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\TapuTipiForms\TapuTipiListForm.resx">
+      <DependentUpon>TapuTipiListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GenelForms\AnaForm.resx">
       <DependentUpon>AnaForm.cs</DependentUpon>
@@ -717,6 +771,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\preview_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newemployee_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newemployee_16x16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

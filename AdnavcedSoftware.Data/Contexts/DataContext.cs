@@ -27,11 +27,14 @@ namespace AdnavcedSoftware.Data.Contexts
             modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();
         }
 
-       public DbSet<Il> Il { get; set; }
-       public DbSet<Ilce> Ilce { get; set; }
-       public DbSet<KargoFirmasi> KargoFirmasi { get; set; }
-       public DbSet<Ofis> Ofis { get; set; }
-       public DbSet<Filtre> Filtre { get; set; }
+        public DbSet<Il> Il { get; set; }
+        public DbSet<Ilce> Ilce { get; set; }
+        public DbSet<Ofis> Ofis { get; set; }
+        public DbSet<Filtre> Filtre { get; set; }
+        public DbSet<MusteriBilgi> MusteriBilgi { get; set; }
+        public DbSet<IptalNedeni> IptalNedeni { get; set; }
+        public DbSet<PortfoyTipi> PortfoyTipi { get; set; }
+        public DbSet<TapuTipi> TapuTipi { get; set; }
 
     }
 

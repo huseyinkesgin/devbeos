@@ -53,7 +53,6 @@
   <ItemGroup>
     <Compile Include="Attributes\Kod.cs" />
     <Compile Include="Attributes\ZorunluAlan.cs" />
-    <Compile Include="Dto\KargoFirmasiDto.cs" />
     <Compile Include="Dto\OfisDto.cs" />
     <Compile Include="Entities\Base\BaseEntity.cs" />
     <Compile Include="Entities\Base\BaseEntityDurum.cs" />
@@ -63,11 +62,12 @@
     <Compile Include="Entities\Filtre.cs" />
     <Compile Include="Entities\Il.cs" />
     <Compile Include="Entities\Ilce.cs" />
-    <Compile Include="Entities\KargoFirmasi.cs" />
+    <Compile Include="Entities\IptalNedeni.cs" />
+    <Compile Include="Entities\IsyeriTipi.cs" />
+    <Compile Include="Entities\MusteriBilgi.cs" />
     <Compile Include="Entities\Ofis.cs" />
-    <Compile Include="Entities\Personel.cs" />
-    <Compile Include="Entities\PortfoyAltKategori.cs" />
-    <Compile Include="Entities\PortfoyKategori.cs" />
+    <Compile Include="Entities\PortfoyTipi.cs" />
+    <Compile Include="Entities\TapuTipi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

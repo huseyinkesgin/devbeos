@@ -54,16 +54,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\BaseBll.cs" />
+    <Compile Include="Base\BaseGenelBll.cs" />
     <Compile Include="Functions\Converts.cs" />
     <Compile Include="Functions\GeneralFunctions.cs" />
     <Compile Include="Functions\ValidationFunctions.cs" />
     <Compile Include="General\FiltreBll.cs" />
+    <Compile Include="General\IsyeriTipiBll.cs" />
+    <Compile Include="General\PortfoyTipiBll.cs" />
     <Compile Include="General\IlBll.cs" />
     <Compile Include="General\IlceBll.cs" />
-    <Compile Include="General\KargoFirmasiBll.cs" />
+    <Compile Include="General\TapuTipiBll.cs" />
+    <Compile Include="General\IptalNedeniBll.cs" />
+    <Compile Include="General\MusteriBilgiBll.cs" />
     <Compile Include="General\OfisBll.cs" />
-    <Compile Include="General\PortfoyAltKategoriBll.cs" />
-    <Compile Include="General\PortfoyKategoriBll.cs" />
     <Compile Include="Interfaces\IBaseBll.cs" />
     <Compile Include="Interfaces\IBaseCommonBll.cs" />
     <Compile Include="Interfaces\IBaseGenelBll.cs" />

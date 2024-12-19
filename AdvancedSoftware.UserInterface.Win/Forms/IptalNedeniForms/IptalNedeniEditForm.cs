@@ -1,52 +1,51 @@
-﻿using AdavancedSoftware.Model.Dto;
-using AdavancedSoftware.Model.Entities;
+﻿using AdavancedSoftware.Model.Entities;
 using AdvancedSoftware.Common.Enums;
 using AdvancedSoftware.UserInterface.Win.Forms.BaseForms;
 using AdvancedSoftware.UserInterface.Win.Functions;
-using AdvancedSoftware.UserInterface.Win.UserControls.Controls;
 using AdvancedSoftweare.BusinessLayer.General;
-using System;
 
-namespace AdvancedSoftware.UserInterface.Win.Forms.SiparisForms.IlForms
+namespace AdvancedSoftware.UserInterface.Win.Forms.IptalNedeniForms
 {
-    public partial class IlEditForm : BaseEditForm
+    public partial class IptalNedeniEditForm : BaseEditForm
     {
-        public IlEditForm()
+        public IptalNedeniEditForm()
         {
             InitializeComponent();
-
             DataLayoutControl = myDataLayoutControl;
-            Bll = new IlBll(myDataLayoutControl);
-            BaseKartTuru = KartTuru.Il;
+            Bll = new IptalNedeniBll(myDataLayoutControl);
+            BaseKartTuru = KartTuru.IptalNedeni;
             EventsLoad();
         }
+
         protected internal override void Yukle()
         {
-            OldEntity = BaseIslemTuru == IslemTuru.EntityInsert ? new Il() : ((IlBll)Bll).Single(FilterFunctions.Filter<Il>(Id));
+            OldEntity = BaseIslemTuru == IslemTuru.EntityInsert ? new IptalNedeni() : ((IptalNedeniBll)Bll).Single(FilterFunctions.Filter<IptalNedeni>(Id));
             NesneyiKontrollereBagla();
 
-            if (BaseIslemTuru != IslemTuru.EntityInsert) return;
+            if (BaseIslemTuru != IslemTuru.EntityInsert)
+                return;
             Id = BaseIslemTuru.IdOlustur(OldEntity);
-            txtKod.Text = ((IlBll)Bll).YeniKodVer();
-            txtIlAdi.Focus();
+            txtKod.Text = ((IptalNedeniBll)Bll).YeniKodVer();
+            txtIptalNedeniAdi.Focus();
         }
+
         protected override void NesneyiKontrollereBagla()
         {
-            var entity = (Il)OldEntity;
+            var entity = (IptalNedeni)OldEntity;
 
             txtKod.Text = entity.Kod;
-            txtIlAdi.Text = entity.IlAdi;
+            txtIptalNedeniAdi.Text = entity.IptalNedeniAdi;
             txtAciklama.Text = entity.Aciklama;
             tglDurum.IsOn = entity.Durum;
         }
 
         protected override void GuncelNesneOlustur()
         {
-            CurrentEntity = new Il
+            CurrentEntity = new IptalNedeni
             {
                 Id = Id,
                 Kod = txtKod.Text,
-                IlAdi = txtIlAdi.Text,
+                IptalNedeniAdi = txtIptalNedeniAdi.Text,
                 Aciklama = txtAciklama.Text,
                 Durum = tglDurum.IsOn,
             };

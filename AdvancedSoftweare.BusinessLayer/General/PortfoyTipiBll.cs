@@ -6,11 +6,12 @@ using System.Windows.Forms;
 
 namespace AdvancedSoftweare.BusinessLayer.General
 {
-    public class IlceBll : BaseGenelBll<Ilce>, IBaseCommonBll
+    public class PortfoyTipiBll : BaseGenelBll<PortfoyTipi>, IBaseGenelBll, IBaseCommonBll
     {
-        public IlceBll():base(KartTuru.Ilce) { }
+        public PortfoyTipiBll():base(KartTuru.PortfoyTipi) { }
 
-        public IlceBll(Control ctrl) : base(ctrl, KartTuru.Ilce) { }
+        public PortfoyTipiBll(Control ctrl) : base(ctrl, KartTuru.PortfoyTipi) { }
+
       
     }
 }
