@@ -2,8 +2,8 @@
 {
     public enum MusteriTuru : byte
     {
-        Bireysel,
-        Kurumsal
+        Bireysel =1,
+        Kurumsal =2
 
     }
 }

@@ -1,22 +1,32 @@
 ﻿using AdvancedSoftware.Common.Enums;
+using AdvancedSoftware.UserInterface.Win.Forms.AltyapiForms;
+using AdvancedSoftware.UserInterface.Win.Forms.DepartmanForms;
 using AdvancedSoftware.UserInterface.Win.Forms.EmsalForms;
 using AdvancedSoftware.UserInterface.Win.Forms.GabariForms;
 using AdvancedSoftware.UserInterface.Win.Forms.ImarBilgisiForms;
 using AdvancedSoftware.UserInterface.Win.Forms.IptalNedeniForms;
+using AdvancedSoftware.UserInterface.Win.Forms.IsıtmaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MusteriBilgiForms;
+using AdvancedSoftware.UserInterface.Win.Forms.MusteriGrupForms;
 using AdvancedSoftware.UserInterface.Win.Forms.OfisForms;
 using AdvancedSoftware.UserInterface.Win.Forms.PortfoyTipiForms;
 using AdvancedSoftware.UserInterface.Win.Forms.SiparisForms.IlForms;
 using AdvancedSoftware.UserInterface.Win.Forms.TapuTipiForms;
+using AdvancedSoftware.UserInterface.Win.Forms.UnvanForms;
 using AdvancedSoftware.UserInterface.Win.Show;
 using DevExpress.XtraBars;
+using System;
 
 namespace AdvancedSoftware.UserInterface.Win.GenelForms
 {
     public partial class AnaForm : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public static string DonemAdi = "2021-2022";
+       //public static long DonemId = 1;
+        public static string DonemAdi = "2024";
+       //public static long SubeId = 1;
         public static string SubeAdi = "Merkez";
+
+        //public static DateTime YerGostermeTarihi = new DateTime(2024,12,20);
 
         public AnaForm()
         {
@@ -60,6 +70,16 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
                 ShowListForms<EmsalListForm>.ShowListForm(KartTuru.Emsal);
             if (e.Item == btnGabari)
                 ShowListForms<GabariListForm>.ShowListForm(KartTuru.Gabari);
+            if (e.Item == btnIsitma)
+                ShowListForms<IsitmaListForm>.ShowListForm(KartTuru.Isitma);
+            if (e.Item == btnMusteriGrup)
+                ShowListForms<MusteriGrupListForm>.ShowListForm(KartTuru.MusteriGrup);
+            if (e.Item == btnDepartman)
+                ShowListForms<DepartmanListForm>.ShowListForm(KartTuru.Departman);
+            if (e.Item == btnUnvan)
+                ShowListForms<UnvanListForm>.ShowListForm(KartTuru.Unvan);
+            if (e.Item == btnAltyapi)
+                ShowListForms<AltyapiListForm>.ShowListForm(KartTuru.Altyapi);
 
         }
 

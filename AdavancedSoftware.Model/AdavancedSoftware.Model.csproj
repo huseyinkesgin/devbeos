@@ -70,6 +70,7 @@
     <Compile Include="Entities\IptalNedeni.cs" />
     <Compile Include="Entities\Isitma.cs" />
     <Compile Include="Entities\IsyeriTipi.cs" />
+    <Compile Include="Entities\Musteri.cs" />
     <Compile Include="Entities\MusteriBilgi.cs" />
     <Compile Include="Entities\MusteriGrup.cs" />
     <Compile Include="Entities\Ofis.cs" />

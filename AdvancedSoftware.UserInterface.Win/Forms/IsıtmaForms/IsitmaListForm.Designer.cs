@@ -34,6 +34,8 @@
             this.tablo = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridView();
             this.colId = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colKod = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
+            this.colIsitmaAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
+            this.colAciklama = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablo)).BeginInit();
@@ -82,7 +84,9 @@
             this.tablo.Appearance.ViewCaption.Options.UseForeColor = true;
             this.tablo.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colId,
-            this.colKod});
+            this.colKod,
+            this.colIsitmaAdi,
+            this.colAciklama});
             this.tablo.GridControl = this.grid;
             this.tablo.Name = "tablo";
             this.tablo.OptionsMenu.EnableColumnMenu = false;
@@ -128,6 +132,32 @@
             this.colKod.Visible = true;
             this.colKod.VisibleIndex = 0;
             // 
+            // colIsitmaAdi
+            // 
+            this.colIsitmaAdi.Caption = "Isıtma Sistemi";
+            this.colIsitmaAdi.FieldName = "IsitmaAdi";
+            this.colIsitmaAdi.Name = "colIsitmaAdi";
+            this.colIsitmaAdi.OptionsColumn.AllowEdit = false;
+            this.colIsitmaAdi.StatusBarAciklama = null;
+            this.colIsitmaAdi.StatusBarKisaYol = null;
+            this.colIsitmaAdi.StatusBarKisaYolAciklama = null;
+            this.colIsitmaAdi.Visible = true;
+            this.colIsitmaAdi.VisibleIndex = 1;
+            this.colIsitmaAdi.Width = 200;
+            // 
+            // colAciklama
+            // 
+            this.colAciklama.Caption = "Açıklama";
+            this.colAciklama.FieldName = "Aciklama";
+            this.colAciklama.Name = "colAciklama";
+            this.colAciklama.OptionsColumn.AllowEdit = false;
+            this.colAciklama.StatusBarAciklama = null;
+            this.colAciklama.StatusBarKisaYol = null;
+            this.colAciklama.StatusBarKisaYolAciklama = null;
+            this.colAciklama.Visible = true;
+            this.colAciklama.VisibleIndex = 2;
+            this.colAciklama.Width = 300;
+            // 
             // IsitmaListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -156,5 +186,7 @@
         private UserControls.Controls.Grid.MyGridView tablo;
         private UserControls.Controls.Grid.MyGridColumn colId;
         private UserControls.Controls.Grid.MyGridColumn colKod;
+        private UserControls.Controls.Grid.MyGridColumn colIsitmaAdi;
+        private UserControls.Controls.Grid.MyGridColumn colAciklama;
     }
 }

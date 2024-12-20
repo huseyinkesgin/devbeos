@@ -326,7 +326,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
             statusBarKisaYol.Visibility = BarItemVisibility.Never;
             statusBarKisaYolAciklama.Visibility = BarItemVisibility.Never;
         }
-        private void Control_EditValueChanged(object sender, EventArgs e)
+        protected virtual void Control_EditValueChanged(object sender, EventArgs e)
         {
             if (!IsLoaded)
                 return;

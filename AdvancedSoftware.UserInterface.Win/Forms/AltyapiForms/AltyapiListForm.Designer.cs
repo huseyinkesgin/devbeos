@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AltyapiListForm));
-            this.longNavigator = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Navigators.longNavigator();
             this.grid = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridControl();
             this.tablo = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridView();
             this.colId = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colKod = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
+            this.colAltyapiAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
+            this.colAciklama = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
+            this.longNavigator = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Navigators.longNavigator();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablo)).BeginInit();
@@ -49,14 +51,6 @@
             // 
             this.btnGonder.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGonder.ImageOptions.Image")));
             this.btnGonder.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnGonder.ImageOptions.LargeImage")));
-            // 
-            // longNavigator
-            // 
-            this.longNavigator.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.longNavigator.Location = new System.Drawing.Point(0, 471);
-            this.longNavigator.Name = "longNavigator";
-            this.longNavigator.Size = new System.Drawing.Size(911, 24);
-            this.longNavigator.TabIndex = 2;
             // 
             // grid
             // 
@@ -82,7 +76,9 @@
             this.tablo.Appearance.ViewCaption.Options.UseForeColor = true;
             this.tablo.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colId,
-            this.colKod});
+            this.colKod,
+            this.colAltyapiAdi,
+            this.colAciklama});
             this.tablo.GridControl = this.grid;
             this.tablo.Name = "tablo";
             this.tablo.OptionsMenu.EnableColumnMenu = false;
@@ -128,6 +124,40 @@
             this.colKod.Visible = true;
             this.colKod.VisibleIndex = 0;
             // 
+            // colAltyapiAdi
+            // 
+            this.colAltyapiAdi.Caption = "Altyapı Özellikleri";
+            this.colAltyapiAdi.FieldName = "AltyapiAdi";
+            this.colAltyapiAdi.Name = "colAltyapiAdi";
+            this.colAltyapiAdi.OptionsColumn.AllowEdit = false;
+            this.colAltyapiAdi.StatusBarAciklama = null;
+            this.colAltyapiAdi.StatusBarKisaYol = null;
+            this.colAltyapiAdi.StatusBarKisaYolAciklama = null;
+            this.colAltyapiAdi.Visible = true;
+            this.colAltyapiAdi.VisibleIndex = 1;
+            this.colAltyapiAdi.Width = 200;
+            // 
+            // colAciklama
+            // 
+            this.colAciklama.Caption = "Açıklama";
+            this.colAciklama.FieldName = "Aciklama";
+            this.colAciklama.Name = "colAciklama";
+            this.colAciklama.OptionsColumn.AllowEdit = false;
+            this.colAciklama.StatusBarAciklama = null;
+            this.colAciklama.StatusBarKisaYol = null;
+            this.colAciklama.StatusBarKisaYolAciklama = null;
+            this.colAciklama.Visible = true;
+            this.colAciklama.VisibleIndex = 2;
+            this.colAciklama.Width = 300;
+            // 
+            // longNavigator
+            // 
+            this.longNavigator.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.longNavigator.Location = new System.Drawing.Point(0, 471);
+            this.longNavigator.Name = "longNavigator";
+            this.longNavigator.Size = new System.Drawing.Size(911, 24);
+            this.longNavigator.TabIndex = 4;
+            // 
             // AltyapiListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -150,11 +180,12 @@
         }
 
         #endregion
-
-        private UserControls.Controls.Navigators.longNavigator longNavigator;
         private UserControls.Controls.Grid.MyGridControl grid;
         private UserControls.Controls.Grid.MyGridView tablo;
         private UserControls.Controls.Grid.MyGridColumn colId;
         private UserControls.Controls.Grid.MyGridColumn colKod;
+        private UserControls.Controls.Grid.MyGridColumn colAltyapiAdi;
+        private UserControls.Controls.Grid.MyGridColumn colAciklama;
+        private UserControls.Controls.Navigators.longNavigator longNavigator;
     }
 }

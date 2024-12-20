@@ -34,6 +34,8 @@
             this.tablo = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridView();
             this.colId = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colKod = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
+            this.colDepartmanAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
+            this.colAciklama = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablo)).BeginInit();
@@ -82,7 +84,9 @@
             this.tablo.Appearance.ViewCaption.Options.UseForeColor = true;
             this.tablo.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colId,
-            this.colKod});
+            this.colKod,
+            this.colDepartmanAdi,
+            this.colAciklama});
             this.tablo.GridControl = this.grid;
             this.tablo.Name = "tablo";
             this.tablo.OptionsMenu.EnableColumnMenu = false;
@@ -128,6 +132,32 @@
             this.colKod.Visible = true;
             this.colKod.VisibleIndex = 0;
             // 
+            // colDepartmanAdi
+            // 
+            this.colDepartmanAdi.Caption = "Departman";
+            this.colDepartmanAdi.FieldName = "DepartmanAdi";
+            this.colDepartmanAdi.Name = "colDepartmanAdi";
+            this.colDepartmanAdi.OptionsColumn.AllowEdit = false;
+            this.colDepartmanAdi.StatusBarAciklama = null;
+            this.colDepartmanAdi.StatusBarKisaYol = null;
+            this.colDepartmanAdi.StatusBarKisaYolAciklama = null;
+            this.colDepartmanAdi.Visible = true;
+            this.colDepartmanAdi.VisibleIndex = 1;
+            this.colDepartmanAdi.Width = 141;
+            // 
+            // colAciklama
+            // 
+            this.colAciklama.Caption = "Açıklama";
+            this.colAciklama.FieldName = "Aciklama";
+            this.colAciklama.Name = "colAciklama";
+            this.colAciklama.OptionsColumn.AllowEdit = false;
+            this.colAciklama.StatusBarAciklama = null;
+            this.colAciklama.StatusBarKisaYol = null;
+            this.colAciklama.StatusBarKisaYolAciklama = null;
+            this.colAciklama.Visible = true;
+            this.colAciklama.VisibleIndex = 2;
+            this.colAciklama.Width = 208;
+            // 
             // DepartmanListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -156,5 +186,7 @@
         private UserControls.Controls.Grid.MyGridView tablo;
         private UserControls.Controls.Grid.MyGridColumn colId;
         private UserControls.Controls.Grid.MyGridColumn colKod;
+        private UserControls.Controls.Grid.MyGridColumn colDepartmanAdi;
+        private UserControls.Controls.Grid.MyGridColumn colAciklama;
     }
 }
