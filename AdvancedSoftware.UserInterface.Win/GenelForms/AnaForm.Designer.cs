@@ -43,9 +43,9 @@
             this.btnPortfoyTipi = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnImarDurumu = new DevExpress.XtraBars.BarButtonItem();
+            this.btnEmsal = new DevExpress.XtraBars.BarButtonItem();
+            this.btnGabari = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
             this.btnTapuTipi = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem17 = new DevExpress.XtraBars.BarButtonItem();
@@ -98,9 +98,9 @@
             this.btnPortfoyTipi,
             this.barButtonItem10,
             this.barButtonItem11,
-            this.barButtonItem12,
-            this.barButtonItem13,
-            this.barButtonItem14,
+            this.btnImarDurumu,
+            this.btnEmsal,
+            this.btnGabari,
             this.barButtonItem15,
             this.btnTapuTipi,
             this.barButtonItem17,
@@ -192,7 +192,7 @@
             // 
             this.btnPortfoyTipi.Caption = "PORTFOY TİPİ";
             this.btnPortfoyTipi.Id = 11;
-            this.btnPortfoyTipi.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem9.ImageOptions.SvgImage")));
+            this.btnPortfoyTipi.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnPortfoyTipi.ImageOptions.SvgImage")));
             this.btnPortfoyTipi.Name = "btnPortfoyTipi";
             // 
             // barButtonItem10
@@ -209,26 +209,26 @@
             this.barButtonItem11.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem11.ImageOptions.SvgImage")));
             this.barButtonItem11.Name = "barButtonItem11";
             // 
-            // barButtonItem12
+            // btnImarDurumu
             // 
-            this.barButtonItem12.Caption = "İMAR DURUMU";
-            this.barButtonItem12.Id = 14;
-            this.barButtonItem12.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem12.ImageOptions.SvgImage")));
-            this.barButtonItem12.Name = "barButtonItem12";
+            this.btnImarDurumu.Caption = "İMAR DURUMU";
+            this.btnImarDurumu.Id = 14;
+            this.btnImarDurumu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnImarDurumu.ImageOptions.SvgImage")));
+            this.btnImarDurumu.Name = "btnImarDurumu";
             // 
-            // barButtonItem13
+            // btnEmsal
             // 
-            this.barButtonItem13.Caption = "EMSAL";
-            this.barButtonItem13.Id = 15;
-            this.barButtonItem13.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem13.ImageOptions.SvgImage")));
-            this.barButtonItem13.Name = "barButtonItem13";
+            this.btnEmsal.Caption = "EMSAL";
+            this.btnEmsal.Id = 15;
+            this.btnEmsal.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem13.ImageOptions.SvgImage")));
+            this.btnEmsal.Name = "btnEmsal";
             // 
-            // barButtonItem14
+            // btnGabari
             // 
-            this.barButtonItem14.Caption = "GABARİ";
-            this.barButtonItem14.Id = 16;
-            this.barButtonItem14.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem14.ImageOptions.SvgImage")));
-            this.barButtonItem14.Name = "barButtonItem14";
+            this.btnGabari.Caption = "GABARİ";
+            this.btnGabari.Id = 16;
+            this.btnGabari.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem14.ImageOptions.SvgImage")));
+            this.btnGabari.Name = "btnGabari";
             // 
             // barButtonItem15
             // 
@@ -355,9 +355,9 @@
             // ribbonPageGroup5
             // 
             this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem10);
-            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem12);
-            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem13);
-            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem14);
+            this.ribbonPageGroup5.ItemLinks.Add(this.btnImarDurumu);
+            this.ribbonPageGroup5.ItemLinks.Add(this.btnEmsal);
+            this.ribbonPageGroup5.ItemLinks.Add(this.btnGabari);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             // 
             // ribbonPageGroup6
@@ -485,9 +485,9 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private DevExpress.XtraBars.BarButtonItem barButtonItem10;
         private DevExpress.XtraBars.BarButtonItem barButtonItem11;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem12;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem13;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem14;
+        private DevExpress.XtraBars.BarButtonItem btnImarDurumu;
+        private DevExpress.XtraBars.BarButtonItem btnEmsal;
+        private DevExpress.XtraBars.BarButtonItem btnGabari;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
         private DevExpress.XtraBars.BarButtonItem barButtonItem15;

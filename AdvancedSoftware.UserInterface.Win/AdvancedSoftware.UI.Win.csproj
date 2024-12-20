@@ -96,6 +96,18 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\AltyapiForms\AltyapiEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AltyapiForms\AltyapiEditForm.Designer.cs">
+      <DependentUpon>AltyapiEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AltyapiForms\AltyapiListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AltyapiForms\AltyapiListForm.Designer.cs">
+      <DependentUpon>AltyapiListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\BaseForms\BaseEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +119,30 @@
     </Compile>
     <Compile Include="Forms\BaseForms\BaseListForm.Designer.cs">
       <DependentUpon>BaseListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DepartmanForms\DepartmanEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DepartmanForms\DepartmanEditForm.Designer.cs">
+      <DependentUpon>DepartmanEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DepartmanForms\DepartmanListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DepartmanForms\DepartmanListForm.Designer.cs">
+      <DependentUpon>DepartmanListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EmsalForms\EmsalEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EmsalForms\EmsalEditForm.Designer.cs">
+      <DependentUpon>EmsalEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EmsalForms\EmsalListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EmsalForms\EmsalListForm.Designer.cs">
+      <DependentUpon>EmsalListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FiltreForms\FiltreEditForm.cs">
       <SubType>Form</SubType>
@@ -120,6 +156,30 @@
     <Compile Include="Forms\FiltreForms\FiltreListForm.Designer.cs">
       <DependentUpon>FiltreListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\GabariForms\GabariEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GabariForms\GabariEditForm.Designer.cs">
+      <DependentUpon>GabariEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GabariForms\GabariListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GabariForms\GabariListForm.Designer.cs">
+      <DependentUpon>GabariListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ImarBilgisiForms\ImarBilgisiEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ImarBilgisiForms\ImarBilgisiEditForm.Designer.cs">
+      <DependentUpon>ImarBilgisiEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ImarBilgisiForms\ImarBilgisiListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ImarBilgisiForms\ImarBilgisiListForm.Designer.cs">
+      <DependentUpon>ImarBilgisiListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\IptalNedeniForms\IptalNedeniEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +192,18 @@
     <Compile Include="Forms\IptalNedeniForms\IptalNedeniListForm.Designer.cs">
       <DependentUpon>IptalNedeniListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\IsıtmaForms\IsitmaEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IsıtmaForms\IsitmaEditForm.Designer.cs">
+      <DependentUpon>IsitmaEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IsıtmaForms\IsitmaListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IsıtmaForms\IsitmaListForm.Designer.cs">
+      <DependentUpon>IsitmaListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MusteriBilgiForms\MusteriBilgiEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +215,18 @@
     </Compile>
     <Compile Include="Forms\MusteriBilgiForms\MusteriBilgiListForm.Designer.cs">
       <DependentUpon>MusteriBilgiListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MusteriGrupForms\MusteriGrupEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MusteriGrupForms\MusteriGrupEditForm.Designer.cs">
+      <DependentUpon>MusteriGrupEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MusteriGrupForms\MusteriGrupListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MusteriGrupForms\MusteriGrupListForm.Designer.cs">
+      <DependentUpon>MusteriGrupListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\OfisForms\OfisEditForm.cs">
       <SubType>Form</SubType>
@@ -203,6 +287,18 @@
     </Compile>
     <Compile Include="Forms\TapuTipiForms\TapuTipiListForm.Designer.cs">
       <DependentUpon>TapuTipiListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UnvanForms\UnvanEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UnvanForms\UnvanEditForm.Designer.cs">
+      <DependentUpon>UnvanEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UnvanForms\UnvanListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UnvanForms\UnvanListForm.Designer.cs">
+      <DependentUpon>UnvanListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Functions\FileFunctions.cs" />
     <Compile Include="Functions\FilterFunctions.cs" />
@@ -319,11 +415,23 @@
     <Compile Include="UserControls\Controls\Navigators\SmallNavigator.Designer.cs">
       <DependentUpon>SmallNavigator.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\AltyapiForms\AltyapiListForm.resx">
+      <DependentUpon>AltyapiListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\BaseForms\BaseEditForm.resx">
       <DependentUpon>BaseEditForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BaseForms\BaseListForm.resx">
       <DependentUpon>BaseListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DepartmanForms\DepartmanListForm.resx">
+      <DependentUpon>DepartmanListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EmsalForms\EmsalEditForm.resx">
+      <DependentUpon>EmsalEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EmsalForms\EmsalListForm.resx">
+      <DependentUpon>EmsalListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FiltreForms\FiltreEditForm.resx">
       <DependentUpon>FiltreEditForm.cs</DependentUpon>
@@ -331,17 +439,35 @@
     <EmbeddedResource Include="Forms\FiltreForms\FiltreListForm.resx">
       <DependentUpon>FiltreListForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GabariForms\GabariEditForm.resx">
+      <DependentUpon>GabariEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GabariForms\GabariListForm.resx">
+      <DependentUpon>GabariListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ImarBilgisiForms\ImarBilgisiEditForm.resx">
+      <DependentUpon>ImarBilgisiEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ImarBilgisiForms\ImarBilgisiListForm.resx">
+      <DependentUpon>ImarBilgisiListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\IptalNedeniForms\IptalNedeniEditForm.resx">
       <DependentUpon>IptalNedeniEditForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\IptalNedeniForms\IptalNedeniListForm.resx">
       <DependentUpon>IptalNedeniListForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IsıtmaForms\IsitmaListForm.resx">
+      <DependentUpon>IsitmaListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MusteriBilgiForms\MusteriBilgiEditForm.resx">
       <DependentUpon>MusteriBilgiEditForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MusteriBilgiForms\MusteriBilgiListForm.resx">
       <DependentUpon>MusteriBilgiListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MusteriGrupForms\MusteriGrupListForm.resx">
+      <DependentUpon>MusteriGrupListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\OfisForms\OfisEditForm.resx">
       <DependentUpon>OfisEditForm.cs</DependentUpon>
@@ -372,6 +498,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TapuTipiForms\TapuTipiListForm.resx">
       <DependentUpon>TapuTipiListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnvanForms\UnvanListForm.resx">
+      <DependentUpon>UnvanListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GenelForms\AnaForm.resx">
       <DependentUpon>AnaForm.cs</DependentUpon>
@@ -778,6 +907,7 @@
   <ItemGroup>
     <None Include="Resources\newemployee_16x16.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

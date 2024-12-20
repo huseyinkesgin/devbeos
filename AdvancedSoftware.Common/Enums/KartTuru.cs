@@ -37,5 +37,30 @@ namespace AdvancedSoftware.Common.Enums
         [Description("İşyeri Tipi Kartı")]
         IsyeriTipi = 11,
 
+        [Description("İmar Durumu Kartı")]
+        ImarDurumu = 12,
+
+        [Description("Emsal Kartı")]
+        Emsal = 13,
+
+        [Description("Gabari Kartı")]
+        Gabari = 14,
+
+        [Description("Isıtma Kartı")]
+        Isitma = 15,
+
+        [Description("Müşteri Grup Kartı")]
+        MusteriGrup = 16,
+
+        [Description("Unvan Kartı")]
+        Unvan = 17,
+
+        [Description("Altyapı Kartı")]
+        Altyapi = 18,
+
+        [Description("Departman Kartı")]
+        Departman = 19,
+
+
     }
 }

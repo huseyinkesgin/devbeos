@@ -167,14 +167,11 @@
     <Compile Include="Enums\DokumSekli.cs" />
     <Compile Include="Enums\DosyaTuru.cs" />
     <Compile Include="Enums\EvetHayir.cs" />
-    <Compile Include="Enums\ImarDurumu.cs" />
     <Compile Include="Enums\IslemTuru.cs" />
     <Compile Include="Enums\KartTuru.cs" />
     <Compile Include="Enums\KrediDurum.cs" />
-    <Compile Include="Enums\MusteriKategori.cs" />
     <Compile Include="Enums\MusteriTuru.cs" />
     <Compile Include="Enums\RaporuKagidaSigdirmaTuru.cs" />
-    <Compile Include="Enums\Unvan.cs" />
     <Compile Include="Enums\VeriDegisimYeri.cs" />
     <Compile Include="Enums\YazdirmaYonu.cs" />
     <Compile Include="Functions\EnumFunctions.cs" />

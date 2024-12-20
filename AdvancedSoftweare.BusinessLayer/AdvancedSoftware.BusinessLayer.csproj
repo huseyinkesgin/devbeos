@@ -59,6 +59,14 @@
     <Compile Include="Functions\GeneralFunctions.cs" />
     <Compile Include="Functions\ValidationFunctions.cs" />
     <Compile Include="General\FiltreBll.cs" />
+    <Compile Include="General\EmsalBll.cs" />
+    <Compile Include="General\GabariBll.cs" />
+    <Compile Include="General\IsitmaBll.cs" />
+    <Compile Include="General\MusteriGrupBll.cs" />
+    <Compile Include="General\DepartmanBll.cs" />
+    <Compile Include="General\UnvanBll.cs" />
+    <Compile Include="General\AltyapiBll.cs" />
+    <Compile Include="General\ImarDurumuBll.cs" />
     <Compile Include="General\IsyeriTipiBll.cs" />
     <Compile Include="General\PortfoyTipiBll.cs" />
     <Compile Include="General\IlBll.cs" />

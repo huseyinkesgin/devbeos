@@ -1,4 +1,7 @@
 ﻿using AdvancedSoftware.Common.Enums;
+using AdvancedSoftware.UserInterface.Win.Forms.EmsalForms;
+using AdvancedSoftware.UserInterface.Win.Forms.GabariForms;
+using AdvancedSoftware.UserInterface.Win.Forms.ImarBilgisiForms;
 using AdvancedSoftware.UserInterface.Win.Forms.IptalNedeniForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MusteriBilgiForms;
 using AdvancedSoftware.UserInterface.Win.Forms.OfisForms;
@@ -51,6 +54,12 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
                 ShowListForms<TapuTipiListForm>.ShowListForm(KartTuru.TapuTipi);
             if (e.Item == btnPortfoyTipi)
                 ShowListForms<PortfoyTipiListForm>.ShowListForm(KartTuru.PortfoyTipi);
+            if (e.Item == btnImarDurumu)
+                ShowListForms<ImarBilgisiListForm>.ShowListForm(KartTuru.ImarDurumu);
+            if (e.Item == btnEmsal)
+                ShowListForms<EmsalListForm>.ShowListForm(KartTuru.Emsal);
+            if (e.Item == btnGabari)
+                ShowListForms<GabariListForm>.ShowListForm(KartTuru.Gabari);
 
         }
 

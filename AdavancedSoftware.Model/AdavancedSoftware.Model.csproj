@@ -54,20 +54,28 @@
     <Compile Include="Attributes\Kod.cs" />
     <Compile Include="Attributes\ZorunluAlan.cs" />
     <Compile Include="Dto\OfisDto.cs" />
+    <Compile Include="Entities\Altyapi.cs" />
     <Compile Include="Entities\Base\BaseEntity.cs" />
     <Compile Include="Entities\Base\BaseEntityDurum.cs" />
     <Compile Include="Entities\Base\BaseHareketEntity.cs" />
     <Compile Include="Entities\Base\Interfaces\IBaseEntity.cs" />
+    <Compile Include="Entities\Departman.cs" />
     <Compile Include="Entities\DokumParametreleri.cs" />
     <Compile Include="Entities\Filtre.cs" />
+    <Compile Include="Entities\Emsal.cs" />
+    <Compile Include="Entities\Gabari.cs" />
     <Compile Include="Entities\Il.cs" />
     <Compile Include="Entities\Ilce.cs" />
+    <Compile Include="Entities\ImarBilgisi.cs" />
     <Compile Include="Entities\IptalNedeni.cs" />
+    <Compile Include="Entities\Isitma.cs" />
     <Compile Include="Entities\IsyeriTipi.cs" />
     <Compile Include="Entities\MusteriBilgi.cs" />
+    <Compile Include="Entities\MusteriGrup.cs" />
     <Compile Include="Entities\Ofis.cs" />
     <Compile Include="Entities\PortfoyTipi.cs" />
     <Compile Include="Entities\TapuTipi.cs" />
+    <Compile Include="Entities\Unvan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
