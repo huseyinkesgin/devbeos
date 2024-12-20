@@ -61,6 +61,7 @@
     <Compile Include="Entities\Base\Interfaces\IBaseEntity.cs" />
     <Compile Include="Entities\Departman.cs" />
     <Compile Include="Entities\DokumParametreleri.cs" />
+    <Compile Include="Entities\Donem.cs" />
     <Compile Include="Entities\Filtre.cs" />
     <Compile Include="Entities\Emsal.cs" />
     <Compile Include="Entities\Gabari.cs" />
@@ -70,11 +71,14 @@
     <Compile Include="Entities\IptalNedeni.cs" />
     <Compile Include="Entities\Isitma.cs" />
     <Compile Include="Entities\IsyeriTipi.cs" />
+    <Compile Include="Entities\Kasa.cs" />
     <Compile Include="Entities\Musteri.cs" />
     <Compile Include="Entities\MusteriBilgi.cs" />
     <Compile Include="Entities\MusteriGrup.cs" />
     <Compile Include="Entities\Ofis.cs" />
+    <Compile Include="Entities\OzelKodlar.cs" />
     <Compile Include="Entities\PortfoyTipi.cs" />
+    <Compile Include="Entities\Sube.cs" />
     <Compile Include="Entities\TapuTipi.cs" />
     <Compile Include="Entities\Unvan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

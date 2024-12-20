@@ -30,6 +30,8 @@ namespace AdnavcedSoftware.Data.Contexts
         public DbSet<Il> Il { get; set; }
         public DbSet<Ilce> Ilce { get; set; }
         public DbSet<Ofis> Ofis { get; set; }
+        public DbSet<Sube> Sube { get; set; }
+        public DbSet<Donem> Donem { get; set; }
         public DbSet<Filtre> Filtre { get; set; }
         public DbSet<MusteriBilgi> MusteriBilgi { get; set; }
         public DbSet<IptalNedeni> IptalNedeni { get; set; }
@@ -43,6 +45,7 @@ namespace AdnavcedSoftware.Data.Contexts
         public DbSet<Departman> Departman { get; set; }
         public DbSet<Unvan> Unvan { get; set; }
         public DbSet<Altyapi> Altyapi { get; set; }
+        public DbSet<OzelKodlar> OzelKod { get; set; }
 
     }
 

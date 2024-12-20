@@ -64,6 +64,7 @@
     <Compile Include="General\IsitmaBll.cs" />
     <Compile Include="General\MusteriGrupBll.cs" />
     <Compile Include="General\DepartmanBll.cs" />
+    <Compile Include="General\OzelKodBll.cs" />
     <Compile Include="General\UnvanBll.cs" />
     <Compile Include="General\AltyapiBll.cs" />
     <Compile Include="General\ImarDurumuBll.cs" />

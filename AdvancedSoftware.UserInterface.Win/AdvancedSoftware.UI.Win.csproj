@@ -246,6 +246,18 @@
     <Compile Include="Forms\OfisForms\OfisListForm.Designer.cs">
       <DependentUpon>OfisListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\OzelKodForms\OzelKodEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OzelKodForms\OzelKodEditForm.Designer.cs">
+      <DependentUpon>OzelKodEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OzelKodForms\OzelKodListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OzelKodForms\OzelKodListForm.Designer.cs">
+      <DependentUpon>OzelKodListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\PortfoyTipiForms\PortfoyTipiEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -495,6 +507,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\OfisForms\OfisListForm.resx">
       <DependentUpon>OfisListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OzelKodForms\OzelKodEditForm.resx">
+      <DependentUpon>OzelKodEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OzelKodForms\OzelKodListForm.resx">
+      <DependentUpon>OzelKodListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PortfoyTipiForms\PortfoyTipiEditForm.resx">
       <DependentUpon>PortfoyTipiEditForm.cs</DependentUpon>
