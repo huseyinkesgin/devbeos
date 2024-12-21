@@ -484,6 +484,9 @@
     <EmbeddedResource Include="Forms\BankaSubeForms\BankaSubeEditForm.resx">
       <DependentUpon>BankaSubeEditForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BankaSubeForms\BankaSubeListForm.resx">
+      <DependentUpon>BankaSubeListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\BaseForms\BaseEditForm.resx">
       <DependentUpon>BaseEditForm.cs</DependentUpon>
     </EmbeddedResource>
