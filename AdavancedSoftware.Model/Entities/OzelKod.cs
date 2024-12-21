@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AdavancedSoftware.Model.Entities
 {
-    public class OzelKodlar : BaseEntity
+    public class OzelKod : BaseEntity
     {
         [Index("IX_Kod", IsUnique = false)]
         public override string Kod { get; set; }

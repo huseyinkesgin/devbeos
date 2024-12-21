@@ -53,9 +53,6 @@ namespace AdvancedSoftweare.BusinessLayer.General
                 Adres = x.Adres,
             }).OrderBy(x => x.Kod).ToList();
         }
-
-      
-
-       
+     
     }
 }

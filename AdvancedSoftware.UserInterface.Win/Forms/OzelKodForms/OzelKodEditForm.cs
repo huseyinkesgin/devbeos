@@ -6,6 +6,7 @@ using AdvancedSoftware.Common.Enums;
 using AdvancedSoftware.UserInterface.Win.Forms.BaseForms;
 using AdvancedSoftware.UserInterface.Win.Functions;
 using AdvancedSoftweare.BusinessLayer.General;
+using DevExpress.XtraEditors;
 
 namespace AdvancedSoftware.UserInterface.Win.Forms.OzelKodForms
 {
@@ -30,7 +31,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.OzelKodForms
 
         protected internal override void Yukle()
         {
-            OldEntity = BaseIslemTuru == IslemTuru.EntityInsert ? new OzelKodlar() : ((OzelKodBll)Bll).Single(FilterFunctions.Filter<OzelKodlar>(Id));
+            OldEntity = BaseIslemTuru == IslemTuru.EntityInsert ? new AdavancedSoftware.Model.Entities.OzelKod() : ((OzelKodBll)Bll).Single(FilterFunctions.Filter<AdavancedSoftware.Model.Entities.OzelKod>(Id));
             NesneyiKontrollereBagla();
 
 
@@ -42,7 +43,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.OzelKodForms
         }
         protected override void NesneyiKontrollereBagla()
         {
-            var entity = (OzelKodlar)OldEntity;
+            var entity = (AdavancedSoftware.Model.Entities.OzelKod)OldEntity;
 
             txtKod.Text = entity.Kod;
             txtOzelKodAdi.Text = entity.OzelKodAdi;
@@ -52,7 +53,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.OzelKodForms
 
         protected override void GuncelNesneOlustur()
         {
-            CurrentEntity = new OzelKodlar
+            CurrentEntity = new AdavancedSoftware.Model.Entities.OzelKod
             {
                 Id = Id,
                 Kod = txtKod.Text,
@@ -74,5 +75,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.OzelKodForms
         {
             return ((OzelKodBll)Bll).Update(OldEntity, CurrentEntity, x => x.Kod == CurrentEntity.Kod && x.KodTuru == _ozelKodTuru && x.KartTuru == _ozelKodKartTuru);
         }
+
+       
     }
 }

@@ -45,7 +45,8 @@ namespace AdnavcedSoftware.Data.Contexts
         public DbSet<Departman> Departman { get; set; }
         public DbSet<Unvan> Unvan { get; set; }
         public DbSet<Altyapi> Altyapi { get; set; }
-        public DbSet<OzelKodlar> OzelKod { get; set; }
+        public DbSet<OzelKod> OzelKod { get; set; }
+        public DbSet<Kasa> Kasa { get; set; }
 
     }
 

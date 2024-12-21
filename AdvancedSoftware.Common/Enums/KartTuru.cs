@@ -64,6 +64,15 @@ namespace AdvancedSoftware.Common.Enums
         [Description("Özel Kod Kartı")]
         OzelKod = 20,
 
+        [Description("Şube Kartı")]
+        Sube = 21,
+
+        [Description("Dönem Kartı")]
+        Donem = 22,
+
+        [Description("Kasa Kartı")]
+        Kasa = 23,
+
 
     }
 }

@@ -61,6 +61,9 @@
     <Compile Include="General\FiltreBll.cs" />
     <Compile Include="General\EmsalBll.cs" />
     <Compile Include="General\GabariBll.cs" />
+    <Compile Include="General\KasaBll.cs" />
+    <Compile Include="General\SubeBll.cs" />
+    <Compile Include="General\DonemBll.cs" />
     <Compile Include="General\IsitmaBll.cs" />
     <Compile Include="General\MusteriGrupBll.cs" />
     <Compile Include="General\DepartmanBll.cs" />

@@ -1,5 +1,7 @@
 ﻿using AdavancedSoftware.Model.Entities;
 using AdvancedSoftware.Common.Enums;
+using AdvancedSoftware.UserInterface.Win.Forms.MusteriGrupForms;
+using AdvancedSoftware.UserInterface.Win.Forms.OzelKod;
 using AdvancedSoftware.UserInterface.Win.Forms.PortfoyTipiForms;
 using AdvancedSoftware.UserInterface.Win.Forms.SiparisForms.IlceForms;
 using AdvancedSoftware.UserInterface.Win.Forms.SiparisForms.IlForms;
@@ -16,7 +18,7 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
         
         private MyButtonEdit _btnEdit;
         private MyButtonEdit _prmEdit;
-        private readonly KartTuru _kartTuru; 
+        private KartTuru _kartTuru; 
 
         #endregion
 
@@ -25,6 +27,14 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
             _btnEdit = btnEdit;
             SecimYap();
         }
+
+        public void Sec(MyButtonEdit btnEdit,KartTuru kartTuru)
+        {
+            _btnEdit = btnEdit;
+            _kartTuru = kartTuru;
+            SecimYap();
+        }
+
         public void Sec(MyButtonEdit btnEdit, MyButtonEdit prmEdit)   
         {
             _btnEdit = btnEdit;
@@ -38,7 +48,7 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
             {
                 case "txtIl":
                     {
-                        var entity = (Il)ShowListForms<IlListForm>.ShowDialogListForm(_kartTuru, _btnEdit.Id);
+                        var entity = (Il)ShowListForms<IlListForm>.ShowDialogListForm(KartTuru.Il, _btnEdit.Id);
                         if (entity != null)
                         {
                             _btnEdit.Id = entity.Id;
@@ -49,7 +59,7 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
 
                 case "txtIlce":
                     {
-                        var entity = (Ilce)ShowListForms<IlceListForm>.ShowDialogListForm(_kartTuru, _btnEdit.Id, _prmEdit.Id, _prmEdit.Text);
+                        var entity = (Ilce)ShowListForms<IlceListForm>.ShowDialogListForm(KartTuru.Ilce, _btnEdit.Id, _prmEdit.Id, _prmEdit.Text);
                         if (entity != null)
                         {
                             _btnEdit.Id = entity.Id;
@@ -60,7 +70,7 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
 
                 case "txtPortfoyTipiAdi":
                     {
-                        var entity = (PortfoyTipi)ShowListForms<PortfoyTipiListForm>.ShowDialogListForm(_kartTuru, _btnEdit.Id);
+                        var entity = (PortfoyTipi)ShowListForms<PortfoyTipiListForm>.ShowDialogListForm(KartTuru.PortfoyTipi, _btnEdit.Id);
                         if (entity != null)
                         {
                             _btnEdit.Id = entity.Id;
@@ -71,7 +81,7 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
 
                 case "txtTapuTipiAdi":
                     {
-                        var entity = (TapuTipi)ShowListForms<TapuTipiListForm>.ShowDialogListForm(_kartTuru, _btnEdit.Id, _prmEdit.Id, _prmEdit.Text);
+                        var entity = (TapuTipi)ShowListForms<TapuTipiListForm>.ShowDialogListForm(KartTuru.TapuTipi, _btnEdit.Id, _prmEdit.Id, _prmEdit.Text);
                         if (entity != null)
                         {
                             _btnEdit.Id = entity.Id;
@@ -80,6 +90,69 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
                     }
                     break;
 
+                case "txtMusteriGroup":
+                    {
+                        var entity = (MusteriGrup)ShowListForms<MusteriGrupListForm>.ShowDialogListForm(KartTuru.MusteriGrup, _btnEdit.Id);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.MusteriGrubu;
+                        }
+                    }
+                    break;
+
+                case "txtOzelKod1":
+                    {
+                        var entity = (OzelKod)ShowListForms<OzelKodListForm>.ShowDialogListForm(KartTuru.OzelKod, _btnEdit.Id,OzelKodTuru.OzelKod1,_kartTuru);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.OzelKodAdi;
+                        }
+                    }
+                    break;
+
+                case "txtOzelKod2":
+                    {
+                        var entity = (OzelKod)ShowListForms<OzelKodListForm>.ShowDialogListForm(KartTuru.OzelKod, _btnEdit.Id, OzelKodTuru.OzelKod2, _kartTuru);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.OzelKodAdi;
+                        }
+                    }
+                    break;
+
+                case "txtOzelKod3":
+                    {
+                        var entity = (OzelKod)ShowListForms<OzelKodListForm>.ShowDialogListForm(KartTuru.OzelKod, _btnEdit.Id, OzelKodTuru.OzelKod3, _kartTuru);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.OzelKodAdi;
+                        }
+                    }
+                    break;
+                case "txtOzelKod4":
+                    {
+                        var entity = (OzelKod)ShowListForms<OzelKodListForm>.ShowDialogListForm(KartTuru.OzelKod, _btnEdit.Id, OzelKodTuru.OzelKod4, _kartTuru);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.OzelKodAdi;
+                        }
+                    }
+                    break;
+                case "txtOzelKod5":
+                    {
+                        var entity = (OzelKod)ShowListForms<OzelKodListForm>.ShowDialogListForm(KartTuru.OzelKod, _btnEdit.Id, OzelKodTuru.OzelKod5, _kartTuru);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.OzelKodAdi;
+                        }
+                    }
+                    break;
 
             }
         }

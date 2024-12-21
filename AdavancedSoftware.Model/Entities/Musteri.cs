@@ -56,5 +56,16 @@ namespace AdavancedSoftware.Model.Entities
         public  MusteriGrup MusteriGrup { get; set; }
         public Il Il { get; set; }
         public Ilce Ilce { get; set; }
+        public Il FirmaIl { get; set; }
+        public Ilce FirmaIlce { get; set; }
+        
+        [NotMapped]
+        public string MusteriAdSoyad
+        {
+            get
+            {
+                return MusteriAdi + " " + MusteriSoyadi;
+            }
+        }
     }
 }

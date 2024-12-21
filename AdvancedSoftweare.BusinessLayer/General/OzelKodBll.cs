@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace AdvancedSoftweare.BusinessLayer.General
 {
-    public class OzelKodBll : BaseGenelBll<OzelKodlar>, IBaseCommonBll
+    public class OzelKodBll : BaseGenelBll<OzelKod>, IBaseCommonBll
     {
         public OzelKodBll() : base(KartTuru.OzelKod) { }
 

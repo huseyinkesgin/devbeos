@@ -6,6 +6,7 @@ using AdvancedSoftware.UserInterface.Win.Forms.GabariForms;
 using AdvancedSoftware.UserInterface.Win.Forms.ImarBilgisiForms;
 using AdvancedSoftware.UserInterface.Win.Forms.IptalNedeniForms;
 using AdvancedSoftware.UserInterface.Win.Forms.IsıtmaForms;
+using AdvancedSoftware.UserInterface.Win.Forms.KasaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MusteriBilgiForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MusteriGrupForms;
 using AdvancedSoftware.UserInterface.Win.Forms.OfisForms;
@@ -21,9 +22,9 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
 {
     public partial class AnaForm : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-       //public static long DonemId = 1;
+       public static long DonemId = 1;
         public static string DonemAdi = "2024";
-       //public static long SubeId = 1;
+       public static long SubeId = 1;
         public static string SubeAdi = "Merkez";
 
         //public static DateTime YerGostermeTarihi = new DateTime(2024,12,20);
@@ -80,6 +81,8 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
                 ShowListForms<UnvanListForm>.ShowListForm(KartTuru.Unvan);
             if (e.Item == btnAltyapi)
                 ShowListForms<AltyapiListForm>.ShowListForm(KartTuru.Altyapi);
+            if (e.Item == btnKasa)
+                ShowListForms<KasaListForm>.ShowListForm(KartTuru.Kasa);
 
         }
 

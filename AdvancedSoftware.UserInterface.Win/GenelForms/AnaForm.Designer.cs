@@ -34,7 +34,7 @@
             this.btnOfis = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnKasa = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
@@ -59,6 +59,7 @@
             this.btnIptalNedeni = new DevExpress.XtraBars.BarButtonItem();
             this.btnDepartman = new DevExpress.XtraBars.BarButtonItem();
             this.btnUnvan = new DevExpress.XtraBars.BarButtonItem();
+            this.btnAltyapi = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageOfis = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageFinans = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -79,7 +80,6 @@
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.btnKargoFirmasi = new DevExpress.XtraBars.BarButtonItem();
-            this.btnAltyapi = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).BeginInit();
             this.SuspendLayout();
@@ -92,7 +92,7 @@
             this.btnOfis,
             this.barButtonItem1,
             this.barButtonItem2,
-            this.barButtonItem3,
+            this.btnKasa,
             this.barButtonItem4,
             this.barButtonItem5,
             this.barButtonItem6,
@@ -152,12 +152,12 @@
             this.barButtonItem2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem2.ImageOptions.SvgImage")));
             this.barButtonItem2.Name = "barButtonItem2";
             // 
-            // barButtonItem3
+            // btnKasa
             // 
-            this.barButtonItem3.Caption = "KASA";
-            this.barButtonItem3.Id = 5;
-            this.barButtonItem3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem3.ImageOptions.SvgImage")));
-            this.barButtonItem3.Name = "barButtonItem3";
+            this.btnKasa.Caption = "KASA";
+            this.btnKasa.Id = 5;
+            this.btnKasa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem3.ImageOptions.SvgImage")));
+            this.btnKasa.Name = "btnKasa";
             // 
             // barButtonItem4
             // 
@@ -327,6 +327,14 @@
             this.btnUnvan.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.newcustomers_32x32;
             this.btnUnvan.Name = "btnUnvan";
             // 
+            // btnAltyapi
+            // 
+            this.btnAltyapi.Caption = "Altyapi Özellik";
+            this.btnAltyapi.Id = 30;
+            this.btnAltyapi.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.checkbuttons_16x16;
+            this.btnAltyapi.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.checkbuttons_32x32;
+            this.btnAltyapi.Name = "btnAltyapi";
+            // 
             // ribbonPageOfis
             // 
             this.ribbonPageOfis.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -353,7 +361,7 @@
             // 
             // ribbonPageGroup3
             // 
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem3);
+            this.ribbonPageGroup3.ItemLinks.Add(this.btnKasa);
             this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem1);
             this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem2);
             this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem4);
@@ -466,14 +474,6 @@
             this.btnKargoFirmasi.Id = 1;
             this.btnKargoFirmasi.Name = "btnKargoFirmasi";
             // 
-            // btnAltyapi
-            // 
-            this.btnAltyapi.Caption = "Altyapi Özellik";
-            this.btnAltyapi.Id = 30;
-            this.btnAltyapi.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.checkbuttons_16x16;
-            this.btnAltyapi.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.checkbuttons_32x32;
-            this.btnAltyapi.Name = "btnAltyapi";
-            // 
             // AnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -507,7 +507,7 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPageFinans;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem btnKasa;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
         private DevExpress.XtraBars.BarButtonItem barButtonItem5;
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;
