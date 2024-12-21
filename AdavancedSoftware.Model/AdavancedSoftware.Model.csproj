@@ -54,11 +54,13 @@
     <Compile Include="Attributes\Kod.cs" />
     <Compile Include="Attributes\ZorunluAlan.cs" />
     <Compile Include="Dto\BankaDto.cs" />
+    <Compile Include="Dto\BankaHesapDto.cs" />
     <Compile Include="Dto\BankaSubeDto.cs" />
     <Compile Include="Dto\KasaDto.cs" />
     <Compile Include="Dto\OfisDto.cs" />
     <Compile Include="Entities\Altyapi.cs" />
     <Compile Include="Entities\Banka.cs" />
+    <Compile Include="Entities\BankaHesap.cs" />
     <Compile Include="Entities\Base\BaseEntity.cs" />
     <Compile Include="Entities\Base\BaseEntityDurum.cs" />
     <Compile Include="Entities\Base\BaseHareketEntity.cs" />

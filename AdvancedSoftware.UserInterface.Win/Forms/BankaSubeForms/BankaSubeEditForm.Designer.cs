@@ -72,6 +72,14 @@
             // 
             this.ribbonControl.ExpandCollapseItem.Id = 0;
             this.ribbonControl.OptionsPageCategories.ShowCaptions = false;
+            // 
+            // 
+            // 
+            this.ribbonControl.SearchEditItem.AccessibleName = "Search Item";
+            this.ribbonControl.SearchEditItem.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Left;
+            this.ribbonControl.SearchEditItem.EditWidth = 150;
+            this.ribbonControl.SearchEditItem.Id = -5000;
+            this.ribbonControl.SearchEditItem.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.ribbonControl.Size = new System.Drawing.Size(448, 135);
             this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             // 
@@ -89,7 +97,7 @@
             this.myDataLayoutControl.OptionsFocus.EnableAutoTabOrder = false;
             this.myDataLayoutControl.Root = this.Root;
             this.myDataLayoutControl.Size = new System.Drawing.Size(448, 170);
-            this.myDataLayoutControl.TabIndex = 2;
+            this.myDataLayoutControl.TabIndex = 0;
             this.myDataLayoutControl.Text = "myDataLayoutControl1";
             // 
             // txtAciklama
@@ -104,7 +112,7 @@
             this.txtAciklama.Size = new System.Drawing.Size(338, 50);
             this.txtAciklama.StatusBarAciklama = "Açıklama Giriniz";
             this.txtAciklama.StyleController = this.myDataLayoutControl;
-            this.txtAciklama.TabIndex = 10;
+            this.txtAciklama.TabIndex = 3;
             // 
             // txtOzelKod2
             // 
@@ -123,7 +131,7 @@
             this.txtOzelKod2.StatusBarKisaYol = "F4 :";
             this.txtOzelKod2.StatusBarKisaYolAciklama = null;
             this.txtOzelKod2.StyleController = this.myDataLayoutControl;
-            this.txtOzelKod2.TabIndex = 9;
+            this.txtOzelKod2.TabIndex = 2;
             // 
             // txtOzelKod1
             // 
@@ -142,7 +150,7 @@
             this.txtOzelKod1.StatusBarKisaYol = "F4 :";
             this.txtOzelKod1.StatusBarKisaYolAciklama = null;
             this.txtOzelKod1.StyleController = this.myDataLayoutControl;
-            this.txtOzelKod1.TabIndex = 8;
+            this.txtOzelKod1.TabIndex = 1;
             // 
             // txtSubeAdi
             // 
@@ -156,7 +164,7 @@
             this.txtSubeAdi.Size = new System.Drawing.Size(338, 20);
             this.txtSubeAdi.StatusBarAciklama = null;
             this.txtSubeAdi.StyleController = this.myDataLayoutControl;
-            this.txtSubeAdi.TabIndex = 6;
+            this.txtSubeAdi.TabIndex = 0;
             // 
             // txtKod
             // 

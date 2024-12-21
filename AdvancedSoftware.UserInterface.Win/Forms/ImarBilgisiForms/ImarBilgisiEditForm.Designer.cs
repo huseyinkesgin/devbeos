@@ -62,6 +62,14 @@
             // 
             this.ribbonControl.ExpandCollapseItem.Id = 0;
             this.ribbonControl.OptionsPageCategories.ShowCaptions = false;
+            // 
+            // 
+            // 
+            this.ribbonControl.SearchEditItem.AccessibleName = "Search Item";
+            this.ribbonControl.SearchEditItem.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Left;
+            this.ribbonControl.SearchEditItem.EditWidth = 150;
+            this.ribbonControl.SearchEditItem.Id = -5000;
+            this.ribbonControl.SearchEditItem.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.ribbonControl.Size = new System.Drawing.Size(473, 135);
             this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             // 
@@ -77,7 +85,7 @@
             this.myDataLayoutControl.OptionsFocus.EnableAutoTabOrder = false;
             this.myDataLayoutControl.Root = this.Root;
             this.myDataLayoutControl.Size = new System.Drawing.Size(473, 115);
-            this.myDataLayoutControl.TabIndex = 2;
+            this.myDataLayoutControl.TabIndex = 0;
             this.myDataLayoutControl.Text = "myDataLayoutControl";
             // 
             // tglDurum
@@ -96,7 +104,7 @@
             this.tglDurum.Size = new System.Drawing.Size(77, 20);
             this.tglDurum.StatusBarAciklama = " Kartın kullanım durumunu seçiniz";
             this.tglDurum.StyleController = this.myDataLayoutControl;
-            this.tglDurum.TabIndex = 7;
+            this.tglDurum.TabIndex = 2;
             // 
             // txtAciklama
             // 
@@ -110,7 +118,7 @@
             this.txtAciklama.Size = new System.Drawing.Size(387, 43);
             this.txtAciklama.StatusBarAciklama = "Açıklama Giriniz";
             this.txtAciklama.StyleController = this.myDataLayoutControl;
-            this.txtAciklama.TabIndex = 6;
+            this.txtAciklama.TabIndex = 1;
             // 
             // txtImarBilgisiAdi
             // 
@@ -124,7 +132,7 @@
             this.txtImarBilgisiAdi.Size = new System.Drawing.Size(387, 20);
             this.txtImarBilgisiAdi.StatusBarAciklama = "İmar durumu giriniz";
             this.txtImarBilgisiAdi.StyleController = this.myDataLayoutControl;
-            this.txtImarBilgisiAdi.TabIndex = 5;
+            this.txtImarBilgisiAdi.TabIndex = 0;
             // 
             // txtKod
             // 
@@ -142,7 +150,7 @@
             this.txtKod.Size = new System.Drawing.Size(134, 20);
             this.txtKod.StatusBarAciklama = "Kod giriniz";
             this.txtKod.StyleController = this.myDataLayoutControl;
-            this.txtKod.TabIndex = 4;
+            this.txtKod.TabIndex = 3;
             // 
             // Root
             // 

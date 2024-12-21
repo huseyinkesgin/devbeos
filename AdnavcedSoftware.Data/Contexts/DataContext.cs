@@ -49,6 +49,7 @@ namespace AdnavcedSoftware.Data.Contexts
         public DbSet<Kasa> Kasa { get; set; }
         public DbSet<Banka> Banka { get; set; }
         public DbSet<BankaSube> BankaSube { get; set; }
+        public DbSet<BankaHesap> BankaHesap { get; set; }
 
     }
 

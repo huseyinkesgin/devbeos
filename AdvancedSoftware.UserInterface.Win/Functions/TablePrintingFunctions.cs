@@ -2,7 +2,6 @@
 using AdvancedSoftware.Common.Enums;
 using AdvancedSoftware.UserInterface.Win.GenelForms;
 using AdvancedSoftware.UserInterface.Win.Show;
-using DevExpress.Drawing.Printing;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraPrinting;
 using System;
@@ -42,7 +41,7 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
             _tablo.OptionsView.ShowViewCaption = false;
 
             _link.Component = _tablo.GridControl;
-            _link.PaperKind = DXPaperKind.Letter;
+            _link.PaperKind = PaperKind.Letter;
             _link.Margins = new Margins(59, 59, 115, 48);
             _link.CreateMarginalHeaderArea += Link_CreateMarginalHeaderArea;
             _link.CreateDocument(_ps);

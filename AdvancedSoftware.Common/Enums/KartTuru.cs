@@ -79,6 +79,9 @@ namespace AdvancedSoftware.Common.Enums
         [Description("Banka Şube Kartı")]
         BankaSube = 25,
 
+        [Description("Banka Hesap Kartı")]
+        BankaHesap = 26,
+
 
     }
 }
