@@ -1,11 +1,6 @@
-﻿using AdavancedSoftware.Model.Entities.Base;
-using AdavancedSoftware.Model.Entities;
-using System;
-using System.Collections.Generic;
+﻿using AdavancedSoftware.Model.Entities;
+using AdavancedSoftware.Model.Entities.Base;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdavancedSoftware.Model.Dto
 {

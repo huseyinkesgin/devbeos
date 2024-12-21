@@ -53,9 +53,12 @@
   <ItemGroup>
     <Compile Include="Attributes\Kod.cs" />
     <Compile Include="Attributes\ZorunluAlan.cs" />
+    <Compile Include="Dto\BankaDto.cs" />
+    <Compile Include="Dto\BankaSubeDto.cs" />
     <Compile Include="Dto\KasaDto.cs" />
     <Compile Include="Dto\OfisDto.cs" />
     <Compile Include="Entities\Altyapi.cs" />
+    <Compile Include="Entities\Banka.cs" />
     <Compile Include="Entities\Base\BaseEntity.cs" />
     <Compile Include="Entities\Base\BaseEntityDurum.cs" />
     <Compile Include="Entities\Base\BaseHareketEntity.cs" />
@@ -72,6 +75,7 @@
     <Compile Include="Entities\IptalNedeni.cs" />
     <Compile Include="Entities\Isitma.cs" />
     <Compile Include="Entities\IsyeriTipi.cs" />
+    <Compile Include="Entities\BankaSube.cs" />
     <Compile Include="Entities\Kasa.cs" />
     <Compile Include="Entities\Musteri.cs" />
     <Compile Include="Entities\MusteriBilgi.cs" />

@@ -58,9 +58,11 @@
     <Compile Include="Functions\Converts.cs" />
     <Compile Include="Functions\GeneralFunctions.cs" />
     <Compile Include="Functions\ValidationFunctions.cs" />
+    <Compile Include="General\BankaSubeBll.cs" />
     <Compile Include="General\FiltreBll.cs" />
     <Compile Include="General\EmsalBll.cs" />
     <Compile Include="General\GabariBll.cs" />
+    <Compile Include="General\BankaBll.cs" />
     <Compile Include="General\KasaBll.cs" />
     <Compile Include="General\SubeBll.cs" />
     <Compile Include="General\DonemBll.cs" />

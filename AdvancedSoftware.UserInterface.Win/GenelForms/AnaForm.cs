@@ -1,5 +1,6 @@
 ﻿using AdvancedSoftware.Common.Enums;
 using AdvancedSoftware.UserInterface.Win.Forms.AltyapiForms;
+using AdvancedSoftware.UserInterface.Win.Forms.BankaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.DepartmanForms;
 using AdvancedSoftware.UserInterface.Win.Forms.EmsalForms;
 using AdvancedSoftware.UserInterface.Win.Forms.GabariForms;
@@ -83,6 +84,8 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
                 ShowListForms<AltyapiListForm>.ShowListForm(KartTuru.Altyapi);
             if (e.Item == btnKasa)
                 ShowListForms<KasaListForm>.ShowListForm(KartTuru.Kasa);
+            if (e.Item == btnBanka)
+                ShowListForms<BankaListForm>.ShowListForm(KartTuru.Banka);
 
         }
 

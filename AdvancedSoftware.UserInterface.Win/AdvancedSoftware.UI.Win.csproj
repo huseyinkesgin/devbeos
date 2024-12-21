@@ -108,6 +108,30 @@
     <Compile Include="Forms\AltyapiForms\AltyapiListForm.Designer.cs">
       <DependentUpon>AltyapiListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\BankaForms\BankaEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BankaForms\BankaEditForm.Designer.cs">
+      <DependentUpon>BankaEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BankaForms\BankaListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BankaForms\BankaListForm.Designer.cs">
+      <DependentUpon>BankaListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BankaSubeForms\BankaSubeEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BankaSubeForms\BankaSubeEditForm.Designer.cs">
+      <DependentUpon>BankaSubeEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BankaSubeForms\BankaSubeListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BankaSubeForms\BankaSubeListForm.Designer.cs">
+      <DependentUpon>BankaSubeListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\BaseForms\BaseEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -450,6 +474,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AltyapiForms\AltyapiListForm.resx">
       <DependentUpon>AltyapiListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BankaForms\BankaEditForm.resx">
+      <DependentUpon>BankaEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BankaForms\BankaListForm.resx">
+      <DependentUpon>BankaListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BankaSubeForms\BankaSubeEditForm.resx">
+      <DependentUpon>BankaSubeEditForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BaseForms\BaseEditForm.resx">
       <DependentUpon>BaseEditForm.cs</DependentUpon>
@@ -984,6 +1017,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\checkbuttons_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salesperiodmonth_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salesperiodmonth_16x16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

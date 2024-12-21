@@ -80,6 +80,8 @@
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.btnKargoFirmasi = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.btnBanka = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).BeginInit();
             this.SuspendLayout();
@@ -117,9 +119,10 @@
             this.btnIptalNedeni,
             this.btnDepartman,
             this.btnUnvan,
-            this.btnAltyapi});
+            this.btnAltyapi,
+            this.btnBanka});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 31;
+            this.ribbonControl.MaxItemId = 32;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPageOfis,
@@ -156,7 +159,7 @@
             // 
             this.btnKasa.Caption = "KASA";
             this.btnKasa.Id = 5;
-            this.btnKasa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem3.ImageOptions.SvgImage")));
+            this.btnKasa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnKasa.ImageOptions.SvgImage")));
             this.btnKasa.Name = "btnKasa";
             // 
             // barButtonItem4
@@ -355,17 +358,15 @@
             // ribbonPageFinans
             // 
             this.ribbonPageFinans.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup3});
+            this.ribbonPageGroup3,
+            this.ribbonPageGroup11});
             this.ribbonPageFinans.Name = "ribbonPageFinans";
             this.ribbonPageFinans.Text = "FİNANS";
             // 
             // ribbonPageGroup3
             // 
             this.ribbonPageGroup3.ItemLinks.Add(this.btnKasa);
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem1);
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem2);
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem4);
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem5);
+            this.ribbonPageGroup3.ItemLinks.Add(this.btnBanka);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             // 
             // ribbonPagePortfoy
@@ -474,6 +475,23 @@
             this.btnKargoFirmasi.Id = 1;
             this.btnKargoFirmasi.Name = "btnKargoFirmasi";
             // 
+            // ribbonPageGroup11
+            // 
+            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem2);
+            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem4);
+            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem5);
+            this.ribbonPageGroup11.Name = "ribbonPageGroup11";
+            this.ribbonPageGroup11.Text = "ribbonPageGroup11";
+            // 
+            // btnBanka
+            // 
+            this.btnBanka.Caption = "Banka";
+            this.btnBanka.Id = 31;
+            this.btnBanka.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.salesperiodmonth_16x16;
+            this.btnBanka.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.salesperiodmonth_32x32;
+            this.btnBanka.Name = "btnBanka";
+            // 
             // AnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -546,5 +564,7 @@
         private DevExpress.XtraBars.BarButtonItem btnDepartman;
         private DevExpress.XtraBars.BarButtonItem btnUnvan;
         private DevExpress.XtraBars.BarButtonItem btnAltyapi;
+        private DevExpress.XtraBars.BarButtonItem btnBanka;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
     }
 }

@@ -73,6 +73,12 @@ namespace AdvancedSoftware.Common.Enums
         [Description("Kasa Kartı")]
         Kasa = 23,
 
+        [Description("Banka Kartı")]
+        Banka = 24,
+
+        [Description("Banka Şube Kartı")]
+        BankaSube = 25,
+
 
     }
 }
