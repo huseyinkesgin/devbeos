@@ -2,7 +2,7 @@
 
 namespace AdvancedSoftware.Common.Enums
 {
-    public enum BankaHesapTuru
+    public enum BankaHesapTuru : byte
     {
         [Description("Vadesiz Mevduat Hesabı")]
         VadesizMevduatHesabi = 1,

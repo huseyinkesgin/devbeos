@@ -64,7 +64,10 @@
     <Compile Include="General\EmsalBll.cs" />
     <Compile Include="General\GabariBll.cs" />
     <Compile Include="General\BankaBll.cs" />
+    <Compile Include="General\ModelBll.cs" />
+    <Compile Include="General\MarkaBll.cs" />
     <Compile Include="General\KasaBll.cs" />
+    <Compile Include="General\FirmaBll.cs" />
     <Compile Include="General\SubeBll.cs" />
     <Compile Include="General\DonemBll.cs" />
     <Compile Include="General\IsitmaBll.cs" />

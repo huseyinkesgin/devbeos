@@ -60,10 +60,14 @@
             this.btnDepartman = new DevExpress.XtraBars.BarButtonItem();
             this.btnUnvan = new DevExpress.XtraBars.BarButtonItem();
             this.btnAltyapi = new DevExpress.XtraBars.BarButtonItem();
+            this.btnBanka = new DevExpress.XtraBars.BarButtonItem();
+            this.btnBankaHesap = new DevExpress.XtraBars.BarButtonItem();
+            this.btnFirma = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageOfis = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageFinans = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPagePortfoy = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -80,8 +84,7 @@
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.btnKargoFirmasi = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.btnBanka = new DevExpress.XtraBars.BarButtonItem();
+            this.btnMarka = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).BeginInit();
             this.SuspendLayout();
@@ -91,6 +94,7 @@
             this.ribbonControl.ExpandCollapseItem.Id = 0;
             this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl.ExpandCollapseItem,
+            this.ribbonControl.SearchEditItem,
             this.btnOfis,
             this.barButtonItem1,
             this.barButtonItem2,
@@ -120,9 +124,12 @@
             this.btnDepartman,
             this.btnUnvan,
             this.btnAltyapi,
-            this.btnBanka});
+            this.btnBanka,
+            this.btnBankaHesap,
+            this.btnFirma,
+            this.btnMarka});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 32;
+            this.ribbonControl.MaxItemId = 35;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPageOfis,
@@ -338,6 +345,28 @@
             this.btnAltyapi.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.checkbuttons_32x32;
             this.btnAltyapi.Name = "btnAltyapi";
             // 
+            // btnBanka
+            // 
+            this.btnBanka.Caption = "Banka";
+            this.btnBanka.Id = 31;
+            this.btnBanka.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.salesperiodmonth_16x16;
+            this.btnBanka.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.salesperiodmonth_32x32;
+            this.btnBanka.Name = "btnBanka";
+            // 
+            // btnBankaHesap
+            // 
+            this.btnBankaHesap.Caption = "Banka Hesap";
+            this.btnBankaHesap.Id = 32;
+            this.btnBankaHesap.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.currency_16x16;
+            this.btnBankaHesap.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.currency_32x32;
+            this.btnBankaHesap.Name = "btnBankaHesap";
+            // 
+            // btnFirma
+            // 
+            this.btnFirma.Caption = "Firma";
+            this.btnFirma.Id = 33;
+            this.btnFirma.Name = "btnFirma";
+            // 
             // ribbonPageOfis
             // 
             this.ribbonPageOfis.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -367,7 +396,17 @@
             // 
             this.ribbonPageGroup3.ItemLinks.Add(this.btnKasa);
             this.ribbonPageGroup3.ItemLinks.Add(this.btnBanka);
+            this.ribbonPageGroup3.ItemLinks.Add(this.btnBankaHesap);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            // 
+            // ribbonPageGroup11
+            // 
+            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem2);
+            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem4);
+            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem5);
+            this.ribbonPageGroup11.Name = "ribbonPageGroup11";
+            this.ribbonPageGroup11.Text = "ribbonPageGroup11";
             // 
             // ribbonPagePortfoy
             // 
@@ -420,6 +459,7 @@
             this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem19);
             this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem20);
             this.ribbonPageGroup7.ItemLinks.Add(this.btnMusteriBilgi);
+            this.ribbonPageGroup7.ItemLinks.Add(this.btnFirma);
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
             // 
             // ribbonPageDiger
@@ -439,6 +479,7 @@
             // ribbonPageGroup10
             // 
             this.ribbonPageGroup10.ItemLinks.Add(this.btnIptalNedeni);
+            this.ribbonPageGroup10.ItemLinks.Add(this.btnMarka);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
             // 
             // ribbonPageRaporlar
@@ -475,22 +516,11 @@
             this.btnKargoFirmasi.Id = 1;
             this.btnKargoFirmasi.Name = "btnKargoFirmasi";
             // 
-            // ribbonPageGroup11
+            // btnMarka
             // 
-            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem1);
-            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem2);
-            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem4);
-            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem5);
-            this.ribbonPageGroup11.Name = "ribbonPageGroup11";
-            this.ribbonPageGroup11.Text = "ribbonPageGroup11";
-            // 
-            // btnBanka
-            // 
-            this.btnBanka.Caption = "Banka";
-            this.btnBanka.Id = 31;
-            this.btnBanka.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.salesperiodmonth_16x16;
-            this.btnBanka.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.salesperiodmonth_32x32;
-            this.btnBanka.Name = "btnBanka";
+            this.btnMarka.Caption = "Marka";
+            this.btnMarka.Id = 34;
+            this.btnMarka.Name = "btnMarka";
             // 
             // AnaForm
             // 
@@ -566,5 +596,8 @@
         private DevExpress.XtraBars.BarButtonItem btnAltyapi;
         private DevExpress.XtraBars.BarButtonItem btnBanka;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
+        private DevExpress.XtraBars.BarButtonItem btnBankaHesap;
+        private DevExpress.XtraBars.BarButtonItem btnFirma;
+        private DevExpress.XtraBars.BarButtonItem btnMarka;
     }
 }

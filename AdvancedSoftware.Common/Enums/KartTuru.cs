@@ -82,6 +82,19 @@ namespace AdvancedSoftware.Common.Enums
         [Description("Banka Hesap Kartı")]
         BankaHesap = 26,
 
+        [Description("Firma Kartı")]
+        Firma = 27,
+
+        [Description("Marka Kartı")]
+        Marka = 28,
+
+        [Description("Model Kartı")]
+        Model = 29,
+
+        [Description("Araç Kartı")]
+        Arac = 30,
+
+
 
     }
 }

@@ -1,5 +1,8 @@
-﻿using AdavancedSoftware.Model.Entities;
+﻿using AdavancedSoftware.Model.Dto;
+using AdavancedSoftware.Model.Entities;
 using AdvancedSoftware.Common.Enums;
+using AdvancedSoftware.UserInterface.Win.Forms.BankaForms;
+using AdvancedSoftware.UserInterface.Win.Forms.BankaSubeForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MusteriGrupForms;
 using AdvancedSoftware.UserInterface.Win.Forms.OzelKod;
 using AdvancedSoftware.UserInterface.Win.Forms.PortfoyTipiForms;
@@ -150,6 +153,28 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
                         {
                             _btnEdit.Id = entity.Id;
                             _btnEdit.EditValue = entity.OzelKodAdi;
+                        }
+                    }
+                    break;
+
+                case "txtBanka":
+                    {
+                        var entity = (BankaL)ShowListForms<BankaListForm>.ShowDialogListForm(KartTuru.Banka, _btnEdit.Id);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.BankaAdi;
+                        }
+                    }
+                    break;
+
+                case "txtBankaSube":
+                    {
+                        var entity = (BankaSubeL)ShowListForms<BankaSubeListForm>.ShowDialogListForm(KartTuru.BankaSube, _btnEdit.Id, _prmEdit.Id, _prmEdit.Text);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.SubeAdi;
                         }
                     }
                     break;

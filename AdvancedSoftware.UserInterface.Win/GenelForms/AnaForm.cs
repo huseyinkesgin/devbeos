@@ -1,13 +1,16 @@
 ﻿using AdvancedSoftware.Common.Enums;
 using AdvancedSoftware.UserInterface.Win.Forms.AltyapiForms;
 using AdvancedSoftware.UserInterface.Win.Forms.BankaForms;
+using AdvancedSoftware.UserInterface.Win.Forms.BankaHesapForms;
 using AdvancedSoftware.UserInterface.Win.Forms.DepartmanForms;
 using AdvancedSoftware.UserInterface.Win.Forms.EmsalForms;
+using AdvancedSoftware.UserInterface.Win.Forms.FirmaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.GabariForms;
 using AdvancedSoftware.UserInterface.Win.Forms.ImarBilgisiForms;
 using AdvancedSoftware.UserInterface.Win.Forms.IptalNedeniForms;
 using AdvancedSoftware.UserInterface.Win.Forms.IsıtmaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.KasaForms;
+using AdvancedSoftware.UserInterface.Win.Forms.MarkaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MusteriBilgiForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MusteriGrupForms;
 using AdvancedSoftware.UserInterface.Win.Forms.OfisForms;
@@ -86,6 +89,12 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
                 ShowListForms<KasaListForm>.ShowListForm(KartTuru.Kasa);
             if (e.Item == btnBanka)
                 ShowListForms<BankaListForm>.ShowListForm(KartTuru.Banka);
+            if (e.Item == btnBankaHesap)
+                ShowListForms<BankaHesapListForm>.ShowListForm(KartTuru.BankaHesap);
+            if (e.Item == btnFirma)
+                ShowListForms<FirmaListForm>.ShowListForm(KartTuru.Firma);
+            if (e.Item == btnMarka)
+                ShowListForms<MarkaListForm>.ShowListForm(KartTuru.Marka);
 
         }
 

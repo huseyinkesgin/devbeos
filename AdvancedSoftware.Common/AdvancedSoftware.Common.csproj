@@ -175,6 +175,8 @@
     <Compile Include="Enums\OzelKodTuru.cs" />
     <Compile Include="Enums\RaporuKagidaSigdirmaTuru.cs" />
     <Compile Include="Enums\VeriDegisimYeri.cs" />
+    <Compile Include="Enums\VitesTuru.cs" />
+    <Compile Include="Enums\YakitCinsi.cs" />
     <Compile Include="Enums\YazdirmaYonu.cs" />
     <Compile Include="Functions\EnumFunctions.cs" />
     <Compile Include="Messages\Messages.cs" />

@@ -7,7 +7,7 @@ using System;
 
 namespace AdavancedSoftware.Model.Entities
 {
-    public class BankaHesap : BaseEntityDurum
+    public class   BankaHesap  : BaseEntityDurum
     {
         [Index("IX_Kod", IsUnique = false)]
         public override string Kod { get; set; }
@@ -23,7 +23,7 @@ namespace AdavancedSoftware.Model.Entities
         public long BankaSubeId { get; set; }
 
         [Column(TypeName = "date")]
-        public DateTime HesapAcilisTarihi { get; set; } = DateTime.Now;
+        public DateTime HesapAcilisTarihi { get; set; } = DateTime.Now.Date;
 
         [Required, StringLength(32), ZorunluAlan("Hesap No", "txtHesapNo")]
         public string HesapNo { get; set; }

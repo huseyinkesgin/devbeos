@@ -43,62 +43,62 @@
             DevExpress.XtraLayout.RowDefinition rowDefinition9 = new DevExpress.XtraLayout.RowDefinition();
             DevExpress.XtraLayout.RowDefinition rowDefinition10 = new DevExpress.XtraLayout.RowDefinition();
             this.myDataLayoutControl = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyDataLayoutControl();
-            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.txtKod = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyCodeTextEdit();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.txtHesapAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyTextEdit();
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.txtHesapTuru = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyComboBoxEdit();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.txtBanka = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyButtonEdit();
-            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.txtBankaSube = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyButtonEdit();
-            this.txtHesapAcilisTarihi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyDateEdit();
-            this.txtHesapNo = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyTextEdit();
-            this.txtIbanNo = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyIbanTextEdit();
-            this.myTextEdit3 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyTextEdit();
-            this.txtOzelKod1 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyButtonEdit();
-            this.txtOzelKod2 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyButtonEdit();
-            this.txtAciklama = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyMemoEdit();
-            this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.tglDurum = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyToogleSwitch();
+            this.txtAciklama = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyMemoEdit();
+            this.txtOzelKod2 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyButtonEdit();
+            this.txtOzelKod1 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyButtonEdit();
+            this.txtMusteriNo = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyTextEdit();
+            this.txtIbanNo = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyIbanTextEdit();
+            this.txtHesapNo = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyTextEdit();
+            this.txtHesapAcilisTarihi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyDateEdit();
+            this.txtBankaSube = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyButtonEdit();
+            this.txtBanka = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyButtonEdit();
+            this.txtHesapTuru = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyComboBoxEdit();
+            this.txtHesapAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyTextEdit();
+            this.txtKod = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyCodeTextEdit();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.txtMusteriNo = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lblMusteriNo = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myDataLayoutControl)).BeginInit();
             this.myDataLayoutControl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKod.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtHesapAdi.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtHesapTuru.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBanka.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBankaSube.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tglDurum.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAciklama.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOzelKod2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOzelKod1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMusteriNo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIbanNo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHesapNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHesapAcilisTarihi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHesapAcilisTarihi.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtHesapNo.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtIbanNo.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myTextEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtOzelKod1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtOzelKod2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAciklama.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBankaSube.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBanka.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHesapTuru.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHesapAdi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKod.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tglDurum.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMusteriNo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblMusteriNo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
             this.SuspendLayout();
@@ -124,7 +124,7 @@
             this.myDataLayoutControl.Controls.Add(this.txtAciklama);
             this.myDataLayoutControl.Controls.Add(this.txtOzelKod2);
             this.myDataLayoutControl.Controls.Add(this.txtOzelKod1);
-            this.myDataLayoutControl.Controls.Add(this.myTextEdit3);
+            this.myDataLayoutControl.Controls.Add(this.txtMusteriNo);
             this.myDataLayoutControl.Controls.Add(this.txtIbanNo);
             this.myDataLayoutControl.Controls.Add(this.txtHesapNo);
             this.myDataLayoutControl.Controls.Add(this.txtHesapAcilisTarihi);
@@ -142,6 +142,235 @@
             this.myDataLayoutControl.TabIndex = 0;
             this.myDataLayoutControl.Text = "myDataLayoutControl1";
             // 
+            // tglDurum
+            // 
+            this.tglDurum.EnterMoveNextControl = true;
+            this.tglDurum.Location = new System.Drawing.Point(320, 12);
+            this.tglDurum.MenuManager = this.ribbonControl;
+            this.tglDurum.Name = "tglDurum";
+            this.tglDurum.Properties.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.tglDurum.Properties.Appearance.Options.UseForeColor = true;
+            this.tglDurum.Properties.AutoHeight = false;
+            this.tglDurum.Properties.AutoWidth = true;
+            this.tglDurum.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.tglDurum.Properties.OffText = "Pasif";
+            this.tglDurum.Properties.OnText = "Aktif";
+            this.tglDurum.Size = new System.Drawing.Size(77, 20);
+            this.tglDurum.StatusBarAciklama = " Kartın kullanım durumunu seçiniz";
+            this.tglDurum.StyleController = this.myDataLayoutControl;
+            this.tglDurum.TabIndex = 11;
+            // 
+            // txtAciklama
+            // 
+            this.txtAciklama.EnterMoveNextControl = true;
+            this.txtAciklama.Location = new System.Drawing.Point(109, 228);
+            this.txtAciklama.MenuManager = this.ribbonControl;
+            this.txtAciklama.Name = "txtAciklama";
+            this.txtAciklama.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtAciklama.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtAciklama.Properties.MaxLength = 500;
+            this.txtAciklama.Size = new System.Drawing.Size(457, 30);
+            this.txtAciklama.StatusBarAciklama = "Açıklama Giriniz";
+            this.txtAciklama.StyleController = this.myDataLayoutControl;
+            this.txtAciklama.TabIndex = 10;
+            // 
+            // txtOzelKod2
+            // 
+            this.txtOzelKod2.EnterMoveNextControl = true;
+            this.txtOzelKod2.Id = null;
+            this.txtOzelKod2.Location = new System.Drawing.Point(417, 204);
+            this.txtOzelKod2.MenuManager = this.ribbonControl;
+            this.txtOzelKod2.Name = "txtOzelKod2";
+            this.txtOzelKod2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtOzelKod2.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtOzelKod2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.txtOzelKod2.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.txtOzelKod2.Size = new System.Drawing.Size(149, 20);
+            this.txtOzelKod2.StatusBarAciklama = "Özel Kod varsa seçiniz";
+            this.txtOzelKod2.StatusBarKisaYol = "F4 :";
+            this.txtOzelKod2.StatusBarKisaYolAciklama = null;
+            this.txtOzelKod2.StyleController = this.myDataLayoutControl;
+            this.txtOzelKod2.TabIndex = 9;
+            // 
+            // txtOzelKod1
+            // 
+            this.txtOzelKod1.EnterMoveNextControl = true;
+            this.txtOzelKod1.Id = null;
+            this.txtOzelKod1.Location = new System.Drawing.Point(417, 180);
+            this.txtOzelKod1.MenuManager = this.ribbonControl;
+            this.txtOzelKod1.Name = "txtOzelKod1";
+            this.txtOzelKod1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtOzelKod1.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtOzelKod1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.txtOzelKod1.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.txtOzelKod1.Size = new System.Drawing.Size(149, 20);
+            this.txtOzelKod1.StatusBarAciklama = "Özel Kod varsa seçiniz";
+            this.txtOzelKod1.StatusBarKisaYol = "F4 :";
+            this.txtOzelKod1.StatusBarKisaYolAciklama = "Seçim Yap";
+            this.txtOzelKod1.StyleController = this.myDataLayoutControl;
+            this.txtOzelKod1.TabIndex = 8;
+            // 
+            // txtMusteriNo
+            // 
+            this.txtMusteriNo.EnterMoveNextControl = true;
+            this.txtMusteriNo.Location = new System.Drawing.Point(109, 156);
+            this.txtMusteriNo.MenuManager = this.ribbonControl;
+            this.txtMusteriNo.Name = "txtMusteriNo";
+            this.txtMusteriNo.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtMusteriNo.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtMusteriNo.Properties.MaxLength = 50;
+            this.txtMusteriNo.Size = new System.Drawing.Size(149, 20);
+            this.txtMusteriNo.StatusBarAciklama = "Banka müşteri numarasını giriniz";
+            this.txtMusteriNo.StyleController = this.myDataLayoutControl;
+            this.txtMusteriNo.TabIndex = 5;
+            // 
+            // txtIbanNo
+            // 
+            this.txtIbanNo.EnterMoveNextControl = true;
+            this.txtIbanNo.Location = new System.Drawing.Point(109, 204);
+            this.txtIbanNo.MenuManager = this.ribbonControl;
+            this.txtIbanNo.Name = "txtIbanNo";
+            this.txtIbanNo.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtIbanNo.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtIbanNo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
+            this.txtIbanNo.Properties.MaskSettings.Set("mask", "TR\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?");
+            this.txtIbanNo.Properties.MaskSettings.Set("isAutoComplete", false);
+            this.txtIbanNo.Properties.MaskSettings.Set("isOptimistic", false);
+            this.txtIbanNo.Properties.MaxLength = 50;
+            this.txtIbanNo.Size = new System.Drawing.Size(199, 20);
+            this.txtIbanNo.StatusBarAciklama = "Iban No Giriniz";
+            this.txtIbanNo.StyleController = this.myDataLayoutControl;
+            this.txtIbanNo.TabIndex = 7;
+            // 
+            // txtHesapNo
+            // 
+            this.txtHesapNo.EnterMoveNextControl = true;
+            this.txtHesapNo.Location = new System.Drawing.Point(109, 180);
+            this.txtHesapNo.MenuManager = this.ribbonControl;
+            this.txtHesapNo.Name = "txtHesapNo";
+            this.txtHesapNo.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtHesapNo.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtHesapNo.Properties.MaxLength = 50;
+            this.txtHesapNo.Size = new System.Drawing.Size(149, 20);
+            this.txtHesapNo.StatusBarAciklama = "Banka hesap numarasını giriniz";
+            this.txtHesapNo.StyleController = this.myDataLayoutControl;
+            this.txtHesapNo.TabIndex = 6;
+            // 
+            // txtHesapAcilisTarihi
+            // 
+            this.txtHesapAcilisTarihi.EditValue = null;
+            this.txtHesapAcilisTarihi.EnterMoveNextControl = true;
+            this.txtHesapAcilisTarihi.Location = new System.Drawing.Point(109, 132);
+            this.txtHesapAcilisTarihi.MenuManager = this.ribbonControl;
+            this.txtHesapAcilisTarihi.Name = "txtHesapAcilisTarihi";
+            this.txtHesapAcilisTarihi.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.False;
+            this.txtHesapAcilisTarihi.Properties.Appearance.Options.UseTextOptions = true;
+            this.txtHesapAcilisTarihi.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.txtHesapAcilisTarihi.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtHesapAcilisTarihi.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtHesapAcilisTarihi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtHesapAcilisTarihi.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtHesapAcilisTarihi.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.DateTimeMaskManager));
+            this.txtHesapAcilisTarihi.Properties.MaskSettings.Set("useAdvancingCaret", true);
+            this.txtHesapAcilisTarihi.Size = new System.Drawing.Size(149, 20);
+            this.txtHesapAcilisTarihi.StatusBarAciklama = "Hesap açılış tarihini giriniz";
+            this.txtHesapAcilisTarihi.StatusBarKisaYol = "F4 :";
+            this.txtHesapAcilisTarihi.StatusBarKisaYolAciklama = "Tarih Seç :";
+            this.txtHesapAcilisTarihi.StyleController = this.myDataLayoutControl;
+            this.txtHesapAcilisTarihi.TabIndex = 4;
+            // 
+            // txtBankaSube
+            // 
+            this.txtBankaSube.EnterMoveNextControl = true;
+            this.txtBankaSube.Id = null;
+            this.txtBankaSube.Location = new System.Drawing.Point(109, 108);
+            this.txtBankaSube.MenuManager = this.ribbonControl;
+            this.txtBankaSube.Name = "txtBankaSube";
+            this.txtBankaSube.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtBankaSube.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtBankaSube.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.txtBankaSube.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.txtBankaSube.Size = new System.Drawing.Size(149, 20);
+            this.txtBankaSube.StatusBarAciklama = "Banka şubesini seçiniz";
+            this.txtBankaSube.StatusBarKisaYol = "F4 :";
+            this.txtBankaSube.StatusBarKisaYolAciklama = "Seçim Yap";
+            this.txtBankaSube.StyleController = this.myDataLayoutControl;
+            this.txtBankaSube.TabIndex = 3;
+            // 
+            // txtBanka
+            // 
+            this.txtBanka.EnterMoveNextControl = true;
+            this.txtBanka.Id = null;
+            this.txtBanka.Location = new System.Drawing.Point(109, 84);
+            this.txtBanka.MenuManager = this.ribbonControl;
+            this.txtBanka.Name = "txtBanka";
+            this.txtBanka.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtBanka.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtBanka.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.txtBanka.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.txtBanka.Size = new System.Drawing.Size(149, 20);
+            this.txtBanka.StatusBarAciklama = "Bankayı seçiniz";
+            this.txtBanka.StatusBarKisaYol = "F4 :";
+            this.txtBanka.StatusBarKisaYolAciklama = "Seçim Yap";
+            this.txtBanka.StyleController = this.myDataLayoutControl;
+            this.txtBanka.TabIndex = 2;
+            // 
+            // txtHesapTuru
+            // 
+            this.txtHesapTuru.EnterMoveNextControl = true;
+            this.txtHesapTuru.Location = new System.Drawing.Point(109, 60);
+            this.txtHesapTuru.MenuManager = this.ribbonControl;
+            this.txtHesapTuru.Name = "txtHesapTuru";
+            this.txtHesapTuru.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtHesapTuru.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtHesapTuru.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtHesapTuru.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.txtHesapTuru.Size = new System.Drawing.Size(199, 20);
+            this.txtHesapTuru.StatusBarAciklama = "Hesap türü seçiniz";
+            this.txtHesapTuru.StatusBarKisaYol = "F4 :";
+            this.txtHesapTuru.StatusBarKisaYolAciklama = "Seçim Yap";
+            this.txtHesapTuru.StyleController = this.myDataLayoutControl;
+            this.txtHesapTuru.TabIndex = 1;
+            // 
+            // txtHesapAdi
+            // 
+            this.txtHesapAdi.EnterMoveNextControl = true;
+            this.txtHesapAdi.Location = new System.Drawing.Point(109, 36);
+            this.txtHesapAdi.MenuManager = this.ribbonControl;
+            this.txtHesapAdi.Name = "txtHesapAdi";
+            this.txtHesapAdi.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtHesapAdi.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtHesapAdi.Properties.MaxLength = 50;
+            this.txtHesapAdi.Size = new System.Drawing.Size(199, 20);
+            this.txtHesapAdi.StatusBarAciklama = "Hesap Adını Giriniz";
+            this.txtHesapAdi.StyleController = this.myDataLayoutControl;
+            this.txtHesapAdi.TabIndex = 0;
+            // 
+            // txtKod
+            // 
+            this.txtKod.EnterMoveNextControl = true;
+            this.txtKod.Location = new System.Drawing.Point(109, 12);
+            this.txtKod.MenuManager = this.ribbonControl;
+            this.txtKod.Name = "txtKod";
+            this.txtKod.Properties.Appearance.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.txtKod.Properties.Appearance.Options.UseBackColor = true;
+            this.txtKod.Properties.Appearance.Options.UseTextOptions = true;
+            this.txtKod.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.txtKod.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtKod.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtKod.Properties.MaxLength = 20;
+            this.txtKod.Size = new System.Drawing.Size(149, 20);
+            this.txtKod.StatusBarAciklama = "Kod giriniz";
+            this.txtKod.StyleController = this.myDataLayoutControl;
+            this.txtKod.TabIndex = 12;
+            // 
             // Root
             // 
             this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -157,7 +386,7 @@
             this.layoutControlItem6,
             this.layoutControlItem8,
             this.layoutControlItem7,
-            this.txtMusteriNo,
+            this.lblMusteriNo,
             this.layoutControlItem11,
             this.layoutControlItem10});
             this.Root.LayoutMode = DevExpress.XtraLayout.Utils.LayoutMode.Table;
@@ -209,24 +438,6 @@
             this.Root.Size = new System.Drawing.Size(578, 270);
             this.Root.TextVisible = false;
             // 
-            // txtKod
-            // 
-            this.txtKod.EnterMoveNextControl = true;
-            this.txtKod.Location = new System.Drawing.Point(109, 12);
-            this.txtKod.MenuManager = this.ribbonControl;
-            this.txtKod.Name = "txtKod";
-            this.txtKod.Properties.Appearance.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.txtKod.Properties.Appearance.Options.UseBackColor = true;
-            this.txtKod.Properties.Appearance.Options.UseTextOptions = true;
-            this.txtKod.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.txtKod.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtKod.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtKod.Properties.MaxLength = 20;
-            this.txtKod.Size = new System.Drawing.Size(149, 20);
-            this.txtKod.StatusBarAciklama = "Kod giriniz";
-            this.txtKod.StyleController = this.myDataLayoutControl;
-            this.txtKod.TabIndex = 12;
-            // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
@@ -237,20 +448,6 @@
             this.layoutControlItem1.Size = new System.Drawing.Size(250, 24);
             this.layoutControlItem1.Text = "Kod";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(85, 13);
-            // 
-            // txtHesapAdi
-            // 
-            this.txtHesapAdi.EnterMoveNextControl = true;
-            this.txtHesapAdi.Location = new System.Drawing.Point(109, 36);
-            this.txtHesapAdi.MenuManager = this.ribbonControl;
-            this.txtHesapAdi.Name = "txtHesapAdi";
-            this.txtHesapAdi.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtHesapAdi.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtHesapAdi.Properties.MaxLength = 50;
-            this.txtHesapAdi.Size = new System.Drawing.Size(199, 20);
-            this.txtHesapAdi.StatusBarAciklama = null;
-            this.txtHesapAdi.StyleController = this.myDataLayoutControl;
-            this.txtHesapAdi.TabIndex = 0;
             // 
             // layoutControlItem2
             // 
@@ -265,24 +462,6 @@
             this.layoutControlItem2.Text = "Hesap Adı";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(85, 13);
             // 
-            // txtHesapTuru
-            // 
-            this.txtHesapTuru.EnterMoveNextControl = true;
-            this.txtHesapTuru.Location = new System.Drawing.Point(109, 60);
-            this.txtHesapTuru.MenuManager = this.ribbonControl;
-            this.txtHesapTuru.Name = "txtHesapTuru";
-            this.txtHesapTuru.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtHesapTuru.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtHesapTuru.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtHesapTuru.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.txtHesapTuru.Size = new System.Drawing.Size(199, 20);
-            this.txtHesapTuru.StatusBarAciklama = null;
-            this.txtHesapTuru.StatusBarKisaYol = "F4 :";
-            this.txtHesapTuru.StatusBarKisaYolAciklama = null;
-            this.txtHesapTuru.StyleController = this.myDataLayoutControl;
-            this.txtHesapTuru.TabIndex = 1;
-            // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
@@ -296,25 +475,6 @@
             this.layoutControlItem3.Text = "Hesap Türü";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(85, 13);
             // 
-            // txtBanka
-            // 
-            this.txtBanka.EnterMoveNextControl = true;
-            this.txtBanka.Id = null;
-            this.txtBanka.Location = new System.Drawing.Point(109, 84);
-            this.txtBanka.MenuManager = this.ribbonControl;
-            this.txtBanka.Name = "txtBanka";
-            this.txtBanka.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtBanka.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtBanka.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.txtBanka.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.txtBanka.Size = new System.Drawing.Size(149, 20);
-            this.txtBanka.StatusBarAciklama = null;
-            this.txtBanka.StatusBarKisaYol = "F4 :";
-            this.txtBanka.StatusBarKisaYolAciklama = null;
-            this.txtBanka.StyleController = this.myDataLayoutControl;
-            this.txtBanka.TabIndex = 2;
-            // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
@@ -326,148 +486,6 @@
             this.layoutControlItem4.Size = new System.Drawing.Size(250, 24);
             this.layoutControlItem4.Text = "Banka";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(85, 13);
-            // 
-            // txtBankaSube
-            // 
-            this.txtBankaSube.EnterMoveNextControl = true;
-            this.txtBankaSube.Id = null;
-            this.txtBankaSube.Location = new System.Drawing.Point(109, 108);
-            this.txtBankaSube.MenuManager = this.ribbonControl;
-            this.txtBankaSube.Name = "txtBankaSube";
-            this.txtBankaSube.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtBankaSube.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtBankaSube.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.txtBankaSube.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.txtBankaSube.Size = new System.Drawing.Size(149, 20);
-            this.txtBankaSube.StatusBarAciklama = null;
-            this.txtBankaSube.StatusBarKisaYol = "F4 :";
-            this.txtBankaSube.StatusBarKisaYolAciklama = null;
-            this.txtBankaSube.StyleController = this.myDataLayoutControl;
-            this.txtBankaSube.TabIndex = 3;
-            // 
-            // txtHesapAcilisTarihi
-            // 
-            this.txtHesapAcilisTarihi.EditValue = null;
-            this.txtHesapAcilisTarihi.EnterMoveNextControl = true;
-            this.txtHesapAcilisTarihi.Location = new System.Drawing.Point(109, 132);
-            this.txtHesapAcilisTarihi.MenuManager = this.ribbonControl;
-            this.txtHesapAcilisTarihi.Name = "txtHesapAcilisTarihi";
-            this.txtHesapAcilisTarihi.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.False;
-            this.txtHesapAcilisTarihi.Properties.Appearance.Options.UseTextOptions = true;
-            this.txtHesapAcilisTarihi.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.txtHesapAcilisTarihi.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtHesapAcilisTarihi.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtHesapAcilisTarihi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtHesapAcilisTarihi.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtHesapAcilisTarihi.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.DateTimeMaskManager));
-            this.txtHesapAcilisTarihi.Properties.MaskSettings.Set("useAdvancingCaret", true);
-            this.txtHesapAcilisTarihi.Size = new System.Drawing.Size(149, 20);
-            this.txtHesapAcilisTarihi.StatusBarAciklama = null;
-            this.txtHesapAcilisTarihi.StatusBarKisaYol = "F4 :";
-            this.txtHesapAcilisTarihi.StatusBarKisaYolAciklama = "Tarih Seç :";
-            this.txtHesapAcilisTarihi.StyleController = this.myDataLayoutControl;
-            this.txtHesapAcilisTarihi.TabIndex = 4;
-            // 
-            // txtHesapNo
-            // 
-            this.txtHesapNo.EnterMoveNextControl = true;
-            this.txtHesapNo.Location = new System.Drawing.Point(109, 180);
-            this.txtHesapNo.MenuManager = this.ribbonControl;
-            this.txtHesapNo.Name = "txtHesapNo";
-            this.txtHesapNo.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtHesapNo.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtHesapNo.Properties.MaxLength = 50;
-            this.txtHesapNo.Size = new System.Drawing.Size(149, 20);
-            this.txtHesapNo.StatusBarAciklama = null;
-            this.txtHesapNo.StyleController = this.myDataLayoutControl;
-            this.txtHesapNo.TabIndex = 6;
-            // 
-            // txtIbanNo
-            // 
-            this.txtIbanNo.EnterMoveNextControl = true;
-            this.txtIbanNo.Location = new System.Drawing.Point(109, 204);
-            this.txtIbanNo.MenuManager = this.ribbonControl;
-            this.txtIbanNo.Name = "txtIbanNo";
-            this.txtIbanNo.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtIbanNo.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtIbanNo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
-            this.txtIbanNo.Properties.MaskSettings.Set("mask", "TR\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?");
-            this.txtIbanNo.Properties.MaskSettings.Set("isAutoComplete", false);
-            this.txtIbanNo.Properties.MaskSettings.Set("isOptimistic", false);
-            this.txtIbanNo.Properties.MaxLength = 50;
-            this.txtIbanNo.Size = new System.Drawing.Size(199, 20);
-            this.txtIbanNo.StatusBarAciklama = "Iban No Giriniz";
-            this.txtIbanNo.StyleController = this.myDataLayoutControl;
-            this.txtIbanNo.TabIndex = 7;
-            // 
-            // myTextEdit3
-            // 
-            this.myTextEdit3.EnterMoveNextControl = true;
-            this.myTextEdit3.Location = new System.Drawing.Point(109, 156);
-            this.myTextEdit3.MenuManager = this.ribbonControl;
-            this.myTextEdit3.Name = "myTextEdit3";
-            this.myTextEdit3.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.myTextEdit3.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.myTextEdit3.Properties.MaxLength = 50;
-            this.myTextEdit3.Size = new System.Drawing.Size(149, 20);
-            this.myTextEdit3.StatusBarAciklama = null;
-            this.myTextEdit3.StyleController = this.myDataLayoutControl;
-            this.myTextEdit3.TabIndex = 5;
-            // 
-            // txtOzelKod1
-            // 
-            this.txtOzelKod1.EnterMoveNextControl = true;
-            this.txtOzelKod1.Id = null;
-            this.txtOzelKod1.Location = new System.Drawing.Point(417, 180);
-            this.txtOzelKod1.MenuManager = this.ribbonControl;
-            this.txtOzelKod1.Name = "txtOzelKod1";
-            this.txtOzelKod1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtOzelKod1.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtOzelKod1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.txtOzelKod1.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.txtOzelKod1.Size = new System.Drawing.Size(149, 20);
-            this.txtOzelKod1.StatusBarAciklama = null;
-            this.txtOzelKod1.StatusBarKisaYol = "F4 :";
-            this.txtOzelKod1.StatusBarKisaYolAciklama = null;
-            this.txtOzelKod1.StyleController = this.myDataLayoutControl;
-            this.txtOzelKod1.TabIndex = 8;
-            // 
-            // txtOzelKod2
-            // 
-            this.txtOzelKod2.EnterMoveNextControl = true;
-            this.txtOzelKod2.Id = null;
-            this.txtOzelKod2.Location = new System.Drawing.Point(417, 204);
-            this.txtOzelKod2.MenuManager = this.ribbonControl;
-            this.txtOzelKod2.Name = "txtOzelKod2";
-            this.txtOzelKod2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtOzelKod2.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtOzelKod2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.txtOzelKod2.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.txtOzelKod2.Size = new System.Drawing.Size(149, 20);
-            this.txtOzelKod2.StatusBarAciklama = null;
-            this.txtOzelKod2.StatusBarKisaYol = "F4 :";
-            this.txtOzelKod2.StatusBarKisaYolAciklama = null;
-            this.txtOzelKod2.StyleController = this.myDataLayoutControl;
-            this.txtOzelKod2.TabIndex = 9;
-            // 
-            // txtAciklama
-            // 
-            this.txtAciklama.EnterMoveNextControl = true;
-            this.txtAciklama.Location = new System.Drawing.Point(109, 228);
-            this.txtAciklama.MenuManager = this.ribbonControl;
-            this.txtAciklama.Name = "txtAciklama";
-            this.txtAciklama.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtAciklama.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtAciklama.Properties.MaxLength = 500;
-            this.txtAciklama.Size = new System.Drawing.Size(457, 30);
-            this.txtAciklama.StatusBarAciklama = "Açıklama Giriniz";
-            this.txtAciklama.StyleController = this.myDataLayoutControl;
-            this.txtAciklama.TabIndex = 10;
             // 
             // layoutControlItem12
             // 
@@ -481,24 +499,6 @@
             this.layoutControlItem12.Size = new System.Drawing.Size(558, 34);
             this.layoutControlItem12.Text = "Açıklama";
             this.layoutControlItem12.TextSize = new System.Drawing.Size(85, 13);
-            // 
-            // tglDurum
-            // 
-            this.tglDurum.EnterMoveNextControl = true;
-            this.tglDurum.Location = new System.Drawing.Point(320, 12);
-            this.tglDurum.MenuManager = this.ribbonControl;
-            this.tglDurum.Name = "tglDurum";
-            this.tglDurum.Properties.Appearance.ForeColor = System.Drawing.Color.Maroon;
-            this.tglDurum.Properties.Appearance.Options.UseForeColor = true;
-            this.tglDurum.Properties.AutoHeight = false;
-            this.tglDurum.Properties.AutoWidth = true;
-            this.tglDurum.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.tglDurum.Properties.OffText = "Pasif";
-            this.tglDurum.Properties.OnText = "Aktif";
-            this.tglDurum.Size = new System.Drawing.Size(77, 20);
-            this.tglDurum.StatusBarAciklama = " Kartın kullanım durumunu seçiniz";
-            this.tglDurum.StyleController = this.myDataLayoutControl;
-            this.tglDurum.TabIndex = 11;
             // 
             // layoutControlItem13
             // 
@@ -561,17 +561,17 @@
             this.layoutControlItem7.Text = "Hesap No";
             this.layoutControlItem7.TextSize = new System.Drawing.Size(85, 13);
             // 
-            // txtMusteriNo
+            // lblMusteriNo
             // 
-            this.txtMusteriNo.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
-            this.txtMusteriNo.AppearanceItemCaption.Options.UseForeColor = true;
-            this.txtMusteriNo.Control = this.myTextEdit3;
-            this.txtMusteriNo.Location = new System.Drawing.Point(0, 144);
-            this.txtMusteriNo.Name = "txtMusteriNo";
-            this.txtMusteriNo.OptionsTableLayoutItem.RowIndex = 6;
-            this.txtMusteriNo.Size = new System.Drawing.Size(250, 24);
-            this.txtMusteriNo.Text = "Müşteri No";
-            this.txtMusteriNo.TextSize = new System.Drawing.Size(85, 13);
+            this.lblMusteriNo.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.lblMusteriNo.AppearanceItemCaption.Options.UseForeColor = true;
+            this.lblMusteriNo.Control = this.txtMusteriNo;
+            this.lblMusteriNo.Location = new System.Drawing.Point(0, 144);
+            this.lblMusteriNo.Name = "lblMusteriNo";
+            this.lblMusteriNo.OptionsTableLayoutItem.RowIndex = 6;
+            this.lblMusteriNo.Size = new System.Drawing.Size(250, 24);
+            this.lblMusteriNo.Text = "Müşteri No";
+            this.lblMusteriNo.TextSize = new System.Drawing.Size(85, 13);
             // 
             // layoutControlItem11
             // 
@@ -614,32 +614,32 @@
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myDataLayoutControl)).EndInit();
             this.myDataLayoutControl.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKod.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtHesapAdi.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtHesapTuru.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBanka.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBankaSube.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tglDurum.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAciklama.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOzelKod2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOzelKod1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMusteriNo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIbanNo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHesapNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHesapAcilisTarihi.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHesapAcilisTarihi.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtHesapNo.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtIbanNo.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myTextEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtOzelKod1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtOzelKod2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAciklama.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBankaSube.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBanka.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHesapTuru.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHesapAdi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKod.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tglDurum.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMusteriNo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblMusteriNo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
             this.ResumeLayout(false);
@@ -665,7 +665,7 @@
         private UserControls.Controls.MyTextEdit txtHesapNo;
         private UserControls.Controls.MyButtonEdit txtOzelKod2;
         private UserControls.Controls.MyButtonEdit txtOzelKod1;
-        private UserControls.Controls.MyTextEdit myTextEdit3;
+        private UserControls.Controls.MyTextEdit txtMusteriNo;
         private UserControls.Controls.MyMemoEdit txtAciklama;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem12;
         private UserControls.Controls.MyToogleSwitch tglDurum;
@@ -674,7 +674,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
-        private DevExpress.XtraLayout.LayoutControlItem txtMusteriNo;
+        private DevExpress.XtraLayout.LayoutControlItem lblMusteriNo;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
     }

@@ -192,6 +192,18 @@
     <Compile Include="Forms\FiltreForms\FiltreListForm.Designer.cs">
       <DependentUpon>FiltreListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FirmaForms\FirmaEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FirmaForms\FirmaEditForm.Designer.cs">
+      <DependentUpon>FirmaEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FirmaForms\FirmaListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FirmaForms\FirmaListForm.Designer.cs">
+      <DependentUpon>FirmaListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\GabariForms\GabariEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -251,6 +263,30 @@
     </Compile>
     <Compile Include="Forms\KasaForms\KasaListForm.Designer.cs">
       <DependentUpon>KasaListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MarkaForms\MarkaEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MarkaForms\MarkaEditForm.Designer.cs">
+      <DependentUpon>MarkaEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MarkaForms\MarkaListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MarkaForms\MarkaListForm.Designer.cs">
+      <DependentUpon>MarkaListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModelForms\ModelEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModelForms\ModelEditForm.Designer.cs">
+      <DependentUpon>ModelEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModelForms\ModelListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModelForms\ModelListForm.Designer.cs">
+      <DependentUpon>ModelListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MusteriBilgiForms\MusteriBilgiEditForm.cs">
       <SubType>Form</SubType>
@@ -529,6 +565,12 @@
     <EmbeddedResource Include="Forms\FiltreForms\FiltreListForm.resx">
       <DependentUpon>FiltreListForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FirmaForms\FirmaEditForm.resx">
+      <DependentUpon>FirmaEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FirmaForms\FirmaListForm.resx">
+      <DependentUpon>FirmaListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\GabariForms\GabariEditForm.resx">
       <DependentUpon>GabariEditForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -558,6 +600,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\KasaForms\KasaListForm.resx">
       <DependentUpon>KasaListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MarkaForms\MarkaEditForm.resx">
+      <DependentUpon>MarkaEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MarkaForms\MarkaListForm.resx">
+      <DependentUpon>MarkaListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModelForms\ModelEditForm.resx">
+      <DependentUpon>ModelEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModelForms\ModelListForm.resx">
+      <DependentUpon>ModelListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MusteriBilgiForms\MusteriBilgiEditForm.resx">
       <DependentUpon>MusteriBilgiEditForm.cs</DependentUpon>
@@ -1045,7 +1099,12 @@
   <ItemGroup>
     <None Include="Resources\salesperiodmonth_16x16.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\currency_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\currency_16x16.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

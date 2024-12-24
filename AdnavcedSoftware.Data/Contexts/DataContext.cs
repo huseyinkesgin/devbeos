@@ -50,6 +50,10 @@ namespace AdnavcedSoftware.Data.Contexts
         public DbSet<Banka> Banka { get; set; }
         public DbSet<BankaSube> BankaSube { get; set; }
         public DbSet<BankaHesap> BankaHesap { get; set; }
+        public DbSet<Firma> Firma { get; set; }
+        public DbSet<Marka> Marka { get; set; }
+
+        public DbSet<Model> Model { get; set; }
 
     }
 
