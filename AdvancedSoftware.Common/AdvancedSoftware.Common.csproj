@@ -173,6 +173,7 @@
     <Compile Include="Enums\IslemTuru.cs" />
     <Compile Include="Enums\IsyeriTuru.cs" />
     <Compile Include="Enums\KartTuru.cs" />
+    <Compile Include="Enums\KategoriTuru.cs" />
     <Compile Include="Enums\KiraciVarmi.cs" />
     <Compile Include="Enums\KrediDurum.cs" />
     <Compile Include="Enums\KrediyeUygunluk.cs" />

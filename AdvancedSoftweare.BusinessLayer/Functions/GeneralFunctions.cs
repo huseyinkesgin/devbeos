@@ -13,6 +13,7 @@ namespace AdvancedSoftweare.BusinessLayer.Functions
         public static IList<string> DegisenAlanlariGetir<T>(this T oldEntity, T currentEntity)
         {
             List<string> alanlar = new List<string>();
+
             foreach (var prop in currentEntity.GetType().GetProperties())
             {
                 if (prop.PropertyType.Namespace == "System.Collections.Generic")
@@ -22,11 +23,11 @@ namespace AdvancedSoftweare.BusinessLayer.Functions
 
                 if (prop.PropertyType == typeof(byte[]))
                 {
-                    if (string.IsNullOrEmpty(oldEntity.ToString()))
+                    if (string.IsNullOrEmpty(oldValue.ToString()))
                     {
                         oldValue = new byte[] { 0 };
                     }
-                    if (string.IsNullOrEmpty(currentEntity.ToString()))
+                    if (string.IsNullOrEmpty(currentValue.ToString()))
                     {
                         currentValue = new byte[] { 0 };
                     }

@@ -44,9 +44,9 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
 
                 if (prop.PropertyType == typeof(byte[]))
                 {
-                    if (string.IsNullOrEmpty(oldEntity.ToString()))
+                    if (string.IsNullOrEmpty(oldValue.ToString()))
                         oldValue = new byte[] { 0 };
-                    if (string.IsNullOrEmpty(currentEntity.ToString()))
+                    if (string.IsNullOrEmpty(currentValue.ToString()))
                         currentValue = new byte[] { 0 };
 
                     if (((byte[])oldValue).Length != ((byte[])currentValue).Length)

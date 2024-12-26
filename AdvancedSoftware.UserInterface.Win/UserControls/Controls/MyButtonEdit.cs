@@ -37,7 +37,7 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.Controls
                 var oldValue = _id;
                 var newValue = value;
 
-                if (newValue == oldValue) return;
+                if (newValue.HasValue && oldValue.HasValue && newValue == oldValue) return;
                 _id = value;
                 IdChanged(this, new IdChangedEventArgs(oldValue, newValue));
                 EnabledChange(this, EventArgs.Empty);
@@ -45,6 +45,7 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.Controls
         }
         public event EventHandler<IdChangedEventArgs> IdChanged = delegate { }; 
         public event EventHandler EnabledChange = delegate { };
+
         #endregion
     }
     public class IdChangedEventArgs : EventArgs 

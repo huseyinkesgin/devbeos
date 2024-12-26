@@ -1,6 +1,6 @@
 ﻿namespace AdvancedSoftware.UserInterface.Win.Forms.MusteriGrupForms
 {
-    partial class MusteriGrupListForm
+    partial class KategoriListForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MusteriGrupListForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KategoriListForm));
             this.longNavigator = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Navigators.longNavigator();
             this.grid = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridControl();
             this.tablo = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridView();
             this.colId = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colKod = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
-            this.colMusteriGrubu = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
+            this.colKategoriAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colAciklama = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
@@ -44,6 +44,14 @@
             // ribbonControl
             // 
             this.ribbonControl.ExpandCollapseItem.Id = 0;
+            // 
+            // 
+            // 
+            this.ribbonControl.SearchEditItem.AccessibleName = "Search Item";
+            this.ribbonControl.SearchEditItem.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Left;
+            this.ribbonControl.SearchEditItem.EditWidth = 150;
+            this.ribbonControl.SearchEditItem.Id = -5000;
+            this.ribbonControl.SearchEditItem.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.ribbonControl.Size = new System.Drawing.Size(911, 135);
             this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             // 
@@ -85,7 +93,7 @@
             this.tablo.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colId,
             this.colKod,
-            this.colMusteriGrubu,
+            this.colKategoriAdi,
             this.colAciklama});
             this.tablo.GridControl = this.grid;
             this.tablo.Name = "tablo";
@@ -132,18 +140,18 @@
             this.colKod.Visible = true;
             this.colKod.VisibleIndex = 0;
             // 
-            // colMusteriGrubu
+            // colKategoriAdi
             // 
-            this.colMusteriGrubu.Caption = "Grup Adı";
-            this.colMusteriGrubu.FieldName = "MusteriGrubu";
-            this.colMusteriGrubu.Name = "colMusteriGrubu";
-            this.colMusteriGrubu.OptionsColumn.AllowEdit = false;
-            this.colMusteriGrubu.StatusBarAciklama = null;
-            this.colMusteriGrubu.StatusBarKisaYol = null;
-            this.colMusteriGrubu.StatusBarKisaYolAciklama = null;
-            this.colMusteriGrubu.Visible = true;
-            this.colMusteriGrubu.VisibleIndex = 1;
-            this.colMusteriGrubu.Width = 138;
+            this.colKategoriAdi.Caption = "Kategori";
+            this.colKategoriAdi.FieldName = "KategoriAdi";
+            this.colKategoriAdi.Name = "colKategoriAdi";
+            this.colKategoriAdi.OptionsColumn.AllowEdit = false;
+            this.colKategoriAdi.StatusBarAciklama = null;
+            this.colKategoriAdi.StatusBarKisaYol = null;
+            this.colKategoriAdi.StatusBarKisaYolAciklama = null;
+            this.colKategoriAdi.Visible = true;
+            this.colKategoriAdi.VisibleIndex = 1;
+            this.colKategoriAdi.Width = 138;
             // 
             // colAciklama
             // 
@@ -158,7 +166,7 @@
             this.colAciklama.VisibleIndex = 2;
             this.colAciklama.Width = 160;
             // 
-            // MusteriGrupListForm
+            // KategoriListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -166,7 +174,7 @@
             this.Controls.Add(this.grid);
             this.Controls.Add(this.longNavigator);
             this.IconOptions.ShowIcon = false;
-            this.Name = "MusteriGrupListForm";
+            this.Name = "KategoriListForm";
             this.Text = "MÜŞTERİ GRUP KARTLARI";
             this.Controls.SetChildIndex(this.ribbonControl, 0);
             this.Controls.SetChildIndex(this.longNavigator, 0);
@@ -186,7 +194,7 @@
         private UserControls.Controls.Grid.MyGridView tablo;
         private UserControls.Controls.Grid.MyGridColumn colId;
         private UserControls.Controls.Grid.MyGridColumn colKod;
-        private UserControls.Controls.Grid.MyGridColumn colMusteriGrubu;
+        private UserControls.Controls.Grid.MyGridColumn colKategoriAdi;
         private UserControls.Controls.Grid.MyGridColumn colAciklama;
     }
 }

@@ -79,7 +79,7 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
             if (e.Item == btnIsitma)
                 ShowListForms<IsitmaListForm>.ShowListForm(KartTuru.Isitma);
             if (e.Item == btnMusteriGrup)
-                ShowListForms<MusteriGrupListForm>.ShowListForm(KartTuru.Kategori);
+                ShowListForms<KategoriListForm>.ShowListForm(KartTuru.Kategori);
             if (e.Item == btnDepartman)
                 ShowListForms<DepartmanListForm>.ShowListForm(KartTuru.Departman);
             if (e.Item == btnUnvan)

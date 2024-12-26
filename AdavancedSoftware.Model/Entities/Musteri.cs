@@ -1,13 +1,8 @@
 ﻿using AdavancedSoftware.Model.Attributes;
 using AdavancedSoftware.Model.Entities.Base;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AdvancedSoftware.Common.Enums;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AdavancedSoftware.Model.Entities
 {
@@ -18,8 +13,8 @@ namespace AdavancedSoftware.Model.Entities
 
         public MusteriTuru MusteriTuru { get; set; } = MusteriTuru.Bireysel;
 
-        [ZorunluAlan("Kategori Adı", "txtKategoriAdi")]
-        public long KategoriId { get; set; }
+        
+        public long? KategoriId { get; set; }
 
         [Required, StringLength(50), ZorunluAlan("Müşteri Adı", "txtAd")]
         public string Ad { get; set; }
@@ -28,10 +23,9 @@ namespace AdavancedSoftware.Model.Entities
         public string Eposta { get; set; }
         public string Telefon { get; set; }
 
-        [ZorunluAlan("İl", "txtIl")]
+       
         public long IlId { get; set; }
 
-        [ZorunluAlan("İlçe", "txtIlce")]
         public long IlceId { get; set; }
         public string Adres { get; set; }
         
@@ -75,13 +69,6 @@ namespace AdavancedSoftware.Model.Entities
         public OzelKod OzelKod5 { get; set; }
 
 
-        [NotMapped]
-        public string AdSoyad
-        {
-            get
-            {
-                return Ad + " " + Soyad;
-            }
-        }
+       
     }
 }

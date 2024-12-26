@@ -312,17 +312,17 @@
     <Compile Include="Forms\MusteriForms\MusteriListForm.Designer.cs">
       <DependentUpon>MusteriListForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MusteriGrupForms\MusteriGrupEditForm.cs">
+    <Compile Include="Forms\KategoriForms\KategoriEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MusteriGrupForms\MusteriGrupEditForm.Designer.cs">
-      <DependentUpon>MusteriGrupEditForm.cs</DependentUpon>
+    <Compile Include="Forms\KategoriForms\KategoriEditForm.Designer.cs">
+      <DependentUpon>KategoriEditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MusteriGrupForms\MusteriGrupListForm.cs">
+    <Compile Include="Forms\KategoriForms\KategoriListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MusteriGrupForms\MusteriGrupListForm.Designer.cs">
-      <DependentUpon>MusteriGrupListForm.cs</DependentUpon>
+    <Compile Include="Forms\KategoriForms\KategoriListForm.Designer.cs">
+      <DependentUpon>KategoriListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\OfisForms\OfisEditForm.cs">
       <SubType>Form</SubType>
@@ -631,11 +631,11 @@
     <EmbeddedResource Include="Forms\MusteriForms\MusteriListForm.resx">
       <DependentUpon>MusteriListForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MusteriGrupForms\MusteriGrupEditForm.resx">
-      <DependentUpon>MusteriGrupEditForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\KategoriForms\KategoriEditForm.resx">
+      <DependentUpon>KategoriEditForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MusteriGrupForms\MusteriGrupListForm.resx">
-      <DependentUpon>MusteriGrupListForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\KategoriForms\KategoriListForm.resx">
+      <DependentUpon>KategoriListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\OfisForms\OfisEditForm.resx">
       <DependentUpon>OfisEditForm.cs</DependentUpon>

@@ -41,8 +41,8 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.MusteriForms
 
             txtKod.Text = entity.Kod;
             txtMusteriTuru.SelectedItem = entity.MusteriTuru.ToName();
-            txtKategoriAdi.Id = entity.KategoriId;
-            txtKategoriAdi.Text = entity.KategoriAdi;
+            txtKategori.Id = entity.KategoriId;
+            txtKategori.Text = entity.KategoriAdi;
             txtAd.Text = entity.Ad;
             txtSoyad.Text = entity.Soyad;
             txtEposta.Text = entity.Eposta;
@@ -83,12 +83,12 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.MusteriForms
                 Id = Id,
                 Kod = txtKod.Text,
                 MusteriTuru = txtMusteriTuru.Text.GetEnum<MusteriTuru>(),
-                KategoriId = Convert.ToInt64(txtKategoriAdi.Id),
+                KategoriId = txtKategori.Id,
                 Ad = txtAd.Text,
                 Soyad = txtSoyad.Text,
                 Eposta = txtEposta.Text,
                 Telefon = txtTelefon.Text,
-                IlId = Convert.ToInt64(txtKategoriAdi.Id),
+                IlId = Convert.ToInt64(txtIl.Id),
                 IlceId = Convert.ToInt64(txtIlce.Id),
                 Adres = txtAdres.Text,
                 FirmaId = txtFirma.Id,
@@ -132,8 +132,8 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.MusteriForms
                     sec.Sec(txtIl);
                 else if (sender == txtIlce)
                     sec.Sec(txtIlce, txtIl);
-                else if (sender == txtKategoriAdi)
-                    sec.Sec(txtKategoriAdi,KartTuru.Musteri);
+                else if (sender == txtKategori)
+                    sec.Sec(txtKategori, KartTuru.Musteri);
                 else if (sender == txtFirma)
                     sec.Sec(txtFirma, KartTuru.Musteri);
                 else if (sender == txtOzelKod1)
@@ -150,6 +150,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.MusteriForms
 
         protected override void Control_EnabledChange(object sender, EventArgs e)
         {
+            if(!IsLoaded) return;
             if (sender != txtIl)
                 return;
             txtIl.ControlEnabledChange(txtIlce);

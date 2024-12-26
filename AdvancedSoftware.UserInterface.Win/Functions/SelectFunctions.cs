@@ -94,17 +94,7 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
                     }
                     break;
 
-                case "txtKategoriAdi":
-                    {
-                        var entity = (Kategori)ShowListForms<MusteriGrupListForm>.ShowDialogListForm(KartTuru.Kategori, _btnEdit.Id);
-                        if (entity != null)
-                        {
-                            _btnEdit.Id = entity.Id;
-                            _btnEdit.EditValue = entity.KategoriAdi;
-                        }
-                    }
-                    break;
-
+            
                 case "txtOzelKod1":
                     {
                         var entity = (OzelKod)ShowListForms<OzelKodListForm>.ShowDialogListForm(KartTuru.OzelKod, _btnEdit.Id,OzelKodTuru.OzelKod1,_kartTuru);
@@ -187,6 +177,17 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
                         {
                             _btnEdit.Id = entity.Id;
                             _btnEdit.EditValue = entity.FirmaAdi;
+                        }
+                    }
+                    break;
+
+                case "txtKategori":
+                    {
+                        var entity = (Kategori)ShowListForms<KategoriListForm>.ShowDialogListForm(KartTuru.Kategori, _btnEdit.Id, KategoriTuru.Kategori, _kartTuru);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.KategoriAdi;
                         }
                     }
                     break;

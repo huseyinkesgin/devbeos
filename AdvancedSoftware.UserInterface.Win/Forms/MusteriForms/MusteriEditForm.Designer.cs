@@ -66,7 +66,7 @@
             this.txtAdres = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyMemoEdit();
             this.txtIlce = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyButtonEdit();
             this.txtIl = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyButtonEdit();
-            this.txtKategoriAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyButtonEdit();
+            this.txtKategori = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyButtonEdit();
             this.txtMusteriTuru = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyComboBoxEdit();
             this.txtTelefon = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyTelefonNoTextEdit();
             this.txtEposta = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyEmailTextEdit();
@@ -126,7 +126,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtAdres.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIlce.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIl.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKategoriAdi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKategori.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMusteriTuru.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTelefon.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEposta.Properties)).BeginInit();
@@ -202,7 +202,7 @@
             this.myDataLayoutControl.Controls.Add(this.txtAdres);
             this.myDataLayoutControl.Controls.Add(this.txtIlce);
             this.myDataLayoutControl.Controls.Add(this.txtIl);
-            this.myDataLayoutControl.Controls.Add(this.txtKategoriAdi);
+            this.myDataLayoutControl.Controls.Add(this.txtKategori);
             this.myDataLayoutControl.Controls.Add(this.txtMusteriTuru);
             this.myDataLayoutControl.Controls.Add(this.txtTelefon);
             this.myDataLayoutControl.Controls.Add(this.txtEposta);
@@ -550,24 +550,24 @@
             this.txtIl.StyleController = this.myDataLayoutControl;
             this.txtIl.TabIndex = 5;
             // 
-            // txtKategoriAdi
+            // txtKategori
             // 
-            this.txtKategoriAdi.EnterMoveNextControl = true;
-            this.txtKategoriAdi.Id = null;
-            this.txtKategoriAdi.Location = new System.Drawing.Point(85, 60);
-            this.txtKategoriAdi.MenuManager = this.ribbonControl;
-            this.txtKategoriAdi.Name = "txtKategoriAdi";
-            this.txtKategoriAdi.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtKategoriAdi.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtKategoriAdi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.txtKategori.EnterMoveNextControl = true;
+            this.txtKategori.Id = null;
+            this.txtKategori.Location = new System.Drawing.Point(85, 60);
+            this.txtKategori.MenuManager = this.ribbonControl;
+            this.txtKategori.Name = "txtKategori";
+            this.txtKategori.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtKategori.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtKategori.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.txtKategoriAdi.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.txtKategoriAdi.Size = new System.Drawing.Size(143, 20);
-            this.txtKategoriAdi.StatusBarAciklama = null;
-            this.txtKategoriAdi.StatusBarKisaYol = "F4 :";
-            this.txtKategoriAdi.StatusBarKisaYolAciklama = null;
-            this.txtKategoriAdi.StyleController = this.myDataLayoutControl;
-            this.txtKategoriAdi.TabIndex = 1;
+            this.txtKategori.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.txtKategori.Size = new System.Drawing.Size(143, 20);
+            this.txtKategori.StatusBarAciklama = null;
+            this.txtKategori.StatusBarKisaYol = "F4 :";
+            this.txtKategori.StatusBarKisaYolAciklama = null;
+            this.txtKategori.StyleController = this.myDataLayoutControl;
+            this.txtKategori.TabIndex = 1;
             // 
             // txtMusteriTuru
             // 
@@ -836,12 +836,12 @@
             // 
             this.layoutControlItem8.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
             this.layoutControlItem8.AppearanceItemCaption.Options.UseForeColor = true;
-            this.layoutControlItem8.Control = this.txtKategoriAdi;
+            this.layoutControlItem8.Control = this.txtKategori;
             this.layoutControlItem8.Location = new System.Drawing.Point(0, 48);
             this.layoutControlItem8.Name = "layoutControlItem8";
             this.layoutControlItem8.OptionsTableLayoutItem.RowIndex = 2;
             this.layoutControlItem8.Size = new System.Drawing.Size(220, 24);
-            this.layoutControlItem8.Text = "Müşteri Grup";
+            this.layoutControlItem8.Text = "Kategori";
             this.layoutControlItem8.TextSize = new System.Drawing.Size(61, 13);
             // 
             // layoutControlItem20
@@ -1160,7 +1160,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtAdres.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIlce.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIl.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKategoriAdi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKategori.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMusteriTuru.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTelefon.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEposta.Properties)).EndInit();
@@ -1220,7 +1220,7 @@
         private UserControls.Controls.MyMemoEdit txtAdres;
         private UserControls.Controls.MyButtonEdit txtIlce;
         private UserControls.Controls.MyButtonEdit txtIl;
-        private UserControls.Controls.MyButtonEdit txtKategoriAdi;
+        private UserControls.Controls.MyButtonEdit txtKategori;
         private UserControls.Controls.MyTextEdit txtInstagram;
         private UserControls.Controls.MyTextEdit txtFacebook;
         private UserControls.Controls.MyTextEdit txtWebsitesi;

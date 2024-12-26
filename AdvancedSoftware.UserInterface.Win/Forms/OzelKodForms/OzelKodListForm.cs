@@ -17,10 +17,10 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.OzelKod
         {
             InitializeComponent();
 
-            Bll = new OzelKodBll();
-
             _ozelKodTuru = (OzelKodTuru)prm[0];
             _ozelKodKartTuru = (KartTuru)prm[1];
+
+            Bll = new OzelKodBll();
         }
 
         protected override void DesgiskenleriDoldur()

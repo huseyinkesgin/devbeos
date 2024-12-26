@@ -1,6 +1,6 @@
 ﻿namespace AdvancedSoftware.UserInterface.Win.Forms.MusteriGrupForms
 {
-    partial class MusteriGrupEditForm
+    partial class KategoriEditForm
     {
         /// <summary>
         /// Required designer variable.
@@ -91,13 +91,13 @@
             // txtAciklama
             // 
             this.txtAciklama.EnterMoveNextControl = true;
-            this.txtAciklama.Location = new System.Drawing.Point(91, 60);
+            this.txtAciklama.Location = new System.Drawing.Point(82, 60);
             this.txtAciklama.MenuManager = this.ribbonControl;
             this.txtAciklama.Name = "txtAciklama";
             this.txtAciklama.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtAciklama.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtAciklama.Properties.MaxLength = 500;
-            this.txtAciklama.Size = new System.Drawing.Size(370, 43);
+            this.txtAciklama.Size = new System.Drawing.Size(379, 43);
             this.txtAciklama.StatusBarAciklama = "Açıklama Giriniz";
             this.txtAciklama.StyleController = this.myDataLayoutControl;
             this.txtAciklama.TabIndex = 1;
@@ -123,13 +123,13 @@
             // txtKategoriAdi
             // 
             this.txtKategoriAdi.EnterMoveNextControl = true;
-            this.txtKategoriAdi.Location = new System.Drawing.Point(91, 36);
+            this.txtKategoriAdi.Location = new System.Drawing.Point(82, 36);
             this.txtKategoriAdi.MenuManager = this.ribbonControl;
             this.txtKategoriAdi.Name = "txtKategoriAdi";
             this.txtKategoriAdi.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtKategoriAdi.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtKategoriAdi.Properties.MaxLength = 50;
-            this.txtKategoriAdi.Size = new System.Drawing.Size(370, 20);
+            this.txtKategoriAdi.Size = new System.Drawing.Size(379, 20);
             this.txtKategoriAdi.StatusBarAciklama = null;
             this.txtKategoriAdi.StyleController = this.myDataLayoutControl;
             this.txtKategoriAdi.TabIndex = 0;
@@ -137,7 +137,7 @@
             // txtKod
             // 
             this.txtKod.EnterMoveNextControl = true;
-            this.txtKod.Location = new System.Drawing.Point(91, 12);
+            this.txtKod.Location = new System.Drawing.Point(82, 12);
             this.txtKod.MenuManager = this.ribbonControl;
             this.txtKod.Name = "txtKod";
             this.txtKod.Properties.Appearance.BackColor = System.Drawing.Color.PaleGoldenrod;
@@ -147,7 +147,7 @@
             this.txtKod.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtKod.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtKod.Properties.MaxLength = 20;
-            this.txtKod.Size = new System.Drawing.Size(117, 20);
+            this.txtKod.Size = new System.Drawing.Size(126, 20);
             this.txtKod.StatusBarAciklama = "Kod giriniz";
             this.txtKod.StyleController = this.myDataLayoutControl;
             this.txtKod.TabIndex = 3;
@@ -195,7 +195,7 @@
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(200, 24);
             this.layoutControlItem1.Text = "Kod";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(67, 13);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(58, 13);
             // 
             // layoutControlItem2
             // 
@@ -207,8 +207,8 @@
             this.layoutControlItem2.OptionsTableLayoutItem.ColumnSpan = 3;
             this.layoutControlItem2.OptionsTableLayoutItem.RowIndex = 1;
             this.layoutControlItem2.Size = new System.Drawing.Size(453, 24);
-            this.layoutControlItem2.Text = "Müsteri Grubu";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(67, 13);
+            this.layoutControlItem2.Text = "Kategori Adı";
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(58, 13);
             // 
             // layoutControlItem3
             // 
@@ -233,9 +233,9 @@
             this.layoutControlItem4.OptionsTableLayoutItem.RowIndex = 2;
             this.layoutControlItem4.Size = new System.Drawing.Size(453, 47);
             this.layoutControlItem4.Text = "Açıklama";
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(67, 13);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(58, 13);
             // 
-            // MusteriGrupEditForm
+            // KategoriEditForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -243,8 +243,8 @@
             this.Controls.Add(this.myDataLayoutControl);
             this.IconOptions.ShowIcon = false;
             this.MinimumSize = new System.Drawing.Size(475, 275);
-            this.Name = "MusteriGrupEditForm";
-            this.Text = "MÜŞTERİ GRUP KARTI";
+            this.Name = "KategoriEditForm";
+            this.Text = "KATEGORİ KARTI";
             this.Controls.SetChildIndex(this.ribbonControl, 0);
             this.Controls.SetChildIndex(this.myDataLayoutControl, 0);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
