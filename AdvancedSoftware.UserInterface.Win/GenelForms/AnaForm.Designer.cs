@@ -48,7 +48,7 @@
             this.btnGabari = new DevExpress.XtraBars.BarButtonItem();
             this.btnIsitma = new DevExpress.XtraBars.BarButtonItem();
             this.btnTapuTipi = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem17 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnMusteri = new DevExpress.XtraBars.BarButtonItem();
             this.btnMusteriGrup = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem19 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem20 = new DevExpress.XtraBars.BarButtonItem();
@@ -63,6 +63,7 @@
             this.btnBanka = new DevExpress.XtraBars.BarButtonItem();
             this.btnBankaHesap = new DevExpress.XtraBars.BarButtonItem();
             this.btnFirma = new DevExpress.XtraBars.BarButtonItem();
+            this.btnMarka = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageOfis = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageFinans = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -84,7 +85,6 @@
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.btnKargoFirmasi = new DevExpress.XtraBars.BarButtonItem();
-            this.btnMarka = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).BeginInit();
             this.SuspendLayout();
@@ -112,7 +112,7 @@
             this.btnGabari,
             this.btnIsitma,
             this.btnTapuTipi,
-            this.barButtonItem17,
+            this.btnMusteri,
             this.btnMusteriGrup,
             this.barButtonItem19,
             this.barButtonItem20,
@@ -260,12 +260,12 @@
             this.btnTapuTipi.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnTapuTipi.ImageOptions.SvgImage")));
             this.btnTapuTipi.Name = "btnTapuTipi";
             // 
-            // barButtonItem17
+            // btnMusteri
             // 
-            this.barButtonItem17.Caption = "MÜŞTERİ";
-            this.barButtonItem17.Id = 19;
-            this.barButtonItem17.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem17.ImageOptions.SvgImage")));
-            this.barButtonItem17.Name = "barButtonItem17";
+            this.btnMusteri.Caption = "MÜŞTERİ";
+            this.btnMusteri.Id = 19;
+            this.btnMusteri.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnMusteri.ImageOptions.SvgImage")));
+            this.btnMusteri.Name = "btnMusteri";
             // 
             // btnMusteriGrup
             // 
@@ -367,6 +367,12 @@
             this.btnFirma.Id = 33;
             this.btnFirma.Name = "btnFirma";
             // 
+            // btnMarka
+            // 
+            this.btnMarka.Caption = "Marka";
+            this.btnMarka.Id = 34;
+            this.btnMarka.Name = "btnMarka";
+            // 
             // ribbonPageOfis
             // 
             this.ribbonPageOfis.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -454,7 +460,7 @@
             // 
             // ribbonPageGroup7
             // 
-            this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem17);
+            this.ribbonPageGroup7.ItemLinks.Add(this.btnMusteri);
             this.ribbonPageGroup7.ItemLinks.Add(this.btnMusteriGrup);
             this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem19);
             this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem20);
@@ -516,12 +522,6 @@
             this.btnKargoFirmasi.Id = 1;
             this.btnKargoFirmasi.Name = "btnKargoFirmasi";
             // 
-            // btnMarka
-            // 
-            this.btnMarka.Caption = "Marka";
-            this.btnMarka.Id = 34;
-            this.btnMarka.Name = "btnMarka";
-            // 
             // AnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -533,7 +533,7 @@
             this.Name = "AnaForm";
             this.Ribbon = this.ribbonControl;
             this.StatusBar = this.ribbonStatusBar1;
-            this.Text = "AnaForm";
+            this.Text = "BURADA YAPI GAYİMENKUL A.Ş";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).EndInit();
@@ -573,7 +573,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
         private DevExpress.XtraBars.BarButtonItem btnIsitma;
         private DevExpress.XtraBars.BarButtonItem btnTapuTipi;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem17;
+        private DevExpress.XtraBars.BarButtonItem btnMusteri;
         private DevExpress.XtraBars.BarButtonItem btnMusteriGrup;
         private DevExpress.XtraBars.BarButtonItem barButtonItem19;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPageMusteri;

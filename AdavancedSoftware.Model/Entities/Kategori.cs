@@ -5,13 +5,13 @@ using System.ComponentModel.DataAnnotations;
 
 namespace AdavancedSoftware.Model.Entities
 {
-    public class MusteriGrup : BaseEntityDurum
+    public class Kategori : BaseEntityDurum
     {
         [Index("IX_Kod", IsUnique = true)]
         public override string Kod { get; set; }
 
         [Required, StringLength(50), ZorunluAlan("Musteri Grup", "txtMusteriGrubu")]
-        public string MusteriGrubu { get; set; }
+        public string KategoriAdi { get; set; }
 
         [StringLength(500)]
         public string Aciklama { get; set; }

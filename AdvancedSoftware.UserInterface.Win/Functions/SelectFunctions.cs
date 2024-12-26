@@ -3,6 +3,7 @@ using AdavancedSoftware.Model.Entities;
 using AdvancedSoftware.Common.Enums;
 using AdvancedSoftware.UserInterface.Win.Forms.BankaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.BankaSubeForms;
+using AdvancedSoftware.UserInterface.Win.Forms.FirmaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MusteriGrupForms;
 using AdvancedSoftware.UserInterface.Win.Forms.OzelKod;
 using AdvancedSoftware.UserInterface.Win.Forms.PortfoyTipiForms;
@@ -93,13 +94,13 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
                     }
                     break;
 
-                case "txtMusteriGroup":
+                case "txtKategoriAdi":
                     {
-                        var entity = (MusteriGrup)ShowListForms<MusteriGrupListForm>.ShowDialogListForm(KartTuru.MusteriGrup, _btnEdit.Id);
+                        var entity = (Kategori)ShowListForms<MusteriGrupListForm>.ShowDialogListForm(KartTuru.Kategori, _btnEdit.Id);
                         if (entity != null)
                         {
                             _btnEdit.Id = entity.Id;
-                            _btnEdit.EditValue = entity.MusteriGrubu;
+                            _btnEdit.EditValue = entity.KategoriAdi;
                         }
                     }
                     break;
@@ -178,6 +179,19 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
                         }
                     }
                     break;
+
+                case "txtFirma":
+                    {
+                        var entity = (FirmaL)ShowListForms<FirmaListForm>.ShowDialogListForm(KartTuru.Firma, _btnEdit.Id);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.FirmaAdi;
+                        }
+                    }
+                    break;
+
+
 
             }
         }

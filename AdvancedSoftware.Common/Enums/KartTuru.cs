@@ -49,8 +49,8 @@ namespace AdvancedSoftware.Common.Enums
         [Description("Isıtma Kartı")]
         Isitma = 15,
 
-        [Description("Müşteri Grup Kartı")]
-        MusteriGrup = 16,
+        [Description("Kategori Kartı")]
+        Kategori = 16,
 
         [Description("Unvan Kartı")]
         Unvan = 17,
@@ -93,6 +93,9 @@ namespace AdvancedSoftware.Common.Enums
 
         [Description("Araç Kartı")]
         Arac = 30,
+
+        [Description("Müşteri Kartı")]
+        Musteri = 31,
 
 
 

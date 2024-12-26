@@ -6,11 +6,11 @@ using System.Windows.Forms;
 
 namespace AdvancedSoftweare.BusinessLayer.General
 {
-    public class MusteriGrupBll : BaseGenelBll<MusteriGrup>, IBaseGenelBll, IBaseCommonBll
+    public class KategoriBll : BaseGenelBll<Kategori>, IBaseGenelBll, IBaseCommonBll
     {
-        public MusteriGrupBll():base(KartTuru.MusteriGrup) { }
+        public KategoriBll():base(KartTuru.Kategori) { }
 
-        public MusteriGrupBll(Control ctrl) : base(ctrl, KartTuru.MusteriGrup) { }
+        public KategoriBll(Control ctrl) : base(ctrl, KartTuru.Kategori) { }
 
       
     }

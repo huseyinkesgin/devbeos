@@ -13,13 +13,13 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.MusteriGrupForms
         public MusteriGrupListForm()
         {
             InitializeComponent();
-            Bll = new MusteriGrupBll();
+            Bll = new KategoriBll();
         }
 
         protected override void DesgiskenleriDoldur()
         {
             Tablo = tablo;
-            BaseKartTuru = KartTuru.MusteriGrup;
+            BaseKartTuru = KartTuru.Kategori;
             FormShow = new ShowEditForms<MusteriGrupEditForm>();
             Navigator = longNavigator.Navigator;
 
@@ -28,7 +28,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.MusteriGrupForms
 
         protected override void Listele()
         {
-            Tablo.GridControl.DataSource = ((MusteriGrupBll)Bll).List(FilterFunctions.Filter<MusteriGrup>(AktifKartlariGoster));
+            Tablo.GridControl.DataSource = ((KategoriBll)Bll).List(FilterFunctions.Filter<Kategori>(AktifKartlariGoster));
         }
 
 

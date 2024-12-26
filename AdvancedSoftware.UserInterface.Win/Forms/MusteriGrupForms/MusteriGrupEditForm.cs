@@ -12,40 +12,40 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.MusteriGrupForms
         {
             InitializeComponent();
             DataLayoutControl = myDataLayoutControl;
-            Bll = new MusteriGrupBll(myDataLayoutControl);
-            BaseKartTuru = KartTuru.MusteriGrup;
+            Bll = new KategoriBll(myDataLayoutControl);
+            BaseKartTuru = KartTuru.Kategori;
             EventsLoad();
         }
 
         protected internal override void Yukle()
         {
-            OldEntity = BaseIslemTuru == IslemTuru.EntityInsert ? new MusteriGrup() : ((MusteriGrupBll)Bll).Single(FilterFunctions.Filter<MusteriGrup>(Id));
+            OldEntity = BaseIslemTuru == IslemTuru.EntityInsert ? new Kategori() : ((KategoriBll)Bll).Single(FilterFunctions.Filter<Kategori>(Id));
             NesneyiKontrollereBagla();
 
             if (BaseIslemTuru != IslemTuru.EntityInsert)
                 return;
             Id = BaseIslemTuru.IdOlustur(OldEntity);
-            txtKod.Text = ((MusteriGrupBll)Bll).YeniKodVer();
-            txtMusteriGrubu.Focus();
+            txtKod.Text = ((KategoriBll)Bll).YeniKodVer();
+            txtKategoriAdi.Focus();
         }
 
         protected override void NesneyiKontrollereBagla()
         {
-            var entity = (MusteriGrup)OldEntity;
+            var entity = (Kategori)OldEntity;
 
             txtKod.Text = entity.Kod;
-            txtMusteriGrubu.Text = entity.MusteriGrubu;
+            txtKategoriAdi.Text = entity.KategoriAdi;
             txtAciklama.Text = entity.Aciklama;
             tglDurum.IsOn = entity.Durum;
         }
 
         protected override void GuncelNesneOlustur()
         {
-            CurrentEntity = new MusteriGrup
+            CurrentEntity = new Kategori
             {
                 Id = Id,
                 Kod = txtKod.Text,
-                MusteriGrubu = txtMusteriGrubu.Text,
+                KategoriAdi = txtKategoriAdi.Text,
                 Aciklama = txtAciklama.Text,
                 Durum = tglDurum.IsOn,
             };

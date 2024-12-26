@@ -306,6 +306,12 @@
     <Compile Include="Forms\MusteriForms\MusteriEditForm.Designer.cs">
       <DependentUpon>MusteriEditForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\MusteriForms\MusteriListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MusteriForms\MusteriListForm.Designer.cs">
+      <DependentUpon>MusteriListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MusteriGrupForms\MusteriGrupEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -621,6 +627,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MusteriForms\MusteriEditForm.resx">
       <DependentUpon>MusteriEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MusteriForms\MusteriListForm.resx">
+      <DependentUpon>MusteriListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MusteriGrupForms\MusteriGrupEditForm.resx">
       <DependentUpon>MusteriGrupEditForm.cs</DependentUpon>

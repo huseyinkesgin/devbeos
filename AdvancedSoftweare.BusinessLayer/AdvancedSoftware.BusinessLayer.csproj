@@ -68,10 +68,11 @@
     <Compile Include="General\MarkaBll.cs" />
     <Compile Include="General\KasaBll.cs" />
     <Compile Include="General\FirmaBll.cs" />
+    <Compile Include="General\MusteriBll.cs" />
     <Compile Include="General\SubeBll.cs" />
     <Compile Include="General\DonemBll.cs" />
     <Compile Include="General\IsitmaBll.cs" />
-    <Compile Include="General\MusteriGrupBll.cs" />
+    <Compile Include="General\KategoriBll.cs" />
     <Compile Include="General\DepartmanBll.cs" />
     <Compile Include="General\OzelKodBll.cs" />
     <Compile Include="General\UnvanBll.cs" />

@@ -104,9 +104,8 @@ namespace AdvancedSoftweare.BusinessLayer.Base
         protected bool BaseUpdate(BaseEntity oldEntity, BaseEntity currentEntity, Expression<Func<T, bool>> filter)
         {
             GeneralFunctions.CreateUnitOfWork<T, TContext>(ref _uow);
-            if (!Validation(IslemTuru.EntityUpdate, oldEntity,currentEntity, filter))
-                return false;
-            return false;
+            if (!Validation(IslemTuru.EntityUpdate, oldEntity,currentEntity, filter)) return false;
+          
             var degisenAlanlar = oldEntity.DegisenAlanlariGetir(currentEntity);
             if (degisenAlanlar.Count == 0) return true;
 

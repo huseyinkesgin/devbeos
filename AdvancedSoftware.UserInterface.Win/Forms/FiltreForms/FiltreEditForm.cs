@@ -1,4 +1,4 @@
-﻿using AdavancedSoftware.Model.Entities;
+﻿    using AdavancedSoftware.Model.Entities;
 using AdvancedSoftware.Common.Enums;
 using AdvancedSoftware.UserInterface.Win.Forms.BaseForms;
 using AdvancedSoftware.UserInterface.Win.Functions;
@@ -49,7 +49,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.FiltreForms
                     if (OldEntity == null)
                     {
                         BaseIslemTuru = IslemTuru.EntityInsert;
-                        continue;
+                        //continue;
                     }
                     NesneyiKontrollereBagla();
                 }

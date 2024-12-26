@@ -56,7 +56,15 @@
             // 
             this.ribbonControl.ExpandCollapseItem.Id = 0;
             this.ribbonControl.OptionsPageCategories.ShowCaptions = false;
-            this.ribbonControl.Size = new System.Drawing.Size(398, 135);
+            // 
+            // 
+            // 
+            this.ribbonControl.SearchEditItem.AccessibleName = "Search Item";
+            this.ribbonControl.SearchEditItem.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Left;
+            this.ribbonControl.SearchEditItem.EditWidth = 150;
+            this.ribbonControl.SearchEditItem.Id = -5000;
+            this.ribbonControl.SearchEditItem.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            this.ribbonControl.Size = new System.Drawing.Size(448, 135);
             this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             // 
             // myDataLayoutControl
@@ -69,7 +77,7 @@
             this.myDataLayoutControl.Name = "myDataLayoutControl";
             this.myDataLayoutControl.OptionsFocus.EnableAutoTabOrder = false;
             this.myDataLayoutControl.Root = this.Root;
-            this.myDataLayoutControl.Size = new System.Drawing.Size(398, 115);
+            this.myDataLayoutControl.Size = new System.Drawing.Size(448, 115);
             this.myDataLayoutControl.TabIndex = 0;
             this.myDataLayoutControl.Text = "myDataLayoutControl1";
             // 
@@ -80,7 +88,7 @@
             this.txtFiltreMetni.Name = "txtFiltreMetni";
             this.txtFiltreMetni.NodeSeparatorHeight = 2;
             this.txtFiltreMetni.ShowGroupCommandsIcon = true;
-            this.txtFiltreMetni.Size = new System.Drawing.Size(309, 43);
+            this.txtFiltreMetni.Size = new System.Drawing.Size(359, 43);
             this.txtFiltreMetni.StatusBarAciklama = "Filtre metni giriniz";
             this.txtFiltreMetni.TabIndex = 1;
             this.txtFiltreMetni.Text = "myFilterControl1";
@@ -94,7 +102,7 @@
             this.txtFiltreAdi.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtFiltreAdi.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtFiltreAdi.Properties.MaxLength = 50;
-            this.txtFiltreAdi.Size = new System.Drawing.Size(309, 20);
+            this.txtFiltreAdi.Size = new System.Drawing.Size(359, 20);
             this.txtFiltreAdi.StatusBarAciklama = null;
             this.txtFiltreAdi.StyleController = this.myDataLayoutControl;
             this.txtFiltreAdi.TabIndex = 0;
@@ -144,7 +152,7 @@
             rowDefinition1,
             rowDefinition2,
             rowDefinition3});
-            this.Root.Size = new System.Drawing.Size(398, 115);
+            this.Root.Size = new System.Drawing.Size(448, 115);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem1
@@ -167,7 +175,7 @@
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.OptionsTableLayoutItem.ColumnSpan = 2;
             this.layoutControlItem2.OptionsTableLayoutItem.RowIndex = 1;
-            this.layoutControlItem2.Size = new System.Drawing.Size(378, 24);
+            this.layoutControlItem2.Size = new System.Drawing.Size(428, 24);
             this.layoutControlItem2.Text = "Filtre Adı";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(53, 13);
             // 
@@ -180,7 +188,7 @@
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.OptionsTableLayoutItem.ColumnSpan = 2;
             this.layoutControlItem3.OptionsTableLayoutItem.RowIndex = 2;
-            this.layoutControlItem3.Size = new System.Drawing.Size(378, 47);
+            this.layoutControlItem3.Size = new System.Drawing.Size(428, 47);
             this.layoutControlItem3.Text = "Filtre Metni";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(53, 13);
             // 
@@ -188,7 +196,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(398, 274);
+            this.ClientSize = new System.Drawing.Size(448, 274);
             this.Controls.Add(this.myDataLayoutControl);
             this.IconOptions.ShowIcon = false;
             this.MinimumSize = new System.Drawing.Size(400, 275);

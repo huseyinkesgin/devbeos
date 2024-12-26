@@ -165,18 +165,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\BankaHesapTuru.cs" />
+    <Compile Include="Enums\Danisman.cs" />
     <Compile Include="Enums\DokumSekli.cs" />
     <Compile Include="Enums\DosyaTuru.cs" />
     <Compile Include="Enums\EvetHayir.cs" />
+    <Compile Include="Enums\IlanVarmi.cs" />
     <Compile Include="Enums\IslemTuru.cs" />
+    <Compile Include="Enums\IsyeriTuru.cs" />
     <Compile Include="Enums\KartTuru.cs" />
+    <Compile Include="Enums\KiraciVarmi.cs" />
     <Compile Include="Enums\KrediDurum.cs" />
+    <Compile Include="Enums\KrediyeUygunluk.cs" />
+    <Compile Include="Enums\KullanimDurumu.cs" />
     <Compile Include="Enums\MusteriTuru.cs" />
     <Compile Include="Enums\OzelKodTuru.cs" />
     <Compile Include="Enums\RaporuKagidaSigdirmaTuru.cs" />
     <Compile Include="Enums\VeriDegisimYeri.cs" />
+    <Compile Include="Enums\VincVarmi.cs" />
     <Compile Include="Enums\VitesTuru.cs" />
     <Compile Include="Enums\YakitCinsi.cs" />
+    <Compile Include="Enums\YapininDurumu.cs" />
     <Compile Include="Enums\YazdirmaYonu.cs" />
     <Compile Include="Functions\EnumFunctions.cs" />
     <Compile Include="Messages\Messages.cs" />

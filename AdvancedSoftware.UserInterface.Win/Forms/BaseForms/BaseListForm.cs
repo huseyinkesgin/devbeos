@@ -57,6 +57,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
             Tablo.EndSorting += Tablo_EndSorting;
             Tablo.FilterEditorCreated += Tablo_FilterEditorCreated;
             Tablo.ColumnFilterChanged += Tablo_ColumnFilterChanged;
+            Tablo.CustomDrawFooterCell += Tablo_CustomDrawFooterCell;
 
             //form events
             Shown += BaseListForm_Shown;
@@ -66,7 +67,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
             SizeChanged += BaseListForm_SizeChanged;
         }
 
-
+       
 
         private void ButtonGizleGoster()
         {
@@ -301,6 +302,13 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
         {
             e.ShowFilterEditor = false;
             ShowEditForms<FiltreEditForm>.ShowDialogEditForm(KartTuru.Filtre, _filtreId, BaseKartTuru, Tablo.GridControl);
+        }
+
+        private void Tablo_CustomDrawFooterCell(object sender, FooterCellCustomDrawEventArgs e)
+        {
+            if (!Tablo.OptionsView.ShowFooter) return;
+            if (e.Column.Summary.Count > 0)
+                e.Appearance.TextOptions.HAlignment = e.Column.ColumnEdit.Appearance.HAlignment;
         }
 
         private void BaseListForm_SizeChanged(object sender, EventArgs e)

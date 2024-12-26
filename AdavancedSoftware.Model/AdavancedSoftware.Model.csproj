@@ -57,6 +57,7 @@
     <Compile Include="Dto\BankaHesapDto.cs" />
     <Compile Include="Dto\BankaSubeDto.cs" />
     <Compile Include="Dto\FirmaDto.cs" />
+    <Compile Include="Dto\IsyeriDto.cs" />
     <Compile Include="Dto\KasaDto.cs" />
     <Compile Include="Dto\MusteriDto.cs" />
     <Compile Include="Dto\OfisDto.cs" />
@@ -76,6 +77,7 @@
     <Compile Include="Entities\Firma.cs" />
     <Compile Include="Entities\Gabari.cs" />
     <Compile Include="Entities\Il.cs" />
+    <Compile Include="Entities\Isyeri.cs" />
     <Compile Include="Entities\Model.cs" />
     <Compile Include="Entities\Ilce.cs" />
     <Compile Include="Entities\Iletisim.cs" />
@@ -88,7 +90,7 @@
     <Compile Include="Entities\Marka.cs" />
     <Compile Include="Entities\Musteri.cs" />
     <Compile Include="Entities\MusteriBilgi.cs" />
-    <Compile Include="Entities\MusteriGrup.cs" />
+    <Compile Include="Entities\Kategori.cs" />
     <Compile Include="Entities\Ofis.cs" />
     <Compile Include="Entities\OzelKod.cs" />
     <Compile Include="Entities\PortfoyTipi.cs" />

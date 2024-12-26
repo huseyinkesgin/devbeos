@@ -12,6 +12,7 @@ using AdvancedSoftware.UserInterface.Win.Forms.IsıtmaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.KasaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MarkaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MusteriBilgiForms;
+using AdvancedSoftware.UserInterface.Win.Forms.MusteriForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MusteriGrupForms;
 using AdvancedSoftware.UserInterface.Win.Forms.OfisForms;
 using AdvancedSoftware.UserInterface.Win.Forms.PortfoyTipiForms;
@@ -78,7 +79,7 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
             if (e.Item == btnIsitma)
                 ShowListForms<IsitmaListForm>.ShowListForm(KartTuru.Isitma);
             if (e.Item == btnMusteriGrup)
-                ShowListForms<MusteriGrupListForm>.ShowListForm(KartTuru.MusteriGrup);
+                ShowListForms<MusteriGrupListForm>.ShowListForm(KartTuru.Kategori);
             if (e.Item == btnDepartman)
                 ShowListForms<DepartmanListForm>.ShowListForm(KartTuru.Departman);
             if (e.Item == btnUnvan)
@@ -95,6 +96,8 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
                 ShowListForms<FirmaListForm>.ShowListForm(KartTuru.Firma);
             if (e.Item == btnMarka)
                 ShowListForms<MarkaListForm>.ShowListForm(KartTuru.Marka);
+            if (e.Item == btnMusteri)
+                ShowListForms<MusteriListForm>.ShowListForm(KartTuru.Musteri);
 
         }
 
