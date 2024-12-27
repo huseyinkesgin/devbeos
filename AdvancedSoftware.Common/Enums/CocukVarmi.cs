@@ -7,13 +7,11 @@ using System.Threading.Tasks;
 
 namespace AdvancedSoftware.Common.Enums
 {
-    public enum KrediyeUygunluk : byte
+    public enum CocukVarmi : byte
     {
-        [Description("EVET")]
-        Evet = 1,
-        [Description("HAYIR")]
-        Hayir = 2,
-        [Description("BİLİNMİYOR")]
-        Bilinmiyor = 3
+        [Description("VAR")]
+        Var = 1,
+        [Description("YOK")]
+        Yok = 2
     }
 }

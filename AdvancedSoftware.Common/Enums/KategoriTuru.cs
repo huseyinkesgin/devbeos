@@ -4,9 +4,9 @@ namespace AdvancedSoftware.Common.Enums
 {
     public enum KategoriTuru : byte
     {
-        [Description("Ana Kategori")]
+        [Description("ANA KATEGORİ")]
         Kategori = 1,
-        [Description("Alt Kategori")]
+        [Description("ALT KATEGORİ")]
         AltKategori = 2,
     }
 }

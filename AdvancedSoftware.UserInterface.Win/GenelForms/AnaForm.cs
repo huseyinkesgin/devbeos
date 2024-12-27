@@ -15,6 +15,7 @@ using AdvancedSoftware.UserInterface.Win.Forms.MusteriBilgiForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MusteriForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MusteriGrupForms;
 using AdvancedSoftware.UserInterface.Win.Forms.OfisForms;
+using AdvancedSoftware.UserInterface.Win.Forms.PersonelForms;
 using AdvancedSoftware.UserInterface.Win.Forms.PortfoyTipiForms;
 using AdvancedSoftware.UserInterface.Win.Forms.SiparisForms.IlForms;
 using AdvancedSoftware.UserInterface.Win.Forms.TapuTipiForms;
@@ -66,8 +67,6 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
                 ShowListForms<MusteriBilgiListForm>.ShowListForm(KartTuru.MusteriBilgi);
             if (e.Item == btnIptalNedeni)
                 ShowListForms<IptalNedeniListForm>.ShowListForm(KartTuru.IptalNedeni);
-            if (e.Item == btnTapuTipi)
-                ShowListForms<TapuTipiListForm>.ShowListForm(KartTuru.TapuTipi);
             if (e.Item == btnPortfoyTipi)
                 ShowListForms<PortfoyTipiListForm>.ShowListForm(KartTuru.PortfoyTipi);
             if (e.Item == btnImarDurumu)
@@ -98,6 +97,8 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
                 ShowListForms<MarkaListForm>.ShowListForm(KartTuru.Marka);
             if (e.Item == btnMusteri)
                 ShowListForms<MusteriListForm>.ShowListForm(KartTuru.Musteri);
+            if (e.Item == btnPersonel)
+                ShowListForms<PersonelListForm>.ShowListForm(KartTuru.Personel);
 
         }
 

@@ -3,6 +3,7 @@ using AdavancedSoftware.Model.Entities;
 using AdvancedSoftware.Common.Enums;
 using AdvancedSoftware.UserInterface.Win.Forms.BankaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.BankaSubeForms;
+using AdvancedSoftware.UserInterface.Win.Forms.DepartmanForms;
 using AdvancedSoftware.UserInterface.Win.Forms.FirmaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MusteriGrupForms;
 using AdvancedSoftware.UserInterface.Win.Forms.OzelKod;
@@ -10,6 +11,7 @@ using AdvancedSoftware.UserInterface.Win.Forms.PortfoyTipiForms;
 using AdvancedSoftware.UserInterface.Win.Forms.SiparisForms.IlceForms;
 using AdvancedSoftware.UserInterface.Win.Forms.SiparisForms.IlForms;
 using AdvancedSoftware.UserInterface.Win.Forms.TapuTipiForms;
+using AdvancedSoftware.UserInterface.Win.Forms.UnvanForms;
 using AdvancedSoftware.UserInterface.Win.Show;
 using AdvancedSoftware.UserInterface.Win.UserControls.Controls;
 using System;
@@ -50,6 +52,7 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
         {
             switch (_btnEdit.Name)
             {
+                case "txtDogumYeri":
                 case "txtIl":
                     {
                         var entity = (Il)ShowListForms<IlListForm>.ShowDialogListForm(KartTuru.Il, _btnEdit.Id);
@@ -85,7 +88,7 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
 
                 case "txtTapuTipiAdi":
                     {
-                        var entity = (TapuTipi)ShowListForms<TapuTipiListForm>.ShowDialogListForm(KartTuru.TapuTipi, _btnEdit.Id, _prmEdit.Id, _prmEdit.Text);
+                        var entity = (TapuTipi)ShowListForms<IsyeriTipiListForm>.ShowDialogListForm(KartTuru.TapuTipi, _btnEdit.Id, _prmEdit.Id, _prmEdit.Text);
                         if (entity != null)
                         {
                             _btnEdit.Id = entity.Id;
@@ -188,6 +191,28 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
                         {
                             _btnEdit.Id = entity.Id;
                             _btnEdit.EditValue = entity.KategoriAdi;
+                        }
+                    }
+                    break;
+
+                case "txtDepartman":
+                    {
+                        var entity = (Departman)ShowListForms<DepartmanListForm>.ShowDialogListForm(KartTuru.Departman, _btnEdit.Id);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.DepartmanAdi;
+                        }
+                    }
+                    break;
+
+                case "txtUnvan":
+                    {
+                        var entity = (Unvan)ShowListForms<UnvanListForm>.ShowDialogListForm(KartTuru.Unvan, _btnEdit.Id);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.UnvanAdi;
                         }
                     }
                     break;

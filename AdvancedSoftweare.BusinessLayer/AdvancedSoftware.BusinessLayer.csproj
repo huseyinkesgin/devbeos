@@ -64,10 +64,12 @@
     <Compile Include="General\EmsalBll.cs" />
     <Compile Include="General\GabariBll.cs" />
     <Compile Include="General\BankaBll.cs" />
+    <Compile Include="General\IsyeriBll.cs" />
     <Compile Include="General\ModelBll.cs" />
     <Compile Include="General\MarkaBll.cs" />
     <Compile Include="General\KasaBll.cs" />
     <Compile Include="General\FirmaBll.cs" />
+    <Compile Include="General\PersonelBll.cs" />
     <Compile Include="General\MusteriBll.cs" />
     <Compile Include="General\SubeBll.cs" />
     <Compile Include="General\DonemBll.cs" />
@@ -82,7 +84,6 @@
     <Compile Include="General\PortfoyTipiBll.cs" />
     <Compile Include="General\IlBll.cs" />
     <Compile Include="General\IlceBll.cs" />
-    <Compile Include="General\TapuTipiBll.cs" />
     <Compile Include="General\IptalNedeniBll.cs" />
     <Compile Include="General\MusteriBilgiBll.cs" />
     <Compile Include="General\OfisBll.cs" />

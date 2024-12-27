@@ -34,6 +34,7 @@
             this.tablo = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridView();
             this.colKod = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.colMusteriTuru = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colMusteriGrupAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colAd = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colSoyad = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colTelefon = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
@@ -52,11 +53,16 @@
             this.colTiktok = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colAciklama = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colId = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.colMusteriGrupAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colOzelKod1Adi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colOzelKod2Adi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colOzelKod3Adi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colOzelKod4Adi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colOzelKod5Adi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.gridBand1 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand2 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand3 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand4 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.gridBand6 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand5 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
@@ -126,6 +132,7 @@
             this.gridBand2,
             this.gridBand3,
             this.gridBand4,
+            this.gridBand6,
             this.gridBand5});
             this.tablo.Columns.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn[] {
             this.colId,
@@ -148,7 +155,12 @@
             this.colYoutube,
             this.colTiktok,
             this.colVk,
-            this.colAciklama});
+            this.colAciklama,
+            this.colOzelKod1Adi,
+            this.colOzelKod2Adi,
+            this.colOzelKod3Adi,
+            this.colOzelKod4Adi,
+            this.colOzelKod5Adi});
             this.tablo.GridControl = this.grid;
             this.tablo.Name = "tablo";
             this.tablo.OptionsMenu.EnableColumnMenu = false;
@@ -189,6 +201,17 @@
             this.colMusteriTuru.StatusBarKisaYol = null;
             this.colMusteriTuru.StatusBarKisaYolAciklama = null;
             this.colMusteriTuru.Visible = true;
+            // 
+            // colMusteriGrupAdi
+            // 
+            this.colMusteriGrupAdi.Caption = "Müşteri Grubu";
+            this.colMusteriGrupAdi.FieldName = "MusteriGrupAdi";
+            this.colMusteriGrupAdi.Name = "colMusteriGrupAdi";
+            this.colMusteriGrupAdi.OptionsColumn.AllowEdit = false;
+            this.colMusteriGrupAdi.StatusBarAciklama = null;
+            this.colMusteriGrupAdi.StatusBarKisaYol = null;
+            this.colMusteriGrupAdi.StatusBarKisaYolAciklama = null;
+            this.colMusteriGrupAdi.Visible = true;
             // 
             // colAd
             // 
@@ -235,7 +258,7 @@
             this.colEposta.StatusBarKisaYol = null;
             this.colEposta.StatusBarKisaYolAciklama = null;
             this.colEposta.Visible = true;
-            this.colEposta.Width = 200;
+            this.colEposta.Width = 144;
             // 
             // colFirmaAdi
             // 
@@ -247,7 +270,7 @@
             this.colFirmaAdi.StatusBarKisaYol = null;
             this.colFirmaAdi.StatusBarKisaYolAciklama = null;
             this.colFirmaAdi.Visible = true;
-            this.colFirmaAdi.Width = 200;
+            this.colFirmaAdi.Width = 149;
             // 
             // colWebsitesi
             // 
@@ -390,16 +413,60 @@
             this.colId.OptionsColumn.AllowEdit = false;
             this.colId.OptionsColumn.ShowInCustomizationForm = false;
             // 
-            // colMusteriGrupAdi
+            // colOzelKod1Adi
             // 
-            this.colMusteriGrupAdi.Caption = "Müşteri Grubu";
-            this.colMusteriGrupAdi.FieldName = "MusteriGrupAdi";
-            this.colMusteriGrupAdi.Name = "colMusteriGrupAdi";
-            this.colMusteriGrupAdi.OptionsColumn.AllowEdit = false;
-            this.colMusteriGrupAdi.StatusBarAciklama = null;
-            this.colMusteriGrupAdi.StatusBarKisaYol = null;
-            this.colMusteriGrupAdi.StatusBarKisaYolAciklama = null;
-            this.colMusteriGrupAdi.Visible = true;
+            this.colOzelKod1Adi.Caption = "Özel Kod-1";
+            this.colOzelKod1Adi.FieldName = "OzelKod1Adi";
+            this.colOzelKod1Adi.Name = "colOzelKod1Adi";
+            this.colOzelKod1Adi.OptionsColumn.AllowEdit = false;
+            this.colOzelKod1Adi.StatusBarAciklama = null;
+            this.colOzelKod1Adi.StatusBarKisaYol = null;
+            this.colOzelKod1Adi.StatusBarKisaYolAciklama = null;
+            this.colOzelKod1Adi.Visible = true;
+            // 
+            // colOzelKod2Adi
+            // 
+            this.colOzelKod2Adi.Caption = "Özel Kod-2";
+            this.colOzelKod2Adi.FieldName = "OzelKod2Adi";
+            this.colOzelKod2Adi.Name = "colOzelKod2Adi";
+            this.colOzelKod2Adi.OptionsColumn.AllowEdit = false;
+            this.colOzelKod2Adi.StatusBarAciklama = null;
+            this.colOzelKod2Adi.StatusBarKisaYol = null;
+            this.colOzelKod2Adi.StatusBarKisaYolAciklama = null;
+            this.colOzelKod2Adi.Visible = true;
+            // 
+            // colOzelKod3Adi
+            // 
+            this.colOzelKod3Adi.Caption = "Özel Kod-3";
+            this.colOzelKod3Adi.FieldName = "OzelKod3Adi";
+            this.colOzelKod3Adi.Name = "colOzelKod3Adi";
+            this.colOzelKod3Adi.OptionsColumn.AllowEdit = false;
+            this.colOzelKod3Adi.StatusBarAciklama = null;
+            this.colOzelKod3Adi.StatusBarKisaYol = null;
+            this.colOzelKod3Adi.StatusBarKisaYolAciklama = null;
+            this.colOzelKod3Adi.Visible = true;
+            // 
+            // colOzelKod4Adi
+            // 
+            this.colOzelKod4Adi.Caption = "Özel Kod-4";
+            this.colOzelKod4Adi.FieldName = "OzelKod4Adi";
+            this.colOzelKod4Adi.Name = "colOzelKod4Adi";
+            this.colOzelKod4Adi.OptionsColumn.AllowEdit = false;
+            this.colOzelKod4Adi.StatusBarAciklama = null;
+            this.colOzelKod4Adi.StatusBarKisaYol = null;
+            this.colOzelKod4Adi.StatusBarKisaYolAciklama = null;
+            this.colOzelKod4Adi.Visible = true;
+            // 
+            // colOzelKod5Adi
+            // 
+            this.colOzelKod5Adi.Caption = "Özel Kod-5";
+            this.colOzelKod5Adi.FieldName = "OzelKod5Adi";
+            this.colOzelKod5Adi.Name = "colOzelKod5Adi";
+            this.colOzelKod5Adi.OptionsColumn.AllowEdit = false;
+            this.colOzelKod5Adi.StatusBarAciklama = null;
+            this.colOzelKod5Adi.StatusBarKisaYol = null;
+            this.colOzelKod5Adi.StatusBarKisaYolAciklama = null;
+            this.colOzelKod5Adi.Visible = true;
             // 
             // gridBand1
             // 
@@ -422,7 +489,7 @@
             this.gridBand2.Columns.Add(this.colWebsitesi);
             this.gridBand2.Name = "gridBand2";
             this.gridBand2.VisibleIndex = 1;
-            this.gridBand2.Width = 595;
+            this.gridBand2.Width = 488;
             // 
             // gridBand3
             // 
@@ -448,12 +515,24 @@
             this.gridBand4.VisibleIndex = 3;
             this.gridBand4.Width = 525;
             // 
+            // gridBand6
+            // 
+            this.gridBand6.Caption = "Özel Kodlar";
+            this.gridBand6.Columns.Add(this.colOzelKod1Adi);
+            this.gridBand6.Columns.Add(this.colOzelKod2Adi);
+            this.gridBand6.Columns.Add(this.colOzelKod3Adi);
+            this.gridBand6.Columns.Add(this.colOzelKod4Adi);
+            this.gridBand6.Columns.Add(this.colOzelKod5Adi);
+            this.gridBand6.Name = "gridBand6";
+            this.gridBand6.VisibleIndex = 4;
+            this.gridBand6.Width = 375;
+            // 
             // gridBand5
             // 
             this.gridBand5.Caption = "Diğer Bilgiler";
             this.gridBand5.Columns.Add(this.colAciklama);
             this.gridBand5.Name = "gridBand5";
-            this.gridBand5.VisibleIndex = 4;
+            this.gridBand5.VisibleIndex = 5;
             this.gridBand5.Width = 75;
             // 
             // MusteriListForm
@@ -502,11 +581,17 @@
         private UserControls.Controls.Grid.MyBandedGridColumn colVk;
         private UserControls.Controls.Grid.MyBandedGridColumn colAciklama;
         private UserControls.Controls.Grid.MyBandedGridColumn colMusteriTuru;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand1;
         private UserControls.Controls.Grid.MyBandedGridColumn colMusteriGrupAdi;
+        private UserControls.Controls.Grid.MyBandedGridColumn colOzelKod1Adi;
+        private UserControls.Controls.Grid.MyBandedGridColumn colOzelKod2Adi;
+        private UserControls.Controls.Grid.MyBandedGridColumn colOzelKod3Adi;
+        private UserControls.Controls.Grid.MyBandedGridColumn colOzelKod4Adi;
+        private UserControls.Controls.Grid.MyBandedGridColumn colOzelKod5Adi;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand1;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand2;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand3;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand4;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand6;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand5;
     }
 }

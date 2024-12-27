@@ -4,98 +4,100 @@ namespace AdvancedSoftware.Common.Enums
 {
     public enum KartTuru: byte
     {
-        [Description("İl Kaydı")]
+        [Description("IL KARTI")]
         Il = 1,
 
-        [Description("İlçe Kaydı")]
+        [Description("ILCE KARTI")]
         Ilce = 2,
 
-        [Description("Ofis Kaydı")]
+        [Description("OFIS KARTI")]
         Ofis = 3,
 
-        [Description("Portföy Kategori Kaydı")]
-        PortfoyKategori = 4,
+        [Description("ISYERI KARTI")]
+        Isyeri = 4,
 
-        [Description("Portföy Alt Kaydı")]
-        PortfoyAltKategori = 5,
+        [Description("ARSA KARTI")]
+        Arsa = 5,
 
-        [Description("Filtre Kartı")]
+        [Description("FILTRE KARTI")]
         Filtre = 6,
 
-        [Description("Müşteri Bilgi Kartı")]
+        [Description("MUSTERI BILGI KARTI")]
         MusteriBilgi = 7,
 
-        [Description("İptal Nedeni Kartı")]
+        [Description("IPTAL NEDENI KARTI")]
         IptalNedeni = 8,
 
-        [Description("Tapu Tipi Kartı")]
+        [Description("_TAPU TIPI KARTI")]
         TapuTipi = 9,
 
-        [Description("Portföy Tipi Kartı")]
+        [Description("PORTFOY  TIPI KARTI")]
         PortfoyTipi = 10,
 
-        [Description("İşyeri Tipi Kartı")]
+        [Description("ISYERI TIPI KARTI")]
         IsyeriTipi = 11,
 
-        [Description("İmar Durumu Kartı")]
+        [Description("IMAR DURUMU KARTI")]
         ImarDurumu = 12,
 
-        [Description("Emsal Kartı")]
+        [Description("EMSAL KARTI")]
         Emsal = 13,
 
-        [Description("Gabari Kartı")]
+        [Description("GABARİ KARTI")]
         Gabari = 14,
 
-        [Description("Isıtma Kartı")]
+        [Description("ISITMA KARTI")]
         Isitma = 15,
 
-        [Description("Kategori Kartı")]
+        [Description("KATEGORİ KARTI")]
         Kategori = 16,
 
-        [Description("Unvan Kartı")]
+        [Description("UNVAN KARTI")]
         Unvan = 17,
 
-        [Description("Altyapı Kartı")]
+        [Description("ALTYAPI KARTI")]
         Altyapi = 18,
 
-        [Description("Departman Kartı")]
+        [Description("DEPARTMAN KARTI")]
         Departman = 19,
 
-        [Description("Özel Kod Kartı")]
+        [Description("OZEL KOD KARTI")]
         OzelKod = 20,
 
-        [Description("Şube Kartı")]
+        [Description("SUBE KARTI")]
         Sube = 21,
 
-        [Description("Dönem Kartı")]
+        [Description("DONEM KARTI")]
         Donem = 22,
 
-        [Description("Kasa Kartı")]
+        [Description("KASA KARTI")]
         Kasa = 23,
 
-        [Description("Banka Kartı")]
+        [Description("BANKA KARTI")]
         Banka = 24,
 
-        [Description("Banka Şube Kartı")]
+        [Description("BANKA SUBE KARTI")]
         BankaSube = 25,
 
-        [Description("Banka Hesap Kartı")]
+        [Description("BANKA HESAP KARTI")]
         BankaHesap = 26,
 
-        [Description("Firma Kartı")]
+        [Description("FIRMA KARTI")]
         Firma = 27,
 
-        [Description("Marka Kartı")]
+        [Description("MARKA KARTI")]
         Marka = 28,
 
-        [Description("Model Kartı")]
+        [Description("MODEL KARTI")]
         Model = 29,
 
-        [Description("Araç Kartı")]
+        [Description("ARAC KARTI")]
         Arac = 30,
 
-        [Description("Müşteri Kartı")]
+        [Description("MUSTERI KARTI")]
         Musteri = 31,
+        [Description("PERSONEL KARTI")]
+        Personel = 32,
 
 
 

@@ -54,7 +54,8 @@ namespace AdnavcedSoftware.Data.Contexts
         public DbSet<Marka> Marka { get; set; }
         public DbSet<Model> Model { get; set; }
         public DbSet<Musteri> Musteri { get; set; }
-
+        public DbSet<Personel> Personel { get; set; }
+        public DbSet<Isyeri> Isyeri { get; set; }
     }
 
 

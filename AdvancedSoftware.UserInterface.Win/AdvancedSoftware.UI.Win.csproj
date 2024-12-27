@@ -240,6 +240,18 @@
     <Compile Include="Forms\IptalNedeniForms\IptalNedeniListForm.Designer.cs">
       <DependentUpon>IptalNedeniListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\IsyeriForms\IsyeriEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IsyeriForms\IsyeriEditForm.Designer.cs">
+      <DependentUpon>IsyeriEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IsyeriForms\IsyeriListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IsyeriForms\IsyeriListForm.Designer.cs">
+      <DependentUpon>IsyeriListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\IsıtmaForms\IsitmaEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -348,6 +360,18 @@
     <Compile Include="Forms\OzelKodForms\OzelKodListForm.Designer.cs">
       <DependentUpon>OzelKodListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\PersonelForms\PersonelEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PersonelForms\PersonelEditForm.Designer.cs">
+      <DependentUpon>PersonelEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PersonelForms\PersonelListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PersonelForms\PersonelListForm.Designer.cs">
+      <DependentUpon>PersonelListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\PortfoyTipiForms\PortfoyTipiEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -384,17 +408,17 @@
     <Compile Include="Forms\SiparisForms\IlForms\IlListForm.Designer.cs">
       <DependentUpon>IlListForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\TapuTipiForms\TapuTipiEditForm.cs">
+    <Compile Include="Forms\IsyeriTipiForms\IsyeriTipiEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\TapuTipiForms\TapuTipiEditForm.Designer.cs">
-      <DependentUpon>TapuTipiEditForm.cs</DependentUpon>
+    <Compile Include="Forms\IsyeriTipiForms\IsyeriTipiEditForm.Designer.cs">
+      <DependentUpon>IsyeriTipiEditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\TapuTipiForms\TapuTipiListForm.cs">
+    <Compile Include="Forms\IsyeriTipiForms\IsyeriTipiListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\TapuTipiForms\TapuTipiListForm.Designer.cs">
-      <DependentUpon>TapuTipiListForm.cs</DependentUpon>
+    <Compile Include="Forms\IsyeriTipiForms\IsyeriTipiListForm.Designer.cs">
+      <DependentUpon>IsyeriTipiListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UnvanForms\UnvanEditForm.cs">
       <SubType>Form</SubType>
@@ -595,6 +619,9 @@
     <EmbeddedResource Include="Forms\IptalNedeniForms\IptalNedeniListForm.resx">
       <DependentUpon>IptalNedeniListForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IsyeriForms\IsyeriEditForm.resx">
+      <DependentUpon>IsyeriEditForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\IsıtmaForms\IsitmaEditForm.resx">
       <DependentUpon>IsitmaEditForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -649,6 +676,12 @@
     <EmbeddedResource Include="Forms\OzelKodForms\OzelKodListForm.resx">
       <DependentUpon>OzelKodListForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PersonelForms\PersonelEditForm.resx">
+      <DependentUpon>PersonelEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PersonelForms\PersonelListForm.resx">
+      <DependentUpon>PersonelListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\PortfoyTipiForms\PortfoyTipiEditForm.resx">
       <DependentUpon>PortfoyTipiEditForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -667,11 +700,11 @@
     <EmbeddedResource Include="Forms\SiparisForms\IlForms\IlListForm.resx">
       <DependentUpon>IlListForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\TapuTipiForms\TapuTipiEditForm.resx">
-      <DependentUpon>TapuTipiEditForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\IsyeriTipiForms\IsyeriTipiEditForm.resx">
+      <DependentUpon>IsyeriTipiEditForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\TapuTipiForms\TapuTipiListForm.resx">
-      <DependentUpon>TapuTipiListForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\IsyeriTipiForms\IsyeriTipiListForm.resx">
+      <DependentUpon>IsyeriTipiListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UnvanForms\UnvanEditForm.resx">
       <DependentUpon>UnvanEditForm.cs</DependentUpon>

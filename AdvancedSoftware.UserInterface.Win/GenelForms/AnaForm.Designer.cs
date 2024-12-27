@@ -37,7 +37,7 @@
             this.btnKasa = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnPersonel = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.btnPortfoyTipi = new DevExpress.XtraBars.BarButtonItem();
@@ -47,7 +47,6 @@
             this.btnEmsal = new DevExpress.XtraBars.BarButtonItem();
             this.btnGabari = new DevExpress.XtraBars.BarButtonItem();
             this.btnIsitma = new DevExpress.XtraBars.BarButtonItem();
-            this.btnTapuTipi = new DevExpress.XtraBars.BarButtonItem();
             this.btnMusteri = new DevExpress.XtraBars.BarButtonItem();
             this.btnMusteriGrup = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem19 = new DevExpress.XtraBars.BarButtonItem();
@@ -101,7 +100,7 @@
             this.btnKasa,
             this.barButtonItem4,
             this.barButtonItem5,
-            this.barButtonItem6,
+            this.btnPersonel,
             this.barButtonItem7,
             this.barButtonItem8,
             this.btnPortfoyTipi,
@@ -111,7 +110,6 @@
             this.btnEmsal,
             this.btnGabari,
             this.btnIsitma,
-            this.btnTapuTipi,
             this.btnMusteri,
             this.btnMusteriGrup,
             this.barButtonItem19,
@@ -183,12 +181,12 @@
             this.barButtonItem5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem5.ImageOptions.SvgImage")));
             this.barButtonItem5.Name = "barButtonItem5";
             // 
-            // barButtonItem6
+            // btnPersonel
             // 
-            this.barButtonItem6.Caption = "PERSONEL";
-            this.barButtonItem6.Id = 8;
-            this.barButtonItem6.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem6.ImageOptions.SvgImage")));
-            this.barButtonItem6.Name = "barButtonItem6";
+            this.btnPersonel.Caption = "PERSONEL";
+            this.btnPersonel.Id = 8;
+            this.btnPersonel.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnPersonel.ImageOptions.SvgImage")));
+            this.btnPersonel.Name = "btnPersonel";
             // 
             // barButtonItem7
             // 
@@ -252,13 +250,6 @@
             this.btnIsitma.Id = 17;
             this.btnIsitma.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnIsitma.ImageOptions.SvgImage")));
             this.btnIsitma.Name = "btnIsitma";
-            // 
-            // btnTapuTipi
-            // 
-            this.btnTapuTipi.Caption = "TAPU TİPİ";
-            this.btnTapuTipi.Id = 18;
-            this.btnTapuTipi.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnTapuTipi.ImageOptions.SvgImage")));
-            this.btnTapuTipi.Name = "btnTapuTipi";
             // 
             // btnMusteri
             // 
@@ -382,7 +373,7 @@
             // 
             // ribbonPageGroup1
             // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem6);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnPersonel);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnOfis);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem7);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem8);
@@ -427,7 +418,6 @@
             // ribbonPageGroup4
             // 
             this.ribbonPageGroup4.ItemLinks.Add(this.btnPortfoyTipi);
-            this.ribbonPageGroup4.ItemLinks.Add(this.btnTapuTipi);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             // 
             // ribbonPageGroup5
@@ -558,7 +548,7 @@
         private DevExpress.XtraBars.BarButtonItem btnKasa;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
         private DevExpress.XtraBars.BarButtonItem barButtonItem5;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
+        private DevExpress.XtraBars.BarButtonItem btnPersonel;
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;
         private DevExpress.XtraBars.BarButtonItem barButtonItem8;
         private DevExpress.XtraBars.BarButtonItem btnPortfoyTipi;
@@ -572,7 +562,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
         private DevExpress.XtraBars.BarButtonItem btnIsitma;
-        private DevExpress.XtraBars.BarButtonItem btnTapuTipi;
         private DevExpress.XtraBars.BarButtonItem btnMusteri;
         private DevExpress.XtraBars.BarButtonItem btnMusteriGrup;
         private DevExpress.XtraBars.BarButtonItem barButtonItem19;

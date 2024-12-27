@@ -4,9 +4,9 @@ namespace AdvancedSoftware.Common.Enums
 {
     public enum MusteriTuru : byte
     {
-        [Description("Bireysel")]
+        [Description("BİREYSEL")]
         Bireysel =1,
-        [Description("Kurumsal")]
+        [Description("KURUMSAL")]
         Kurumsal =2
 
     }

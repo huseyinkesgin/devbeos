@@ -1,30 +1,34 @@
 ﻿using AdavancedSoftware.Model.Attributes;
 using AdavancedSoftware.Model.Entities.Base;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AdvancedSoftware.Common.Enums;
+using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AdavancedSoftware.Model.Entities
 {
-    public class Musteri : BaseEntityDurum
+    public class Personel : BaseEntityDurum
     {
         [Index("IX_Kod", IsUnique = true)]
         public override string Kod { get; set; }
 
-        public MusteriTuru MusteriTuru { get; set; } = MusteriTuru.Bireysel;
-
-        
-        public long? KategoriId { get; set; }
-
+     
         [Required, StringLength(50), ZorunluAlan("Müşteri Adı", "txtAd")]
         public string Ad { get; set; }
         [Required, StringLength(50), ZorunluAlan("Müşteri Soyadi", "txtSoyad")]
         public string Soyad { get; set; }
+        public string TcKimlikNo { get; set; }
+        public Cinsiyet Cinsiyet { get; set; } = Cinsiyet.Erkek;
+        public DateTime DogumTarihi { get; set; } = DateTime.Now;
+        public string DogumYeri { get; set; }
+        public string BabaAdi { get; set; }
+        public string AnneAdi { get; set; }
+        public MedeniDurum MedeniDurum { get; set; } = MedeniDurum.Bekar;
+        public CocukVarmi CocukVarmi { get; set; } = CocukVarmi.Yok;
+        public int CocukSayisi { get; set; }
+        public KanGrubu KanGrubu { get; set; } = KanGrubu.Bilinmiyor;
+        public string Ehliyet { get; set; }
+
         public string Eposta { get; set; }
         public string Telefon { get; set; }
 
@@ -34,8 +38,8 @@ namespace AdavancedSoftware.Model.Entities
         [ZorunluAlan("İlçe", "txtIlceAdi")]
         public long IlceId { get; set; }
         public string Adres { get; set; }
-        
-        public long? FirmaId { get; set; }
+           
+       
 
         public string Websitesi { get; set; }
         [StringLength(150)]
@@ -47,13 +51,22 @@ namespace AdavancedSoftware.Model.Entities
         [StringLength(150)]
         public string Linkedin { get; set; }
         [StringLength(150)]
-        public string Youtube{ get; set; }
+        public string Youtube { get; set; }
         [StringLength(150)]
         public string Tiktok { get; set; }
         [StringLength(150)]
         public string VK { get; set; }
         [StringLength(500)]
         public string Aciklama { get; set; }
+
+        public long? DepartmanId { get; set; }
+        public long? UnvanId { get; set; }
+        public long? BankaId { get; set; }
+        public long? SubeId { get; set; }
+        public string IBAN { get; set; }
+        public PersonelDurumu PersonelDurumu { get; set; } = PersonelDurumu.Calisiyor;
+        public DateTime IseGirisTarihi { get; set; } = DateTime.Now;
+        public DateTime? IstenCikisTarihi { get; set; } = null;
 
         public long? OzelKod1Id { get; set; }
         public long? OzelKod2Id { get; set; }
@@ -63,18 +76,17 @@ namespace AdavancedSoftware.Model.Entities
 
 
 
-        public  Kategori Kategori { get; set; }
-        public Firma Firma { get; set; }
+        public Departman Departman { get; set; }
+        public Unvan Unvan { get; set; }
         public Il Il { get; set; }
         public Ilce Ilce { get; set; }
+        public Banka Banka { get; set; }
+        public BankaSube Sube { get; set; }
 
         public OzelKod OzelKod1 { get; set; }
         public OzelKod OzelKod2 { get; set; }
         public OzelKod OzelKod3 { get; set; }
         public OzelKod OzelKod4 { get; set; }
         public OzelKod OzelKod5 { get; set; }
-
-
-       
     }
 }

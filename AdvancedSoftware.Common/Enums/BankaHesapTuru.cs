@@ -4,21 +4,21 @@ namespace AdvancedSoftware.Common.Enums
 {
     public enum BankaHesapTuru : byte
     {
-        [Description("Vadesiz Mevduat Hesabı")]
+        [Description("VADESİZ MEVDUAT HESABI")]
         VadesizMevduatHesabi = 1,
-        [Description("Vadeli Mevduat Hesabı")]
+        [Description("VADELİ MEVDUAT HESABI")]
         VadeliMevduatHesabi = 2,
-        [Description("Kredi Hesabı")]
+        [Description("KREDİ HESABI")]
         KrediHesaabi = 3,
-        [Description("Kredi Kartı Hesabı")]
+        [Description("KREDİ KARTI HESABI")]
         KrediKartiHesabi = 4,
-        [Description("Yatırım Hesabı")]
+        [Description("YATIRIM HESABI")]
         KrediHesabi = 5,
-        [Description("Altın Hesabı")]
+        [Description("ALTIN HESABI")]
         AltinHesabi = 6,
-        [Description("Döviz Hesabı")]
+        [Description("DÖVİZ HESABI")]
         DovizHesabi = 7,
-        [Description("Diğer")]
+        [Description("DİĞER")]
         Diger = 8
     }
 }

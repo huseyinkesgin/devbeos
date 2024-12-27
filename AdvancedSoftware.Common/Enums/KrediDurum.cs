@@ -4,13 +4,13 @@ namespace AdvancedSoftware.Common.Enums
 {
     public enum KrediDurum : byte
     {
-        [Description("Uygun")]
+        [Description("UYGUN")]
         Uygun = 1,
 
-        [Description("Uygun Değil")]
+        [Description("UYGUN DEĞİL")]
         UygunDegil = 2,
 
-        [Description("Bilinmiyor")]
+        [Description("BİLİNMİYOR")]
         Bilinmiyor = 3
     }
 }

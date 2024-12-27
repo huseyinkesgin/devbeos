@@ -10,14 +10,10 @@ namespace AdavancedSoftware.Model.Entities
         [Index("IX_Kod", IsUnique = true)]
         public override string Kod { get; set; }
 
-        public long PortfoyTipiId { get; set; }
-
-        [Required, StringLength(50), ZorunluAlan("Tapu Tipi Adı", "txtTapuTipiAdi")]
-        public string TapuTipiAdi { get; set; }
+        [Required, StringLength(50), ZorunluAlan("İşyeri Tipi Adı", "txtIsyeriTipiAdi")]
+        public string IsyeriTipiAdi { get; set; }
 
         [StringLength(500)]
         public string Aciklama { get; set; }
-
-        public PortfoyTipi PortfoyTipi { get; set; }
     }
 }

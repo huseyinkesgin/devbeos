@@ -4,10 +4,10 @@ namespace AdvancedSoftware.Common.Enums
 {
     public enum EvetHayir : byte
     {
-        [Description("Evet")]
+        [Description("EVET")]
         Evet = 1,
 
-        [Description("Hayır")]
+        [Description("HAYIR")]
         Hayir = 2
     }
 }

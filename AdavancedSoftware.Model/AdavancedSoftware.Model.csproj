@@ -59,6 +59,7 @@
     <Compile Include="Dto\FirmaDto.cs" />
     <Compile Include="Dto\IsyeriDto.cs" />
     <Compile Include="Dto\KasaDto.cs" />
+    <Compile Include="Dto\PersonelDto.cs" />
     <Compile Include="Dto\MusteriDto.cs" />
     <Compile Include="Dto\OfisDto.cs" />
     <Compile Include="Entities\Altyapi.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="Entities\Kategori.cs" />
     <Compile Include="Entities\Ofis.cs" />
     <Compile Include="Entities\OzelKod.cs" />
+    <Compile Include="Entities\Personel.cs" />
     <Compile Include="Entities\PortfoyTipi.cs" />
     <Compile Include="Entities\Sube.cs" />
     <Compile Include="Entities\TapuTipi.cs" />

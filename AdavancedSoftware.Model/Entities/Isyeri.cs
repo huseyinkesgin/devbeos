@@ -11,8 +11,7 @@ namespace AdavancedSoftware.Model.Entities
         [Index("IX_Kod", IsUnique = true)]
         public override string Kod { get; set; }
 
-        public long PortfoyTipiId { get; set; }
-        public IsyeriTuru IsyeriTuru { get; set; } = IsyeriTuru.Fabrika;
+        public long IsyeriTipiId { get; set; }
 
         [Required, StringLength(350), ZorunluAlan("Başlık", "txtIlAdi")]
         public string Baslik { get; set; }
@@ -35,7 +34,7 @@ namespace AdavancedSoftware.Model.Entities
         public YapininDurumu YapininDurumu { get; set; } = YapininDurumu.IkinciEl;
         public KullanimDurumu KullanimDurumu { get; set; } = KullanimDurumu.Bos;
         public KrediyeUygunluk KrediyeUygunluk { get; set; } = KrediyeUygunluk.Bilinmiyor;
-        public long TapuTipiId { get; set; }
+        public IsyeriTapuTipi IsyeriTapuTipi { get; set; } = IsyeriTapuTipi.KatIrtifaki;
         public int TasinmazNo { get; set; }
         public long IlId { get; set; }
         public long IlceId { get; set; }
@@ -45,7 +44,7 @@ namespace AdavancedSoftware.Model.Entities
 
         [StringLength(5000)]
         public string Aciklama { get; set; }
-        public Danisman Danisman { get; set; } = Danisman.NedimAkbacak;
+        public long DanismanId { get; set; }
         public long MusteriId { get; set; }
         public IlanVarmi IlanVarmi { get; set; } = IlanVarmi.IlanVar;
         public string Sahibinden { get; set; }
@@ -73,11 +72,24 @@ namespace AdavancedSoftware.Model.Entities
         [StringLength(1000)]
         public string AutoCadDosyaYolu { get; set; }
 
+        public PortfoyDurumu PortfoyDurumu { get; set; } = PortfoyDurumu.DevamEdiyor;
+        public YetkiliOfis YetkiliOfis { get; set; } = YetkiliOfis.Hayır;
+        public long? OzelKod1Id { get; set; }
+        public long? OzelKod2Id { get; set; }
+        public long? OzelKod3Id { get; set; }
+        public long? OzelKod4Id { get; set; }
+        public long? OzelKod5Id { get; set; }
+
         public Isitma Isitma { get; set; }
-        public PortfoyTipi PortfoyTipi { get; set; }
-        public TapuTipi TapuTipi { get; set; }
+        public IsyeriTipi IsyeriTipi { get; set; }
         public Il Il { get; set; }
         public Ilce Ilce { get; set; }
         public Musteri Musteri { get; set; }
+        public Personel Danisman { get; set; }
+        public OzelKod OzelKod1 { get; set; }
+        public OzelKod OzelKod2 { get; set; }
+        public OzelKod OzelKod3 { get; set; }
+        public OzelKod OzelKod4 { get; set; }
+        public OzelKod OzelKod5 { get; set; }
     }
 }
