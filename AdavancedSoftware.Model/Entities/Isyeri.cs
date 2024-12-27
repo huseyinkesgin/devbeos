@@ -12,8 +12,10 @@ namespace AdavancedSoftware.Model.Entities
         public override string Kod { get; set; }
 
         public long IsyeriTipiId { get; set; }
+        public PortfoyTuru PortfoyTuru { get; set; } = PortfoyTuru.Kiralik;
+        public ImarDurumu ImarDurumu { get; set; } = ImarDurumu.Sanayi;
 
-        [Required, StringLength(350), ZorunluAlan("Başlık", "txtIlAdi")]
+        [Required, StringLength(350), ZorunluAlan("Başlık", "txtBaslik")]
         public string Baslik { get; set; }
         [Column(TypeName = "money")]
         public decimal Ucret { get; set; }

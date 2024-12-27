@@ -171,6 +171,7 @@
     <Compile Include="Enums\DokumSekli.cs" />
     <Compile Include="Enums\DosyaTuru.cs" />
     <Compile Include="Enums\EvetHayir.cs" />
+    <Compile Include="Enums\ImarDurumu.cs" />
     <Compile Include="Enums\IsyeriTapuTipi.cs" />
     <Compile Include="Enums\MedeniDurum.cs" />
     <Compile Include="Enums\IlanVarmi.cs" />
@@ -186,6 +187,7 @@
     <Compile Include="Enums\OzelKodTuru.cs" />
     <Compile Include="Enums\PersonelDurumu.cs" />
     <Compile Include="Enums\PortfoyDurumu.cs" />
+    <Compile Include="Enums\PortfoyTuru.cs" />
     <Compile Include="Enums\RaporuKagidaSigdirmaTuru.cs" />
     <Compile Include="Enums\VarYok.cs" />
     <Compile Include="Enums\VeriDegisimYeri.cs" />

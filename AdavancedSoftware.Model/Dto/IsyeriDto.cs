@@ -26,7 +26,10 @@ namespace AdavancedSoftware.Model.Dto
 
     public class IsyeriL : BaseEntity
     {
+
         public string IsyeriTipiAdi { get; set; }
+        public PortfoyTuru PortfoyTuru { get; set; }
+        public ImarDurumu ImarDurumu { get; set; }
         public string Baslik { get; set; }
         public decimal Ucret { get; set; }
         public decimal AcikAlan { get; set; }
