@@ -32,12 +32,10 @@
             this.longNavigator = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Navigators.longNavigator();
             this.grid = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridControl();
             this.tablo = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridView();
-            this.gridBand1 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.colUcret = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colIsyeriTipiAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colPortfoyTuru = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colImarDurumu = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.gridBand2 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.colKapaliAlan = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colIsletmeAlani = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colOfisAlani = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
@@ -49,37 +47,51 @@
             this.colId = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.colKod = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.colBaslik = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn14 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn15 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn16 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn17 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn18 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn19 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn20 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn21 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn22 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn23 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn24 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn25 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn26 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn27 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn28 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn29 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn30 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn31 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn32 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn33 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn34 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn35 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn36 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn37 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn38 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn39 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn40 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.myBandedGridColumn41 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colM2TasimaKapasitesi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colGirisYuksekligi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colYapimYili = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colKiraciVarmi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colIsitmaAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colYapininDurumu = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colKullanimDurumu = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colKrediyeUygunluk = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colIsyeriTapuTipi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colTasinmazNo = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colIlAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colIlceAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colMahalle = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colAda = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colParsel = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colAciklama = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colDanismanAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colMusteriAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colIlanVarmi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colSahibinden = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colSahibindenLink = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colHepsiEmlak = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colHepsiEmlakLink = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colZingat = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colZingatLink = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colBuradaYapi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colBuradaYapiLink = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colDepoFabrika = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.repositoryÜcret = new DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit();
+            this.repositoryInt = new DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit();
+            this.colDepoFabrikaLink = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colPortfoyDurumu = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colYetkiliOfis = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colKayitTarihi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colIlanKayitTarihi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colIlanCikisTarihi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.gridBand1 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.gridBand2 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.gridBand3 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.gridBand4 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryÜcret)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryInt)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -116,6 +128,9 @@
             this.grid.MainView = this.tablo;
             this.grid.MenuManager = this.ribbonControl;
             this.grid.Name = "grid";
+            this.grid.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryÜcret,
+            this.repositoryInt});
             this.grid.Size = new System.Drawing.Size(1311, 418);
             this.grid.TabIndex = 3;
             this.grid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -142,7 +157,9 @@
             this.tablo.BandPanelRowHeight = 40;
             this.tablo.Bands.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.GridBand[] {
             this.gridBand1,
-            this.gridBand2});
+            this.gridBand2,
+            this.gridBand3,
+            this.gridBand4});
             this.tablo.Columns.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn[] {
             this.colId,
             this.colKod,
@@ -159,34 +176,40 @@
             this.VincVarmi,
             this.colVincAciklama,
             this.colKatsayisi,
-            this.myBandedGridColumn14,
-            this.myBandedGridColumn15,
-            this.myBandedGridColumn16,
-            this.myBandedGridColumn17,
-            this.myBandedGridColumn18,
-            this.myBandedGridColumn19,
-            this.myBandedGridColumn20,
-            this.myBandedGridColumn21,
-            this.myBandedGridColumn22,
-            this.myBandedGridColumn23,
-            this.myBandedGridColumn24,
-            this.myBandedGridColumn25,
-            this.myBandedGridColumn26,
-            this.myBandedGridColumn27,
-            this.myBandedGridColumn28,
-            this.myBandedGridColumn29,
-            this.myBandedGridColumn30,
-            this.myBandedGridColumn31,
-            this.myBandedGridColumn32,
-            this.myBandedGridColumn33,
-            this.myBandedGridColumn34,
-            this.myBandedGridColumn35,
-            this.myBandedGridColumn36,
-            this.myBandedGridColumn37,
-            this.myBandedGridColumn38,
-            this.myBandedGridColumn39,
-            this.myBandedGridColumn40,
-            this.myBandedGridColumn41});
+            this.colM2TasimaKapasitesi,
+            this.colGirisYuksekligi,
+            this.colYapimYili,
+            this.colKiraciVarmi,
+            this.colIsitmaAdi,
+            this.colYapininDurumu,
+            this.colKullanimDurumu,
+            this.colKrediyeUygunluk,
+            this.colIsyeriTapuTipi,
+            this.colTasinmazNo,
+            this.colIlAdi,
+            this.colIlceAdi,
+            this.colMahalle,
+            this.colAda,
+            this.colParsel,
+            this.colAciklama,
+            this.colDanismanAdi,
+            this.colMusteriAdi,
+            this.colIlanVarmi,
+            this.colSahibinden,
+            this.colSahibindenLink,
+            this.colHepsiEmlak,
+            this.colHepsiEmlakLink,
+            this.colZingat,
+            this.colZingatLink,
+            this.colBuradaYapi,
+            this.colBuradaYapiLink,
+            this.colDepoFabrika,
+            this.colDepoFabrikaLink,
+            this.colPortfoyDurumu,
+            this.colYetkiliOfis,
+            this.colKayitTarihi,
+            this.colIlanKayitTarihi,
+            this.colIlanCikisTarihi});
             this.tablo.GridControl = this.grid;
             this.tablo.Name = "tablo";
             this.tablo.OptionsMenu.EnableColumnMenu = false;
@@ -206,17 +229,6 @@
             this.tablo.StatusBarKisaYol = null;
             this.tablo.StatusBarKisaYolAciklama = null;
             this.tablo.ViewCaption = "İŞYERİ PORFÖY LİSTESİ";
-            // 
-            // gridBand1
-            // 
-            this.gridBand1.Caption = "GENEL BİLGİLER";
-            this.gridBand1.Columns.Add(this.colUcret);
-            this.gridBand1.Columns.Add(this.colIsyeriTipiAdi);
-            this.gridBand1.Columns.Add(this.colPortfoyTuru);
-            this.gridBand1.Columns.Add(this.colImarDurumu);
-            this.gridBand1.Name = "gridBand1";
-            this.gridBand1.VisibleIndex = 0;
-            this.gridBand1.Width = 300;
             // 
             // colUcret
             // 
@@ -261,21 +273,6 @@
             this.colImarDurumu.StatusBarKisaYol = null;
             this.colImarDurumu.StatusBarKisaYolAciklama = null;
             this.colImarDurumu.Visible = true;
-            // 
-            // gridBand2
-            // 
-            this.gridBand2.Caption = "gridBand2";
-            this.gridBand2.Columns.Add(this.colKapaliAlan);
-            this.gridBand2.Columns.Add(this.colIsletmeAlani);
-            this.gridBand2.Columns.Add(this.colOfisAlani);
-            this.gridBand2.Columns.Add(this.colAcikAlan);
-            this.gridBand2.Columns.Add(this.colKWAEnerji);
-            this.gridBand2.Columns.Add(this.colKatsayisi);
-            this.gridBand2.Columns.Add(this.VincVarmi);
-            this.gridBand2.Columns.Add(this.colVincAciklama);
-            this.gridBand2.Name = "gridBand2";
-            this.gridBand2.VisibleIndex = 1;
-            this.gridBand2.Width = 600;
             // 
             // colKapaliAlan
             // 
@@ -394,285 +391,456 @@
             this.colBaslik.StatusBarKisaYolAciklama = null;
             this.colBaslik.Visible = true;
             // 
-            // myBandedGridColumn14
+            // colM2TasimaKapasitesi
             // 
-            this.myBandedGridColumn14.Caption = "myBandedGridColumn14";
-            this.myBandedGridColumn14.Name = "myBandedGridColumn14";
-            this.myBandedGridColumn14.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn14.StatusBarAciklama = null;
-            this.myBandedGridColumn14.StatusBarKisaYol = null;
-            this.myBandedGridColumn14.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn14.Visible = true;
+            this.colM2TasimaKapasitesi.Caption = "Taşıma Kapasitesi";
+            this.colM2TasimaKapasitesi.FieldName = "M2TasimaKapasitesi";
+            this.colM2TasimaKapasitesi.Name = "colM2TasimaKapasitesi";
+            this.colM2TasimaKapasitesi.OptionsColumn.AllowEdit = false;
+            this.colM2TasimaKapasitesi.StatusBarAciklama = null;
+            this.colM2TasimaKapasitesi.StatusBarKisaYol = null;
+            this.colM2TasimaKapasitesi.StatusBarKisaYolAciklama = null;
+            this.colM2TasimaKapasitesi.Visible = true;
             // 
-            // myBandedGridColumn15
+            // colGirisYuksekligi
             // 
-            this.myBandedGridColumn15.Caption = "myBandedGridColumn15";
-            this.myBandedGridColumn15.Name = "myBandedGridColumn15";
-            this.myBandedGridColumn15.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn15.StatusBarAciklama = null;
-            this.myBandedGridColumn15.StatusBarKisaYol = null;
-            this.myBandedGridColumn15.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn15.Visible = true;
+            this.colGirisYuksekligi.Caption = "G.Yüksekliği";
+            this.colGirisYuksekligi.FieldName = "GirisYuksekligi";
+            this.colGirisYuksekligi.Name = "colGirisYuksekligi";
+            this.colGirisYuksekligi.OptionsColumn.AllowEdit = false;
+            this.colGirisYuksekligi.StatusBarAciklama = null;
+            this.colGirisYuksekligi.StatusBarKisaYol = null;
+            this.colGirisYuksekligi.StatusBarKisaYolAciklama = null;
+            this.colGirisYuksekligi.Visible = true;
             // 
-            // myBandedGridColumn16
+            // colYapimYili
             // 
-            this.myBandedGridColumn16.Caption = "myBandedGridColumn16";
-            this.myBandedGridColumn16.Name = "myBandedGridColumn16";
-            this.myBandedGridColumn16.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn16.StatusBarAciklama = null;
-            this.myBandedGridColumn16.StatusBarKisaYol = null;
-            this.myBandedGridColumn16.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn16.Visible = true;
+            this.colYapimYili.Caption = "Yapım Yılı";
+            this.colYapimYili.FieldName = "YapimYili";
+            this.colYapimYili.Name = "colYapimYili";
+            this.colYapimYili.OptionsColumn.AllowEdit = false;
+            this.colYapimYili.StatusBarAciklama = null;
+            this.colYapimYili.StatusBarKisaYol = null;
+            this.colYapimYili.StatusBarKisaYolAciklama = null;
+            this.colYapimYili.Visible = true;
             // 
-            // myBandedGridColumn17
+            // colKiraciVarmi
             // 
-            this.myBandedGridColumn17.Caption = "myBandedGridColumn17";
-            this.myBandedGridColumn17.Name = "myBandedGridColumn17";
-            this.myBandedGridColumn17.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn17.StatusBarAciklama = null;
-            this.myBandedGridColumn17.StatusBarKisaYol = null;
-            this.myBandedGridColumn17.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn17.Visible = true;
+            this.colKiraciVarmi.Caption = "Kiracı";
+            this.colKiraciVarmi.FieldName = "KiraciVarmi";
+            this.colKiraciVarmi.Name = "colKiraciVarmi";
+            this.colKiraciVarmi.OptionsColumn.AllowEdit = false;
+            this.colKiraciVarmi.StatusBarAciklama = null;
+            this.colKiraciVarmi.StatusBarKisaYol = null;
+            this.colKiraciVarmi.StatusBarKisaYolAciklama = null;
+            this.colKiraciVarmi.Visible = true;
             // 
-            // myBandedGridColumn18
+            // colIsitmaAdi
             // 
-            this.myBandedGridColumn18.Caption = "myBandedGridColumn18";
-            this.myBandedGridColumn18.Name = "myBandedGridColumn18";
-            this.myBandedGridColumn18.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn18.StatusBarAciklama = null;
-            this.myBandedGridColumn18.StatusBarKisaYol = null;
-            this.myBandedGridColumn18.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn18.Visible = true;
+            this.colIsitmaAdi.Caption = "Isıtma";
+            this.colIsitmaAdi.FieldName = "IsitmaAdi";
+            this.colIsitmaAdi.Name = "colIsitmaAdi";
+            this.colIsitmaAdi.OptionsColumn.AllowEdit = false;
+            this.colIsitmaAdi.StatusBarAciklama = null;
+            this.colIsitmaAdi.StatusBarKisaYol = null;
+            this.colIsitmaAdi.StatusBarKisaYolAciklama = null;
+            this.colIsitmaAdi.Visible = true;
             // 
-            // myBandedGridColumn19
+            // colYapininDurumu
             // 
-            this.myBandedGridColumn19.Caption = "myBandedGridColumn19";
-            this.myBandedGridColumn19.Name = "myBandedGridColumn19";
-            this.myBandedGridColumn19.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn19.StatusBarAciklama = null;
-            this.myBandedGridColumn19.StatusBarKisaYol = null;
-            this.myBandedGridColumn19.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn19.Visible = true;
+            this.colYapininDurumu.Caption = "Yapının Durumu";
+            this.colYapininDurumu.FieldName = "YapininDurumu";
+            this.colYapininDurumu.Name = "colYapininDurumu";
+            this.colYapininDurumu.OptionsColumn.AllowEdit = false;
+            this.colYapininDurumu.StatusBarAciklama = null;
+            this.colYapininDurumu.StatusBarKisaYol = null;
+            this.colYapininDurumu.StatusBarKisaYolAciklama = null;
+            this.colYapininDurumu.Visible = true;
             // 
-            // myBandedGridColumn20
+            // colKullanimDurumu
             // 
-            this.myBandedGridColumn20.Caption = "myBandedGridColumn20";
-            this.myBandedGridColumn20.Name = "myBandedGridColumn20";
-            this.myBandedGridColumn20.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn20.StatusBarAciklama = null;
-            this.myBandedGridColumn20.StatusBarKisaYol = null;
-            this.myBandedGridColumn20.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn20.Visible = true;
+            this.colKullanimDurumu.Caption = "Kullanım Durumu";
+            this.colKullanimDurumu.FieldName = "KullanimDurumu";
+            this.colKullanimDurumu.Name = "colKullanimDurumu";
+            this.colKullanimDurumu.OptionsColumn.AllowEdit = false;
+            this.colKullanimDurumu.StatusBarAciklama = null;
+            this.colKullanimDurumu.StatusBarKisaYol = null;
+            this.colKullanimDurumu.StatusBarKisaYolAciklama = null;
+            this.colKullanimDurumu.Visible = true;
             // 
-            // myBandedGridColumn21
+            // colKrediyeUygunluk
             // 
-            this.myBandedGridColumn21.Caption = "myBandedGridColumn21";
-            this.myBandedGridColumn21.Name = "myBandedGridColumn21";
-            this.myBandedGridColumn21.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn21.StatusBarAciklama = null;
-            this.myBandedGridColumn21.StatusBarKisaYol = null;
-            this.myBandedGridColumn21.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn21.Visible = true;
+            this.colKrediyeUygunluk.Caption = "Krediye Uygunluk";
+            this.colKrediyeUygunluk.FieldName = "KrediyeUygunluk";
+            this.colKrediyeUygunluk.Name = "colKrediyeUygunluk";
+            this.colKrediyeUygunluk.OptionsColumn.AllowEdit = false;
+            this.colKrediyeUygunluk.StatusBarAciklama = null;
+            this.colKrediyeUygunluk.StatusBarKisaYol = null;
+            this.colKrediyeUygunluk.StatusBarKisaYolAciklama = null;
+            this.colKrediyeUygunluk.Visible = true;
             // 
-            // myBandedGridColumn22
+            // colIsyeriTapuTipi
             // 
-            this.myBandedGridColumn22.Caption = "myBandedGridColumn22";
-            this.myBandedGridColumn22.Name = "myBandedGridColumn22";
-            this.myBandedGridColumn22.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn22.StatusBarAciklama = null;
-            this.myBandedGridColumn22.StatusBarKisaYol = null;
-            this.myBandedGridColumn22.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn22.Visible = true;
+            this.colIsyeriTapuTipi.Caption = "Tapu Tipi";
+            this.colIsyeriTapuTipi.FieldName = "IsyeriTapuTipi";
+            this.colIsyeriTapuTipi.Name = "colIsyeriTapuTipi";
+            this.colIsyeriTapuTipi.OptionsColumn.AllowEdit = false;
+            this.colIsyeriTapuTipi.StatusBarAciklama = null;
+            this.colIsyeriTapuTipi.StatusBarKisaYol = null;
+            this.colIsyeriTapuTipi.StatusBarKisaYolAciklama = null;
+            this.colIsyeriTapuTipi.Visible = true;
             // 
-            // myBandedGridColumn23
+            // colTasinmazNo
             // 
-            this.myBandedGridColumn23.Caption = "myBandedGridColumn23";
-            this.myBandedGridColumn23.Name = "myBandedGridColumn23";
-            this.myBandedGridColumn23.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn23.StatusBarAciklama = null;
-            this.myBandedGridColumn23.StatusBarKisaYol = null;
-            this.myBandedGridColumn23.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn23.Visible = true;
+            this.colTasinmazNo.Caption = "Taşınmaz No";
+            this.colTasinmazNo.FieldName = "TasinmazNo";
+            this.colTasinmazNo.Name = "colTasinmazNo";
+            this.colTasinmazNo.OptionsColumn.AllowEdit = false;
+            this.colTasinmazNo.StatusBarAciklama = null;
+            this.colTasinmazNo.StatusBarKisaYol = null;
+            this.colTasinmazNo.StatusBarKisaYolAciklama = null;
+            this.colTasinmazNo.Visible = true;
             // 
-            // myBandedGridColumn24
+            // colIlAdi
             // 
-            this.myBandedGridColumn24.Caption = "myBandedGridColumn24";
-            this.myBandedGridColumn24.Name = "myBandedGridColumn24";
-            this.myBandedGridColumn24.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn24.StatusBarAciklama = null;
-            this.myBandedGridColumn24.StatusBarKisaYol = null;
-            this.myBandedGridColumn24.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn24.Visible = true;
+            this.colIlAdi.Caption = "İl ";
+            this.colIlAdi.FieldName = "IlAdi";
+            this.colIlAdi.Name = "colIlAdi";
+            this.colIlAdi.OptionsColumn.AllowEdit = false;
+            this.colIlAdi.StatusBarAciklama = null;
+            this.colIlAdi.StatusBarKisaYol = null;
+            this.colIlAdi.StatusBarKisaYolAciklama = null;
+            this.colIlAdi.Visible = true;
             // 
-            // myBandedGridColumn25
+            // colIlceAdi
             // 
-            this.myBandedGridColumn25.Caption = "myBandedGridColumn25";
-            this.myBandedGridColumn25.Name = "myBandedGridColumn25";
-            this.myBandedGridColumn25.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn25.StatusBarAciklama = null;
-            this.myBandedGridColumn25.StatusBarKisaYol = null;
-            this.myBandedGridColumn25.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn25.Visible = true;
+            this.colIlceAdi.Caption = "İlçe ";
+            this.colIlceAdi.FieldName = "IlceAdi";
+            this.colIlceAdi.Name = "colIlceAdi";
+            this.colIlceAdi.OptionsColumn.AllowEdit = false;
+            this.colIlceAdi.StatusBarAciklama = null;
+            this.colIlceAdi.StatusBarKisaYol = null;
+            this.colIlceAdi.StatusBarKisaYolAciklama = null;
+            this.colIlceAdi.Visible = true;
             // 
-            // myBandedGridColumn26
+            // colMahalle
             // 
-            this.myBandedGridColumn26.Caption = "myBandedGridColumn26";
-            this.myBandedGridColumn26.Name = "myBandedGridColumn26";
-            this.myBandedGridColumn26.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn26.StatusBarAciklama = null;
-            this.myBandedGridColumn26.StatusBarKisaYol = null;
-            this.myBandedGridColumn26.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn26.Visible = true;
+            this.colMahalle.Caption = "Mahalle ";
+            this.colMahalle.FieldName = "Mahalle";
+            this.colMahalle.Name = "colMahalle";
+            this.colMahalle.OptionsColumn.AllowEdit = false;
+            this.colMahalle.StatusBarAciklama = null;
+            this.colMahalle.StatusBarKisaYol = null;
+            this.colMahalle.StatusBarKisaYolAciklama = null;
+            this.colMahalle.Visible = true;
             // 
-            // myBandedGridColumn27
+            // colAda
             // 
-            this.myBandedGridColumn27.Caption = "myBandedGridColumn27";
-            this.myBandedGridColumn27.Name = "myBandedGridColumn27";
-            this.myBandedGridColumn27.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn27.StatusBarAciklama = null;
-            this.myBandedGridColumn27.StatusBarKisaYol = null;
-            this.myBandedGridColumn27.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn27.Visible = true;
+            this.colAda.Caption = "Ada";
+            this.colAda.FieldName = "Ada";
+            this.colAda.Name = "colAda";
+            this.colAda.OptionsColumn.AllowEdit = false;
+            this.colAda.StatusBarAciklama = null;
+            this.colAda.StatusBarKisaYol = null;
+            this.colAda.StatusBarKisaYolAciklama = null;
+            this.colAda.Visible = true;
             // 
-            // myBandedGridColumn28
+            // colParsel
             // 
-            this.myBandedGridColumn28.Caption = "myBandedGridColumn28";
-            this.myBandedGridColumn28.Name = "myBandedGridColumn28";
-            this.myBandedGridColumn28.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn28.StatusBarAciklama = null;
-            this.myBandedGridColumn28.StatusBarKisaYol = null;
-            this.myBandedGridColumn28.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn28.Visible = true;
+            this.colParsel.Caption = "Parsel";
+            this.colParsel.FieldName = "Parsel";
+            this.colParsel.Name = "colParsel";
+            this.colParsel.OptionsColumn.AllowEdit = false;
+            this.colParsel.StatusBarAciklama = null;
+            this.colParsel.StatusBarKisaYol = null;
+            this.colParsel.StatusBarKisaYolAciklama = null;
+            this.colParsel.Visible = true;
             // 
-            // myBandedGridColumn29
+            // colAciklama
             // 
-            this.myBandedGridColumn29.Caption = "myBandedGridColumn29";
-            this.myBandedGridColumn29.Name = "myBandedGridColumn29";
-            this.myBandedGridColumn29.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn29.StatusBarAciklama = null;
-            this.myBandedGridColumn29.StatusBarKisaYol = null;
-            this.myBandedGridColumn29.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn29.Visible = true;
+            this.colAciklama.Caption = "Açıklama";
+            this.colAciklama.FieldName = "Aciklama";
+            this.colAciklama.Name = "colAciklama";
+            this.colAciklama.OptionsColumn.AllowEdit = false;
+            this.colAciklama.StatusBarAciklama = null;
+            this.colAciklama.StatusBarKisaYol = null;
+            this.colAciklama.StatusBarKisaYolAciklama = null;
+            this.colAciklama.Visible = true;
             // 
-            // myBandedGridColumn30
+            // colDanismanAdi
             // 
-            this.myBandedGridColumn30.Caption = "myBandedGridColumn30";
-            this.myBandedGridColumn30.Name = "myBandedGridColumn30";
-            this.myBandedGridColumn30.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn30.StatusBarAciklama = null;
-            this.myBandedGridColumn30.StatusBarKisaYol = null;
-            this.myBandedGridColumn30.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn30.Visible = true;
+            this.colDanismanAdi.Caption = "Danışman";
+            this.colDanismanAdi.FieldName = "DanismanAdi";
+            this.colDanismanAdi.Name = "colDanismanAdi";
+            this.colDanismanAdi.OptionsColumn.AllowEdit = false;
+            this.colDanismanAdi.StatusBarAciklama = null;
+            this.colDanismanAdi.StatusBarKisaYol = null;
+            this.colDanismanAdi.StatusBarKisaYolAciklama = null;
+            this.colDanismanAdi.Visible = true;
             // 
-            // myBandedGridColumn31
+            // colMusteriAdi
             // 
-            this.myBandedGridColumn31.Caption = "myBandedGridColumn31";
-            this.myBandedGridColumn31.Name = "myBandedGridColumn31";
-            this.myBandedGridColumn31.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn31.StatusBarAciklama = null;
-            this.myBandedGridColumn31.StatusBarKisaYol = null;
-            this.myBandedGridColumn31.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn31.Visible = true;
+            this.colMusteriAdi.Caption = "Mal Sahibi";
+            this.colMusteriAdi.FieldName = "MusteriAdi";
+            this.colMusteriAdi.Name = "colMusteriAdi";
+            this.colMusteriAdi.OptionsColumn.AllowEdit = false;
+            this.colMusteriAdi.StatusBarAciklama = null;
+            this.colMusteriAdi.StatusBarKisaYol = null;
+            this.colMusteriAdi.StatusBarKisaYolAciklama = null;
+            this.colMusteriAdi.Visible = true;
             // 
-            // myBandedGridColumn32
+            // colIlanVarmi
             // 
-            this.myBandedGridColumn32.Caption = "myBandedGridColumn32";
-            this.myBandedGridColumn32.Name = "myBandedGridColumn32";
-            this.myBandedGridColumn32.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn32.StatusBarAciklama = null;
-            this.myBandedGridColumn32.StatusBarKisaYol = null;
-            this.myBandedGridColumn32.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn32.Visible = true;
+            this.colIlanVarmi.Caption = "İlanda Mı?";
+            this.colIlanVarmi.FieldName = "IlanVarmi";
+            this.colIlanVarmi.Name = "colIlanVarmi";
+            this.colIlanVarmi.OptionsColumn.AllowEdit = false;
+            this.colIlanVarmi.StatusBarAciklama = null;
+            this.colIlanVarmi.StatusBarKisaYol = null;
+            this.colIlanVarmi.StatusBarKisaYolAciklama = null;
+            this.colIlanVarmi.Visible = true;
             // 
-            // myBandedGridColumn33
+            // colSahibinden
             // 
-            this.myBandedGridColumn33.Caption = "myBandedGridColumn33";
-            this.myBandedGridColumn33.Name = "myBandedGridColumn33";
-            this.myBandedGridColumn33.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn33.StatusBarAciklama = null;
-            this.myBandedGridColumn33.StatusBarKisaYol = null;
-            this.myBandedGridColumn33.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn33.Visible = true;
+            this.colSahibinden.Caption = "Sahibinden";
+            this.colSahibinden.FieldName = "Sahibinden";
+            this.colSahibinden.Name = "colSahibinden";
+            this.colSahibinden.OptionsColumn.AllowEdit = false;
+            this.colSahibinden.StatusBarAciklama = null;
+            this.colSahibinden.StatusBarKisaYol = null;
+            this.colSahibinden.StatusBarKisaYolAciklama = null;
+            this.colSahibinden.Visible = true;
             // 
-            // myBandedGridColumn34
+            // colSahibindenLink
             // 
-            this.myBandedGridColumn34.Caption = "myBandedGridColumn34";
-            this.myBandedGridColumn34.Name = "myBandedGridColumn34";
-            this.myBandedGridColumn34.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn34.StatusBarAciklama = null;
-            this.myBandedGridColumn34.StatusBarKisaYol = null;
-            this.myBandedGridColumn34.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn34.Visible = true;
+            this.colSahibindenLink.Caption = "Sahibinden Link";
+            this.colSahibindenLink.FieldName = "SahibindenLink";
+            this.colSahibindenLink.Name = "colSahibindenLink";
+            this.colSahibindenLink.OptionsColumn.AllowEdit = false;
+            this.colSahibindenLink.StatusBarAciklama = null;
+            this.colSahibindenLink.StatusBarKisaYol = null;
+            this.colSahibindenLink.StatusBarKisaYolAciklama = null;
+            this.colSahibindenLink.Visible = true;
             // 
-            // myBandedGridColumn35
+            // colHepsiEmlak
             // 
-            this.myBandedGridColumn35.Caption = "myBandedGridColumn35";
-            this.myBandedGridColumn35.Name = "myBandedGridColumn35";
-            this.myBandedGridColumn35.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn35.StatusBarAciklama = null;
-            this.myBandedGridColumn35.StatusBarKisaYol = null;
-            this.myBandedGridColumn35.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn35.Visible = true;
+            this.colHepsiEmlak.Caption = "Hepsi Emlak";
+            this.colHepsiEmlak.FieldName = "HepsiEmlak";
+            this.colHepsiEmlak.Name = "colHepsiEmlak";
+            this.colHepsiEmlak.OptionsColumn.AllowEdit = false;
+            this.colHepsiEmlak.StatusBarAciklama = null;
+            this.colHepsiEmlak.StatusBarKisaYol = null;
+            this.colHepsiEmlak.StatusBarKisaYolAciklama = null;
+            this.colHepsiEmlak.Visible = true;
             // 
-            // myBandedGridColumn36
+            // colHepsiEmlakLink
             // 
-            this.myBandedGridColumn36.Caption = "myBandedGridColumn36";
-            this.myBandedGridColumn36.Name = "myBandedGridColumn36";
-            this.myBandedGridColumn36.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn36.StatusBarAciklama = null;
-            this.myBandedGridColumn36.StatusBarKisaYol = null;
-            this.myBandedGridColumn36.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn36.Visible = true;
+            this.colHepsiEmlakLink.Caption = "Hepsi Emlak Link";
+            this.colHepsiEmlakLink.FieldName = "HepsiEmlakLink";
+            this.colHepsiEmlakLink.Name = "colHepsiEmlakLink";
+            this.colHepsiEmlakLink.OptionsColumn.AllowEdit = false;
+            this.colHepsiEmlakLink.StatusBarAciklama = null;
+            this.colHepsiEmlakLink.StatusBarKisaYol = null;
+            this.colHepsiEmlakLink.StatusBarKisaYolAciklama = null;
+            this.colHepsiEmlakLink.Visible = true;
             // 
-            // myBandedGridColumn37
+            // colZingat
             // 
-            this.myBandedGridColumn37.Caption = "myBandedGridColumn37";
-            this.myBandedGridColumn37.Name = "myBandedGridColumn37";
-            this.myBandedGridColumn37.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn37.StatusBarAciklama = null;
-            this.myBandedGridColumn37.StatusBarKisaYol = null;
-            this.myBandedGridColumn37.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn37.Visible = true;
+            this.colZingat.Caption = "Zingat";
+            this.colZingat.FieldName = "Zingat";
+            this.colZingat.Name = "colZingat";
+            this.colZingat.OptionsColumn.AllowEdit = false;
+            this.colZingat.StatusBarAciklama = null;
+            this.colZingat.StatusBarKisaYol = null;
+            this.colZingat.StatusBarKisaYolAciklama = null;
+            this.colZingat.Visible = true;
             // 
-            // myBandedGridColumn38
+            // colZingatLink
             // 
-            this.myBandedGridColumn38.Caption = "myBandedGridColumn38";
-            this.myBandedGridColumn38.Name = "myBandedGridColumn38";
-            this.myBandedGridColumn38.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn38.StatusBarAciklama = null;
-            this.myBandedGridColumn38.StatusBarKisaYol = null;
-            this.myBandedGridColumn38.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn38.Visible = true;
+            this.colZingatLink.Caption = "Zingat Link";
+            this.colZingatLink.FieldName = "ZingatLink";
+            this.colZingatLink.Name = "colZingatLink";
+            this.colZingatLink.OptionsColumn.AllowEdit = false;
+            this.colZingatLink.StatusBarAciklama = null;
+            this.colZingatLink.StatusBarKisaYol = null;
+            this.colZingatLink.StatusBarKisaYolAciklama = null;
+            this.colZingatLink.Visible = true;
             // 
-            // myBandedGridColumn39
+            // colBuradaYapi
             // 
-            this.myBandedGridColumn39.Caption = "myBandedGridColumn39";
-            this.myBandedGridColumn39.Name = "myBandedGridColumn39";
-            this.myBandedGridColumn39.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn39.StatusBarAciklama = null;
-            this.myBandedGridColumn39.StatusBarKisaYol = null;
-            this.myBandedGridColumn39.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn39.Visible = true;
+            this.colBuradaYapi.Caption = "Burada Yapı";
+            this.colBuradaYapi.FieldName = "BuradaYapi";
+            this.colBuradaYapi.Name = "colBuradaYapi";
+            this.colBuradaYapi.OptionsColumn.AllowEdit = false;
+            this.colBuradaYapi.StatusBarAciklama = null;
+            this.colBuradaYapi.StatusBarKisaYol = null;
+            this.colBuradaYapi.StatusBarKisaYolAciklama = null;
+            this.colBuradaYapi.Visible = true;
             // 
-            // myBandedGridColumn40
+            // colBuradaYapiLink
             // 
-            this.myBandedGridColumn40.Caption = "myBandedGridColumn40";
-            this.myBandedGridColumn40.Name = "myBandedGridColumn40";
-            this.myBandedGridColumn40.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn40.StatusBarAciklama = null;
-            this.myBandedGridColumn40.StatusBarKisaYol = null;
-            this.myBandedGridColumn40.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn40.Visible = true;
+            this.colBuradaYapiLink.Caption = "Burada Yapı Link";
+            this.colBuradaYapiLink.FieldName = "BuradaYapiLink";
+            this.colBuradaYapiLink.Name = "colBuradaYapiLink";
+            this.colBuradaYapiLink.OptionsColumn.AllowEdit = false;
+            this.colBuradaYapiLink.StatusBarAciklama = null;
+            this.colBuradaYapiLink.StatusBarKisaYol = null;
+            this.colBuradaYapiLink.StatusBarKisaYolAciklama = null;
+            this.colBuradaYapiLink.Visible = true;
             // 
-            // myBandedGridColumn41
+            // colDepoFabrika
             // 
-            this.myBandedGridColumn41.Caption = "myBandedGridColumn41";
-            this.myBandedGridColumn41.Name = "myBandedGridColumn41";
-            this.myBandedGridColumn41.OptionsColumn.AllowEdit = false;
-            this.myBandedGridColumn41.StatusBarAciklama = null;
-            this.myBandedGridColumn41.StatusBarKisaYol = null;
-            this.myBandedGridColumn41.StatusBarKisaYolAciklama = null;
-            this.myBandedGridColumn41.Visible = true;
+            this.colDepoFabrika.Caption = "Depo Fabrika";
+            this.colDepoFabrika.FieldName = "DepoFabrika";
+            this.colDepoFabrika.Name = "colDepoFabrika";
+            this.colDepoFabrika.OptionsColumn.AllowEdit = false;
+            this.colDepoFabrika.StatusBarAciklama = null;
+            this.colDepoFabrika.StatusBarKisaYol = null;
+            this.colDepoFabrika.StatusBarKisaYolAciklama = null;
+            this.colDepoFabrika.Visible = true;
+            // 
+            // repositoryÜcret
+            // 
+            this.repositoryÜcret.AutoHeight = false;
+            this.repositoryÜcret.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryÜcret.DisplayFormat.FormatString = "c2";
+            this.repositoryÜcret.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.repositoryÜcret.MaskSettings.Set("mask", "c2");
+            this.repositoryÜcret.Name = "repositoryÜcret";
+            // 
+            // repositoryInt
+            // 
+            this.repositoryInt.AutoHeight = false;
+            this.repositoryInt.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryInt.Name = "repositoryInt";
+            // 
+            // colDepoFabrikaLink
+            // 
+            this.colDepoFabrikaLink.Caption = "Depo Fabrika Link";
+            this.colDepoFabrikaLink.FieldName = "DepoFabrikaLink";
+            this.colDepoFabrikaLink.Name = "colDepoFabrikaLink";
+            this.colDepoFabrikaLink.OptionsColumn.AllowEdit = false;
+            this.colDepoFabrikaLink.StatusBarAciklama = null;
+            this.colDepoFabrikaLink.StatusBarKisaYol = null;
+            this.colDepoFabrikaLink.StatusBarKisaYolAciklama = null;
+            this.colDepoFabrikaLink.Visible = true;
+            // 
+            // colPortfoyDurumu
+            // 
+            this.colPortfoyDurumu.Caption = "Portföy Durumu";
+            this.colPortfoyDurumu.FieldName = "PortfoyDurumu";
+            this.colPortfoyDurumu.Name = "colPortfoyDurumu";
+            this.colPortfoyDurumu.OptionsColumn.AllowEdit = false;
+            this.colPortfoyDurumu.StatusBarAciklama = null;
+            this.colPortfoyDurumu.StatusBarKisaYol = null;
+            this.colPortfoyDurumu.StatusBarKisaYolAciklama = null;
+            this.colPortfoyDurumu.Visible = true;
+            // 
+            // colYetkiliOfis
+            // 
+            this.colYetkiliOfis.Caption = "Yetkili Ofis";
+            this.colYetkiliOfis.FieldName = "YetkiliOfis";
+            this.colYetkiliOfis.Name = "colYetkiliOfis";
+            this.colYetkiliOfis.OptionsColumn.AllowEdit = false;
+            this.colYetkiliOfis.StatusBarAciklama = null;
+            this.colYetkiliOfis.StatusBarKisaYol = null;
+            this.colYetkiliOfis.StatusBarKisaYolAciklama = null;
+            this.colYetkiliOfis.Visible = true;
+            // 
+            // colKayitTarihi
+            // 
+            this.colKayitTarihi.Caption = "Kayıt Tarihi";
+            this.colKayitTarihi.FieldName = "KayitTarihi";
+            this.colKayitTarihi.Name = "colKayitTarihi";
+            this.colKayitTarihi.OptionsColumn.AllowEdit = false;
+            this.colKayitTarihi.StatusBarAciklama = null;
+            this.colKayitTarihi.StatusBarKisaYol = null;
+            this.colKayitTarihi.StatusBarKisaYolAciklama = null;
+            this.colKayitTarihi.Visible = true;
+            // 
+            // colIlanKayitTarihi
+            // 
+            this.colIlanKayitTarihi.Caption = "Kayıt Tarihi";
+            this.colIlanKayitTarihi.FieldName = "IlanKayitTarihi";
+            this.colIlanKayitTarihi.Name = "colIlanKayitTarihi";
+            this.colIlanKayitTarihi.OptionsColumn.AllowEdit = false;
+            this.colIlanKayitTarihi.StatusBarAciklama = null;
+            this.colIlanKayitTarihi.StatusBarKisaYol = null;
+            this.colIlanKayitTarihi.StatusBarKisaYolAciklama = null;
+            this.colIlanKayitTarihi.Visible = true;
+            // 
+            // colIlanCikisTarihi
+            // 
+            this.colIlanCikisTarihi.Caption = "Çıkış Tarihi";
+            this.colIlanCikisTarihi.FieldName = "IlanCikisTarihi";
+            this.colIlanCikisTarihi.Name = "colIlanCikisTarihi";
+            this.colIlanCikisTarihi.OptionsColumn.AllowEdit = false;
+            this.colIlanCikisTarihi.StatusBarAciklama = null;
+            this.colIlanCikisTarihi.StatusBarKisaYol = null;
+            this.colIlanCikisTarihi.StatusBarKisaYolAciklama = null;
+            this.colIlanCikisTarihi.Visible = true;
+            // 
+            // gridBand1
+            // 
+            this.gridBand1.Caption = "GENEL BİLGİLER";
+            this.gridBand1.Columns.Add(this.colKayitTarihi);
+            this.gridBand1.Columns.Add(this.colUcret);
+            this.gridBand1.Columns.Add(this.colIsyeriTipiAdi);
+            this.gridBand1.Columns.Add(this.colPortfoyTuru);
+            this.gridBand1.Columns.Add(this.colImarDurumu);
+            this.gridBand1.Columns.Add(this.colIlAdi);
+            this.gridBand1.Columns.Add(this.colIlceAdi);
+            this.gridBand1.Columns.Add(this.colMahalle);
+            this.gridBand1.Columns.Add(this.colAda);
+            this.gridBand1.Columns.Add(this.colParsel);
+            this.gridBand1.Name = "gridBand1";
+            this.gridBand1.VisibleIndex = 0;
+            this.gridBand1.Width = 750;
+            // 
+            // gridBand2
+            // 
+            this.gridBand2.Caption = "İŞYERİ BİLGİLERİ";
+            this.gridBand2.Columns.Add(this.colKapaliAlan);
+            this.gridBand2.Columns.Add(this.colIsletmeAlani);
+            this.gridBand2.Columns.Add(this.colOfisAlani);
+            this.gridBand2.Columns.Add(this.colAcikAlan);
+            this.gridBand2.Columns.Add(this.colKWAEnerji);
+            this.gridBand2.Columns.Add(this.colKatsayisi);
+            this.gridBand2.Columns.Add(this.VincVarmi);
+            this.gridBand2.Columns.Add(this.colVincAciklama);
+            this.gridBand2.Name = "gridBand2";
+            this.gridBand2.VisibleIndex = 1;
+            this.gridBand2.Width = 600;
+            // 
+            // gridBand3
+            // 
+            this.gridBand3.Caption = "İLAN BİLGİLERİ";
+            this.gridBand3.Columns.Add(this.colSahibinden);
+            this.gridBand3.Columns.Add(this.colSahibindenLink);
+            this.gridBand3.Columns.Add(this.colIlanVarmi);
+            this.gridBand3.Columns.Add(this.colHepsiEmlak);
+            this.gridBand3.Columns.Add(this.colHepsiEmlakLink);
+            this.gridBand3.Columns.Add(this.colBuradaYapiLink);
+            this.gridBand3.Columns.Add(this.colBuradaYapi);
+            this.gridBand3.Columns.Add(this.colDepoFabrikaLink);
+            this.gridBand3.Columns.Add(this.colDepoFabrika);
+            this.gridBand3.Columns.Add(this.colZingatLink);
+            this.gridBand3.Columns.Add(this.colZingat);
+            this.gridBand3.Name = "gridBand3";
+            this.gridBand3.VisibleIndex = 2;
+            this.gridBand3.Width = 825;
+            // 
+            // gridBand4
+            // 
+            this.gridBand4.Caption = "gridBand4";
+            this.gridBand4.Columns.Add(this.colDanismanAdi);
+            this.gridBand4.Columns.Add(this.colPortfoyDurumu);
+            this.gridBand4.Columns.Add(this.colMusteriAdi);
+            this.gridBand4.Name = "gridBand4";
+            this.gridBand4.VisibleIndex = 3;
+            this.gridBand4.Width = 225;
             // 
             // IsyeriListForm
             // 
@@ -690,6 +858,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryÜcret)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryInt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -715,35 +885,45 @@
         private UserControls.Controls.Grid.MyBandedGridColumn VincVarmi;
         private UserControls.Controls.Grid.MyBandedGridColumn colVincAciklama;
         private UserControls.Controls.Grid.MyBandedGridColumn colKatsayisi;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn14;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn15;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn16;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn17;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn18;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn19;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn20;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn21;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn22;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn23;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn24;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn25;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn26;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn27;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn28;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn29;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn30;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn31;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn32;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn33;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn34;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn35;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn36;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn37;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn38;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn39;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn40;
-        private UserControls.Controls.Grid.MyBandedGridColumn myBandedGridColumn41;
+        private UserControls.Controls.Grid.MyBandedGridColumn colM2TasimaKapasitesi;
+        private UserControls.Controls.Grid.MyBandedGridColumn colGirisYuksekligi;
+        private UserControls.Controls.Grid.MyBandedGridColumn colYapimYili;
+        private UserControls.Controls.Grid.MyBandedGridColumn colKiraciVarmi;
+        private UserControls.Controls.Grid.MyBandedGridColumn colIsitmaAdi;
+        private UserControls.Controls.Grid.MyBandedGridColumn colYapininDurumu;
+        private UserControls.Controls.Grid.MyBandedGridColumn colKullanimDurumu;
+        private UserControls.Controls.Grid.MyBandedGridColumn colKrediyeUygunluk;
+        private UserControls.Controls.Grid.MyBandedGridColumn colIsyeriTapuTipi;
+        private UserControls.Controls.Grid.MyBandedGridColumn colTasinmazNo;
+        private UserControls.Controls.Grid.MyBandedGridColumn colIlAdi;
+        private UserControls.Controls.Grid.MyBandedGridColumn colIlceAdi;
+        private UserControls.Controls.Grid.MyBandedGridColumn colMahalle;
+        private UserControls.Controls.Grid.MyBandedGridColumn colAda;
+        private UserControls.Controls.Grid.MyBandedGridColumn colParsel;
+        private UserControls.Controls.Grid.MyBandedGridColumn colAciklama;
+        private UserControls.Controls.Grid.MyBandedGridColumn colDanismanAdi;
+        private UserControls.Controls.Grid.MyBandedGridColumn colMusteriAdi;
+        private UserControls.Controls.Grid.MyBandedGridColumn colIlanVarmi;
+        private UserControls.Controls.Grid.MyBandedGridColumn colSahibinden;
+        private UserControls.Controls.Grid.MyBandedGridColumn colSahibindenLink;
+        private UserControls.Controls.Grid.MyBandedGridColumn colHepsiEmlak;
+        private UserControls.Controls.Grid.MyBandedGridColumn colHepsiEmlakLink;
+        private UserControls.Controls.Grid.MyBandedGridColumn colZingat;
+        private UserControls.Controls.Grid.MyBandedGridColumn colZingatLink;
+        private UserControls.Controls.Grid.MyBandedGridColumn colBuradaYapi;
+        private UserControls.Controls.Grid.MyBandedGridColumn colBuradaYapiLink;
+        private UserControls.Controls.Grid.MyBandedGridColumn colDepoFabrika;
+        private DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit repositoryÜcret;
+        private DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit repositoryInt;
+        private UserControls.Controls.Grid.MyBandedGridColumn colDepoFabrikaLink;
+        private UserControls.Controls.Grid.MyBandedGridColumn colPortfoyDurumu;
+        private UserControls.Controls.Grid.MyBandedGridColumn colYetkiliOfis;
+        private UserControls.Controls.Grid.MyBandedGridColumn colKayitTarihi;
+        private UserControls.Controls.Grid.MyBandedGridColumn colIlanKayitTarihi;
+        private UserControls.Controls.Grid.MyBandedGridColumn colIlanCikisTarihi;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand1;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand2;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand3;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand4;
     }
 }

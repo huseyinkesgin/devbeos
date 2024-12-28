@@ -70,8 +70,6 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
                 ShowListForms<IptalNedeniListForm>.ShowListForm(KartTuru.IptalNedeni);
             if (e.Item == btnPortfoyTipi)
                 ShowListForms<PortfoyTipiListForm>.ShowListForm(KartTuru.PortfoyTipi);
-            if (e.Item == btnImarDurumu)
-                ShowListForms<ImarBilgisiListForm>.ShowListForm(KartTuru.ImarDurumu);
             if (e.Item == btnEmsal)
                 ShowListForms<EmsalListForm>.ShowListForm(KartTuru.Emsal);
             if (e.Item == btnGabari)

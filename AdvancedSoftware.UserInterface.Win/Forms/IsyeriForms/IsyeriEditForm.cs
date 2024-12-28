@@ -137,13 +137,13 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.IsyeriForms
                 KapaliAlan = txtKapaliAlan.Value,
                 IsletmeAlani = txtIsletmeAlani.Value,
                 OfisAlani = txtOfisAlani.Value,
-                KWAEnerji = Convert.ToInt32(txtKWAEnerji.Value),
+                KWAEnerji = (int)txtKWAEnerji.Value,
                 VincVarmi = txtVincVarmi.Text.GetEnum<VincVarmi>(),
                 VincAciklama = txtVincAciklama.Text,
-                Katsayisi = Convert.ToInt32(txtKatSayisi.Value),
+                Katsayisi = (int)txtKatSayisi.Value,
                 M2TasimaKapasitesi = txtM2TasimaKapasitesi.Text,
-                GirisYuksekligi = Convert.ToInt32(txtGirisYuksekligi.Value),
-                YapimYili = Convert.ToInt32(txtYapimYili.Value),
+                GirisYuksekligi = (int)txtGirisYuksekligi.Value,
+                YapimYili = (int)txtYapimYili.Value,
                 KiraciVarmi = txtKiraciVarmi.Text.GetEnum<KiraciVarmi>(),
                 IsitmaId = Convert.ToInt64(txtIsitma.Id),
                 YapininDurumu = txtYapininDurumu.Text.GetEnum<YapininDurumu>(),
@@ -154,8 +154,8 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.IsyeriForms
                 IlId = Convert.ToInt64(txtIl.Id),
                 IlceId = Convert.ToInt64(txtIlce.Id),
                 Mahalle = txtMahalle.Text,
-                Ada = Convert.ToInt32(txtAda.Value),
-                Parsel = Convert.ToInt32(txtParsel.Value),
+                Ada = (int)txtAda.Value,
+                Parsel = (int)txtParsel.Value,
                 Aciklama = txtAciklama.Text,
                 DanismanId = Convert.ToInt64(txtDanisman.Id),
                 MusteriId = Convert.ToInt64(txtMusteri.Id),
@@ -177,9 +177,9 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.IsyeriForms
                 //AutoCadDosyaYolu = txtAutoCadDosyaYolu.Text,
                 PortfoyDurumu = txtPortfoyDurumu.Text.GetEnum<PortfoyDurumu>(),
                 YetkiliOfis = txtYetkiliOfis.Text.GetEnum<YetkiliOfis>(),
-                KayitTarihi = txtKayitTarihi.DateTime,
-                IlanKayitTarihi = txtIlanKayitTarihi.DateTime,
-                IlanCikisTarihi = txtIlanCikisTarihi.DateTime,
+                KayitTarihi = txtKayitTarihi.DateTime.Date,
+                IlanKayitTarihi = txtIlanKayitTarihi.DateTime.Date,
+                IlanCikisTarihi = txtIlanCikisTarihi.DateTime.Date,
                 OzelKod1Id = txtOzelKod1.Id,
                 OzelKod2Id = txtOzelKod2.Id,
                 OzelKod3Id = txtOzelKod3.Id,
@@ -217,6 +217,8 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.IsyeriForms
                     sec.Sec(txtDanisman);
                 else if (txtMusteri == sender)
                     sec.Sec(txtMusteri);
+                else if (txtIsitma == sender)
+                    sec.Sec(txtIsitma);
                 else if (sender == txtOzelKod1)
                     sec.Sec(txtOzelKod1, KartTuru.Personel);
                 else if (sender == txtOzelKod2)

@@ -19,6 +19,7 @@ namespace AdavancedSoftware.Model.Entities
         public string Soyad { get; set; }
         public string TcKimlikNo { get; set; }
         public Cinsiyet Cinsiyet { get; set; } = Cinsiyet.Erkek;
+        [Column(TypeName = "date")]
         public DateTime DogumTarihi { get; set; } = DateTime.Now;
         public string DogumYeri { get; set; }
         public string BabaAdi { get; set; }
@@ -65,7 +66,9 @@ namespace AdavancedSoftware.Model.Entities
         public long? SubeId { get; set; }
         public string IBAN { get; set; }
         public PersonelDurumu PersonelDurumu { get; set; } = PersonelDurumu.Calisiyor;
+        [Column(TypeName = "date")]
         public DateTime IseGirisTarihi { get; set; } = DateTime.Now;
+        [Column(TypeName = "date")]
         public DateTime? IstenCikisTarihi { get; set; } = null;
 
         public long? OzelKod1Id { get; set; }

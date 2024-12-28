@@ -2,13 +2,11 @@
 using AdavancedSoftware.Model.Entities.Base;
 using AdvancedSoftware.Common.Enums;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AdavancedSoftware.Model.Dto
 {
+    [NotMapped]
     public class IsyeriS : Isyeri
     {
         public string IsyeriTipiAdi { get; set; }
@@ -77,8 +75,8 @@ namespace AdavancedSoftware.Model.Dto
         public PortfoyDurumu PortfoyDurumu { get; set; }
         public YetkiliOfis YetkiliOfis { get; set; }
         public DateTime KayitTarihi { get; set; }
-        public DateTime IlanKayitTarihi { get; set; }
-        public DateTime IlanCikisTarihi { get; set; }
+        public DateTime? IlanKayitTarihi { get; set; }
+        public DateTime? IlanCikisTarihi { get; set; }
         public string OzelKod1Adi { get; set; }
         public string OzelKod2Adi { get; set; }
         public string OzelKod3Adi { get; set; }

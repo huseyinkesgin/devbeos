@@ -8,7 +8,7 @@ namespace AdvancedSoftware.Common.Enums
         Sifir = 0,
         [Description("İKİNCİ EL")]
         IkinciEl = 1,
-        [Description("İNŞAAH HALİNDE")]
+        [Description("İNŞAAT HALİNDE")]
         InsaHalinde = 2,
     }
 }

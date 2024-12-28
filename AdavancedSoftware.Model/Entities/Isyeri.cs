@@ -1,4 +1,4 @@
-﻿using AdavancedSoftware.Model.Attributes;
+﻿    using AdavancedSoftware.Model.Attributes;
 using AdavancedSoftware.Model.Entities.Base;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
@@ -12,6 +12,7 @@ namespace AdavancedSoftware.Model.Entities
         [Index("IX_Kod", IsUnique = true)]
         public override string Kod { get; set; }
 
+        [ZorunluAlan("İşyeri Tipi", "txtIsyeriTipi")]
         public long IsyeriTipiId { get; set; }
         public PortfoyTuru PortfoyTuru { get; set; } = PortfoyTuru.Kiralik;
         public ImarDurumu ImarDurumu { get; set; } = ImarDurumu.Sanayi;
@@ -33,13 +34,16 @@ namespace AdavancedSoftware.Model.Entities
         public int GirisYuksekligi { get; set; }
         public int YapimYili { get; set; }
         public KiraciVarmi KiraciVarmi { get; set; } = KiraciVarmi.Hayir;
+        [ZorunluAlan("Isıtma", "txtIsitma")]
         public long IsitmaId { get; set; }
         public YapininDurumu YapininDurumu { get; set; } = YapininDurumu.IkinciEl;
         public KullanimDurumu KullanimDurumu { get; set; } = KullanimDurumu.Bos;
         public KrediyeUygunluk KrediyeUygunluk { get; set; } = KrediyeUygunluk.Bilinmiyor;
         public IsyeriTapuTipi IsyeriTapuTipi { get; set; } = IsyeriTapuTipi.KatIrtifaki;
         public string TasinmazNo { get; set; }
+        [ZorunluAlan("İl", "txtIl")]
         public long IlId { get; set; }
+        [ZorunluAlan("İlçe", "txtIlce")]
         public long IlceId { get; set; }
         public string Mahalle { get; set; }
         public int Ada { get; set; }
@@ -47,7 +51,9 @@ namespace AdavancedSoftware.Model.Entities
 
         [StringLength(5000)]
         public string Aciklama { get; set; }
+        [ZorunluAlan("Danışman", "txtDanisman")]
         public long DanismanId { get; set; }
+        [ZorunluAlan("Mal Sahibi", "txtMusteri")]
         public long MusteriId { get; set; }
         public IlanVarmi IlanVarmi { get; set; } = IlanVarmi.IlanYok;
         public string Sahibinden { get; set; }
@@ -77,9 +83,15 @@ namespace AdavancedSoftware.Model.Entities
 
         public PortfoyDurumu PortfoyDurumu { get; set; } = PortfoyDurumu.DevamEdiyor;
         public YetkiliOfis YetkiliOfis { get; set; } = YetkiliOfis.Hayır;
-        public DateTime KayitTarihi { get; set; } = DateTime.Now;
-        public DateTime IlanKayitTarihi { get; set; }
-        public DateTime IlanCikisTarihi { get; set; }
+
+        [Column(TypeName = "date")]
+        public DateTime KayitTarihi { get; set; } = DateTime.Now.Date;
+
+        [Column(TypeName = "date")]
+        public DateTime? IlanKayitTarihi { get; set; } = null;
+
+        [Column(TypeName = "date")]
+        public DateTime? IlanCikisTarihi { get; set; } = null;
         public long? OzelKod1Id { get; set; }
         public long? OzelKod2Id { get; set; }
         public long? OzelKod3Id { get; set; }
