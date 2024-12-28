@@ -4,11 +4,11 @@ namespace AdvancedSoftware.Common.Enums
 {
     public enum YapininDurumu : byte
     {
-        [Description("Sıfır")]
+        [Description("SIFIR")]
         Sifir = 0,
-        [Description("İkinci El")]
+        [Description("İKİNCİ EL")]
         IkinciEl = 1,
-        [Description("İnşaat Halinde")]
+        [Description("İNŞAAH HALİNDE")]
         InsaHalinde = 2,
     }
 }

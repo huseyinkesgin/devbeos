@@ -5,8 +5,10 @@ using AdvancedSoftware.UserInterface.Win.Forms.BankaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.BankaSubeForms;
 using AdvancedSoftware.UserInterface.Win.Forms.DepartmanForms;
 using AdvancedSoftware.UserInterface.Win.Forms.FirmaForms;
+using AdvancedSoftware.UserInterface.Win.Forms.MusteriForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MusteriGrupForms;
 using AdvancedSoftware.UserInterface.Win.Forms.OzelKod;
+using AdvancedSoftware.UserInterface.Win.Forms.PersonelForms;
 using AdvancedSoftware.UserInterface.Win.Forms.PortfoyTipiForms;
 using AdvancedSoftware.UserInterface.Win.Forms.SiparisForms.IlceForms;
 using AdvancedSoftware.UserInterface.Win.Forms.SiparisForms.IlForms;
@@ -86,13 +88,13 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
                     }
                     break;
 
-                case "txtTapuTipiAdi":
+                case "txtIsyeriTipi":
                     {
-                        var entity = (TapuTipi)ShowListForms<IsyeriTipiListForm>.ShowDialogListForm(KartTuru.TapuTipi, _btnEdit.Id, _prmEdit.Id, _prmEdit.Text);
+                        var entity = (IsyeriTipi)ShowListForms<IsyeriTipiListForm>.ShowDialogListForm(KartTuru.IsyeriTipi, _btnEdit.Id);
                         if (entity != null)
                         {
                             _btnEdit.Id = entity.Id;
-                            _btnEdit.EditValue = entity.TapuTipiAdi;
+                            _btnEdit.EditValue = entity.IsyeriTipiAdi;
                         }
                     }
                     break;
@@ -213,6 +215,28 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
                         {
                             _btnEdit.Id = entity.Id;
                             _btnEdit.EditValue = entity.UnvanAdi;
+                        }
+                    }
+                    break;
+
+                case "txtDanisman":
+                    {
+                        var entity = (PersonelL)ShowListForms<PersonelListForm>.ShowDialogListForm(KartTuru.Personel, _btnEdit.Id);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.Ad;
+                        }
+                    }
+                    break;
+
+                case "txtMusteri":
+                    {
+                        var entity = (MusteriL)ShowListForms<MusteriListForm>.ShowDialogListForm(KartTuru.Musteri, _btnEdit.Id);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.Ad;
                         }
                     }
                     break;

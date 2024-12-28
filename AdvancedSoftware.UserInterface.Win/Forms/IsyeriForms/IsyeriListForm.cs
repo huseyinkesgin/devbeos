@@ -14,7 +14,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.IsyeriForms
         public IsyeriListForm()
         {
             InitializeComponent();
-            Bll = new PersonelBll();
+            Bll = new IsyeriBll();
 
         }
 
@@ -22,9 +22,14 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.IsyeriForms
         {
             Tablo = tablo;
             BaseKartTuru = KartTuru.Personel;
-            FormShow = new ShowEditForms<PersonelEditForm>();
-            Navigator = UserControls.Controls.Navigators.longNavigator.Navigator;
+            FormShow = new ShowEditForms<IsyeriEditForm>();
+            Navigator = longNavigator.Navigator;
 
+        }
+
+        protected override void Listele()
+        {
+            Tablo.GridControl.DataSource = ((IsyeriBll)Bll).List(FilterFunctions.Filter<Isyeri>(AktifKartlariGoster));
         }
     }
 }

@@ -14,10 +14,10 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.IsyeriForms
     {
         public IsyeriEditForm()
         {
-            
+
             InitializeComponent();
             DataLayoutControl = myDataLayoutControl;
-            Bll = new PersonelBll(myDataLayoutControl);
+            Bll = new IsyeriBll(myDataLayoutControl);
             txtPortfoyTuru.Properties.Items.AddRange(EnumFunctions.GetEnumDescriptionList<PortfoyTuru>());
             txtVincVarmi.Properties.Items.AddRange(EnumFunctions.GetEnumDescriptionList<VincVarmi>());
             txtYapininDurumu.Properties.Items.AddRange(EnumFunctions.GetEnumDescriptionList<YapininDurumu>());
@@ -25,7 +25,8 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.IsyeriForms
             txtKrediyeUygunluk.Properties.Items.AddRange(EnumFunctions.GetEnumDescriptionList<KrediyeUygunluk>());
             txtImarDurumu.Properties.Items.AddRange(EnumFunctions.GetEnumDescriptionList<ImarDurumu>());
             txtKullanimDurumu.Properties.Items.AddRange(EnumFunctions.GetEnumDescriptionList<KullanimDurumu>());
-            txtTapuTipi.Properties.Items.AddRange(EnumFunctions.GetEnumDescriptionList<TapuTipi>());
+            txtTapuTipi.Properties.Items.AddRange(EnumFunctions.GetEnumDescriptionList<IsyeriTapuTipi>());
+            txtIlanVarmi.Properties.Items.AddRange(EnumFunctions.GetEnumDescriptionList<IlanVarmi>());
             txtYetkiliOfis.Properties.Items.AddRange(EnumFunctions.GetEnumDescriptionList<YetkiliOfis>());
             txtPortfoyDurumu.Properties.Items.AddRange(EnumFunctions.GetEnumDescriptionList<PortfoyDurumu>());
             BaseKartTuru = KartTuru.Isyeri;
@@ -147,7 +148,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.IsyeriForms
                 IsitmaId = Convert.ToInt64(txtIsitma.Id),
                 YapininDurumu = txtYapininDurumu.Text.GetEnum<YapininDurumu>(),
                 KullanimDurumu = txtKullanimDurumu.Text.GetEnum<KullanimDurumu>(),
-                KrediyeUygunluk = txtKrediyeUygunluk.Text.GetEnum <KrediyeUygunluk>(),
+                KrediyeUygunluk = txtKrediyeUygunluk.Text.GetEnum<KrediyeUygunluk>(),
                 IsyeriTapuTipi = txtTapuTipi.Text.GetEnum<IsyeriTapuTipi>(),
                 TasinmazNo = txtTasinmazNo.Text,
                 IlId = Convert.ToInt64(txtIl.Id),
@@ -282,7 +283,27 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.IsyeriForms
                 txtDepoFabrikaLink.Enabled = false;
             }
 
-        }
+            var vincDurumu = edt.Text.GetEnum<VincVarmi>();
 
+            if (vincDurumu == VincVarmi.Evet)
+            {
+                txtVincAciklama.Enabled = true;
+            }
+            else
+            {
+                txtVincAciklama.Enabled = false;
+            }
+
+            var portfoyTuru = edt.Text.GetEnum<PortfoyTuru>();
+
+            if (portfoyTuru == PortfoyTuru.Satilik)
+            {
+                txtKrediyeUygunluk.Enabled = true;
+            }
+            else
+            {
+                txtKrediyeUygunluk.Enabled = false;
+            }
+        }
     }
 }

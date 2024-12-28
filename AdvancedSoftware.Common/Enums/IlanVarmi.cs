@@ -9,9 +9,9 @@ namespace AdvancedSoftware.Common.Enums
 {
     public enum IlanVarmi : byte
     {
-        [Description("İlan Var")]
+        [Description("İLAN VAR")]
         IlanVar = 1,
-        [Description("İlan Yok")]
+        [Description("İLAN YOK")]
         IlanYok = 2
     }
 }

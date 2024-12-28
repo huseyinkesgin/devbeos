@@ -4,11 +4,11 @@ namespace AdvancedSoftware.Common.Enums
 {
     public enum VincVarmi : byte
     {
-        [Description("Evet")]
+        [Description("EVET")]
         Evet = 1,
-        [Description("Hayır")]
+        [Description("HAYIR")]
         Hayir = 2,
-        [Description("Bilinmiyor")]
+        [Description("BİLİNMİYOR")]
         Bilinmiyor = 3
     }
 }

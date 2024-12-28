@@ -36,7 +36,7 @@ namespace AdnavcedSoftware.Data.Contexts
         public DbSet<MusteriBilgi> MusteriBilgi { get; set; }
         public DbSet<IptalNedeni> IptalNedeni { get; set; }
         public DbSet<PortfoyTipi> PortfoyTipi { get; set; }
-        public DbSet<TapuTipi> TapuTipi { get; set; }
+        public DbSet<IsyeriTipi> IsyeriTipi { get; set; }
         public DbSet<ImarBilgisi> ImarBilgisi { get; set; }
         public DbSet<Emsal> Emsal { get; set; }
         public DbSet<Gabari> Gabari { get; set; }

@@ -9,6 +9,7 @@ using AdvancedSoftware.UserInterface.Win.Forms.GabariForms;
 using AdvancedSoftware.UserInterface.Win.Forms.ImarBilgisiForms;
 using AdvancedSoftware.UserInterface.Win.Forms.IptalNedeniForms;
 using AdvancedSoftware.UserInterface.Win.Forms.IsıtmaForms;
+using AdvancedSoftware.UserInterface.Win.Forms.IsyeriForms;
 using AdvancedSoftware.UserInterface.Win.Forms.KasaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MarkaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MusteriBilgiForms;
@@ -99,6 +100,11 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
                 ShowListForms<MusteriListForm>.ShowListForm(KartTuru.Musteri);
             if (e.Item == btnPersonel)
                 ShowListForms<PersonelListForm>.ShowListForm(KartTuru.Personel);
+            if ( e.Item == btnIsyeri)
+                ShowListForms<IsyeriListForm>.ShowListForm(KartTuru.Isyeri);
+            if (e.Item == btnIsyeriTipi)
+                ShowListForms<IsyeriTipiListForm>.ShowListForm(KartTuru.IsyeriTipi);
+
 
         }
 

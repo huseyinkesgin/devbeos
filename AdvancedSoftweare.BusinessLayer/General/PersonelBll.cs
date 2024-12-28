@@ -118,11 +118,12 @@ namespace AdvancedSoftweare.BusinessLayer.General
                 IseGirisTarihi = x.IseGirisTarihi,
                 IstenCikisTarihi = x.IstenCikisTarihi,
                 Aciklama = x.Aciklama,
-                OzelKod1Id = x.OzelKod1Id,
-                OzelKod2Id = x.OzelKod2Id,
-                OzelKod3Id = x.OzelKod3Id,
-                OzelKod4Id = x.OzelKod4Id,
-                OzelKod5Id = x.OzelKod5Id,
+                OzelKod1Adi = x.OzelKod1.OzelKodAdi,
+                OzelKod2Adi = x.OzelKod2.OzelKodAdi,
+                OzelKod3Adi = x.OzelKod3.OzelKodAdi,
+                OzelKod4Adi = x.OzelKod4.OzelKodAdi,
+                OzelKod5Adi = x.OzelKod5.OzelKodAdi,
+
             }).OrderBy(x => x.Kod).ToList();
         }
     }

@@ -34,7 +34,7 @@
             this.tablo = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridView();
             this.colId = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colKod = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
-            this.colTapuTipiAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
+            this.colIsyeriTipiAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colAciklama = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
@@ -44,6 +44,14 @@
             // ribbonControl
             // 
             this.ribbonControl.ExpandCollapseItem.Id = 0;
+            // 
+            // 
+            // 
+            this.ribbonControl.SearchEditItem.AccessibleName = "Search Item";
+            this.ribbonControl.SearchEditItem.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Left;
+            this.ribbonControl.SearchEditItem.EditWidth = 150;
+            this.ribbonControl.SearchEditItem.Id = -5000;
+            this.ribbonControl.SearchEditItem.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.ribbonControl.Size = new System.Drawing.Size(911, 135);
             this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             // 
@@ -85,7 +93,7 @@
             this.tablo.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colId,
             this.colKod,
-            this.colTapuTipiAdi,
+            this.colIsyeriTipiAdi,
             this.colAciklama});
             this.tablo.GridControl = this.grid;
             this.tablo.Name = "tablo";
@@ -132,18 +140,18 @@
             this.colKod.Visible = true;
             this.colKod.VisibleIndex = 0;
             // 
-            // colTapuTipiAdi
+            // colIsyeriTipiAdi
             // 
-            this.colTapuTipiAdi.Caption = "Tapu Tipi";
-            this.colTapuTipiAdi.FieldName = "TapuTipiAdi";
-            this.colTapuTipiAdi.Name = "colTapuTipiAdi";
-            this.colTapuTipiAdi.OptionsColumn.AllowEdit = false;
-            this.colTapuTipiAdi.StatusBarAciklama = null;
-            this.colTapuTipiAdi.StatusBarKisaYol = null;
-            this.colTapuTipiAdi.StatusBarKisaYolAciklama = null;
-            this.colTapuTipiAdi.Visible = true;
-            this.colTapuTipiAdi.VisibleIndex = 1;
-            this.colTapuTipiAdi.Width = 200;
+            this.colIsyeriTipiAdi.Caption = "İşyeri Tipi";
+            this.colIsyeriTipiAdi.FieldName = "IsyeriTipiAdi";
+            this.colIsyeriTipiAdi.Name = "colIsyeriTipiAdi";
+            this.colIsyeriTipiAdi.OptionsColumn.AllowEdit = false;
+            this.colIsyeriTipiAdi.StatusBarAciklama = null;
+            this.colIsyeriTipiAdi.StatusBarKisaYol = null;
+            this.colIsyeriTipiAdi.StatusBarKisaYolAciklama = null;
+            this.colIsyeriTipiAdi.Visible = true;
+            this.colIsyeriTipiAdi.VisibleIndex = 1;
+            this.colIsyeriTipiAdi.Width = 200;
             // 
             // colAciklama
             // 
@@ -158,7 +166,7 @@
             this.colAciklama.VisibleIndex = 2;
             this.colAciklama.Width = 300;
             // 
-            // TapuTipiListForm
+            // IsyeriTipiListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -166,7 +174,7 @@
             this.Controls.Add(this.grid);
             this.Controls.Add(this.longNavigator);
             this.IconOptions.ShowIcon = false;
-            this.Name = "TapuTipiListForm";
+            this.Name = "IsyeriTipiListForm";
             this.Text = "TAPU TİPLERİ KARTLARI";
             this.Controls.SetChildIndex(this.ribbonControl, 0);
             this.Controls.SetChildIndex(this.longNavigator, 0);
@@ -186,7 +194,7 @@
         private UserControls.Controls.Grid.MyGridView tablo;
         private UserControls.Controls.Grid.MyGridColumn colId;
         private UserControls.Controls.Grid.MyGridColumn colKod;
-        private UserControls.Controls.Grid.MyGridColumn colTapuTipiAdi;
+        private UserControls.Controls.Grid.MyGridColumn colIsyeriTipiAdi;
         private UserControls.Controls.Grid.MyGridColumn colAciklama;
     }
 }
