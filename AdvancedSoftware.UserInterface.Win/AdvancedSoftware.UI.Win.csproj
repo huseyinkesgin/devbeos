@@ -622,6 +622,9 @@
     <EmbeddedResource Include="Forms\IsyeriForms\IsyeriEditForm.resx">
       <DependentUpon>IsyeriEditForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IsyeriForms\IsyeriListForm.resx">
+      <DependentUpon>IsyeriListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\IsıtmaForms\IsitmaEditForm.resx">
       <DependentUpon>IsitmaEditForm.cs</DependentUpon>
     </EmbeddedResource>

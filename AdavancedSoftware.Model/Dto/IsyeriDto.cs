@@ -49,7 +49,7 @@ namespace AdavancedSoftware.Model.Dto
         public KullanimDurumu KullanimDurumu { get; set; }
         public KrediyeUygunluk KrediyeUygunluk { get; set; }
         public IsyeriTapuTipi IsyeriTapuTipi { get; set; }
-        public int TasinmazNo { get; set; }
+        public string TasinmazNo { get; set; }
         public string IlAdi { get; set; }
         public string IlceAdi { get; set; }
         public string Mahalle { get; set; }
@@ -76,6 +76,9 @@ namespace AdavancedSoftware.Model.Dto
         public string AutoCadDosyaYolu { get; set; }
         public PortfoyDurumu PortfoyDurumu { get; set; }
         public YetkiliOfis YetkiliOfis { get; set; }
+        public DateTime KayitTarihi { get; set; }
+        public DateTime IlanKayitTarihi { get; set; }
+        public DateTime IlanCikisTarihi { get; set; }
         public string OzelKod1Adi { get; set; }
         public string OzelKod2Adi { get; set; }
         public string OzelKod3Adi { get; set; }

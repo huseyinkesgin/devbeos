@@ -62,10 +62,10 @@ namespace AdavancedSoftware.Model.Dto
         public PersonelDurumu PersonelDurumu { get; set; }
         public DateTime IseGirisTarihi { get; set; }
         public DateTime? IstenCikisTarihi { get; set; }
-        public long? OzelKod1Id { get; set; }
-        public long? OzelKod2Id { get; set; }
-        public long? OzelKod3Id { get; set; }
-        public long? OzelKod4Id { get; set; }
-        public long? OzelKod5Id { get; set; }
+        public string OzelKod1Adi { get; set; }
+        public string OzelKod2Adi { get; set; }
+        public string OzelKod3Adi { get; set; }
+        public string OzelKod4Adi { get; set; }
+        public string OzelKod5Adi { get; set; }
     }
 }

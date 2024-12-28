@@ -3,6 +3,7 @@ using AdavancedSoftware.Model.Entities.Base;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using AdvancedSoftware.Common.Enums;
+using System;
 
 namespace AdavancedSoftware.Model.Entities
 {
@@ -37,7 +38,7 @@ namespace AdavancedSoftware.Model.Entities
         public KullanimDurumu KullanimDurumu { get; set; } = KullanimDurumu.Bos;
         public KrediyeUygunluk KrediyeUygunluk { get; set; } = KrediyeUygunluk.Bilinmiyor;
         public IsyeriTapuTipi IsyeriTapuTipi { get; set; } = IsyeriTapuTipi.KatIrtifaki;
-        public int TasinmazNo { get; set; }
+        public string TasinmazNo { get; set; }
         public long IlId { get; set; }
         public long IlceId { get; set; }
         public string Mahalle { get; set; }
@@ -48,7 +49,7 @@ namespace AdavancedSoftware.Model.Entities
         public string Aciklama { get; set; }
         public long DanismanId { get; set; }
         public long MusteriId { get; set; }
-        public IlanVarmi IlanVarmi { get; set; } = IlanVarmi.IlanVar;
+        public IlanVarmi IlanVarmi { get; set; } = IlanVarmi.IlanYok;
         public string Sahibinden { get; set; }
         public string SahibindenLink { get; set; }
         public string HepsiEmlak { get; set; }
@@ -76,6 +77,9 @@ namespace AdavancedSoftware.Model.Entities
 
         public PortfoyDurumu PortfoyDurumu { get; set; } = PortfoyDurumu.DevamEdiyor;
         public YetkiliOfis YetkiliOfis { get; set; } = YetkiliOfis.Hayır;
+        public DateTime KayitTarihi { get; set; } = DateTime.Now;
+        public DateTime IlanKayitTarihi { get; set; }
+        public DateTime IlanCikisTarihi { get; set; }
         public long? OzelKod1Id { get; set; }
         public long? OzelKod2Id { get; set; }
         public long? OzelKod3Id { get; set; }

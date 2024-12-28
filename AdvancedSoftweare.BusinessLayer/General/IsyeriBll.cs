@@ -79,6 +79,9 @@ namespace AdvancedSoftweare.BusinessLayer.General
                 AutoCadDosyaYolu = x.AutoCadDosyaYolu,
                 PortfoyDurumu = x.PortfoyDurumu,
                 YetkiliOfis = x.YetkiliOfis,
+                KayitTarihi = x.KayitTarihi,
+                IlanKayitTarihi = x.IlanKayitTarihi,
+                IlanCikisTarihi = x.IlanCikisTarihi,
                 OzelKod1Id = x.OzelKod1Id,
                 OzelKod1Adi = x.OzelKod1.OzelKodAdi,
                 OzelKod2Id = x.OzelKod2Id,
@@ -90,6 +93,7 @@ namespace AdvancedSoftweare.BusinessLayer.General
                 OzelKod5Id = x.OzelKod5Id,
                 OzelKod5Adi = x.OzelKod5.OzelKodAdi,
                 Durum = x.Durum,
+               
             });
         }
         public override IEnumerable<BaseEntity> List(Expression<Func<Isyeri, bool>> filter)
@@ -100,6 +104,7 @@ namespace AdvancedSoftweare.BusinessLayer.General
                 Kod = x.Kod,
                 IsyeriTipiAdi = x.IsyeriTipi.IsyeriTipiAdi,
                 PortfoyTuru = x.PortfoyTuru,
+                ImarDurumu = x.ImarDurumu,
                 Baslik = x.Baslik,
                 Ucret = x.Ucret,
                 AcikAlan = x.AcikAlan,
@@ -128,6 +133,7 @@ namespace AdvancedSoftweare.BusinessLayer.General
                 Aciklama = x.Aciklama,
                 DanismanAdi = x.Danisman.Ad,
                 MusteriAdi = x.Musteri.Ad,
+                IlanVarmi = x.IlanVarmi,
                 Sahibinden = x.Sahibinden,
                 SahibindenLink = x.SahibindenLink,
                 HepsiEmlak = x.HepsiEmlak,
@@ -145,6 +151,9 @@ namespace AdvancedSoftweare.BusinessLayer.General
                 AutoCadDosyaYolu = x.AutoCadDosyaYolu,
                 PortfoyDurumu = x.PortfoyDurumu,
                 YetkiliOfis = x.YetkiliOfis,
+                KayitTarihi = x.KayitTarihi,
+                IlanKayitTarihi = x.IlanKayitTarihi,
+                IlanCikisTarihi = x.IlanCikisTarihi,     
                 OzelKod1Adi = x.OzelKod1.OzelKodAdi,
                 OzelKod2Adi = x.OzelKod2.OzelKodAdi,
                 OzelKod3Adi = x.OzelKod3.OzelKodAdi,

@@ -40,55 +40,73 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.IsyeriForms
             if (BaseIslemTuru != IslemTuru.EntityInsert)
                 return;
             Id = BaseIslemTuru.IdOlustur(OldEntity);
-            txtKod.Text = ((PersonelBll)Bll).YeniKodVer();
+            txtKod.Text = ((IsyeriBll)Bll).YeniKodVer();
             txtUcret.Focus();
         }
 
         protected override void NesneyiKontrollereBagla()
         {
-            var entity = (PersonelS)OldEntity;
+            var entity = (IsyeriS)OldEntity;
 
             txtKod.Text = entity.Kod;
-            txtCinsiyet.SelectedItem = entity.Cinsiyet.ToName();
-
-            txtAd.Text = entity.Ad;
-            txtSoyad.Text = entity.Soyad;
-            txtTcKimlikNo.Text = entity.TcKimlikNo;
-            txtDogumTarihi.DateTime = entity.DogumTarihi;
-            txtDogumYeri.Text = entity.DogumYeri;
-            txtBabaAdi.Text = entity.BabaAdi;
-            txtAnneAdi.Text = entity.AnneAdi;
-            txtMedeniDurum.SelectedItem = entity.MedeniDurum.ToName();
-            txtCocukVarmi.SelectedItem = entity.CocukVarmi.ToName();
-            txtCocukSayisi.Value = entity.CocukSayisi;
-            txtKanGrubu.SelectedItem = entity.KanGrubu.ToName();
-            txtEposta.Text = entity.Eposta;
-            txtTelefon.Text = entity.Telefon;
+            txtIsyeriTipi.Id = entity.IsyeriTipiId;
+            txtIsyeriTipi.Text = entity.IsyeriTipiAdi;
+            txtPortfoyTuru.SelectedItem = entity.PortfoyTuru.ToName();
+            txtImarDurumu.SelectedItem = entity.ImarDurumu.ToName();
+            txtBaslik.Text = entity.Baslik;
+            txtUcret.Value = entity.Ucret;
+            txtAcikAlan.Value = entity.AcikAlan;
+            txtKapaliAlan.Value = entity.KapaliAlan;
+            txtIsletmeAlani.Value = entity.IsletmeAlani;
+            txtOfisAlani.Value = entity.OfisAlani;
+            txtKWAEnerji.Value = entity.KWAEnerji;
+            txtVincVarmi.SelectedItem = entity.VincVarmi.ToName();
+            txtVincAciklama.Text = entity.VincAciklama;
+            txtKatSayisi.Value = entity.Katsayisi;
+            txtM2TasimaKapasitesi.Text = entity.M2TasimaKapasitesi;
+            txtGirisYuksekligi.Value = entity.GirisYuksekligi;
+            txtYapimYili.Value = entity.YapimYili;
+            txtKiraciVarmi.SelectedItem = entity.KiraciVarmi.ToName();
+            txtIsitma.Id = entity.IsitmaId;
+            txtIsitma.Text = entity.IsitmaAdi;
+            txtYapininDurumu.SelectedItem = entity.YapininDurumu.ToName();
+            txtKullanimDurumu.SelectedItem = entity.KullanimDurumu.ToName();
+            txtKrediyeUygunluk.SelectedItem = entity.KrediyeUygunluk.ToName();
+            txtTapuTipi.SelectedItem = entity.IsyeriTapuTipi.ToName();
+            txtTasinmazNo.Text = entity.TasinmazNo;
             txtIl.Id = entity.IlId;
             txtIl.Text = entity.IlAdi;
             txtIlce.Id = entity.IlceId;
             txtIlce.Text = entity.IlceAdi;
-            txtAdres.Text = entity.Adres;
-            txtWebsitesi.Text = entity.Websitesi;
-            txtFacebook.Text = entity.Facebook;
-            txtTwitter.Text = entity.Twitter;
-            txtInstagram.Text = entity.Instagram;
-            txtLinkedin.Text = entity.Linkedin;
-            txtYoutube.Text = entity.Youtube;
-            txtTiktok.Text = entity.Tiktok;
-            txtVk.Text = entity.VK;
-            txtDepartman.Id = entity.DepartmanId;
-            txtDepartman.Text = entity.DepartmanAdi;
-            txtUnvan.Id = entity.UnvanId;
-            txtUnvan.Text = entity.UnvanAdi;
-            txtBanka.Id = entity.BankaId;
-            txtBanka.Text = entity.BankaAdi;
-            txtBankaSube.Id = entity.SubeId;
-            txtBankaSube.Text = entity.SubeAdi;
-            txtIban.Text = entity.IBAN;
-            txtPersonelDurumu.SelectedItem = entity.PersonelDurumu.ToName();
-            txtIseGirisTarihi.DateTime = entity.IseGirisTarihi;
-            txtIstenCikisTarihi.EditValue = entity.IstenCikisTarihi;
+            txtMahalle.Text = entity.Mahalle;
+            txtAda.Value = entity.Ada;
+            txtParsel.Value = entity.Parsel;
+            txtAciklama.Text = entity.Aciklama;
+            txtDanisman.Id = entity.DanismanId;
+            txtDanisman.Text = entity.DanismanAdi;
+            txtMusteri.Id = entity.MusteriId;
+            txtMusteri.Text = entity.MusteriAdi;
+            txtIlanVarmi.SelectedItem = entity.IlanVarmi.ToName();
+            txtSahibindenID.Text = entity.Sahibinden;
+            txtSahibindenLink.Text = entity.SahibindenLink;
+            txtHepsiEmlakID.Text = entity.HepsiEmlak;
+            txtHepsiEmlakLink.Text = entity.HepsiEmlakLink;
+            txtZingatID.Text = entity.Zingat;
+            txtZingatLink.Text = entity.ZingatLink;
+            txtBuradaYapiID.Text = entity.BuradaYapı;
+            txtBuradaYapiLink.Text = entity.BuradaYapıLink;
+            txtDepoFabrikaID.Text = entity.DepoFabrika;
+            txtDepoFabrikaLink.Text = entity.DepoFabrikaLink;
+            //txtUyduGoruntusu.Text = entity.UyduGoruntusu;
+            //txtOznitelikGoruntusu.Text = entity.OznitelikGoruntusu;
+            //txtImarDurumuGoruntusu.Text = entity.ImarDurumuGoruntusu;
+            //txtAutoCadDosyaAdi.Text = entity.AutoCadDosyaAdi;
+            //txtAutoCadDosyaYolu.Text = entity.AutoCadDosyaYolu;
+            txtPortfoyDurumu.SelectedItem = entity.PortfoyDurumu.ToName();
+            txtYetkiliOfis.SelectedItem = entity.YetkiliOfis.ToName();
+            txtKayitTarihi.DateTime = entity.KayitTarihi;
+            txtIlanKayitTarihi.EditValue = entity.IlanKayitTarihi;
+            txtIlanCikisTarihi.EditValue = entity.IlanCikisTarihi;
             txtAciklama.Text = entity.Aciklama;
             txtOzelKod1.Id = entity.OzelKod1Id;
             txtOzelKod1.Text = entity.OzelKod1Adi;
@@ -105,44 +123,62 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.IsyeriForms
 
         protected override void GuncelNesneOlustur()
         {
-            CurrentEntity = new Personel
+            CurrentEntity = new Isyeri
             {
                 Id = Id,
                 Kod = txtKod.Text,
-                Ad = txtAd.Text,
-                Soyad = txtSoyad.Text,
-                TcKimlikNo = txtTcKimlikNo.Text,
-                Cinsiyet = txtCinsiyet.Text.GetEnum<Cinsiyet>(),
-                DogumTarihi = txtDogumTarihi.DateTime,
-                DogumYeri = txtDogumYeri.Text,
-                BabaAdi = txtBabaAdi.Text,
-                AnneAdi = txtAnneAdi.Text,
-                MedeniDurum = txtMedeniDurum.Text.GetEnum<MedeniDurum>(),
-                CocukVarmi = txtCocukVarmi.Text.GetEnum<CocukVarmi>(),
-                CocukSayisi = Convert.ToInt32(txtCocukSayisi.Value),
-                KanGrubu = txtKanGrubu.Text.GetEnum<KanGrubu>(),
-                Eposta = txtEposta.Text,
-                Telefon = txtTelefon.Text,
+                IsyeriTipiId = Convert.ToInt64(txtIsyeriTipi.Id),
+                PortfoyTuru = txtPortfoyTuru.Text.GetEnum<PortfoyTuru>(),
+                ImarDurumu = txtImarDurumu.Text.GetEnum<ImarDurumu>(),
+                Baslik = txtBaslik.Text,
+                Ucret = txtUcret.Value,
+                AcikAlan = txtAcikAlan.Value,
+                KapaliAlan = txtKapaliAlan.Value,
+                IsletmeAlani = txtIsletmeAlani.Value,
+                OfisAlani = txtOfisAlani.Value,
+                KWAEnerji = Convert.ToInt32(txtKWAEnerji.Value),
+                VincVarmi = txtVincVarmi.Text.GetEnum<VincVarmi>(),
+                VincAciklama = txtVincAciklama.Text,
+                Katsayisi = Convert.ToInt32(txtKatSayisi.Value),
+                M2TasimaKapasitesi = txtM2TasimaKapasitesi.Text,
+                GirisYuksekligi = Convert.ToInt32(txtGirisYuksekligi.Value),
+                YapimYili = Convert.ToInt32(txtYapimYili.Value),
+                KiraciVarmi = txtKiraciVarmi.Text.GetEnum<KiraciVarmi>(),
+                IsitmaId = Convert.ToInt64(txtIsitma.Id),
+                YapininDurumu = txtYapininDurumu.Text.GetEnum<YapininDurumu>(),
+                KullanimDurumu = txtKullanimDurumu.Text.GetEnum<KullanimDurumu>(),
+                KrediyeUygunluk = txtKrediyeUygunluk.Text.GetEnum <KrediyeUygunluk>(),
+                IsyeriTapuTipi = txtTapuTipi.Text.GetEnum<IsyeriTapuTipi>(),
+                TasinmazNo = txtTasinmazNo.Text,
                 IlId = Convert.ToInt64(txtIl.Id),
                 IlceId = Convert.ToInt64(txtIlce.Id),
-                Adres = txtAdres.Text,
-                Websitesi = txtWebsitesi.Text,
-                Facebook = txtFacebook.Text,
-                Twitter = txtTwitter.Text,
-                Instagram = txtInstagram.Text,
-                Linkedin = txtLinkedin.Text,
-                Youtube = txtYoutube.Text,
-                Tiktok = txtTiktok.Text,
-                VK = txtVk.Text,
-                DepartmanId = txtDepartman.Id,
-                UnvanId = txtUnvan.Id,
-                BankaId = txtBanka.Id,
-                SubeId = txtBankaSube.Id,
-                IBAN = txtIban.Text,
-                PersonelDurumu = txtPersonelDurumu.Text.GetEnum<PersonelDurumu>(),
-                IseGirisTarihi = txtIseGirisTarihi.DateTime,
-                IstenCikisTarihi = txtIstenCikisTarihi.DateTime,
+                Mahalle = txtMahalle.Text,
+                Ada = Convert.ToInt32(txtAda.Value),
+                Parsel = Convert.ToInt32(txtParsel.Value),
                 Aciklama = txtAciklama.Text,
+                DanismanId = Convert.ToInt64(txtDanisman.Id),
+                MusteriId = Convert.ToInt64(txtMusteri.Id),
+                IlanVarmi = txtIlanVarmi.Text.GetEnum<IlanVarmi>(),
+                Sahibinden = txtSahibindenID.Text,
+                SahibindenLink = txtSahibindenLink.Text,
+                HepsiEmlak = txtHepsiEmlakID.Text,
+                HepsiEmlakLink = txtHepsiEmlakLink.Text,
+                Zingat = txtZingatID.Text,
+                ZingatLink = txtZingatLink.Text,
+                BuradaYapı = txtBuradaYapiID.Text,
+                BuradaYapıLink = txtBuradaYapiLink.Text,
+                DepoFabrika = txtDepoFabrikaID.Text,
+                DepoFabrikaLink = txtDepoFabrikaLink.Text,
+                //UyduGoruntusu = txtUyduGoruntusu.Text,
+                //OznitelikGoruntusu = txtOznitelikGoruntusu.Text,
+                //ImarDurumuGoruntusu = txtImarDurumuGoruntusu.Text,
+                //AutoCadDosyaAdi = txtAutoCadDosyaAdi.Text,
+                //AutoCadDosyaYolu = txtAutoCadDosyaYolu.Text,
+                PortfoyDurumu = txtPortfoyDurumu.Text.GetEnum<PortfoyDurumu>(),
+                YetkiliOfis = txtYetkiliOfis.Text.GetEnum<YetkiliOfis>(),
+                KayitTarihi = txtKayitTarihi.DateTime,
+                IlanKayitTarihi = txtIlanKayitTarihi.DateTime,
+                IlanCikisTarihi = txtIlanCikisTarihi.DateTime,
                 OzelKod1Id = txtOzelKod1.Id,
                 OzelKod2Id = txtOzelKod2.Id,
                 OzelKod3Id = txtOzelKod3.Id,
@@ -156,12 +192,12 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.IsyeriForms
 
         protected override bool EntityInsert()
         {
-            return ((PersonelBll)Bll).Insert(CurrentEntity, x => x.Kod == CurrentEntity.Kod);
+            return ((IsyeriBll)Bll).Insert(CurrentEntity, x => x.Kod == CurrentEntity.Kod);
         }
 
         protected override bool EntityUpdate()
         {
-            return ((PersonelBll)Bll).Update(OldEntity, CurrentEntity, x => x.Kod == CurrentEntity.Kod);
+            return ((IsyeriBll)Bll).Update(OldEntity, CurrentEntity, x => x.Kod == CurrentEntity.Kod);
         }
 
         protected override void SecimYap(object sender)
@@ -174,16 +210,12 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.IsyeriForms
                     sec.Sec(txtIl);
                 else if (sender == txtIlce)
                     sec.Sec(txtIlce, txtIl);
-                else if (txtDogumYeri == sender)
-                    sec.Sec(txtDogumYeri);
-                else if (sender == txtBanka)
-                    sec.Sec(txtBanka);
-                else if (sender == txtBankaSube)
-                    sec.Sec(txtBankaSube, txtBanka);
-                else if (sender == txtDepartman)
-                    sec.Sec(txtDepartman);
-                else if (sender == txtUnvan)
-                    sec.Sec(txtUnvan);
+                else if (txtIsyeriTipi == sender)
+                    sec.Sec(txtIsyeriTipi);
+                else if (txtDanisman == sender)
+                    sec.Sec(txtDanisman);
+                else if (txtMusteri == sender)
+                    sec.Sec(txtMusteri);
                 else if (sender == txtOzelKod1)
                     sec.Sec(txtOzelKod1, KartTuru.Personel);
                 else if (sender == txtOzelKod2)
@@ -216,18 +248,38 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.IsyeriForms
             if (!(sender is ComboBoxEdit edt))
                 return;
 
-            var medeniDurumu = edt.Text.GetEnum<MedeniDurum>();
+            var ilanDurumu = edt.Text.GetEnum<IlanVarmi>();
 
-            if (medeniDurumu == MedeniDurum.Bekar)
+            if (ilanDurumu == IlanVarmi.IlanVar)
             {
-                txtCocukVarmi.SelectedItem = CocukVarmi.Yok.ToName();
-                txtCocukVarmi.Enabled = false;
-                txtCocukSayisi.Enabled = false;
+                txtIlanKayitTarihi.Enabled = true;
+                txtIlanCikisTarihi.Enabled = true;
+                txtSahibindenID.Enabled = true;
+                txtSahibindenLink.Enabled = true;
+                txtHepsiEmlakID.Enabled = true;
+                txtHepsiEmlakLink.Enabled = true;
+                txtZingatID.Enabled = true;
+                txtZingatLink.Enabled = true;
+                txtBuradaYapiID.Enabled = true;
+                txtBuradaYapiLink.Enabled = true;
+                txtDepoFabrikaID.Enabled = true;
+                txtDepoFabrikaLink.Enabled = true;
+
             }
             else
             {
-                txtCocukVarmi.Enabled = true;
-                txtCocukSayisi.Enabled = true;
+                txtIlanKayitTarihi.Enabled = false;
+                txtIlanCikisTarihi.Enabled = false;
+                txtSahibindenID.Enabled = false;
+                txtSahibindenLink.Enabled = false;
+                txtHepsiEmlakID.Enabled = false;
+                txtHepsiEmlakLink.Enabled = false;
+                txtZingatID.Enabled = false;
+                txtZingatLink.Enabled = false;
+                txtBuradaYapiID.Enabled = false;
+                txtBuradaYapiLink.Enabled = false;
+                txtDepoFabrikaID.Enabled = false;
+                txtDepoFabrikaLink.Enabled = false;
             }
 
         }
