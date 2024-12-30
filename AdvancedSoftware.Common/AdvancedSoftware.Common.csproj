@@ -165,6 +165,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\BankaHesapTuru.cs" />
+    <Compile Include="Enums\BelgeTuru.cs" />
     <Compile Include="Enums\Cinsiyet.cs" />
     <Compile Include="Enums\CocukVarmi.cs" />
     <Compile Include="Enums\Danisman.cs" />

@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Attributes\Kod.cs" />
     <Compile Include="Attributes\ZorunluAlan.cs" />
+    <Compile Include="Dto\AracDto.cs" />
     <Compile Include="Dto\BankaDto.cs" />
     <Compile Include="Dto\BankaHesapDto.cs" />
     <Compile Include="Dto\BankaSubeDto.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Entities\Departman.cs" />
     <Compile Include="Entities\DokumParametreleri.cs" />
     <Compile Include="Entities\Donem.cs" />
+    <Compile Include="Entities\FaturaHarcama.cs" />
     <Compile Include="Entities\Filtre.cs" />
     <Compile Include="Entities\Emsal.cs" />
     <Compile Include="Entities\Firma.cs" />
@@ -92,13 +94,16 @@
     <Compile Include="Entities\Musteri.cs" />
     <Compile Include="Entities\MusteriBilgi.cs" />
     <Compile Include="Entities\Kategori.cs" />
+    <Compile Include="Entities\OdemeMetodu.cs" />
     <Compile Include="Entities\Ofis.cs" />
     <Compile Include="Entities\OzelKod.cs" />
     <Compile Include="Entities\Personel.cs" />
+    <Compile Include="Entities\PersonelHarcama.cs" />
     <Compile Include="Entities\PortfoyTipi.cs" />
     <Compile Include="Entities\Sube.cs" />
     <Compile Include="Entities\TapuTipi.cs" />
     <Compile Include="Entities\Unvan.cs" />
+    <Compile Include="Entities\YakitHarcama.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -53,9 +53,13 @@ namespace AdnavcedSoftware.Data.Contexts
         public DbSet<Firma> Firma { get; set; }
         public DbSet<Marka> Marka { get; set; }
         public DbSet<Model> Model { get; set; }
+        public DbSet<Arac> Arac { get; set; }
         public DbSet<Musteri> Musteri { get; set; }
         public DbSet<Personel> Personel { get; set; }
         public DbSet<Isyeri> Isyeri { get; set; }
+        public DbSet<OdemeMetodu> OdemeMetodu { get; set; }
+        public DbSet<PersonelHarcama> PersonelHarcama { get; set; }
+        public DbSet<YakitHarcama> YakitHarcama { get; set; }
     }
 
 

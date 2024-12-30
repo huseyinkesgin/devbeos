@@ -98,6 +98,10 @@ namespace AdvancedSoftware.Common.Enums
         Musteri = 31,
         [Description("PERSONEL KARTI")]
         Personel = 32,
+        [Description("ODEME METODU KARTI")]
+        OdemeMetodu = 33,
+        [Description("PERSONEL HARCAMA KARTI")]
+        PersonelHarcama = 34,
 
 
 

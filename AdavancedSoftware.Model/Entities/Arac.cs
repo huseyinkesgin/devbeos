@@ -14,9 +14,9 @@ namespace AdavancedSoftware.Model.Entities
 
         [Required, StringLength(50), ZorunluAlan("Araç Plaka", "txtAracPlaka")]
         public string PlakaNo { get; set; }
-        public DateTime IlkTescilTarihi { get; set; }
+        public DateTime? IlkTescilTarihi { get; set; }
         public string TescilSiraNo { get; set; }
-        public DateTime TescilTarihi { get; set; }
+        public DateTime? TescilTarihi { get; set; }
         public long MarkaId { get; set; }
         public long ModelId { get; set; }
         public string ModelYil { get; set; }
@@ -31,18 +31,10 @@ namespace AdavancedSoftware.Model.Entities
         public VitesTuru VitesTuru { get; set; } = VitesTuru.Otomatik;
         public string BelgeNo { get; set; }
         public string SeriNo { get; set; }
-
-
-
-
-
-
-
-
-
-
         [StringLength(500)]
         public string Aciklama { get; set; }
+
+
 
         public Marka Marka { get; set; }
         public Model Model { get; set; }

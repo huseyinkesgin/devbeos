@@ -58,6 +58,7 @@
     <Compile Include="Functions\Converts.cs" />
     <Compile Include="Functions\GeneralFunctions.cs" />
     <Compile Include="Functions\ValidationFunctions.cs" />
+    <Compile Include="General\AracBll.cs" />
     <Compile Include="General\BankaHesapBll.cs" />
     <Compile Include="General\BankaSubeBll.cs" />
     <Compile Include="General\FiltreBll.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="General\MarkaBll.cs" />
     <Compile Include="General\KasaBll.cs" />
     <Compile Include="General\FirmaBll.cs" />
+    <Compile Include="General\OdemeMetoduBll.cs" />
     <Compile Include="General\PersonelBll.cs" />
     <Compile Include="General\MusteriBll.cs" />
     <Compile Include="General\SubeBll.cs" />

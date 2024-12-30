@@ -336,6 +336,18 @@
     <Compile Include="Forms\KategoriForms\KategoriListForm.Designer.cs">
       <DependentUpon>KategoriListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\OdemeMetoduForms\OdemeMetoduEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OdemeMetoduForms\OdemeMetoduEdit.Designer.cs">
+      <DependentUpon>OdemeMetoduEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OdemeMetoduForms\OdemeMetoduList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OdemeMetoduForms\OdemeMetoduList.Designer.cs">
+      <DependentUpon>OdemeMetoduList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\OfisForms\OfisEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -666,6 +678,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\KategoriForms\KategoriListForm.resx">
       <DependentUpon>KategoriListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OdemeMetoduForms\OdemeMetoduEdit.resx">
+      <DependentUpon>OdemeMetoduEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OdemeMetoduForms\OdemeMetoduList.resx">
+      <DependentUpon>OdemeMetoduList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\OfisForms\OfisEditForm.resx">
       <DependentUpon>OfisEditForm.cs</DependentUpon>
