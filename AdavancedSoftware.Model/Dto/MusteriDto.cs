@@ -12,6 +12,7 @@ namespace AdavancedSoftware.Model.Dto
         public string KategoriAdi { get; set; }
         public string IlAdi { get; set; }
         public string IlceAdi { get; set; }
+        public string MahalleAdi { get; set; }
         public string OzelKod1Adi { get; set; }
         public string OzelKod2Adi { get; set; }
         public string OzelKod3Adi { get; set; }
@@ -29,6 +30,7 @@ namespace AdavancedSoftware.Model.Dto
         public string Telefon { get; set; }
         public string IlAdi { get; set; }
         public string IlceAdi { get; set; }
+        public string MahalleAdi { get; set; }
         public string Adres { get; set; }
         public string Websitesi { get; set; }
         public string Facebook { get; set; }

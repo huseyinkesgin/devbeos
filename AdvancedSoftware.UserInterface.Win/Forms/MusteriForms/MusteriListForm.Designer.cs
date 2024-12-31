@@ -51,13 +51,14 @@
             this.colVk = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colYoutube = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colTiktok = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.colAciklama = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.colId = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.colOzelKod1Adi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colOzelKod2Adi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colOzelKod3Adi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colOzelKod4Adi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colOzelKod5Adi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colAciklama = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colId = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.colMahalleAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.gridBand1 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand2 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridBand3 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
@@ -145,6 +146,7 @@
             this.colTelefon,
             this.colIlAdi,
             this.colIlceAdi,
+            this.colMahalleAdi,
             this.colAdres,
             this.colFirmaAdi,
             this.colWebsitesi,
@@ -294,6 +296,7 @@
             this.colIlAdi.StatusBarKisaYol = null;
             this.colIlAdi.StatusBarKisaYolAciklama = null;
             this.colIlAdi.Visible = true;
+            this.colIlAdi.Width = 109;
             // 
             // colIlceAdi
             // 
@@ -305,6 +308,7 @@
             this.colIlceAdi.StatusBarKisaYol = null;
             this.colIlceAdi.StatusBarKisaYolAciklama = null;
             this.colIlceAdi.Visible = true;
+            this.colIlceAdi.Width = 115;
             // 
             // colAdres
             // 
@@ -316,6 +320,7 @@
             this.colAdres.StatusBarKisaYol = null;
             this.colAdres.StatusBarKisaYolAciklama = null;
             this.colAdres.Visible = true;
+            this.colAdres.Width = 200;
             // 
             // colInstagram
             // 
@@ -394,25 +399,6 @@
             this.colTiktok.StatusBarKisaYolAciklama = null;
             this.colTiktok.Visible = true;
             // 
-            // colAciklama
-            // 
-            this.colAciklama.Caption = "Açıklama";
-            this.colAciklama.FieldName = "Aciklama";
-            this.colAciklama.Name = "colAciklama";
-            this.colAciklama.OptionsColumn.AllowEdit = false;
-            this.colAciklama.StatusBarAciklama = null;
-            this.colAciklama.StatusBarKisaYol = null;
-            this.colAciklama.StatusBarKisaYolAciklama = null;
-            this.colAciklama.Visible = true;
-            // 
-            // colId
-            // 
-            this.colId.Caption = "Id";
-            this.colId.FieldName = "Id";
-            this.colId.Name = "colId";
-            this.colId.OptionsColumn.AllowEdit = false;
-            this.colId.OptionsColumn.ShowInCustomizationForm = false;
-            // 
             // colOzelKod1Adi
             // 
             this.colOzelKod1Adi.Caption = "Özel Kod-1";
@@ -468,6 +454,37 @@
             this.colOzelKod5Adi.StatusBarKisaYolAciklama = null;
             this.colOzelKod5Adi.Visible = true;
             // 
+            // colAciklama
+            // 
+            this.colAciklama.Caption = "Açıklama";
+            this.colAciklama.FieldName = "Aciklama";
+            this.colAciklama.Name = "colAciklama";
+            this.colAciklama.OptionsColumn.AllowEdit = false;
+            this.colAciklama.StatusBarAciklama = null;
+            this.colAciklama.StatusBarKisaYol = null;
+            this.colAciklama.StatusBarKisaYolAciklama = null;
+            this.colAciklama.Visible = true;
+            // 
+            // colId
+            // 
+            this.colId.Caption = "Id";
+            this.colId.FieldName = "Id";
+            this.colId.Name = "colId";
+            this.colId.OptionsColumn.AllowEdit = false;
+            this.colId.OptionsColumn.ShowInCustomizationForm = false;
+            // 
+            // colMahalleAdi
+            // 
+            this.colMahalleAdi.Caption = "Mahalle";
+            this.colMahalleAdi.FieldName = "Mahalle";
+            this.colMahalleAdi.Name = "colMahalleAdi";
+            this.colMahalleAdi.OptionsColumn.AllowEdit = false;
+            this.colMahalleAdi.StatusBarAciklama = null;
+            this.colMahalleAdi.StatusBarKisaYol = null;
+            this.colMahalleAdi.StatusBarKisaYolAciklama = null;
+            this.colMahalleAdi.Visible = true;
+            this.colMahalleAdi.Width = 83;
+            // 
             // gridBand1
             // 
             this.gridBand1.Caption = "Müsteri Bilgileri";
@@ -496,10 +513,11 @@
             this.gridBand3.Caption = "Lokasyon";
             this.gridBand3.Columns.Add(this.colIlAdi);
             this.gridBand3.Columns.Add(this.colIlceAdi);
+            this.gridBand3.Columns.Add(this.colMahalleAdi);
             this.gridBand3.Columns.Add(this.colAdres);
             this.gridBand3.Name = "gridBand3";
             this.gridBand3.VisibleIndex = 2;
-            this.gridBand3.Width = 225;
+            this.gridBand3.Width = 507;
             // 
             // gridBand4
             // 
@@ -590,6 +608,7 @@
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand1;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand2;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand3;
+        private UserControls.Controls.Grid.MyBandedGridColumn colMahalleAdi;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand4;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand6;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand5;

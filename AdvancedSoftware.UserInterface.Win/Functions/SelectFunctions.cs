@@ -1,11 +1,15 @@
 ﻿using AdavancedSoftware.Model.Dto;
 using AdavancedSoftware.Model.Entities;
 using AdvancedSoftware.Common.Enums;
+using AdvancedSoftware.UserInterface.Win.Forms.AracSinifForms;
 using AdvancedSoftware.UserInterface.Win.Forms.BankaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.BankaSubeForms;
 using AdvancedSoftware.UserInterface.Win.Forms.DepartmanForms;
 using AdvancedSoftware.UserInterface.Win.Forms.FirmaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.IsıtmaForms;
+using AdvancedSoftware.UserInterface.Win.Forms.MahalleForms;
+using AdvancedSoftware.UserInterface.Win.Forms.MarkaForms;
+using AdvancedSoftware.UserInterface.Win.Forms.ModelForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MusteriForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MusteriGrupForms;
 using AdvancedSoftware.UserInterface.Win.Forms.OzelKod;
@@ -74,6 +78,16 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
                         {
                             _btnEdit.Id = entity.Id;
                             _btnEdit.EditValue = entity.IlceAdi;
+                        }
+                    }
+                    break;
+                case "txtMahalle":
+                    {
+                        var entity = (Mahalle)ShowListForms<MahalleListForm>.ShowDialogListForm(KartTuru.Mahalle, _btnEdit.Id, _prmEdit.Id, _prmEdit.Text);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.MahalleAdi;
                         }
                     }
                     break;
@@ -249,6 +263,37 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
                         {
                             _btnEdit.Id = entity.Id;
                             _btnEdit.EditValue = entity.IsitmaAdi;
+                        }
+                    }
+                    break;
+
+                case "txtAracSinif":
+                    {
+                        var entity = (AracSinif)ShowListForms<AracSinifListForm>.ShowDialogListForm(KartTuru.AracSinif, _btnEdit.Id);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.AracSinifAdi;
+                        }
+                    }
+                    break;
+                case "txtMarka":
+                    {
+                        var entity = (Marka)ShowListForms<MarkaListForm>.ShowDialogListForm(KartTuru.Marka, _btnEdit.Id);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.MarkaAdi;
+                        }
+                    }
+                    break;
+                case "txtModel":
+                    {
+                        var entity = (Model)ShowListForms<ModelListForm>.ShowDialogListForm(KartTuru.Model, _btnEdit.Id, _prmEdit.Id, _prmEdit.Text);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.ModelAdi;
                         }
                     }
                     break;

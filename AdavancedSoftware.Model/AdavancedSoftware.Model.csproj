@@ -58,6 +58,7 @@
     <Compile Include="Dto\BankaHesapDto.cs" />
     <Compile Include="Dto\BankaSubeDto.cs" />
     <Compile Include="Dto\FirmaDto.cs" />
+    <Compile Include="Dto\ArsaDto.cs" />
     <Compile Include="Dto\IsyeriDto.cs" />
     <Compile Include="Dto\KasaDto.cs" />
     <Compile Include="Dto\PersonelDto.cs" />
@@ -65,6 +66,7 @@
     <Compile Include="Dto\OfisDto.cs" />
     <Compile Include="Entities\Altyapi.cs" />
     <Compile Include="Entities\Arac.cs" />
+    <Compile Include="Entities\AracSinif.cs" />
     <Compile Include="Entities\Banka.cs" />
     <Compile Include="Entities\BankaHesap.cs" />
     <Compile Include="Entities\Base\BaseEntity.cs" />
@@ -80,7 +82,9 @@
     <Compile Include="Entities\Firma.cs" />
     <Compile Include="Entities\Gabari.cs" />
     <Compile Include="Entities\Il.cs" />
+    <Compile Include="Entities\Arsa.cs" />
     <Compile Include="Entities\Isyeri.cs" />
+    <Compile Include="Entities\Mahalle.cs" />
     <Compile Include="Entities\Model.cs" />
     <Compile Include="Entities\Ilce.cs" />
     <Compile Include="Entities\Iletisim.cs" />
@@ -100,6 +104,7 @@
     <Compile Include="Entities\Personel.cs" />
     <Compile Include="Entities\PersonelHarcama.cs" />
     <Compile Include="Entities\PortfoyTipi.cs" />
+    <Compile Include="Entities\Sozlesme.cs" />
     <Compile Include="Entities\Sube.cs" />
     <Compile Include="Entities\TapuTipi.cs" />
     <Compile Include="Entities\Unvan.cs" />

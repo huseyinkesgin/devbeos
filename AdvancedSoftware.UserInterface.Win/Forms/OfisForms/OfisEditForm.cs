@@ -47,6 +47,8 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.OfisForms
             txtIl.Text = entity.IlAdi;
             txtIlce.Id = entity.IlceId;
             txtIlce.Text = entity.IlceAdi;
+            txtMahalle.Id = entity.MahalleId;
+            txtMahalle.Text = entity.MahalleAdi;
             txtAdres.Text = entity.Adres;
             tglDurum.IsOn = entity.Durum;
         }
@@ -62,6 +64,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.OfisForms
                 Eposta = txtEposta.Text,
                 IlId = Convert.ToInt64(txtIl.Id),
                 IlceId = Convert.ToInt64(txtIlce.Id),
+                MahalleId = Convert.ToInt64(txtMahalle.Id),
                 Adres = txtAdres.Text,
                 Durum = tglDurum.IsOn,
             };
@@ -78,12 +81,15 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.OfisForms
                     sec.Sec(txtIl);
                 else if (sender == txtIlce)
                     sec.Sec(txtIlce, txtIl);
+                else if (sender == txtMahalle)
+                    sec.Sec(txtMahalle, txtIlce);
         }
 
         protected override void Control_EnabledChange(object sender, EventArgs e)
         {
             if (sender != txtIl) return;
             txtIl.ControlEnabledChange(txtIlce);
+            txtIl.ControlEnabledChange(txtMahalle);
 
         }
 

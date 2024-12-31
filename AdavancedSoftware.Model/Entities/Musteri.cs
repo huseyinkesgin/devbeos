@@ -28,11 +28,13 @@ namespace AdavancedSoftware.Model.Entities
         public string Eposta { get; set; }
         public string Telefon { get; set; }
 
-        [ZorunluAlan("İl", "txtIlAdi")]
+        [ZorunluAlan("İl", "txtIl")]
         public long IlId { get; set; }
 
-        [ZorunluAlan("İlçe", "txtIlceAdi")]
+        [ZorunluAlan("İlçe", "txtIlce")]
         public long IlceId { get; set; }
+        [ZorunluAlan("Mahalle", "txtMahalle")]
+        public long MahalleId { get; set; }
         public string Adres { get; set; }
         
         public long? FirmaId { get; set; }
@@ -67,6 +69,7 @@ namespace AdavancedSoftware.Model.Entities
         public Firma Firma { get; set; }
         public Il Il { get; set; }
         public Ilce Ilce { get; set; }
+        public Mahalle Mahalle { get; set; }
 
         public OzelKod OzelKod1 { get; set; }
         public OzelKod OzelKod2 { get; set; }

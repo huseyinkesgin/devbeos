@@ -29,6 +29,7 @@ namespace AdnavcedSoftware.Data.Contexts
 
         public DbSet<Il> Il { get; set; }
         public DbSet<Ilce> Ilce { get; set; }
+        public DbSet<Mahalle> Mahalle { get; set; }
         public DbSet<Ofis> Ofis { get; set; }
         public DbSet<Sube> Sube { get; set; }
         public DbSet<Donem> Donem { get; set; }
@@ -54,6 +55,7 @@ namespace AdnavcedSoftware.Data.Contexts
         public DbSet<Marka> Marka { get; set; }
         public DbSet<Model> Model { get; set; }
         public DbSet<Arac> Arac { get; set; }
+        public DbSet<AracSinif> AracSinif { get; set; }
         public DbSet<Musteri> Musteri { get; set; }
         public DbSet<Personel> Personel { get; set; }
         public DbSet<Isyeri> Isyeri { get; set; }

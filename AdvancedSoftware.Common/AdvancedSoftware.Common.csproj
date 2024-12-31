@@ -164,6 +164,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\AracCinsi.cs" />
+    <Compile Include="Enums\ArsaTapuTipi.cs" />
     <Compile Include="Enums\BankaHesapTuru.cs" />
     <Compile Include="Enums\BelgeTuru.cs" />
     <Compile Include="Enums\Cinsiyet.cs" />
@@ -171,6 +173,7 @@
     <Compile Include="Enums\Danisman.cs" />
     <Compile Include="Enums\DokumSekli.cs" />
     <Compile Include="Enums\DosyaTuru.cs" />
+    <Compile Include="Enums\EkUcretler.cs" />
     <Compile Include="Enums\EvetHayir.cs" />
     <Compile Include="Enums\ImarDurumu.cs" />
     <Compile Include="Enums\IsyeriTapuTipi.cs" />
@@ -190,6 +193,7 @@
     <Compile Include="Enums\PortfoyDurumu.cs" />
     <Compile Include="Enums\PortfoyTuru.cs" />
     <Compile Include="Enums\RaporuKagidaSigdirmaTuru.cs" />
+    <Compile Include="Enums\SozlesmeTuru.cs" />
     <Compile Include="Enums\VarYok.cs" />
     <Compile Include="Enums\VeriDegisimYeri.cs" />
     <Compile Include="Enums\VincVarmi.cs" />

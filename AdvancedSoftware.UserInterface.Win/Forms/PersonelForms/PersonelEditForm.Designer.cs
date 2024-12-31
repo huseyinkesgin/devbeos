@@ -119,7 +119,6 @@
             this.layoutControlItem29 = new DevExpress.XtraLayout.LayoutControlItem();
             this.lblIl = new DevExpress.XtraLayout.LayoutControlItem();
             this.lblIlce = new DevExpress.XtraLayout.LayoutControlItem();
-            this.lblAdres = new DevExpress.XtraLayout.LayoutControlItem();
             this.lblEhliyet = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem41 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem40 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -140,6 +139,9 @@
             this.lblCocukVarmi = new DevExpress.XtraLayout.LayoutControlItem();
             this.lblCocukSayisi = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.txtMahalle = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyButtonEdit();
+            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lblAdres = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myDataLayoutControl)).BeginInit();
             this.myDataLayoutControl.SuspendLayout();
@@ -212,7 +214,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblIl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblIlce)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblAdres)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblEhliyet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem40)).BeginInit();
@@ -233,6 +234,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.lblCocukVarmi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblCocukSayisi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMahalle.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblAdres)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -252,6 +256,7 @@
             // 
             // myDataLayoutControl
             // 
+            this.myDataLayoutControl.Controls.Add(this.txtMahalle);
             this.myDataLayoutControl.Controls.Add(this.txtKanGrubu);
             this.myDataLayoutControl.Controls.Add(this.txtAciklama);
             this.myDataLayoutControl.Controls.Add(this.myPictureEdit1);
@@ -689,7 +694,7 @@
             // txtAdres
             // 
             this.txtAdres.EnterMoveNextControl = true;
-            this.txtAdres.Location = new System.Drawing.Point(338, 108);
+            this.txtAdres.Location = new System.Drawing.Point(338, 132);
             this.txtAdres.MenuManager = this.ribbonControl;
             this.txtAdres.Name = "txtAdres";
             this.txtAdres.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
@@ -1102,7 +1107,6 @@
             this.layoutControlItem29,
             this.lblIl,
             this.lblIlce,
-            this.lblAdres,
             this.lblEhliyet,
             this.layoutControlItem41,
             this.layoutControlItem40,
@@ -1122,7 +1126,9 @@
             this.lblMedeniDurum,
             this.lblCocukVarmi,
             this.lblCocukSayisi,
-            this.layoutControlItem6});
+            this.layoutControlItem6,
+            this.layoutControlItem8,
+            this.lblAdres});
             this.Root.LayoutMode = DevExpress.XtraLayout.Utils.LayoutMode.Table;
             this.Root.Name = "Root";
             columnDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
@@ -1475,20 +1481,6 @@
             this.lblIlce.Text = "İlçesi";
             this.lblIlce.TextSize = new System.Drawing.Size(85, 13);
             // 
-            // lblAdres
-            // 
-            this.lblAdres.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
-            this.lblAdres.AppearanceItemCaption.Options.UseForeColor = true;
-            this.lblAdres.Control = this.txtAdres;
-            this.lblAdres.Location = new System.Drawing.Point(229, 96);
-            this.lblAdres.Name = "lblAdres";
-            this.lblAdres.OptionsTableLayoutItem.ColumnIndex = 2;
-            this.lblAdres.OptionsTableLayoutItem.RowIndex = 4;
-            this.lblAdres.OptionsTableLayoutItem.RowSpan = 2;
-            this.lblAdres.Size = new System.Drawing.Size(220, 48);
-            this.lblAdres.Text = "Adresi";
-            this.lblAdres.TextSize = new System.Drawing.Size(85, 13);
-            // 
             // lblEhliyet
             // 
             this.lblEhliyet.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
@@ -1746,6 +1738,52 @@
             this.layoutControlItem6.Text = "Kan Grubu";
             this.layoutControlItem6.TextSize = new System.Drawing.Size(85, 13);
             // 
+            // txtMahalle
+            // 
+            this.txtMahalle.EnterMoveNextControl = true;
+            this.txtMahalle.Id = null;
+            this.txtMahalle.Location = new System.Drawing.Point(338, 108);
+            this.txtMahalle.MenuManager = this.ribbonControl;
+            this.txtMahalle.Name = "txtMahalle";
+            this.txtMahalle.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtMahalle.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtMahalle.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.txtMahalle.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.txtMahalle.Size = new System.Drawing.Size(119, 20);
+            this.txtMahalle.StatusBarAciklama = null;
+            this.txtMahalle.StatusBarKisaYol = "F4 :";
+            this.txtMahalle.StatusBarKisaYolAciklama = null;
+            this.txtMahalle.StyleController = this.myDataLayoutControl;
+            this.txtMahalle.TabIndex = 43;
+            // 
+            // layoutControlItem8
+            // 
+            this.layoutControlItem8.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.layoutControlItem8.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem8.Control = this.txtMahalle;
+            this.layoutControlItem8.Location = new System.Drawing.Point(229, 96);
+            this.layoutControlItem8.Name = "layoutControlItem8";
+            this.layoutControlItem8.OptionsTableLayoutItem.ColumnIndex = 2;
+            this.layoutControlItem8.OptionsTableLayoutItem.RowIndex = 4;
+            this.layoutControlItem8.Size = new System.Drawing.Size(220, 24);
+            this.layoutControlItem8.Text = "Mahalle";
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(85, 13);
+            // 
+            // lblAdres
+            // 
+            this.lblAdres.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.lblAdres.AppearanceItemCaption.Options.UseForeColor = true;
+            this.lblAdres.Control = this.txtAdres;
+            this.lblAdres.Location = new System.Drawing.Point(229, 120);
+            this.lblAdres.Name = "lblAdres";
+            this.lblAdres.OptionsTableLayoutItem.ColumnIndex = 2;
+            this.lblAdres.OptionsTableLayoutItem.RowIndex = 5;
+            this.lblAdres.OptionsTableLayoutItem.RowSpan = 2;
+            this.lblAdres.Size = new System.Drawing.Size(220, 48);
+            this.lblAdres.Text = "Adresi";
+            this.lblAdres.TextSize = new System.Drawing.Size(85, 13);
+            // 
             // PersonelEditForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1829,7 +1867,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblIl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblIlce)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblAdres)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblEhliyet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem41)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem40)).EndInit();
@@ -1850,6 +1887,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.lblCocukVarmi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblCocukSayisi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMahalle.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblAdres)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1922,7 +1962,6 @@
         private UserControls.Controls.MyButtonEdit txtOzelKod2;
         private UserControls.Controls.MyButtonEdit txtOzelKod1;
         private UserControls.Controls.MyTextEdit txtEhliyet;
-        private DevExpress.XtraLayout.LayoutControlItem lblAdres;
         private DevExpress.XtraLayout.LayoutControlItem lblEhliyet;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem41;
         private UserControls.Controls.MyMemoEdit txtAciklama;
@@ -1945,5 +1984,8 @@
         private DevExpress.XtraLayout.LayoutControlItem lblCocukSayisi;
         private UserControls.Controls.MyComboBoxEdit txtKanGrubu;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
+        private UserControls.Controls.MyButtonEdit txtMahalle;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
+        private DevExpress.XtraLayout.LayoutControlItem lblAdres;
     }
 }

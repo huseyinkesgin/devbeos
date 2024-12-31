@@ -9,15 +9,15 @@ namespace AdvancedSoftware.Common.Enums
 {
     public enum YakitCinsi : byte
     {
-        [Description("Benzin")]
+        [Description("BENZİN")]
         Benzin = 1,
-        [Description("Dizel")]
+        [Description("DİZEL")]
         Dizel = 2,
         [Description("LPG")]
         LPG = 3,
-        [Description("Elektrik")]
+        [Description("ELEKTRİK")]
         Elektrik = 4,
-        [Description("Hibrit")]
+        [Description("HİBRİT")]
         Hibrit = 5
     }
 }

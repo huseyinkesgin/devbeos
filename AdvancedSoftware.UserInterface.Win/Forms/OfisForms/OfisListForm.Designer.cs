@@ -40,6 +40,7 @@
             this.colIlAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colIlceAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colAdres = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
+            this.colMahalle = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablo)).BeginInit();
@@ -48,6 +49,14 @@
             // ribbonControl
             // 
             this.ribbonControl.ExpandCollapseItem.Id = 0;
+            // 
+            // 
+            // 
+            this.ribbonControl.SearchEditItem.AccessibleName = "Search Item";
+            this.ribbonControl.SearchEditItem.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Left;
+            this.ribbonControl.SearchEditItem.EditWidth = 150;
+            this.ribbonControl.SearchEditItem.Id = -5000;
+            this.ribbonControl.SearchEditItem.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.ribbonControl.Size = new System.Drawing.Size(948, 135);
             this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             // 
@@ -94,6 +103,7 @@
             this.colEposta,
             this.colIlAdi,
             this.colIlceAdi,
+            this.colMahalle,
             this.colAdres});
             this.tablo.GridControl = this.grid;
             this.tablo.Name = "tablo";
@@ -190,7 +200,7 @@
             this.colIlAdi.StatusBarKisaYolAciklama = null;
             this.colIlAdi.Visible = true;
             this.colIlAdi.VisibleIndex = 4;
-            this.colIlAdi.Width = 96;
+            this.colIlAdi.Width = 120;
             // 
             // colIlceAdi
             // 
@@ -203,7 +213,7 @@
             this.colIlceAdi.StatusBarKisaYolAciklama = null;
             this.colIlceAdi.Visible = true;
             this.colIlceAdi.VisibleIndex = 5;
-            this.colIlceAdi.Width = 105;
+            this.colIlceAdi.Width = 120;
             // 
             // colAdres
             // 
@@ -217,6 +227,19 @@
             this.colAdres.Visible = true;
             this.colAdres.VisibleIndex = 6;
             this.colAdres.Width = 306;
+            // 
+            // colMahalle
+            // 
+            this.colMahalle.Caption = "Mahalle";
+            this.colMahalle.FieldName = "Mahalle";
+            this.colMahalle.Name = "colMahalle";
+            this.colMahalle.OptionsColumn.AllowEdit = false;
+            this.colMahalle.StatusBarAciklama = null;
+            this.colMahalle.StatusBarKisaYol = null;
+            this.colMahalle.StatusBarKisaYolAciklama = null;
+            this.colMahalle.Visible = true;
+            this.colMahalle.VisibleIndex = 7;
+            this.colMahalle.Width = 120;
             // 
             // OfisListForm
             // 
@@ -251,5 +274,6 @@
         private UserControls.Controls.Grid.MyGridColumn colIlAdi;
         private UserControls.Controls.Grid.MyGridColumn colIlceAdi;
         private UserControls.Controls.Grid.MyGridColumn colAdres;
+        private UserControls.Controls.Grid.MyGridColumn colMahalle;
     }
 }

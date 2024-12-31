@@ -15,6 +15,7 @@ namespace AdavancedSoftware.Model.Dto
         public string MusteriAdi { get; set; }
         public string IlAdi { get; set; }
         public string IlceAdi { get; set; }
+        public string MahalleAdi { get; set; }
         public string OzelKod1Adi { get; set; }
         public string OzelKod2Adi { get; set; }
         public string OzelKod3Adi { get; set; }
@@ -30,6 +31,8 @@ namespace AdavancedSoftware.Model.Dto
         public ImarDurumu ImarDurumu { get; set; }
         public string Baslik { get; set; }
         public decimal Ucret { get; set; }
+        public EkUcretler EkUcretler { get; set; }
+        public decimal? Arsa { get; set; }
         public decimal AcikAlan { get; set; }
         public decimal KapaliAlan { get; set; }
         public decimal IsletmeAlani { get; set; }
@@ -46,11 +49,13 @@ namespace AdavancedSoftware.Model.Dto
         public YapininDurumu YapininDurumu { get; set; }
         public KullanimDurumu KullanimDurumu { get; set; }
         public KrediyeUygunluk KrediyeUygunluk { get; set; }
+        public VarYok? Takas { get; set; }
         public IsyeriTapuTipi IsyeriTapuTipi { get; set; }
         public string TasinmazNo { get; set; }
         public string IlAdi { get; set; }
         public string IlceAdi { get; set; }
-        public string Mahalle { get; set; }
+        public string MahalleAdi { get; set; }
+        public string BölgeAdi { get; set; }
         public int Ada { get; set; }
         public int Parsel { get; set; }
         public string Aciklama { get; set; }

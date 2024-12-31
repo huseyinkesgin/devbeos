@@ -79,7 +79,9 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.IsyeriForms
             txtIl.Text = entity.IlAdi;
             txtIlce.Id = entity.IlceId;
             txtIlce.Text = entity.IlceAdi;
-            txtMahalle.Text = entity.Mahalle;
+            txtMahalle.Id = entity.MahalleId;
+            txtMahalle.Text = entity.MahalleAdi;
+            txtBolgeAdi.Text = entity.MahalleAdi;
             txtAda.Value = entity.Ada;
             txtParsel.Value = entity.Parsel;
             txtAciklama.Text = entity.Aciklama;
@@ -153,7 +155,8 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.IsyeriForms
                 TasinmazNo = txtTasinmazNo.Text,
                 IlId = Convert.ToInt64(txtIl.Id),
                 IlceId = Convert.ToInt64(txtIlce.Id),
-                Mahalle = txtMahalle.Text,
+                MahalleId = Convert.ToInt64(txtMahalle.Id),
+                BölgeAdi = txtBolgeAdi.Text,
                 Ada = (int)txtAda.Value,
                 Parsel = (int)txtParsel.Value,
                 Aciklama = txtAciklama.Text,
@@ -211,6 +214,8 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.IsyeriForms
                     sec.Sec(txtIl);
                 else if (sender == txtIlce)
                     sec.Sec(txtIlce, txtIl);
+                else if (txtMahalle == sender)
+                    sec.Sec(txtMahalle, txtIlce);
                 else if (txtIsyeriTipi == sender)
                     sec.Sec(txtIsyeriTipi);
                 else if (txtDanisman == sender)
@@ -238,6 +243,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.IsyeriForms
             if (sender != txtIl)
                 return;
             txtIl.ControlEnabledChange(txtIlce);
+            txtIlce.ControlEnabledChange(txtMahalle);
         }
 
 

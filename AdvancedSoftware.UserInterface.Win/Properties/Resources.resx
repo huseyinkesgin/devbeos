@@ -301,6 +301,9 @@
   <data name="alignhorizontalbottom_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\alignhorizontalbottom_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="employee_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\employee_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="printer_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\printer_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -334,8 +337,11 @@
   <data name="checkbuttons_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\checkbuttons_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="printer_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\printer_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="driving_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\driving_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="left_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\left_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="suggestion_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\suggestion_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -352,8 +358,8 @@
   <data name="closeheaderandfooter_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\closeheaderandfooter_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="defaultmap_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\defaultmap_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="employee_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\employee_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="newgroup_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\newgroup_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -363,6 +369,9 @@
   </data>
   <data name="closeheaderandfooter_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\closeheaderandfooter_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="defaultmap_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\defaultmap_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="suggestion_16x166" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\suggestion_16x166.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -490,11 +499,14 @@
   <data name="print_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\print_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="left_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\left_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="newgroup_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newgroup_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="export_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\export_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="printer_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\printer_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="add_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -514,7 +526,7 @@
   <data name="saveall_32x321" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\saveall_32x321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="newgroup_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\newgroup_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="driving_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\driving_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

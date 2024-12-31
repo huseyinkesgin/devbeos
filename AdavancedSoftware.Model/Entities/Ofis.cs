@@ -29,11 +29,14 @@ namespace AdavancedSoftware.Model.Entities
 
         [ZorunluAlan("İlçe", "txtIlce")]
         public long IlceId { get; set; }
+        [ZorunluAlan("Mahalle", "txtMahalle")]
+        public long MahalleId { get; set; }
 
         [StringLength(150)]
         public string Adres { get; set; }
 
         public Il Il { get; set; }
         public Ilce Ilce { get; set; }
+        public Mahalle Mahalle { get; set; }
     }
 }

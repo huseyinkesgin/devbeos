@@ -33,6 +33,8 @@ namespace AdvancedSoftweare.BusinessLayer.General
                 IlAdi = x.Il.IlAdi,
                 IlceId = x.IlceId,
                 IlceAdi = x.Ilce.IlceAdi,
+                MahalleId = x.MahalleId,
+                MahalleAdi = x.Mahalle.MahalleAdi,
                 Adres = x.Adres,
                 Durum = x.Durum,
             });
@@ -50,6 +52,7 @@ namespace AdvancedSoftweare.BusinessLayer.General
                 Eposta = x.Eposta,
                 IlAdi = x.Il.IlAdi,
                 IlceAdi = x.Ilce.IlceAdi,
+                MahalleAdi = x.Mahalle.MahalleAdi,
                 Adres = x.Adres,
             }).OrderBy(x => x.Kod).ToList();
         }

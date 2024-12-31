@@ -9,6 +9,7 @@ namespace AdavancedSoftware.Model.Dto
     {
         public string MarkaAdi { get; set; }
         public string ModelAdi { get; set; }
+        public string AracSinifAdi { get; set; }
     }
 
     public class AracL : BaseEntity
@@ -17,11 +18,11 @@ namespace AdavancedSoftware.Model.Dto
         public string MarkaAdi { get; set; }
         public string ModelAdi { get; set; }
         public string TescilSiraNo { get; set; }
-        public DateTime? TescilTarihi { get; set; }
-        public DateTime? IlkTescilTarihi { get; set; }
-        public string ModelYil { get; set; }
-        public string Sinifi { get; set; }
-        public string Cinsi { get; set; }
+        public DateTime TescilTarihi { get; set; }
+        public DateTime IlkTescilTarihi { get; set; }
+        public int ModelYil { get; set; }
+        public string AracSinifAdi { get; set; }
+        public AracCinsi AracCinsi { get; set; }
         public string AracRenk { get; set; }
         public string AracMotorNo { get; set; }
         public string AracSasiNo { get; set; }

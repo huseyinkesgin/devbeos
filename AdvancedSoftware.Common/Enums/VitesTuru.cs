@@ -4,9 +4,9 @@ namespace AdvancedSoftware.Common.Enums
 {
     public enum VitesTuru : byte
     {
-        [Description("Manuel")]
+        [Description("MANUEL")]
         Manuel = 1,
-        [Description("Otomatik")]
+        [Description("OTOMATİK")]
         Otomatik = 2
     }
 }

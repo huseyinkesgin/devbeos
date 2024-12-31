@@ -1,5 +1,7 @@
 ﻿using AdvancedSoftware.Common.Enums;
 using AdvancedSoftware.UserInterface.Win.Forms.AltyapiForms;
+using AdvancedSoftware.UserInterface.Win.Forms.AracForms;
+using AdvancedSoftware.UserInterface.Win.Forms.AracSinifForms;
 using AdvancedSoftware.UserInterface.Win.Forms.BankaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.BankaHesapForms;
 using AdvancedSoftware.UserInterface.Win.Forms.DepartmanForms;
@@ -76,8 +78,7 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
                 ShowListForms<GabariListForm>.ShowListForm(KartTuru.Gabari);
             if (e.Item == btnIsitma)
                 ShowListForms<IsitmaListForm>.ShowListForm(KartTuru.Isitma);
-            if (e.Item == btnMusteriGrup)
-                ShowListForms<KategoriListForm>.ShowListForm(KartTuru.Kategori);
+
             if (e.Item == btnDepartman)
                 ShowListForms<DepartmanListForm>.ShowListForm(KartTuru.Departman);
             if (e.Item == btnUnvan)
@@ -102,6 +103,10 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
                 ShowListForms<IsyeriListForm>.ShowListForm(KartTuru.Isyeri);
             if (e.Item == btnIsyeriTipi)
                 ShowListForms<IsyeriTipiListForm>.ShowListForm(KartTuru.IsyeriTipi);
+            if (e.Item == btnAracSinif)
+                ShowListForms<AracSinifListForm>.ShowListForm(KartTuru.AracSinif);
+            if (e.Item == btnArac)
+                ShowListForms<AracListForm>.ShowListForm(KartTuru.Arac);
 
 
         }

@@ -14,6 +14,7 @@ namespace AdavancedSoftware.Model.Entities
 
         [ZorunluAlan("İşyeri Tipi", "txtIsyeriTipi")]
         public long IsyeriTipiId { get; set; }
+        [ZorunluAlan("Portföy Türü", "txtPortfoyTuru")]
         public PortfoyTuru PortfoyTuru { get; set; } = PortfoyTuru.Kiralik;
         public ImarDurumu ImarDurumu { get; set; } = ImarDurumu.Sanayi;
 
@@ -22,8 +23,14 @@ namespace AdavancedSoftware.Model.Entities
         [Column(TypeName = "money")]
         public decimal Ucret { get; set; }
 
+        public EkUcretler EkUcretler { get; set; } = EkUcretler.Yok;
+        public decimal? Arsa { get; set; }
+
+        [ZorunluAlan("Açık Alan", "txtAcikAlan")]
         public decimal AcikAlan { get; set; }
+        [ZorunluAlan("Kapalı Alan", "txtKapaliAlan")]
         public decimal KapaliAlan { get; set; }
+        [ZorunluAlan("İşletme Alanı", "txtIsletmeAlanı")]
         public decimal IsletmeAlani { get; set; }
         public decimal OfisAlani { get; set; }
         public int KWAEnerji { get; set; }
@@ -39,13 +46,16 @@ namespace AdavancedSoftware.Model.Entities
         public YapininDurumu YapininDurumu { get; set; } = YapininDurumu.IkinciEl;
         public KullanimDurumu KullanimDurumu { get; set; } = KullanimDurumu.Bos;
         public KrediyeUygunluk KrediyeUygunluk { get; set; } = KrediyeUygunluk.Bilinmiyor;
+        public VarYok? Takas { get; set; } = VarYok.Yok;
         public IsyeriTapuTipi IsyeriTapuTipi { get; set; } = IsyeriTapuTipi.KatIrtifaki;
         public string TasinmazNo { get; set; }
         [ZorunluAlan("İl", "txtIl")]
         public long IlId { get; set; }
         [ZorunluAlan("İlçe", "txtIlce")]
         public long IlceId { get; set; }
-        public string Mahalle { get; set; }
+        [ZorunluAlan("Mahalle", "txtMahalle")]
+        public long MahalleId { get; set; }
+        public string BölgeAdi { get; set; }
         public int Ada { get; set; }
         public int Parsel { get; set; }
 
@@ -102,6 +112,7 @@ namespace AdavancedSoftware.Model.Entities
         public IsyeriTipi IsyeriTipi { get; set; }
         public Il Il { get; set; }
         public Ilce Ilce { get; set; }
+        public Mahalle Mahalle { get; set; }
         public Musteri Musteri { get; set; }
         public Personel Danisman { get; set; }
         public OzelKod OzelKod1 { get; set; }

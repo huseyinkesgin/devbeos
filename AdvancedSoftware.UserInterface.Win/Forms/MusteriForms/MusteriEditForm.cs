@@ -51,6 +51,8 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.MusteriForms
             txtIl.Text = entity.IlAdi;
             txtIlce.Id = entity.IlceId;
             txtIlce.Text = entity.IlceAdi;
+            txtMahalle.Id = entity.MahalleId;
+            txtMahalle.Text = entity.MahalleAdi;
             txtAdres.Text = entity.Adres;
             txtFirma.Id = entity.FirmaId;
             txtFirma.Text = entity.FirmaAdi;
@@ -90,6 +92,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.MusteriForms
                 Telefon = txtTelefon.Text,
                 IlId = Convert.ToInt64(txtIl.Id),
                 IlceId = Convert.ToInt64(txtIlce.Id),
+                MahalleId = Convert.ToInt64(txtMahalle.Id),
                 Adres = txtAdres.Text,
                 FirmaId = txtFirma.Id,
                 Websitesi = txtWebsitesi.Text,
@@ -132,6 +135,8 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.MusteriForms
                     sec.Sec(txtIl);
                 else if (sender == txtIlce)
                     sec.Sec(txtIlce, txtIl);
+                else if (sender == txtMahalle)
+                    sec.Sec(txtMahalle, txtIlce);
                 else if (sender == txtKategori)
                     sec.Sec(txtKategori, KartTuru.Musteri);
                 else if (sender == txtFirma)

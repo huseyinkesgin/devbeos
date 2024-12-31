@@ -15,6 +15,7 @@ namespace AdavancedSoftware.Model.Dto
         public string UnvanAdi { get; set; }
         public string IlAdi { get; set; }
         public string IlceAdi { get; set; }
+        public string MahalleAdi { get; set; }
         public string BankaAdi { get; set; }
         public string SubeAdi { get; set; }
         public string OzelKod1Adi { get; set; }
@@ -44,6 +45,7 @@ namespace AdavancedSoftware.Model.Dto
         public string Telefon { get; set; }
         public string IlAdi { get; set; }
         public string IlceAdi { get; set; }
+        public string MahalleAdi { get; set; }
         public string Adres { get; set; }
         public string Websitesi { get; set; }
         public string Facebook { get; set; }

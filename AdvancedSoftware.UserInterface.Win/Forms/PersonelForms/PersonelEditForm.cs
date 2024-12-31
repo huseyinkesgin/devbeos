@@ -168,6 +168,8 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.PersonelForms
                     sec.Sec(txtIl);
                 else if (sender == txtIlce)
                     sec.Sec(txtIlce, txtIl);
+                else if (sender == txtMahalle)
+                    sec.Sec(txtMahalle, txtIlce);
                 else if (txtDogumYeri == sender)
                     sec.Sec(txtDogumYeri);
                 else if (sender == txtBanka)

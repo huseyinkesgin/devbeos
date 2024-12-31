@@ -20,7 +20,7 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.Controls
         public override bool EnterMoveNextControl { get ; set ; } = true;
         public string StatusBarAciklama { get; set; }
         public string StatusBarKisaYol { get; set; } = "F4 :";
-        public string StatusBarKisaYolAciklama { get; set; }
+        public string StatusBarKisaYolAciklama { get; set; } = "Seçim Yap";
 
 
         #region Events

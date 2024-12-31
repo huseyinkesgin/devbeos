@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraLayout.ColumnDefinition columnDefinition1 = new DevExpress.XtraLayout.ColumnDefinition();
-            DevExpress.XtraLayout.ColumnDefinition columnDefinition2 = new DevExpress.XtraLayout.ColumnDefinition();
-            DevExpress.XtraLayout.ColumnDefinition columnDefinition3 = new DevExpress.XtraLayout.ColumnDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition1 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition2 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition3 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition4 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition5 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition6 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition7 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition4 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition5 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition6 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition9 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition10 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition11 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition12 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition13 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition14 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition15 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition16 = new DevExpress.XtraLayout.RowDefinition();
             this.myDataLayoutControl = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyDataLayoutControl();
             this.tglDurum = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyToogleSwitch();
             this.txtAdres = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyMemoEdit();
@@ -56,6 +57,8 @@
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.lblAdres = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.txtMahalle = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyButtonEdit();
+            this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myDataLayoutControl)).BeginInit();
             this.myDataLayoutControl.SuspendLayout();
@@ -76,17 +79,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblAdres)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMahalle.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
             // 
             this.ribbonControl.ExpandCollapseItem.Id = 0;
             this.ribbonControl.OptionsPageCategories.ShowCaptions = false;
-            this.ribbonControl.Size = new System.Drawing.Size(358, 135);
+            // 
+            // 
+            // 
+            this.ribbonControl.SearchEditItem.AccessibleName = "Search Item";
+            this.ribbonControl.SearchEditItem.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Left;
+            this.ribbonControl.SearchEditItem.EditWidth = 150;
+            this.ribbonControl.SearchEditItem.Id = -5000;
+            this.ribbonControl.SearchEditItem.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            this.ribbonControl.Size = new System.Drawing.Size(368, 135);
             this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             // 
             // myDataLayoutControl
             // 
+            this.myDataLayoutControl.Controls.Add(this.txtMahalle);
             this.myDataLayoutControl.Controls.Add(this.tglDurum);
             this.myDataLayoutControl.Controls.Add(this.txtAdres);
             this.myDataLayoutControl.Controls.Add(this.txtIlce);
@@ -100,14 +114,14 @@
             this.myDataLayoutControl.Name = "myDataLayoutControl";
             this.myDataLayoutControl.OptionsFocus.EnableAutoTabOrder = false;
             this.myDataLayoutControl.Root = this.Root;
-            this.myDataLayoutControl.Size = new System.Drawing.Size(358, 220);
+            this.myDataLayoutControl.Size = new System.Drawing.Size(368, 240);
             this.myDataLayoutControl.TabIndex = 0;
             this.myDataLayoutControl.Text = "myDataLayoutControl1";
             // 
             // tglDurum
             // 
             this.tglDurum.EnterMoveNextControl = true;
-            this.tglDurum.Location = new System.Drawing.Point(251, 12);
+            this.tglDurum.Location = new System.Drawing.Point(261, 12);
             this.tglDurum.MenuManager = this.ribbonControl;
             this.tglDurum.Name = "tglDurum";
             this.tglDurum.Properties.Appearance.ForeColor = System.Drawing.Color.Maroon;
@@ -125,13 +139,13 @@
             // txtAdres
             // 
             this.txtAdres.EnterMoveNextControl = true;
-            this.txtAdres.Location = new System.Drawing.Point(61, 156);
+            this.txtAdres.Location = new System.Drawing.Point(61, 180);
             this.txtAdres.MenuManager = this.ribbonControl;
             this.txtAdres.Name = "txtAdres";
             this.txtAdres.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtAdres.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtAdres.Properties.MaxLength = 500;
-            this.txtAdres.Size = new System.Drawing.Size(285, 52);
+            this.txtAdres.Size = new System.Drawing.Size(295, 48);
             this.txtAdres.StatusBarAciklama = "Açıklama Giriniz";
             this.txtAdres.StyleController = this.myDataLayoutControl;
             this.txtAdres.TabIndex = 5;
@@ -182,10 +196,6 @@
             this.txtEposta.Name = "txtEposta";
             this.txtEposta.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtEposta.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtEposta.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.Strong;
-            this.txtEposta.Properties.Mask.EditMask = "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
-    "-])+)+";
-            this.txtEposta.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
             this.txtEposta.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
             this.txtEposta.Properties.MaskSettings.Set("allowBlankInput", true);
             this.txtEposta.Properties.MaskSettings.Set("mask", "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
@@ -193,7 +203,7 @@
             this.txtEposta.Properties.MaskSettings.Set("isAutoComplete", true);
             this.txtEposta.Properties.MaskSettings.Set("isOptimistic", false);
             this.txtEposta.Properties.MaxLength = 50;
-            this.txtEposta.Size = new System.Drawing.Size(186, 20);
+            this.txtEposta.Size = new System.Drawing.Size(196, 20);
             this.txtEposta.StatusBarAciklama = "Eposta adresi giriniz";
             this.txtEposta.StyleController = this.myDataLayoutControl;
             this.txtEposta.TabIndex = 2;
@@ -208,9 +218,6 @@
             this.txtTelefon.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.txtTelefon.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtTelefon.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtTelefon.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.None;
-            this.txtTelefon.Properties.Mask.EditMask = "0 (\\d?\\d?\\d?) \\d?\\d?\\d? \\d?\\d? \\d?\\d?";
-            this.txtTelefon.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Regular;
             this.txtTelefon.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
             this.txtTelefon.Properties.MaskSettings.Set("mask", "0 (\\d?\\d?\\d?) \\d?\\d?\\d? \\d?\\d? \\d?\\d?");
             this.txtTelefon.Properties.MaskSettings.Set("isAutoComplete", false);
@@ -230,7 +237,7 @@
             this.txtOfisAdi.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtOfisAdi.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtOfisAdi.Properties.MaxLength = 50;
-            this.txtOfisAdi.Size = new System.Drawing.Size(285, 20);
+            this.txtOfisAdi.Size = new System.Drawing.Size(295, 20);
             this.txtOfisAdi.StatusBarAciklama = null;
             this.txtOfisAdi.StyleController = this.myDataLayoutControl;
             this.txtOfisAdi.TabIndex = 0;
@@ -265,42 +272,46 @@
             this.layoutControlItem5,
             this.layoutControlItem6,
             this.lblAdres,
-            this.layoutControlItem8});
+            this.layoutControlItem8,
+            this.layoutControlItem7});
             this.Root.LayoutMode = DevExpress.XtraLayout.Utils.LayoutMode.Table;
             this.Root.Name = "Root";
-            columnDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
-            columnDefinition1.Width = 200D;
-            columnDefinition2.SizeType = System.Windows.Forms.SizeType.Percent;
-            columnDefinition2.Width = 100D;
-            columnDefinition3.SizeType = System.Windows.Forms.SizeType.Absolute;
-            columnDefinition3.Width = 99D;
+            columnDefinition4.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition4.Width = 200D;
+            columnDefinition5.SizeType = System.Windows.Forms.SizeType.Percent;
+            columnDefinition5.Width = 100D;
+            columnDefinition6.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition6.Width = 99D;
             this.Root.OptionsTableLayoutGroup.ColumnDefinitions.AddRange(new DevExpress.XtraLayout.ColumnDefinition[] {
-            columnDefinition1,
-            columnDefinition2,
-            columnDefinition3});
-            rowDefinition1.Height = 24D;
-            rowDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition2.Height = 24D;
-            rowDefinition2.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition3.Height = 24D;
-            rowDefinition3.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition4.Height = 24D;
-            rowDefinition4.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition5.Height = 24D;
-            rowDefinition5.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition6.Height = 24D;
-            rowDefinition6.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition7.Height = 100D;
-            rowDefinition7.SizeType = System.Windows.Forms.SizeType.Percent;
+            columnDefinition4,
+            columnDefinition5,
+            columnDefinition6});
+            rowDefinition9.Height = 24D;
+            rowDefinition9.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition10.Height = 24D;
+            rowDefinition10.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition11.Height = 24D;
+            rowDefinition11.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition12.Height = 24D;
+            rowDefinition12.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition13.Height = 24D;
+            rowDefinition13.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition14.Height = 24D;
+            rowDefinition14.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition15.Height = 24D;
+            rowDefinition15.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition16.Height = 100D;
+            rowDefinition16.SizeType = System.Windows.Forms.SizeType.Percent;
             this.Root.OptionsTableLayoutGroup.RowDefinitions.AddRange(new DevExpress.XtraLayout.RowDefinition[] {
-            rowDefinition1,
-            rowDefinition2,
-            rowDefinition3,
-            rowDefinition4,
-            rowDefinition5,
-            rowDefinition6,
-            rowDefinition7});
-            this.Root.Size = new System.Drawing.Size(358, 220);
+            rowDefinition9,
+            rowDefinition10,
+            rowDefinition11,
+            rowDefinition12,
+            rowDefinition13,
+            rowDefinition14,
+            rowDefinition15,
+            rowDefinition16});
+            this.Root.Size = new System.Drawing.Size(368, 240);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem1
@@ -323,7 +334,7 @@
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.OptionsTableLayoutItem.ColumnSpan = 3;
             this.layoutControlItem2.OptionsTableLayoutItem.RowIndex = 1;
-            this.layoutControlItem2.Size = new System.Drawing.Size(338, 24);
+            this.layoutControlItem2.Size = new System.Drawing.Size(348, 24);
             this.layoutControlItem2.Text = "Ofis Adı";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(37, 13);
             // 
@@ -348,7 +359,7 @@
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.OptionsTableLayoutItem.ColumnSpan = 2;
             this.layoutControlItem4.OptionsTableLayoutItem.RowIndex = 3;
-            this.layoutControlItem4.Size = new System.Drawing.Size(239, 24);
+            this.layoutControlItem4.Size = new System.Drawing.Size(249, 24);
             this.layoutControlItem4.Text = "Eposta";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(37, 13);
             // 
@@ -381,11 +392,11 @@
             this.lblAdres.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
             this.lblAdres.AppearanceItemCaption.Options.UseForeColor = true;
             this.lblAdres.Control = this.txtAdres;
-            this.lblAdres.Location = new System.Drawing.Point(0, 144);
+            this.lblAdres.Location = new System.Drawing.Point(0, 168);
             this.lblAdres.Name = "lblAdres";
             this.lblAdres.OptionsTableLayoutItem.ColumnSpan = 3;
-            this.lblAdres.OptionsTableLayoutItem.RowIndex = 6;
-            this.lblAdres.Size = new System.Drawing.Size(338, 56);
+            this.lblAdres.OptionsTableLayoutItem.RowIndex = 7;
+            this.lblAdres.Size = new System.Drawing.Size(348, 52);
             this.lblAdres.Text = "Adres";
             this.lblAdres.TextSize = new System.Drawing.Size(37, 13);
             // 
@@ -394,23 +405,54 @@
             this.layoutControlItem8.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
             this.layoutControlItem8.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem8.Control = this.tglDurum;
-            this.layoutControlItem8.Location = new System.Drawing.Point(239, 0);
+            this.layoutControlItem8.Location = new System.Drawing.Point(249, 0);
             this.layoutControlItem8.Name = "layoutControlItem8";
             this.layoutControlItem8.OptionsTableLayoutItem.ColumnIndex = 2;
             this.layoutControlItem8.Size = new System.Drawing.Size(99, 24);
             this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem8.TextVisible = false;
             // 
+            // txtMahalle
+            // 
+            this.txtMahalle.EnterMoveNextControl = true;
+            this.txtMahalle.Id = null;
+            this.txtMahalle.Location = new System.Drawing.Point(61, 156);
+            this.txtMahalle.MenuManager = this.ribbonControl;
+            this.txtMahalle.Name = "txtMahalle";
+            this.txtMahalle.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtMahalle.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtMahalle.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.txtMahalle.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.txtMahalle.Size = new System.Drawing.Size(147, 20);
+            this.txtMahalle.StatusBarAciklama = "Mahalle Seç";
+            this.txtMahalle.StatusBarKisaYol = "F4 :";
+            this.txtMahalle.StatusBarKisaYolAciklama = "Seçim Yap";
+            this.txtMahalle.StyleController = this.myDataLayoutControl;
+            this.txtMahalle.TabIndex = 8;
+            // 
+            // layoutControlItem7
+            // 
+            this.layoutControlItem7.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.layoutControlItem7.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem7.Control = this.txtMahalle;
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 144);
+            this.layoutControlItem7.Name = "layoutControlItem7";
+            this.layoutControlItem7.OptionsTableLayoutItem.RowIndex = 6;
+            this.layoutControlItem7.Size = new System.Drawing.Size(200, 24);
+            this.layoutControlItem7.Text = "Mahalle";
+            this.layoutControlItem7.TextSize = new System.Drawing.Size(37, 13);
+            // 
             // OfisEditForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(358, 379);
+            this.ClientSize = new System.Drawing.Size(368, 399);
             this.Controls.Add(this.myDataLayoutControl);
             this.IconOptions.ShowIcon = false;
-            this.MinimumSize = new System.Drawing.Size(360, 380);
+            this.MinimumSize = new System.Drawing.Size(370, 400);
             this.Name = "OfisEditForm";
-            this.Text = "Ofis Formu";
+            this.Text = "OFİS KARTI";
             this.Controls.SetChildIndex(this.ribbonControl, 0);
             this.Controls.SetChildIndex(this.myDataLayoutControl, 0);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
@@ -433,6 +475,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblAdres)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMahalle.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -458,5 +502,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
         private DevExpress.XtraLayout.LayoutControlItem lblAdres;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
+        private UserControls.Controls.MyButtonEdit txtMahalle;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
     }
 }
