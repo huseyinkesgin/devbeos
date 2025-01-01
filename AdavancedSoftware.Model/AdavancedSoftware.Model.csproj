@@ -64,6 +64,7 @@
     <Compile Include="Dto\PersonelDto.cs" />
     <Compile Include="Dto\MusteriDto.cs" />
     <Compile Include="Dto\OfisDto.cs" />
+    <Compile Include="Dto\PersonelHarcamaDto.cs" />
     <Compile Include="Entities\Altyapi.cs" />
     <Compile Include="Entities\Arac.cs" />
     <Compile Include="Entities\AracSinif.cs" />

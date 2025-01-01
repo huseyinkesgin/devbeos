@@ -7,11 +7,13 @@ using AdvancedSoftware.UserInterface.Win.Forms.BankaSubeForms;
 using AdvancedSoftware.UserInterface.Win.Forms.DepartmanForms;
 using AdvancedSoftware.UserInterface.Win.Forms.FirmaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.IsıtmaForms;
+using AdvancedSoftware.UserInterface.Win.Forms.KasaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MahalleForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MarkaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.ModelForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MusteriForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MusteriGrupForms;
+using AdvancedSoftware.UserInterface.Win.Forms.OdemeTuru;
 using AdvancedSoftware.UserInterface.Win.Forms.OzelKod;
 using AdvancedSoftware.UserInterface.Win.Forms.PersonelForms;
 using AdvancedSoftware.UserInterface.Win.Forms.PortfoyTipiForms;
@@ -233,7 +235,7 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
                         }
                     }
                     break;
-
+                case "txtPersonel":
                 case "txtDanisman":
                     {
                         var entity = (PersonelL)ShowListForms<PersonelListForm>.ShowDialogListForm(KartTuru.Personel, _btnEdit.Id);
@@ -294,6 +296,27 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
                         {
                             _btnEdit.Id = entity.Id;
                             _btnEdit.EditValue = entity.ModelAdi;
+                        }
+                    }
+                    break;
+                case "txtKasa":
+                    {
+                        var entity = (KasaL)ShowListForms<KasaListForm>.ShowDialogListForm(KartTuru.Kasa, _btnEdit.Id);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.KasaAdi;
+                        }
+                    }
+                    break;
+
+                case "txtOdemeMetodu":
+                    {
+                        var entity = (OdemeMetodu)ShowListForms<OdemeMetoduList>.ShowDialogListForm(KartTuru.OdemeMetodu, _btnEdit.Id);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.OdemeMetoduAdi;
                         }
                     }
                     break;

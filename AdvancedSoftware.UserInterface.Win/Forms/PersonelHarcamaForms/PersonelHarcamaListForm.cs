@@ -1,35 +1,31 @@
 ﻿using AdavancedSoftware.Model.Entities;
 using AdvancedSoftware.Common.Enums;
+using AdvancedSoftware.UserInterface.Win.Forms.AracForms;
 using AdvancedSoftware.UserInterface.Win.Forms.BaseForms;
-using AdvancedSoftware.UserInterface.Win.Forms.PersonelForms;
 using AdvancedSoftware.UserInterface.Win.Functions;
 using AdvancedSoftware.UserInterface.Win.Show;
-using AdvancedSoftware.UserInterface.Win.UserControls.Controls.Navigators;
 using AdvancedSoftweare.BusinessLayer.General;
 
-namespace AdvancedSoftware.UserInterface.Win.Forms.IsyeriForms
+namespace AdvancedSoftware.UserInterface.Win.Forms.PersonelHarcamaForms
 {
-    public partial class IsyeriListForm : BaseListForm
+    public partial class PersonelHarcamaListForm : BaseListForm
     {
-        public IsyeriListForm()
+        public PersonelHarcamaListForm()
         {
             InitializeComponent();
-            Bll = new IsyeriBll();
-
+            Bll = new PersonelHarcamaBll();
         }
-
         protected override void DesgiskenleriDoldur()
         {
             Tablo = tablo;
-            BaseKartTuru = KartTuru.Arac;
-            FormShow = new ShowEditForms<IsyeriEditForm>();
+            BaseKartTuru = KartTuru.PersonelHarcama;
+            FormShow = new ShowEditForms<PersonelHarcamaEditForm>();
             Navigator = longNavigator.Navigator;
 
         }
-
         protected override void Listele()
         {
-            Tablo.GridControl.DataSource = ((IsyeriBll)Bll).List(FilterFunctions.Filter<Isyeri>(AktifKartlariGoster));
+            Tablo.GridControl.DataSource = ((PersonelHarcamaBll)Bll).List(FilterFunctions.Filter<PersonelHarcama>(AktifKartlariGoster));
         }
     }
 }

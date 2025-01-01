@@ -74,6 +74,7 @@
     <Compile Include="General\KasaBll.cs" />
     <Compile Include="General\FirmaBll.cs" />
     <Compile Include="General\OdemeMetoduBll.cs" />
+    <Compile Include="General\PersonelHarcamaBll.cs" />
     <Compile Include="General\PersonelBll.cs" />
     <Compile Include="General\MusteriBll.cs" />
     <Compile Include="General\SubeBll.cs" />

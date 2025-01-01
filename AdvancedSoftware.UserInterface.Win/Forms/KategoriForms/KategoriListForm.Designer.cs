@@ -113,7 +113,7 @@
             this.tablo.StatusBarAciklama = null;
             this.tablo.StatusBarKisaYol = null;
             this.tablo.StatusBarKisaYolAciklama = null;
-            this.tablo.ViewCaption = "MÜŞTERİ GRUPLARI";
+            this.tablo.ViewCaption = "KATEGORİ LİSTESİ";
             // 
             // colId
             // 
@@ -175,7 +175,7 @@
             this.Controls.Add(this.longNavigator);
             this.IconOptions.ShowIcon = false;
             this.Name = "KategoriListForm";
-            this.Text = "MÜŞTERİ GRUP KARTLARI";
+            this.Text = "KATEGORİ KARTLARI";
             this.Controls.SetChildIndex(this.ribbonControl, 0);
             this.Controls.SetChildIndex(this.longNavigator, 0);
             this.Controls.SetChildIndex(this.grid, 0);

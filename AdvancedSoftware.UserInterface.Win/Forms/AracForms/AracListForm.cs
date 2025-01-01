@@ -19,7 +19,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.AracForms
         protected override void DesgiskenleriDoldur()
         {
             Tablo = tablo;
-            BaseKartTuru = KartTuru.Ofis;
+            BaseKartTuru = KartTuru.Arac;
             FormShow = new ShowEditForms<AracEditForm>();
             Navigator = longNavigator.Navigator;
 

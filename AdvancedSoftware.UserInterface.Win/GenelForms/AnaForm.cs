@@ -17,8 +17,10 @@ using AdvancedSoftware.UserInterface.Win.Forms.MarkaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MusteriBilgiForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MusteriForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MusteriGrupForms;
+using AdvancedSoftware.UserInterface.Win.Forms.OdemeTuru;
 using AdvancedSoftware.UserInterface.Win.Forms.OfisForms;
 using AdvancedSoftware.UserInterface.Win.Forms.PersonelForms;
+using AdvancedSoftware.UserInterface.Win.Forms.PersonelHarcamaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.PortfoyTipiForms;
 using AdvancedSoftware.UserInterface.Win.Forms.SiparisForms.IlForms;
 using AdvancedSoftware.UserInterface.Win.Forms.TapuTipiForms;
@@ -107,6 +109,10 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
                 ShowListForms<AracSinifListForm>.ShowListForm(KartTuru.AracSinif);
             if (e.Item == btnArac)
                 ShowListForms<AracListForm>.ShowListForm(KartTuru.Arac);
+            if (e.Item == btnOdemeMetodu)
+                ShowListForms<OdemeMetoduList>.ShowListForm(KartTuru.OdemeMetodu);
+            if (e.Item == btnPersonelHarcama)
+                ShowListForms<PersonelHarcamaListForm>.ShowListForm(KartTuru.PersonelHarcama);
 
 
         }

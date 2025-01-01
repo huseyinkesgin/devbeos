@@ -35,6 +35,7 @@
             this.colId = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colKod = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colOdemeMetoduAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
+            this.colOdemeTipi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colAciklama = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
@@ -94,6 +95,7 @@
             this.colId,
             this.colKod,
             this.colOdemeMetoduAdi,
+            this.colOdemeTipi,
             this.colAciklama});
             this.tablo.GridControl = this.grid;
             this.tablo.Name = "tablo";
@@ -151,6 +153,20 @@
             this.colOdemeMetoduAdi.StatusBarKisaYolAciklama = null;
             this.colOdemeMetoduAdi.Visible = true;
             this.colOdemeMetoduAdi.VisibleIndex = 1;
+            this.colOdemeMetoduAdi.Width = 120;
+            // 
+            // colOdemeTipi
+            // 
+            this.colOdemeTipi.Caption = "Ödeme Türü";
+            this.colOdemeTipi.FieldName = "OdemeTipi";
+            this.colOdemeTipi.Name = "colOdemeTipi";
+            this.colOdemeTipi.OptionsColumn.AllowEdit = false;
+            this.colOdemeTipi.StatusBarAciklama = null;
+            this.colOdemeTipi.StatusBarKisaYol = null;
+            this.colOdemeTipi.StatusBarKisaYolAciklama = null;
+            this.colOdemeTipi.Visible = true;
+            this.colOdemeTipi.VisibleIndex = 2;
+            this.colOdemeTipi.Width = 120;
             // 
             // colAciklama
             // 
@@ -162,7 +178,8 @@
             this.colAciklama.StatusBarKisaYol = null;
             this.colAciklama.StatusBarKisaYolAciklama = null;
             this.colAciklama.Visible = true;
-            this.colAciklama.VisibleIndex = 2;
+            this.colAciklama.VisibleIndex = 3;
+            this.colAciklama.Width = 300;
             // 
             // OdemeMetoduList
             // 
@@ -194,5 +211,6 @@
         private UserControls.Controls.Grid.MyGridColumn colKod;
         private UserControls.Controls.Grid.MyGridColumn colOdemeMetoduAdi;
         private UserControls.Controls.Grid.MyGridColumn colAciklama;
+        private UserControls.Controls.Grid.MyGridColumn colOdemeTipi;
     }
 }

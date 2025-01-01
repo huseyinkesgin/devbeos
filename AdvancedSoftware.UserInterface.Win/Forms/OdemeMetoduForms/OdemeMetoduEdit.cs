@@ -1,8 +1,10 @@
 ﻿using AdavancedSoftware.Model.Entities;
 using AdvancedSoftware.Common.Enums;
+using AdvancedSoftware.Common.Functions;
 using AdvancedSoftware.UserInterface.Win.Forms.BaseForms;
 using AdvancedSoftware.UserInterface.Win.Functions;
 using AdvancedSoftweare.BusinessLayer.General;
+
 
 namespace AdvancedSoftware.UserInterface.Win.Forms.OdemeMetoduForms
 {
@@ -10,8 +12,11 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.OdemeMetoduForms
     {
         public OdemeMetoduEdit()
         {
+            InitializeComponent();
             DataLayoutControl = myDataLayoutControl;
             Bll = new OdemeMetoduBll(myDataLayoutControl);
+            txtOdemeTipi.Properties.Items.AddRange(EnumFunctions.GetEnumDescriptionList<OdemeTipi>());
+           
             BaseKartTuru = KartTuru.OdemeMetodu;
             EventsLoad();
         }
@@ -34,6 +39,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.OdemeMetoduForms
 
             txtKod.Text = entity.Kod;
             txtOdemeMetoduAdi.Text = entity.OdemeMetoduAdi;
+            txtOdemeTipi.SelectedItem = entity.OdemeTipi.ToName();
             txtAciklama.Text = entity.Aciklama;
             tglDurum.IsOn = entity.Durum;
         }
@@ -45,6 +51,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.OdemeMetoduForms
                 Id = Id,
                 Kod = txtKod.Text,
                 OdemeMetoduAdi = txtOdemeMetoduAdi.Text,
+                OdemeTipi = txtOdemeTipi.Text.GetEnum<OdemeTipi>(),
                 Aciklama = txtAciklama.Text,
                 Durum = tglDurum.IsOn,
             };

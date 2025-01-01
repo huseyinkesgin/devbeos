@@ -188,6 +188,7 @@
     <Compile Include="Enums\KrediyeUygunluk.cs" />
     <Compile Include="Enums\KullanimDurumu.cs" />
     <Compile Include="Enums\MusteriTuru.cs" />
+    <Compile Include="Enums\OdemeTipi.cs" />
     <Compile Include="Enums\OzelKodTuru.cs" />
     <Compile Include="Enums\PersonelDurumu.cs" />
     <Compile Include="Enums\PortfoyDurumu.cs" />

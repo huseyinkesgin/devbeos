@@ -61,6 +61,7 @@
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.btnAracSinif = new DevExpress.XtraBars.BarButtonItem();
             this.btnArac = new DevExpress.XtraBars.BarButtonItem();
+            this.btnOdemeMetodu = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageOfis = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageFinans = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -81,6 +82,7 @@
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.btnKargoFirmasi = new DevExpress.XtraBars.BarButtonItem();
+            this.btnPersonelHarcama = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).BeginInit();
             this.SuspendLayout();
@@ -120,9 +122,11 @@
             this.btnIsyeriTipi,
             this.barButtonItem3,
             this.btnAracSinif,
-            this.btnArac});
+            this.btnArac,
+            this.btnOdemeMetodu,
+            this.btnPersonelHarcama});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 41;
+            this.ribbonControl.MaxItemId = 43;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPageOfis,
@@ -355,6 +359,12 @@
             this.btnArac.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.driving_32x32;
             this.btnArac.Name = "btnArac";
             // 
+            // btnOdemeMetodu
+            // 
+            this.btnOdemeMetodu.Caption = "Ödeme Metotları";
+            this.btnOdemeMetodu.Id = 41;
+            this.btnOdemeMetodu.Name = "btnOdemeMetodu";
+            // 
             // ribbonPageOfis
             // 
             this.ribbonPageOfis.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -394,8 +404,9 @@
             this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem2);
             this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem4);
             this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem5);
+            this.ribbonPageGroup11.ItemLinks.Add(this.btnOdemeMetodu);
+            this.ribbonPageGroup11.ItemLinks.Add(this.btnPersonelHarcama);
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
-            this.ribbonPageGroup11.Text = "ribbonPageGroup11";
             // 
             // ribbonPagePortfoy
             // 
@@ -495,6 +506,12 @@
             this.btnKargoFirmasi.Id = 1;
             this.btnKargoFirmasi.Name = "btnKargoFirmasi";
             // 
+            // btnPersonelHarcama
+            // 
+            this.btnPersonelHarcama.Caption = "Personel Harcama";
+            this.btnPersonelHarcama.Id = 42;
+            this.btnPersonelHarcama.Name = "btnPersonelHarcama";
+            // 
             // AnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -568,5 +585,7 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
         private DevExpress.XtraBars.BarButtonItem btnAracSinif;
         private DevExpress.XtraBars.BarButtonItem btnArac;
+        private DevExpress.XtraBars.BarButtonItem btnOdemeMetodu;
+        private DevExpress.XtraBars.BarButtonItem btnPersonelHarcama;
     }
 }

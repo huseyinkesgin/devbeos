@@ -420,6 +420,18 @@
     <Compile Include="Forms\PersonelForms\PersonelListForm.Designer.cs">
       <DependentUpon>PersonelListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\PersonelHarcamaForms\PersonelHarcamaEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PersonelHarcamaForms\PersonelHarcamaEditForm.Designer.cs">
+      <DependentUpon>PersonelHarcamaEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PersonelHarcamaForms\PersonelHarcamaListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PersonelHarcamaForms\PersonelHarcamaListForm.Designer.cs">
+      <DependentUpon>PersonelHarcamaListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\PortfoyTipiForms\PortfoyTipiEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -756,6 +768,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PersonelForms\PersonelListForm.resx">
       <DependentUpon>PersonelListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PersonelHarcamaForms\PersonelHarcamaEditForm.resx">
+      <DependentUpon>PersonelHarcamaEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PersonelHarcamaForms\PersonelHarcamaListForm.resx">
+      <DependentUpon>PersonelHarcamaListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PortfoyTipiForms\PortfoyTipiEditForm.resx">
       <DependentUpon>PortfoyTipiEditForm.cs</DependentUpon>

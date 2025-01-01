@@ -2,9 +2,11 @@
 using AdavancedSoftware.Model.Entities.Base;
 using AdvancedSoftware.Common.Enums;
 using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AdavancedSoftware.Model.Dto
 {
+    [NotMapped]
     public class AracS : Arac
     {
         public string MarkaAdi { get; set; }

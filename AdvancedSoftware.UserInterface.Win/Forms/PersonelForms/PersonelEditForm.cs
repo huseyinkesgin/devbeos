@@ -62,6 +62,8 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.PersonelForms
             txtIl.Text = entity.IlAdi;
             txtIlce.Id = entity.IlceId;
             txtIlce.Text = entity.IlceAdi;
+            txtMahalle.Id = entity.MahalleId;
+            txtMahalle.Text = entity.MahalleAdi;
             txtAdres.Text = entity.Adres;
             txtWebsitesi.Text = entity.Websitesi;
             txtFacebook.Text = entity.Facebook;
@@ -119,6 +121,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.PersonelForms
                 Telefon = txtTelefon.Text,
                 IlId = Convert.ToInt64(txtIl.Id),
                 IlceId = Convert.ToInt64(txtIlce.Id),
+                MahalleId = Convert.ToInt64(txtMahalle.Id),
                 Adres = txtAdres.Text,
                 Websitesi = txtWebsitesi.Text,
                 Facebook = txtFacebook.Text,
