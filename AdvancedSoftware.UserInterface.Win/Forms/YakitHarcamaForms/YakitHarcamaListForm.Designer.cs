@@ -1,6 +1,6 @@
-﻿namespace AdvancedSoftware.UserInterface.Win.Forms.PersonelHarcamaForms
+﻿namespace AdvancedSoftware.UserInterface.Win.Forms.YakitHarcamaForms
 {
-    partial class PersonelHarcamaListForm
+    partial class YakitHarcamaListForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PersonelHarcamaListForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(YakitHarcamaListForm));
             this.longNavigator = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Navigators.longNavigator();
             this.grid = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridControl();
             this.tablo = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridView();
             this.gridBand1 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.colKod = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.colPersonelAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.colKategoriAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colTarih = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.colKasaAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colAracPlakaNo = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colLitre = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colTutar = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.repositoryDecimal = new DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit();
+            this.colPersonelAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.gridBand2 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.colOdemeMetoduAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colKasa = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colYakitCinsi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colBelgeNo = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.colBelgeTuru = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.gridBand3 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.colAciklama = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colId = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryDecimal)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -63,7 +63,7 @@
             this.ribbonControl.SearchEditItem.EditWidth = 150;
             this.ribbonControl.SearchEditItem.Id = -5000;
             this.ribbonControl.SearchEditItem.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
-            this.ribbonControl.Size = new System.Drawing.Size(1077, 135);
+            this.ribbonControl.Size = new System.Drawing.Size(911, 135);
             this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             // 
             // btnGonder
@@ -74,9 +74,9 @@
             // longNavigator
             // 
             this.longNavigator.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.longNavigator.Location = new System.Drawing.Point(0, 460);
+            this.longNavigator.Location = new System.Drawing.Point(0, 471);
             this.longNavigator.Name = "longNavigator";
-            this.longNavigator.Size = new System.Drawing.Size(1077, 24);
+            this.longNavigator.Size = new System.Drawing.Size(911, 24);
             this.longNavigator.TabIndex = 2;
             // 
             // grid
@@ -86,9 +86,7 @@
             this.grid.MainView = this.tablo;
             this.grid.MenuManager = this.ribbonControl;
             this.grid.Name = "grid";
-            this.grid.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.repositoryDecimal});
-            this.grid.Size = new System.Drawing.Size(1077, 325);
+            this.grid.Size = new System.Drawing.Size(911, 336);
             this.grid.TabIndex = 3;
             this.grid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.tablo});
@@ -114,22 +112,22 @@
             this.tablo.BandPanelRowHeight = 40;
             this.tablo.Bands.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.GridBand[] {
             this.gridBand1,
-            this.gridBand2});
+            this.gridBand2,
+            this.gridBand3});
             this.tablo.Columns.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn[] {
             this.colId,
             this.colKod,
+            this.colAracPlakaNo,
             this.colPersonelAdi,
             this.colOdemeMetoduAdi,
-            this.colKasaAdi,
-            this.colKategoriAdi,
+            this.colKasa,
             this.colTarih,
             this.colTutar,
-            this.colBelgeTuru,
+            this.colLitre,
+            this.colYakitCinsi,
             this.colBelgeNo,
             this.colAciklama});
             this.tablo.GridControl = this.grid;
-            this.tablo.GroupSummary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Sum, "Tutar", this.colTutar, "n2")});
             this.tablo.Name = "tablo";
             this.tablo.OptionsMenu.EnableColumnMenu = false;
             this.tablo.OptionsMenu.EnableFooterMenu = false;
@@ -148,20 +146,20 @@
             this.tablo.StatusBarAciklama = null;
             this.tablo.StatusBarKisaYol = null;
             this.tablo.StatusBarKisaYolAciklama = null;
-            this.tablo.ViewCaption = "PERSONEL HARCAMALARI";
+            this.tablo.ViewCaption = "ARAÇ YAKIT HARCAMALARI";
             // 
             // gridBand1
             // 
-            this.gridBand1.Caption = "HARCAMA BİLGİLERİ";
+            this.gridBand1.Caption = "ALINAN YAKIT";
             this.gridBand1.Columns.Add(this.colKod);
-            this.gridBand1.Columns.Add(this.colPersonelAdi);
-            this.gridBand1.Columns.Add(this.colKategoriAdi);
             this.gridBand1.Columns.Add(this.colTarih);
-            this.gridBand1.Columns.Add(this.colKasaAdi);
+            this.gridBand1.Columns.Add(this.colAracPlakaNo);
+            this.gridBand1.Columns.Add(this.colLitre);
             this.gridBand1.Columns.Add(this.colTutar);
+            this.gridBand1.Columns.Add(this.colPersonelAdi);
             this.gridBand1.Name = "gridBand1";
             this.gridBand1.VisibleIndex = 0;
-            this.gridBand1.Width = 690;
+            this.gridBand1.Width = 540;
             // 
             // colKod
             // 
@@ -171,8 +169,62 @@
             this.colKod.FieldName = "Kod";
             this.colKod.Name = "colKod";
             this.colKod.OptionsColumn.AllowEdit = false;
-            this.colKod.Visible = true;
-            this.colKod.Width = 100;
+            // 
+            // colTarih
+            // 
+            this.colTarih.Caption = "Tarih";
+            this.colTarih.FieldName = "Tarih";
+            this.colTarih.Name = "colTarih";
+            this.colTarih.OptionsColumn.AllowEdit = false;
+            this.colTarih.StatusBarAciklama = null;
+            this.colTarih.StatusBarKisaYol = null;
+            this.colTarih.StatusBarKisaYolAciklama = null;
+            this.colTarih.Visible = true;
+            this.colTarih.Width = 100;
+            // 
+            // colAracPlakaNo
+            // 
+            this.colAracPlakaNo.Caption = "Plaka";
+            this.colAracPlakaNo.FieldName = "AracPlakaNo";
+            this.colAracPlakaNo.Name = "colAracPlakaNo";
+            this.colAracPlakaNo.OptionsColumn.AllowEdit = false;
+            this.colAracPlakaNo.StatusBarAciklama = null;
+            this.colAracPlakaNo.StatusBarKisaYol = null;
+            this.colAracPlakaNo.StatusBarKisaYolAciklama = null;
+            this.colAracPlakaNo.Visible = true;
+            this.colAracPlakaNo.Width = 100;
+            // 
+            // colLitre
+            // 
+            this.colLitre.Caption = "Litre";
+            this.colLitre.DisplayFormat.FormatString = "n2";
+            this.colLitre.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.colLitre.FieldName = "Litre";
+            this.colLitre.Name = "colLitre";
+            this.colLitre.OptionsColumn.AllowEdit = false;
+            this.colLitre.StatusBarAciklama = null;
+            this.colLitre.StatusBarKisaYol = null;
+            this.colLitre.StatusBarKisaYolAciklama = null;
+            this.colLitre.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "Litre", "n2")});
+            this.colLitre.Visible = true;
+            this.colLitre.Width = 100;
+            // 
+            // colTutar
+            // 
+            this.colTutar.Caption = "Tutar ";
+            this.colTutar.DisplayFormat.FormatString = "c2";
+            this.colTutar.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.colTutar.FieldName = "Tutar";
+            this.colTutar.Name = "colTutar";
+            this.colTutar.OptionsColumn.AllowEdit = false;
+            this.colTutar.StatusBarAciklama = null;
+            this.colTutar.StatusBarKisaYol = null;
+            this.colTutar.StatusBarKisaYolAciklama = null;
+            this.colTutar.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "Tutar", "n2")});
+            this.colTutar.Visible = true;
+            this.colTutar.Width = 120;
             // 
             // colPersonelAdi
             // 
@@ -186,85 +238,20 @@
             this.colPersonelAdi.Visible = true;
             this.colPersonelAdi.Width = 120;
             // 
-            // colKategoriAdi
-            // 
-            this.colKategoriAdi.Caption = "Harcama Kategorisi";
-            this.colKategoriAdi.FieldName = "KategoriAdi";
-            this.colKategoriAdi.Name = "colKategoriAdi";
-            this.colKategoriAdi.OptionsColumn.AllowEdit = false;
-            this.colKategoriAdi.StatusBarAciklama = null;
-            this.colKategoriAdi.StatusBarKisaYol = null;
-            this.colKategoriAdi.StatusBarKisaYolAciklama = null;
-            this.colKategoriAdi.Visible = true;
-            this.colKategoriAdi.Width = 120;
-            // 
-            // colTarih
-            // 
-            this.colTarih.AppearanceCell.Options.UseTextOptions = true;
-            this.colTarih.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colTarih.Caption = "Tarih";
-            this.colTarih.FieldName = "Tarih";
-            this.colTarih.Name = "colTarih";
-            this.colTarih.OptionsColumn.AllowEdit = false;
-            this.colTarih.StatusBarAciklama = null;
-            this.colTarih.StatusBarKisaYol = null;
-            this.colTarih.StatusBarKisaYolAciklama = null;
-            this.colTarih.Visible = true;
-            this.colTarih.Width = 100;
-            // 
-            // colKasaAdi
-            // 
-            this.colKasaAdi.Caption = "Kasa Adı";
-            this.colKasaAdi.FieldName = "KasaAdi";
-            this.colKasaAdi.Name = "colKasaAdi";
-            this.colKasaAdi.OptionsColumn.AllowEdit = false;
-            this.colKasaAdi.StatusBarAciklama = null;
-            this.colKasaAdi.StatusBarKisaYol = null;
-            this.colKasaAdi.StatusBarKisaYolAciklama = null;
-            this.colKasaAdi.Visible = true;
-            this.colKasaAdi.Width = 150;
-            // 
-            // colTutar
-            // 
-            this.colTutar.Caption = "Tutar";
-            this.colTutar.ColumnEdit = this.repositoryDecimal;
-            this.colTutar.DisplayFormat.FormatString = "n2";
-            this.colTutar.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.colTutar.FieldName = "Tutar";
-            this.colTutar.Name = "colTutar";
-            this.colTutar.OptionsColumn.AllowEdit = false;
-            this.colTutar.StatusBarAciklama = null;
-            this.colTutar.StatusBarKisaYol = null;
-            this.colTutar.StatusBarKisaYolAciklama = null;
-            this.colTutar.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "Tutar", "{0:n2}")});
-            this.colTutar.Visible = true;
-            this.colTutar.Width = 100;
-            // 
-            // repositoryDecimal
-            // 
-            this.repositoryDecimal.AutoHeight = false;
-            this.repositoryDecimal.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryDecimal.DisplayFormat.FormatString = "n2";
-            this.repositoryDecimal.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.repositoryDecimal.MaskSettings.Set("mask", "n2");
-            this.repositoryDecimal.Name = "repositoryDecimal";
-            // 
             // gridBand2
             // 
             this.gridBand2.Caption = "DİĞER BİLGİLER";
             this.gridBand2.Columns.Add(this.colOdemeMetoduAdi);
+            this.gridBand2.Columns.Add(this.colKasa);
+            this.gridBand2.Columns.Add(this.colYakitCinsi);
             this.gridBand2.Columns.Add(this.colBelgeNo);
-            this.gridBand2.Columns.Add(this.colBelgeTuru);
-            this.gridBand2.Columns.Add(this.colAciklama);
             this.gridBand2.Name = "gridBand2";
             this.gridBand2.VisibleIndex = 1;
-            this.gridBand2.Width = 620;
+            this.gridBand2.Width = 520;
             // 
             // colOdemeMetoduAdi
             // 
-            this.colOdemeMetoduAdi.Caption = "Ödeme Metodu";
+            this.colOdemeMetoduAdi.Caption = "Ödeme Türü";
             this.colOdemeMetoduAdi.FieldName = "OdemeMetoduAdi";
             this.colOdemeMetoduAdi.Name = "colOdemeMetoduAdi";
             this.colOdemeMetoduAdi.OptionsColumn.AllowEdit = false;
@@ -272,7 +259,31 @@
             this.colOdemeMetoduAdi.StatusBarKisaYol = null;
             this.colOdemeMetoduAdi.StatusBarKisaYolAciklama = null;
             this.colOdemeMetoduAdi.Visible = true;
-            this.colOdemeMetoduAdi.Width = 120;
+            this.colOdemeMetoduAdi.Width = 150;
+            // 
+            // colKasa
+            // 
+            this.colKasa.Caption = "Kasa";
+            this.colKasa.FieldName = "KasaAdi";
+            this.colKasa.Name = "colKasa";
+            this.colKasa.OptionsColumn.AllowEdit = false;
+            this.colKasa.StatusBarAciklama = null;
+            this.colKasa.StatusBarKisaYol = null;
+            this.colKasa.StatusBarKisaYolAciklama = null;
+            this.colKasa.Visible = true;
+            this.colKasa.Width = 150;
+            // 
+            // colYakitCinsi
+            // 
+            this.colYakitCinsi.Caption = "Yakıt Cinsi";
+            this.colYakitCinsi.FieldName = "YakitCinsi";
+            this.colYakitCinsi.Name = "colYakitCinsi";
+            this.colYakitCinsi.OptionsColumn.AllowEdit = false;
+            this.colYakitCinsi.StatusBarAciklama = null;
+            this.colYakitCinsi.StatusBarKisaYol = null;
+            this.colYakitCinsi.StatusBarKisaYolAciklama = null;
+            this.colYakitCinsi.Visible = true;
+            this.colYakitCinsi.Width = 100;
             // 
             // colBelgeNo
             // 
@@ -284,19 +295,15 @@
             this.colBelgeNo.StatusBarKisaYol = null;
             this.colBelgeNo.StatusBarKisaYolAciklama = null;
             this.colBelgeNo.Visible = true;
-            this.colBelgeNo.Width = 100;
+            this.colBelgeNo.Width = 120;
             // 
-            // colBelgeTuru
+            // gridBand3
             // 
-            this.colBelgeTuru.Caption = "Belge Türü";
-            this.colBelgeTuru.FieldName = "BelgeTuru";
-            this.colBelgeTuru.Name = "colBelgeTuru";
-            this.colBelgeTuru.OptionsColumn.AllowEdit = false;
-            this.colBelgeTuru.StatusBarAciklama = null;
-            this.colBelgeTuru.StatusBarKisaYol = null;
-            this.colBelgeTuru.StatusBarKisaYolAciklama = null;
-            this.colBelgeTuru.Visible = true;
-            this.colBelgeTuru.Width = 100;
+            this.gridBand3.Caption = "EK BİLGİLER";
+            this.gridBand3.Columns.Add(this.colAciklama);
+            this.gridBand3.Name = "gridBand3";
+            this.gridBand3.VisibleIndex = 2;
+            this.gridBand3.Width = 400;
             // 
             // colAciklama
             // 
@@ -308,7 +315,7 @@
             this.colAciklama.StatusBarKisaYol = null;
             this.colAciklama.StatusBarKisaYolAciklama = null;
             this.colAciklama.Visible = true;
-            this.colAciklama.Width = 300;
+            this.colAciklama.Width = 400;
             // 
             // colId
             // 
@@ -318,23 +325,22 @@
             this.colId.OptionsColumn.AllowEdit = false;
             this.colId.OptionsColumn.ShowInCustomizationForm = false;
             // 
-            // PersonelHarcamaListForm
+            // YakitHarcamaListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1077, 508);
+            this.ClientSize = new System.Drawing.Size(911, 519);
             this.Controls.Add(this.grid);
             this.Controls.Add(this.longNavigator);
             this.IconOptions.ShowIcon = false;
-            this.Name = "PersonelHarcamaListForm";
-            this.Text = "PERSONEL HARCAMA KARTLARI";
+            this.Name = "YakitHarcamaListForm";
+            this.Text = "YAKIT HARCAMA KARTLARI";
             this.Controls.SetChildIndex(this.ribbonControl, 0);
             this.Controls.SetChildIndex(this.longNavigator, 0);
             this.Controls.SetChildIndex(this.grid, 0);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryDecimal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -343,21 +349,22 @@
         #endregion
 
         private UserControls.Controls.Navigators.longNavigator longNavigator;
-        private UserControls.Controls.Grid.MyBandedGridControl grid;
         private UserControls.Controls.Grid.MyBandedGridView tablo;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colId;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colKod;
-        private UserControls.Controls.Grid.MyBandedGridColumn colPersonelAdi;
-        private UserControls.Controls.Grid.MyBandedGridColumn colOdemeMetoduAdi;
-        private UserControls.Controls.Grid.MyBandedGridColumn colKasaAdi;
-        private UserControls.Controls.Grid.MyBandedGridColumn colKategoriAdi;
-        private UserControls.Controls.Grid.MyBandedGridColumn colTarih;
-        private UserControls.Controls.Grid.MyBandedGridColumn colTutar;
-        private UserControls.Controls.Grid.MyBandedGridColumn colBelgeTuru;
-        private UserControls.Controls.Grid.MyBandedGridColumn colBelgeNo;
-        private UserControls.Controls.Grid.MyBandedGridColumn colAciklama;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand1;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colKod;
+        private UserControls.Controls.Grid.MyBandedGridColumn colTarih;
+        private UserControls.Controls.Grid.MyBandedGridColumn colAracPlakaNo;
+        private UserControls.Controls.Grid.MyBandedGridColumn colLitre;
+        private UserControls.Controls.Grid.MyBandedGridColumn colTutar;
+        private UserControls.Controls.Grid.MyBandedGridColumn colPersonelAdi;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand2;
-        private DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit repositoryDecimal;
+        private UserControls.Controls.Grid.MyBandedGridColumn colOdemeMetoduAdi;
+        private UserControls.Controls.Grid.MyBandedGridColumn colKasa;
+        private UserControls.Controls.Grid.MyBandedGridColumn colYakitCinsi;
+        private UserControls.Controls.Grid.MyBandedGridColumn colBelgeNo;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand3;
+        private UserControls.Controls.Grid.MyBandedGridColumn colAciklama;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colId;
+        protected UserControls.Controls.Grid.MyBandedGridControl grid;
     }
 }

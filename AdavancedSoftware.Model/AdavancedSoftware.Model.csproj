@@ -61,6 +61,7 @@
     <Compile Include="Dto\ArsaDto.cs" />
     <Compile Include="Dto\IsyeriDto.cs" />
     <Compile Include="Dto\KasaDto.cs" />
+    <Compile Include="Dto\YakitHarcamaDto.cs" />
     <Compile Include="Dto\PersonelDto.cs" />
     <Compile Include="Dto\MusteriDto.cs" />
     <Compile Include="Dto\OfisDto.cs" />

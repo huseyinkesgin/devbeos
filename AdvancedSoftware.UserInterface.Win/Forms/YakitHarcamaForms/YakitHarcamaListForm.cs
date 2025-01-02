@@ -6,28 +6,26 @@ using AdvancedSoftware.UserInterface.Win.Functions;
 using AdvancedSoftware.UserInterface.Win.Show;
 using AdvancedSoftweare.BusinessLayer.General;
 
-namespace AdvancedSoftware.UserInterface.Win.Forms.PersonelHarcamaForms
+namespace AdvancedSoftware.UserInterface.Win.Forms.YakitHarcamaForms
 {
-    public partial class PersonelHarcamaListForm : BaseListForm
+    public partial class YakitHarcamaListForm : BaseListForm
     {
-        public PersonelHarcamaListForm()
+        public YakitHarcamaListForm()
         {
             InitializeComponent();
-            Bll = new PersonelHarcamaBll();
+            Bll = new YakitHarcamaBll();
         }
         protected override void DesgiskenleriDoldur()
         {
             Tablo = tablo;
-            BaseKartTuru = KartTuru.PersonelHarcama;
-            FormShow = new ShowEditForms<PersonelHarcamaEditForm>();
+            BaseKartTuru = KartTuru.YakitHarcama;
+            FormShow = new ShowEditForms<YakitHarcamaEditForm>();
             Navigator = longNavigator.Navigator;
 
         }
         protected override void Listele()
         {
-            Tablo.GridControl.DataSource = ((PersonelHarcamaBll)Bll).List(FilterFunctions.Filter<PersonelHarcama>(AktifKartlariGoster));
+            Tablo.GridControl.DataSource = ((YakitHarcamaBll)Bll).List(FilterFunctions.Filter<YakitHarcama>(AktifKartlariGoster));
         }
-
-     
     }
 }

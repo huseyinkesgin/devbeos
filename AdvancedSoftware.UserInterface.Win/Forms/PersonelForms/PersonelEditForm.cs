@@ -4,6 +4,7 @@ using AdvancedSoftware.Common.Enums;
 using AdvancedSoftware.Common.Functions;
 using AdvancedSoftware.UserInterface.Win.Forms.BaseForms;
 using AdvancedSoftware.UserInterface.Win.Functions;
+using AdvancedSoftware.UserInterface.Win.UserControls.Controls;
 using AdvancedSoftweare.BusinessLayer.General;
 using DevExpress.XtraEditors;
 using System;
@@ -85,6 +86,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.PersonelForms
             txtPersonelDurumu.SelectedItem = entity.PersonelDurumu.ToName();
             txtIseGirisTarihi.DateTime = entity.IseGirisTarihi;
             txtIstenCikisTarihi.EditValue = entity.IstenCikisTarihi;
+            imgPersonelResmi.EditValue = entity.PersonelResmi;
             txtAciklama.Text = entity.Aciklama;
             txtOzelKod1.Id = entity.OzelKod1Id;
             txtOzelKod1.Text = entity.OzelKod1Adi;
@@ -139,6 +141,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.PersonelForms
                 PersonelDurumu = txtPersonelDurumu.Text.GetEnum<PersonelDurumu>(),
                 IseGirisTarihi = txtIseGirisTarihi.DateTime,
                 IstenCikisTarihi = txtIstenCikisTarihi.DateTime,
+                PersonelResmi = (byte[])imgPersonelResmi.EditValue,
                 Aciklama = txtAciklama.Text,
                 OzelKod1Id = txtOzelKod1.Id,
                 OzelKod2Id = txtOzelKod2.Id,
@@ -229,6 +232,13 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.PersonelForms
                 txtCocukSayisi.Enabled = true;
             }
 
+        }
+
+        protected override void Control_Enter(object sender, EventArgs e)
+        {
+            if (!(sender is MyPictureEdit resim))
+                return;
+            resim.Sec(resimMenu);
         }
     }
 }

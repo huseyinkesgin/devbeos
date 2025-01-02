@@ -7,7 +7,10 @@ using DevExpress.XtraBars.Docking.Paint;
 using DevExpress.XtraGrid.Views.Grid;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.Drawing.Printing;
+using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -17,28 +20,30 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
     {
         public static long GetRowId(this GridView tablo)
         {
-            if (tablo.FocusedRowHandle > -1) 
+            if (tablo.FocusedRowHandle > -1)
                 return (long)tablo.GetFocusedRowCellValue("Id");
             Messages.KartSecmemeUyariMesaji();
             return -1;
-            
+
         }
 
         public static T GetRow<T>(this GridView tablo, bool mesajVer = true)
         {
-            if (tablo.FocusedRowHandle > -1) return (T)tablo.GetRow(tablo.FocusedRowHandle);
+            if (tablo.FocusedRowHandle > -1)
+                return (T)tablo.GetRow(tablo.FocusedRowHandle);
 
             if (mesajVer)
                 Messages.KartSecmemeUyariMesaji();
 
-            return default(T); 
+            return default(T);
         }
 
         private static VeriDegisimYeri VeriDegisimYeriGetir<T>(T oldEntity, T currentEntity)
         {
             foreach (var prop in currentEntity.GetType().GetProperties())
             {
-                if (prop.PropertyType.Namespace == "System.Collections.Generic") continue;
+                if (prop.PropertyType.Namespace == "System.Collections.Generic")
+                    continue;
                 var oldValue = prop.GetValue(oldEntity) ?? string.Empty;
                 var currentValue = prop.GetValue(currentEntity) ?? string.Empty;
 
@@ -69,7 +74,7 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
             btnSil.Enabled = !butonEnabledDurumu;
         }
 
-        public static void ButtonEnabledDurumu<T>(BarButtonItem btnKaydet, BarButtonItem btnFarkliKaydet, BarButtonItem btnSil,IslemTuru islemTuru ,T oldEntity, T currentEntity)
+        public static void ButtonEnabledDurumu<T>(BarButtonItem btnKaydet, BarButtonItem btnFarkliKaydet, BarButtonItem btnSil, IslemTuru islemTuru, T oldEntity, T currentEntity)
         {
             var veriDegisimYeri = VeriDegisimYeriGetir(oldEntity, currentEntity);
             var butonEnabledDurumu = veriDegisimYeri == VeriDegisimYeri.Alan;
@@ -108,14 +113,14 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
                 var dakika = SifirEkle(DateTime.Now.Minute.ToString());
                 var saniye = SifirEkle(DateTime.Now.Second.ToString());
                 var milisaniye = UcBasamakYap(DateTime.Now.Millisecond.ToString());
-                var random = SifirEkle(new Random().Next(0,99).ToString());
+                var random = SifirEkle(new Random().Next(0, 99).ToString());
 
-                return yil+ay+gun+saat+dakika+saniye+milisaniye+random;
+                return yil + ay + gun + saat + dakika + saniye + milisaniye + random;
             }
             var id = Id();
-            return islemTuru == IslemTuru.EntityUpdate?selectedEntity.Id : long.Parse(Id());
+            return islemTuru == IslemTuru.EntityUpdate ? selectedEntity.Id : long.Parse(Id());
         }
-    
+
         public static void ControlEnabledChange(this MyButtonEdit baseEdit, Control prmEdit)
         {
             switch (prmEdit)
@@ -124,20 +129,20 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
                 case MyButtonEdit edt:
                     edt.Enabled = baseEdit.Id.HasValue && baseEdit.Id > 0;
                     edt.Id = null;
-                    edt.EditValue =null ;
+                    edt.EditValue = null;
                     break;
             }
         }
 
         public static void RowFocus(this GridView tablo, string aranacakKolon, object aranacakDeger)
         {
-           var rowHandle = 0;
+            var rowHandle = 0;
 
             for (int i = 0; i < tablo.RowCount; i++)
             {
-               var bulunanDeger = tablo.GetRowCellValue(i, aranacakKolon);
+                var bulunanDeger = tablo.GetRowCellValue(i, aranacakKolon);
 
-                if(aranacakDeger.Equals(bulunanDeger))
+                if (aranacakDeger.Equals(bulunanDeger))
                     rowHandle = i;
             }
             tablo.FocusedRowHandle = rowHandle;
@@ -145,8 +150,9 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
 
         public static void RowFocus(this GridView tablo, int rowhandle)
         {
-           
-            if (rowhandle <= 0) return;
+
+            if (rowhandle <= 0)
+                return;
 
             if (rowhandle == tablo.RowCount - 1)
                 tablo.FocusedRowHandle = rowhandle;
@@ -172,5 +178,33 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
             return settings.PrinterName;
         }
 
+        public static void ShowPopupMenu(this MouseEventArgs e, PopupMenu popupMenu)
+        {
+            if (e.Button != MouseButtons.Right)
+                return;
+            popupMenu.ShowPopup(Control.MousePosition);
+        }
+
+        public static byte[] ResimYukle()
+        {
+            var dialog = new OpenFileDialog
+            {
+                Title = "Resim Seç",
+                Filter = "Resim Dosyaları (*.jpg;*.jpeg;*.png;*.bmp;*.gif)|*.jpg;*.jpeg;*.png;*.bmp;*.gif|Jpg Dosyaları|*.jpg|Jpeg Dosyaları|*.jpeg|Png Dosyaları|*.png|Bmp Dosyaları|*.bmp|Gif Dosyaları|*.gif",
+                InitialDirectory = @"C:\",
+                Multiselect = false
+            };
+
+            byte[] Resim()
+            {
+                using (var stream = new MemoryStream())
+                {
+                    Image.FromFile(dialog.FileName).Save(stream, ImageFormat.Png);
+                    return stream.ToArray();
+                }
+            }
+
+            return dialog.ShowDialog() != DialogResult.OK ? null : Resim();
+        }
     }
 }

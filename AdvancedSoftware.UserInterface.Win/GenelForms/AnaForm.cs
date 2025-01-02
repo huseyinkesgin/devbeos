@@ -25,6 +25,7 @@ using AdvancedSoftware.UserInterface.Win.Forms.PortfoyTipiForms;
 using AdvancedSoftware.UserInterface.Win.Forms.SiparisForms.IlForms;
 using AdvancedSoftware.UserInterface.Win.Forms.TapuTipiForms;
 using AdvancedSoftware.UserInterface.Win.Forms.UnvanForms;
+using AdvancedSoftware.UserInterface.Win.Forms.YakitHarcamaForms;
 using AdvancedSoftware.UserInterface.Win.Show;
 using DevExpress.XtraBars;
 using System;
@@ -61,8 +62,8 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
 
         private void Butonlar_ItemClick(object sender, ItemClickEventArgs e)
         {
-           
-           
+
+
             if (e.Item == btnOfis)
                 ShowListForms<OfisListForm>.ShowListForm(KartTuru.Ofis);
 
@@ -101,7 +102,7 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
                 ShowListForms<MusteriListForm>.ShowListForm(KartTuru.Musteri);
             if (e.Item == btnPersonel)
                 ShowListForms<PersonelListForm>.ShowListForm(KartTuru.Personel);
-            if ( e.Item == btnIsyeri)
+            if (e.Item == btnIsyeri)
                 ShowListForms<IsyeriListForm>.ShowListForm(KartTuru.Isyeri);
             if (e.Item == btnIsyeriTipi)
                 ShowListForms<IsyeriTipiListForm>.ShowListForm(KartTuru.IsyeriTipi);
@@ -113,7 +114,9 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
                 ShowListForms<OdemeMetoduList>.ShowListForm(KartTuru.OdemeMetodu);
             if (e.Item == btnPersonelHarcama)
                 ShowListForms<PersonelHarcamaListForm>.ShowListForm(KartTuru.PersonelHarcama);
-
+            if (e.Item == btnYakitHarcama)
+                ShowListForms<YakitHarcamaListForm>.ShowListForm(KartTuru.YakitHarcama);
+           
 
         }
 

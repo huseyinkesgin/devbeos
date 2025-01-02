@@ -163,6 +163,26 @@ namespace AdvancedSoftware.UserInterface.Win.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bouser_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("bouser_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bouser_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("bouser_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap build_16x16 {
             get {
                 object obj = ResourceManager.GetObject("build_16x16", resourceCulture);
@@ -823,6 +843,26 @@ namespace AdvancedSoftware.UserInterface.Win.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap listbullets_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("listbullets_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap listbullets_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("listbullets_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap listmultilevel_16x16 {
             get {
                 object obj = ResourceManager.GetObject("listmultilevel_16x16", resourceCulture);
@@ -996,6 +1036,26 @@ namespace AdvancedSoftware.UserInterface.Win.Properties {
         internal static System.Drawing.Bitmap next_16x162 {
             get {
                 object obj = ResourceManager.GetObject("next_16x162", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap open2_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("open2_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap open2_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("open2_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1226,6 +1286,26 @@ namespace AdvancedSoftware.UserInterface.Win.Properties {
         internal static System.Drawing.Bitmap saveall_32x321 {
             get {
                 object obj = ResourceManager.GetObject("saveall_32x321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap squeeze_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("squeeze_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap squeeze_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("squeeze_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

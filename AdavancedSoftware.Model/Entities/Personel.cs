@@ -73,6 +73,8 @@ namespace AdavancedSoftware.Model.Entities
         [Column(TypeName = "date")]
         public DateTime? IstenCikisTarihi { get; set; } = null;
 
+        public byte[] PersonelResmi { get; set; }
+
         public long? OzelKod1Id { get; set; }
         public long? OzelKod2Id { get; set; }
         public long? OzelKod3Id { get; set; }

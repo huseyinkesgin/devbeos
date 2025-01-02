@@ -33,13 +33,13 @@ namespace AdavancedSoftware.Model.Entities
         [ZorunluAlan("İşletme Alanı", "txtIsletmeAlanı")]
         public decimal IsletmeAlani { get; set; }
         public decimal OfisAlani { get; set; }
-        public int KWAEnerji { get; set; }
+        public int KWAEnerji { get; set; } = 0;
         public VincVarmi VincVarmi { get; set; } = VincVarmi.Hayir;
         public string VincAciklama { get; set; }
-        public int Katsayisi { get; set; }
+        public int Katsayisi { get; set; } = 1;
         public string M2TasimaKapasitesi { get; set; }
-        public int GirisYuksekligi { get; set; }
-        public int YapimYili { get; set; }
+        public int GirisYuksekligi { get; set; } = 0;
+        public int YapimYili { get; set; } = DateTime.Now.Year;
         public KiraciVarmi KiraciVarmi { get; set; } = KiraciVarmi.Hayir;
         [ZorunluAlan("Isıtma", "txtIsitma")]
         public long IsitmaId { get; set; }

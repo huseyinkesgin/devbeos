@@ -64,6 +64,7 @@ namespace AdavancedSoftware.Model.Dto
         public PersonelDurumu PersonelDurumu { get; set; }
         public DateTime IseGirisTarihi { get; set; }
         public DateTime? IstenCikisTarihi { get; set; }
+        public byte[] PersonelResmi { get; set; }
         public string OzelKod1Adi { get; set; }
         public string OzelKod2Adi { get; set; }
         public string OzelKod3Adi { get; set; }

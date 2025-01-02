@@ -56,6 +56,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
                 control.KeyDown += Control_KeyDown;
                 control.GotFocus += Control_GotFocus;
                 control.Leave += Control_Leave;
+                control.Enter += Control_Enter;
 
                 switch (control)
                 {
@@ -89,6 +90,9 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
                     foreach (Control ctrl in layout.Controls)
                         ControlEvents(ctrl);
         }
+
+       
+
         private void EntityDelete()
         {
             if (!((IBaseCommonBll)Bll).Delete(OldEntity))
@@ -326,6 +330,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
             statusBarKisaYol.Visibility = BarItemVisibility.Never;
             statusBarKisaYolAciklama.Visibility = BarItemVisibility.Never;
         }
+        protected virtual void Control_Enter(object sender, EventArgs e) { }
         protected virtual void Control_EditValueChanged(object sender, EventArgs e)
         {
             if (!IsLoaded)

@@ -4,6 +4,7 @@ using AdvancedSoftware.Common.Enums;
 using AdvancedSoftware.Common.Functions;
 using AdvancedSoftware.UserInterface.Win.Forms.BaseForms;
 using AdvancedSoftware.UserInterface.Win.Functions;
+using AdvancedSoftware.UserInterface.Win.UserControls.Controls;
 using AdvancedSoftweare.BusinessLayer.General;
 using DevExpress.XtraEditors;
 using System;
@@ -100,9 +101,9 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.IsyeriForms
             txtBuradaYapiLink.Text = entity.BuradaYapıLink;
             txtDepoFabrikaID.Text = entity.DepoFabrika;
             txtDepoFabrikaLink.Text = entity.DepoFabrikaLink;
-            //txtUyduGoruntusu.Text = entity.UyduGoruntusu;
-            //txtOznitelikGoruntusu.Text = entity.OznitelikGoruntusu;
-            //txtImarDurumuGoruntusu.Text = entity.ImarDurumuGoruntusu;
+            imgUyduGoruntusu.EditValue = entity.UyduGoruntusu;
+            imgOznitelikGoruntusu.EditValue = entity.OznitelikGoruntusu;
+            imgImarDurumuGoruntusu.EditValue = entity.ImarDurumuGoruntusu;
             //txtAutoCadDosyaAdi.Text = entity.AutoCadDosyaAdi;
             //txtAutoCadDosyaYolu.Text = entity.AutoCadDosyaYolu;
             txtPortfoyDurumu.SelectedItem = entity.PortfoyDurumu.ToName();
@@ -173,9 +174,9 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.IsyeriForms
                 BuradaYapıLink = txtBuradaYapiLink.Text,
                 DepoFabrika = txtDepoFabrikaID.Text,
                 DepoFabrikaLink = txtDepoFabrikaLink.Text,
-                //UyduGoruntusu = txtUyduGoruntusu.Text,
-                //OznitelikGoruntusu = txtOznitelikGoruntusu.Text,
-                //ImarDurumuGoruntusu = txtImarDurumuGoruntusu.Text,
+                UyduGoruntusu = (byte[])imgUyduGoruntusu.EditValue,
+                OznitelikGoruntusu = (byte[])imgOznitelikGoruntusu.EditValue,
+                ImarDurumuGoruntusu = (byte[])imgImarDurumuGoruntusu.EditValue,
                 //AutoCadDosyaAdi = txtAutoCadDosyaAdi.Text,
                 //AutoCadDosyaYolu = txtAutoCadDosyaYolu.Text,
                 PortfoyDurumu = txtPortfoyDurumu.Text.GetEnum<PortfoyDurumu>(),
@@ -312,6 +313,12 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.IsyeriForms
             {
                 txtKrediyeUygunluk.Enabled = false;
             }
+        }
+
+        protected override void Control_Enter(object sender, EventArgs e)
+        {
+           if (!(sender is MyPictureEdit resim)) return;
+           resim.Sec(resimMenu);
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using AdavancedSoftware.Model.Dto;
 using AdavancedSoftware.Model.Entities;
 using AdvancedSoftware.Common.Enums;
+using AdvancedSoftware.UserInterface.Win.Forms.AracForms;
 using AdvancedSoftware.UserInterface.Win.Forms.AracSinifForms;
 using AdvancedSoftware.UserInterface.Win.Forms.BankaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.BankaSubeForms;
@@ -317,6 +318,16 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
                         {
                             _btnEdit.Id = entity.Id;
                             _btnEdit.EditValue = entity.OdemeMetoduAdi;
+                        }
+                    }
+                    break;
+                case "txtArac":
+                    {
+                        var entity = (AracL)ShowListForms<AracListForm>.ShowDialogListForm(KartTuru.Arac, _btnEdit.Id);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.PlakaNo;
                         }
                     }
                     break;

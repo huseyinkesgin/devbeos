@@ -36,7 +36,7 @@
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.btnKasa = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnYakitHarcama = new DevExpress.XtraBars.BarButtonItem();
             this.btnPersonel = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.btnPortfoyTipi = new DevExpress.XtraBars.BarButtonItem();
@@ -47,7 +47,6 @@
             this.btnIsitma = new DevExpress.XtraBars.BarButtonItem();
             this.btnMusteri = new DevExpress.XtraBars.BarButtonItem();
             this.btnIl = new DevExpress.XtraBars.BarButtonItem();
-            this.btnIlce = new DevExpress.XtraBars.BarButtonItem();
             this.btnMusteriBilgi = new DevExpress.XtraBars.BarButtonItem();
             this.btnIptalNedeni = new DevExpress.XtraBars.BarButtonItem();
             this.btnDepartman = new DevExpress.XtraBars.BarButtonItem();
@@ -62,11 +61,15 @@
             this.btnAracSinif = new DevExpress.XtraBars.BarButtonItem();
             this.btnArac = new DevExpress.XtraBars.BarButtonItem();
             this.btnOdemeMetodu = new DevExpress.XtraBars.BarButtonItem();
+            this.btnPersonelHarcama = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageOfis = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup13 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageFinans = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPagePortfoy = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -82,7 +85,6 @@
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.btnKargoFirmasi = new DevExpress.XtraBars.BarButtonItem();
-            this.btnPersonelHarcama = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).BeginInit();
             this.SuspendLayout();
@@ -98,7 +100,7 @@
             this.barButtonItem2,
             this.btnKasa,
             this.barButtonItem4,
-            this.barButtonItem5,
+            this.btnYakitHarcama,
             this.btnPersonel,
             this.barButtonItem8,
             this.btnPortfoyTipi,
@@ -109,7 +111,6 @@
             this.btnIsitma,
             this.btnMusteri,
             this.btnIl,
-            this.btnIlce,
             this.btnMusteriBilgi,
             this.btnIptalNedeni,
             this.btnDepartman,
@@ -140,7 +141,7 @@
             // 
             // btnOfis
             // 
-            this.btnOfis.Caption = "OFİS KARTI";
+            this.btnOfis.Caption = "Ofis Listesi";
             this.btnOfis.Id = 2;
             this.btnOfis.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.editname_16x16;
             this.btnOfis.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.editname_32x32;
@@ -162,7 +163,7 @@
             // 
             // btnKasa
             // 
-            this.btnKasa.Caption = "KASA";
+            this.btnKasa.Caption = "Kasa Listesi";
             this.btnKasa.Id = 5;
             this.btnKasa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnKasa.ImageOptions.SvgImage")));
             this.btnKasa.Name = "btnKasa";
@@ -174,13 +175,13 @@
             this.barButtonItem4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem4.ImageOptions.SvgImage")));
             this.barButtonItem4.Name = "barButtonItem4";
             // 
-            // barButtonItem5
+            // btnYakitHarcama
             // 
-            this.barButtonItem5.Caption = "YAKIT GİDER";
-            this.barButtonItem5.Id = 7;
-            this.barButtonItem5.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.left_16x16;
-            this.barButtonItem5.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.left_32x32;
-            this.barButtonItem5.Name = "barButtonItem5";
+            this.btnYakitHarcama.Caption = "Yakıt Harcama";
+            this.btnYakitHarcama.Id = 7;
+            this.btnYakitHarcama.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.left_16x16;
+            this.btnYakitHarcama.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.left_32x32;
+            this.btnYakitHarcama.Name = "btnYakitHarcama";
             // 
             // btnPersonel
             // 
@@ -192,14 +193,14 @@
             // 
             // barButtonItem8
             // 
-            this.barButtonItem8.Caption = "DEMİRBAŞ";
+            this.barButtonItem8.Caption = "Demirbaş Listesi";
             this.barButtonItem8.Id = 10;
             this.barButtonItem8.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.LargeImage")));
             this.barButtonItem8.Name = "barButtonItem8";
             // 
             // btnPortfoyTipi
             // 
-            this.btnPortfoyTipi.Caption = "PORTFOY TİPİ";
+            this.btnPortfoyTipi.Caption = "Portfoy Tipleri";
             this.btnPortfoyTipi.Id = 11;
             this.btnPortfoyTipi.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.boproductgroup_16x16;
             this.btnPortfoyTipi.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.boproductgroup_32x32;
@@ -207,7 +208,7 @@
             // 
             // barButtonItem10
             // 
-            this.barButtonItem10.Caption = "ARSA";
+            this.barButtonItem10.Caption = "Arsa Formu";
             this.barButtonItem10.Id = 12;
             this.barButtonItem10.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.add_16x16;
             this.barButtonItem10.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.add_32x32;
@@ -215,7 +216,7 @@
             // 
             // btnIsyeri
             // 
-            this.btnIsyeri.Caption = "İŞYERİ";
+            this.btnIsyeri.Caption = "İşyeri Formu";
             this.btnIsyeri.Id = 13;
             this.btnIsyeri.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.language_16x16;
             this.btnIsyeri.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.language_32x32;
@@ -223,7 +224,7 @@
             // 
             // btnEmsal
             // 
-            this.btnEmsal.Caption = "EMSAL";
+            this.btnEmsal.Caption = "Emsal Listesi";
             this.btnEmsal.Id = 15;
             this.btnEmsal.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.alignhorizontalbottom_16x16;
             this.btnEmsal.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.alignhorizontalbottom_32x32;
@@ -231,7 +232,7 @@
             // 
             // btnGabari
             // 
-            this.btnGabari.Caption = "GABARİ";
+            this.btnGabari.Caption = "Gabari Listesi";
             this.btnGabari.Id = 16;
             this.btnGabari.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.defaultmap_16x16;
             this.btnGabari.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.defaultmap_32x32;
@@ -239,7 +240,7 @@
             // 
             // btnIsitma
             // 
-            this.btnIsitma.Caption = "ISITMA";
+            this.btnIsitma.Caption = "Isıtma Türleri";
             this.btnIsitma.Id = 17;
             this.btnIsitma.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.build_16x16;
             this.btnIsitma.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.build_32x32;
@@ -255,15 +256,9 @@
             // 
             // btnIl
             // 
-            this.btnIl.Caption = "İL KARTI";
+            this.btnIl.Caption = "İllerin Listesi";
             this.btnIl.Id = 24;
             this.btnIl.Name = "btnIl";
-            // 
-            // btnIlce
-            // 
-            this.btnIlce.Caption = "İLÇE KARTI";
-            this.btnIlce.Id = 25;
-            this.btnIlce.Name = "btnIlce";
             // 
             // btnMusteriBilgi
             // 
@@ -305,7 +300,7 @@
             // 
             // btnBanka
             // 
-            this.btnBanka.Caption = "Banka";
+            this.btnBanka.Caption = "Banka Listesi";
             this.btnBanka.Id = 31;
             this.btnBanka.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.salesperiodmonth_16x16;
             this.btnBanka.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.salesperiodmonth_32x32;
@@ -323,6 +318,8 @@
             // 
             this.btnFirma.Caption = "Firma Listesi";
             this.btnFirma.Id = 33;
+            this.btnFirma.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.listbullets_16x16;
+            this.btnFirma.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.listbullets_32x32;
             this.btnFirma.Name = "btnFirma";
             // 
             // btnMarka
@@ -349,6 +346,8 @@
             // 
             this.btnAracSinif.Caption = "Araç Sınıfları";
             this.btnAracSinif.Id = 38;
+            this.btnAracSinif.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.open2_16x16;
+            this.btnAracSinif.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.open2_32x32;
             this.btnAracSinif.Name = "btnAracSinif";
             // 
             // btnArac
@@ -363,12 +362,24 @@
             // 
             this.btnOdemeMetodu.Caption = "Ödeme Metotları";
             this.btnOdemeMetodu.Id = 41;
+            this.btnOdemeMetodu.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.squeeze_16x16;
+            this.btnOdemeMetodu.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.squeeze_32x32;
             this.btnOdemeMetodu.Name = "btnOdemeMetodu";
+            // 
+            // btnPersonelHarcama
+            // 
+            this.btnPersonelHarcama.Caption = "Personel Harcama";
+            this.btnPersonelHarcama.Id = 42;
+            this.btnPersonelHarcama.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.bouser_16x16;
+            this.btnPersonelHarcama.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.bouser_32x32;
+            this.btnPersonelHarcama.Name = "btnPersonelHarcama";
             // 
             // ribbonPageOfis
             // 
             this.ribbonPageOfis.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1});
+            this.ribbonPageGroup1,
+            this.ribbonPageGroup12,
+            this.ribbonPageGroup13});
             this.ribbonPageOfis.Name = "ribbonPageOfis";
             this.ribbonPageOfis.Text = "OFİS";
             // 
@@ -377,17 +388,26 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.btnPersonel);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnOfis);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnArac);
-            this.ribbonPageGroup1.ItemLinks.Add(this.btnAracSinif);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem8);
-            this.ribbonPageGroup1.ItemLinks.Add(this.btnDepartman);
-            this.ribbonPageGroup1.ItemLinks.Add(this.btnUnvan);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            // 
+            // ribbonPageGroup12
+            // 
+            this.ribbonPageGroup12.ItemLinks.Add(this.btnDepartman);
+            this.ribbonPageGroup12.ItemLinks.Add(this.btnUnvan);
+            this.ribbonPageGroup12.Name = "ribbonPageGroup12";
+            // 
+            // ribbonPageGroup13
+            // 
+            this.ribbonPageGroup13.ItemLinks.Add(this.barButtonItem8);
+            this.ribbonPageGroup13.ItemLinks.Add(this.btnAracSinif);
+            this.ribbonPageGroup13.Name = "ribbonPageGroup13";
             // 
             // ribbonPageFinans
             // 
             this.ribbonPageFinans.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup3,
-            this.ribbonPageGroup11});
+            this.ribbonPageGroup11,
+            this.ribbonPageGroup8});
             this.ribbonPageFinans.Name = "ribbonPageFinans";
             this.ribbonPageFinans.Text = "FİNANS";
             // 
@@ -400,13 +420,17 @@
             // 
             // ribbonPageGroup11
             // 
-            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem1);
-            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem2);
-            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem4);
-            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem5);
             this.ribbonPageGroup11.ItemLinks.Add(this.btnOdemeMetodu);
-            this.ribbonPageGroup11.ItemLinks.Add(this.btnPersonelHarcama);
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
+            // 
+            // ribbonPageGroup8
+            // 
+            this.ribbonPageGroup8.ItemLinks.Add(this.btnYakitHarcama);
+            this.ribbonPageGroup8.ItemLinks.Add(this.btnPersonelHarcama);
+            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem4);
+            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem2);
+            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup8.Name = "ribbonPageGroup8";
             // 
             // ribbonPagePortfoy
             // 
@@ -447,7 +471,6 @@
             // ribbonPageGroup7
             // 
             this.ribbonPageGroup7.ItemLinks.Add(this.btnMusteri);
-            this.ribbonPageGroup7.ItemLinks.Add(this.btnMusteriBilgi);
             this.ribbonPageGroup7.ItemLinks.Add(this.btnFirma);
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
             // 
@@ -462,7 +485,6 @@
             // ribbonPageGroup9
             // 
             this.ribbonPageGroup9.ItemLinks.Add(this.btnIl);
-            this.ribbonPageGroup9.ItemLinks.Add(this.btnIlce);
             this.ribbonPageGroup9.Name = "ribbonPageGroup9";
             // 
             // ribbonPageGroup10
@@ -506,12 +528,6 @@
             this.btnKargoFirmasi.Id = 1;
             this.btnKargoFirmasi.Name = "btnKargoFirmasi";
             // 
-            // btnPersonelHarcama
-            // 
-            this.btnPersonelHarcama.Caption = "Personel Harcama";
-            this.btnPersonelHarcama.Id = 42;
-            this.btnPersonelHarcama.Name = "btnPersonelHarcama";
-            // 
             // AnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -547,7 +563,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
         private DevExpress.XtraBars.BarButtonItem btnKasa;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
+        private DevExpress.XtraBars.BarButtonItem btnYakitHarcama;
         private DevExpress.XtraBars.BarButtonItem btnPersonel;
         private DevExpress.XtraBars.BarButtonItem barButtonItem8;
         private DevExpress.XtraBars.BarButtonItem btnPortfoyTipi;
@@ -564,7 +580,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPageMusteri;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
         private DevExpress.XtraBars.BarButtonItem btnIl;
-        private DevExpress.XtraBars.BarButtonItem btnIlce;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPageDiger;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
         private DevExpress.XtraBars.BarButtonItem btnKargoFirmasi;
@@ -587,5 +602,8 @@
         private DevExpress.XtraBars.BarButtonItem btnArac;
         private DevExpress.XtraBars.BarButtonItem btnOdemeMetodu;
         private DevExpress.XtraBars.BarButtonItem btnPersonelHarcama;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup12;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup13;
     }
 }

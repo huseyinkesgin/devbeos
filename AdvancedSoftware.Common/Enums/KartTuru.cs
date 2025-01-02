@@ -112,6 +112,9 @@ namespace AdvancedSoftware.Common.Enums
         [Description("ARAC SINIF KARTI")]
         AracSinif = 36,
 
+        [Description("YAKIT HARCAMA KARTI")]
+        YakitHarcama = 37,
+
 
 
 

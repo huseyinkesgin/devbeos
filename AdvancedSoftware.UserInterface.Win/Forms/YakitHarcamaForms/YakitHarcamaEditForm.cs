@@ -8,49 +8,50 @@ using AdvancedSoftweare.BusinessLayer.General;
 using DevExpress.XtraEditors;
 using System;
 
-namespace AdvancedSoftware.UserInterface.Win.Forms.PersonelHarcamaForms
+namespace AdvancedSoftware.UserInterface.Win.Forms.YakitHarcamaForms
 {
-    public partial class PersonelHarcamaEditForm : BaseEditForm
+    public partial class YakitHarcamaEditForm : BaseEditForm
     {
-        public PersonelHarcamaEditForm()
+        public YakitHarcamaEditForm()
         {
             InitializeComponent();
             DataLayoutControl = myDataLayoutControl;
-            Bll = new PersonelHarcamaBll(myDataLayoutControl);
-            txtBelgeTuru.Properties.Items.AddRange(EnumFunctions.GetEnumDescriptionList<BelgeTuru>());
-           
-            BaseKartTuru = KartTuru.PersonelHarcama;
+            Bll = new YakitHarcamaBll(myDataLayoutControl);
+            txtYakitCinsi.Properties.Items.AddRange(EnumFunctions.GetEnumDescriptionList<YakitCinsi>());
+            
+            BaseKartTuru = KartTuru.YakitHarcama;
             EventsLoad();
         }
 
         protected internal override void Yukle()
         {
-            OldEntity = BaseIslemTuru == IslemTuru.EntityInsert ? new PersonelHarcamaS() : ((PersonelHarcamaBll)Bll).Single(FilterFunctions.Filter<PersonelHarcama>(Id));
+            OldEntity = BaseIslemTuru == IslemTuru.EntityInsert ? new YakitHarcamaS() : ((YakitHarcamaBll)Bll).Single(FilterFunctions.Filter<YakitHarcama>(Id));
             NesneyiKontrollereBagla();
 
             if (BaseIslemTuru != IslemTuru.EntityInsert)
                 return;
             Id = BaseIslemTuru.IdOlustur(OldEntity);
-            txtKod.Text = ((PersonelHarcamaBll)Bll).YeniKodVer();
+            txtKod.Text = ((YakitHarcamaBll)Bll).YeniKodVer();
             txtTutar.Focus();
         }
 
         protected override void NesneyiKontrollereBagla()
         {
-            var entity = (PersonelHarcamaS)OldEntity;
+            var entity = (YakitHarcamaS)OldEntity;
 
             txtKod.Text = entity.Kod;
+            txtArac.Id = entity.AracId;
+            txtArac.Text = entity.AracPlakaNo;
             txtPersonel.Id = entity.PersonelId;
             txtPersonel.Text = entity.PersonelAdi;
             txtOdemeMetodu.Id = entity.OdemeMetoduId;
             txtOdemeMetodu.Text = entity.OdemeMetoduAdi;
             txtKasa.Id = entity.KasaId;
             txtKasa.Text = entity.KasaAdi;
-            txtKategori.Id = entity.KategoriId;
-            txtKategori.Text = entity.KategoriAdi;
             txtTarih.DateTime = entity.Tarih;
+            txtLitre.Value = entity.Litre;
             txtTutar.Value = entity.Tutar;
-            txtBelgeTuru.SelectedItem = entity.BelgeTuru.ToName();
+            txtYakitCinsi.SelectedItem = entity.YakitCinsi.ToName();
             txtBelgeNo.Text = entity.BelgeNo;
             txtAciklama.Text = entity.Aciklama;
             tglDurum.IsOn = entity.Durum;
@@ -58,17 +59,18 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.PersonelHarcamaForms
 
         protected override void GuncelNesneOlustur()
         {
-            CurrentEntity = new PersonelHarcama
+            CurrentEntity = new YakitHarcama
             {
                 Id = Id,
                 Kod = txtKod.Text,
+                AracId = Convert.ToInt64(txtArac.Id),
                 PersonelId = Convert.ToInt64(txtPersonel.Id),
                 OdemeMetoduId = Convert.ToInt64(txtOdemeMetodu.Id),
                 KasaId = Convert.ToInt64(txtKasa.Id),
-                KategoriId = Convert.ToInt64(txtKategori.Id),
                 Tarih = txtTarih.DateTime,
+                Litre = txtLitre.Value,
                 Tutar = txtTutar.Value,
-                BelgeTuru = txtBelgeTuru.Text.GetEnum<BelgeTuru>(),
+                YakitCinsi = txtYakitCinsi.Text.GetEnum<YakitCinsi>(),
                 BelgeNo = txtBelgeNo.Text,
                 Aciklama = txtAciklama.Text,
                 Durum = tglDurum.IsOn,
@@ -82,16 +84,14 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.PersonelHarcamaForms
                 return;
 
             using (var sec = new SelectFunctions())
-                if (sender == txtPersonel)
-                    sec.Sec(txtPersonel);
+                if (sender == txtArac)
+                    sec.Sec(txtArac);
                 else if (sender == txtKasa)
                     sec.Sec(txtKasa);
+                else if (sender == txtPersonel)
+                    sec.Sec(txtPersonel);
                 else if (sender == txtOdemeMetodu)
                     sec.Sec(txtOdemeMetodu);
-                else if (sender == txtKategori)
-                    sec.Sec(txtKategori, KartTuru.PersonelHarcama);
         }
-
-      
     }
 }
