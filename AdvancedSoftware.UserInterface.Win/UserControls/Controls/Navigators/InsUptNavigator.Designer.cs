@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InsUptNavigator));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(insUptNavigator));
             this.Navigator = new DevExpress.XtraEditors.ControlNavigator();
             this.imageCollection = new DevExpress.Utils.ImageCollection(this.components);
             this.dpıAwareImageCollection1 = new DevExpress.Utils.DPIAwareImageCollection(this.components);
@@ -57,6 +57,7 @@
             this.Navigator.Size = new System.Drawing.Size(530, 24);
             this.Navigator.TabIndex = 0;
             this.Navigator.Text = "controlNavigator1";
+
             // 
             // imageCollection
             // 
@@ -77,12 +78,12 @@
             this.dpıAwareImageCollection1.Owner = this;
             this.dpıAwareImageCollection1.Stream = ((DevExpress.Utils.DPIAwareImageCollectionStreamer)(resources.GetObject("dpıAwareImageCollection1.Stream")));
             // 
-            // InsUptNavigator
+            // insUptNavigator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.Navigator);
-            this.Name = "InsUptNavigator";
+            this.Name = "insUptNavigator";
             this.Size = new System.Drawing.Size(530, 24);
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpıAwareImageCollection1)).EndInit();
@@ -91,9 +92,8 @@
         }
 
         #endregion
-
-        private DevExpress.XtraEditors.ControlNavigator Navigator;
         private DevExpress.Utils.ImageCollection imageCollection;
         private DevExpress.Utils.DPIAwareImageCollection dpıAwareImageCollection1;
+        protected internal DevExpress.XtraEditors.ControlNavigator Navigator;
     }
 }
