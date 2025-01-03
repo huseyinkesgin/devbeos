@@ -7,6 +7,8 @@ using AdvancedSoftware.UserInterface.Win.Forms.BankaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.BankaSubeForms;
 using AdvancedSoftware.UserInterface.Win.Forms.DepartmanForms;
 using AdvancedSoftware.UserInterface.Win.Forms.FirmaForms;
+using AdvancedSoftware.UserInterface.Win.Forms.HizmetTuruForms;
+using AdvancedSoftware.UserInterface.Win.Forms.IndirimTuruForms;
 using AdvancedSoftware.UserInterface.Win.Forms.IsıtmaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.KasaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MahalleForms;
@@ -238,12 +240,25 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
                     break;
                 case "txtPersonel":
                 case "txtDanisman":
-                    {
+                                   {
                         var entity = (PersonelL)ShowListForms<PersonelListForm>.ShowDialogListForm(KartTuru.Personel, _btnEdit.Id);
                         if (entity != null)
                         {
                             _btnEdit.Id = entity.Id;
                             _btnEdit.EditValue = entity.Ad;
+                           
+                        }
+                    }
+                    break;
+
+                case "txtSoyad":
+                    {
+                        var entity = (PersonelL)ShowListForms<PersonelListForm>.ShowDialogListForm(KartTuru.Personel, _btnEdit.Id);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.Soyad;
+
                         }
                     }
                     break;
@@ -328,6 +343,28 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
                         {
                             _btnEdit.Id = entity.Id;
                             _btnEdit.EditValue = entity.PlakaNo;
+                        }
+                    }
+                    break;
+
+                case "txtHizmetTuru":
+                    {
+                        var entity = (HizmetTuru)ShowListForms<HizmetTuruListForm>.ShowDialogListForm(KartTuru.HizmetTuru, _btnEdit.Id);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.HizmetTuruAdi;
+                        }
+                    }
+                    break;
+
+                case "txtIndirimTuru":
+                    {
+                        var entity = (IndirimTuru)ShowListForms<IndirimTuruListForm>.ShowDialogListForm(KartTuru.IndirimTuru, _btnEdit.Id);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.IndirimTuruAdi;
                         }
                     }
                     break;

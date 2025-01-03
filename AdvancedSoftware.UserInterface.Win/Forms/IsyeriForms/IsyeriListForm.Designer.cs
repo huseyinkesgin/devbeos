@@ -32,10 +32,18 @@
             this.longNavigator = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Navigators.longNavigator();
             this.grid = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridControl();
             this.tablo = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridView();
+            this.gridBand1 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.colKayitTarihi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colUcret = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colIsyeriTipiAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colPortfoyTuru = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colImarDurumu = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colIlAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colIlceAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colMahalle = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colAda = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colParsel = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.gridBand2 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.colKapaliAlan = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colIsletmeAlani = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colOfisAlani = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
@@ -44,6 +52,22 @@
             this.colKatsayisi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.VincVarmi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colVincAciklama = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.gridBand3 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.colSahibinden = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colSahibindenLink = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colIlanVarmi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colHepsiEmlak = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colHepsiEmlakLink = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colBuradaYapiLink = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colBuradaYapi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colDepoFabrikaLink = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colDepoFabrika = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colZingatLink = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colZingat = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.gridBand4 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.colDanismanAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colPortfoyDurumu = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
+            this.colMusteriAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colId = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.colKod = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.colBaslik = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
@@ -57,41 +81,13 @@
             this.colKrediyeUygunluk = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colIsyeriTapuTipi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colTasinmazNo = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.colIlAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.colIlceAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.colMahalle = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.colAda = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.colParsel = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colAciklama = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.colDanismanAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.colMusteriAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.colIlanVarmi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.colSahibinden = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.colSahibindenLink = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.colHepsiEmlak = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.colHepsiEmlakLink = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.colZingat = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.colZingatLink = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.colBuradaYapi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.colBuradaYapiLink = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.colDepoFabrika = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.repositoryÜcret = new DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit();
-            this.repositoryInt = new DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit();
-            this.colDepoFabrikaLink = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.colPortfoyDurumu = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colYetkiliOfis = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.colKayitTarihi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colIlanKayitTarihi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
             this.colIlanCikisTarihi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyBandedGridColumn();
-            this.gridBand1 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.gridBand2 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.gridBand3 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.gridBand4 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryÜcret)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryInt)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -128,9 +124,6 @@
             this.grid.MainView = this.tablo;
             this.grid.MenuManager = this.ribbonControl;
             this.grid.Name = "grid";
-            this.grid.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.repositoryÜcret,
-            this.repositoryInt});
             this.grid.Size = new System.Drawing.Size(1311, 418);
             this.grid.TabIndex = 3;
             this.grid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -230,6 +223,34 @@
             this.tablo.StatusBarKisaYolAciklama = null;
             this.tablo.ViewCaption = "İŞYERİ PORFÖY LİSTESİ";
             // 
+            // gridBand1
+            // 
+            this.gridBand1.Caption = "GENEL BİLGİLER";
+            this.gridBand1.Columns.Add(this.colKayitTarihi);
+            this.gridBand1.Columns.Add(this.colUcret);
+            this.gridBand1.Columns.Add(this.colIsyeriTipiAdi);
+            this.gridBand1.Columns.Add(this.colPortfoyTuru);
+            this.gridBand1.Columns.Add(this.colImarDurumu);
+            this.gridBand1.Columns.Add(this.colIlAdi);
+            this.gridBand1.Columns.Add(this.colIlceAdi);
+            this.gridBand1.Columns.Add(this.colMahalle);
+            this.gridBand1.Columns.Add(this.colAda);
+            this.gridBand1.Columns.Add(this.colParsel);
+            this.gridBand1.Name = "gridBand1";
+            this.gridBand1.VisibleIndex = 0;
+            this.gridBand1.Width = 750;
+            // 
+            // colKayitTarihi
+            // 
+            this.colKayitTarihi.Caption = "Kayıt Tarihi";
+            this.colKayitTarihi.FieldName = "KayitTarihi";
+            this.colKayitTarihi.Name = "colKayitTarihi";
+            this.colKayitTarihi.OptionsColumn.AllowEdit = false;
+            this.colKayitTarihi.StatusBarAciklama = null;
+            this.colKayitTarihi.StatusBarKisaYol = null;
+            this.colKayitTarihi.StatusBarKisaYolAciklama = null;
+            this.colKayitTarihi.Visible = true;
+            // 
             // colUcret
             // 
             this.colUcret.Caption = "Ücret";
@@ -273,6 +294,76 @@
             this.colImarDurumu.StatusBarKisaYol = null;
             this.colImarDurumu.StatusBarKisaYolAciklama = null;
             this.colImarDurumu.Visible = true;
+            // 
+            // colIlAdi
+            // 
+            this.colIlAdi.Caption = "İl ";
+            this.colIlAdi.FieldName = "IlAdi";
+            this.colIlAdi.Name = "colIlAdi";
+            this.colIlAdi.OptionsColumn.AllowEdit = false;
+            this.colIlAdi.StatusBarAciklama = null;
+            this.colIlAdi.StatusBarKisaYol = null;
+            this.colIlAdi.StatusBarKisaYolAciklama = null;
+            this.colIlAdi.Visible = true;
+            // 
+            // colIlceAdi
+            // 
+            this.colIlceAdi.Caption = "İlçe ";
+            this.colIlceAdi.FieldName = "IlceAdi";
+            this.colIlceAdi.Name = "colIlceAdi";
+            this.colIlceAdi.OptionsColumn.AllowEdit = false;
+            this.colIlceAdi.StatusBarAciklama = null;
+            this.colIlceAdi.StatusBarKisaYol = null;
+            this.colIlceAdi.StatusBarKisaYolAciklama = null;
+            this.colIlceAdi.Visible = true;
+            // 
+            // colMahalle
+            // 
+            this.colMahalle.Caption = "Mahalle ";
+            this.colMahalle.FieldName = "Mahalle";
+            this.colMahalle.Name = "colMahalle";
+            this.colMahalle.OptionsColumn.AllowEdit = false;
+            this.colMahalle.StatusBarAciklama = null;
+            this.colMahalle.StatusBarKisaYol = null;
+            this.colMahalle.StatusBarKisaYolAciklama = null;
+            this.colMahalle.Visible = true;
+            // 
+            // colAda
+            // 
+            this.colAda.Caption = "Ada";
+            this.colAda.FieldName = "Ada";
+            this.colAda.Name = "colAda";
+            this.colAda.OptionsColumn.AllowEdit = false;
+            this.colAda.StatusBarAciklama = null;
+            this.colAda.StatusBarKisaYol = null;
+            this.colAda.StatusBarKisaYolAciklama = null;
+            this.colAda.Visible = true;
+            // 
+            // colParsel
+            // 
+            this.colParsel.Caption = "Parsel";
+            this.colParsel.FieldName = "Parsel";
+            this.colParsel.Name = "colParsel";
+            this.colParsel.OptionsColumn.AllowEdit = false;
+            this.colParsel.StatusBarAciklama = null;
+            this.colParsel.StatusBarKisaYol = null;
+            this.colParsel.StatusBarKisaYolAciklama = null;
+            this.colParsel.Visible = true;
+            // 
+            // gridBand2
+            // 
+            this.gridBand2.Caption = "İŞYERİ BİLGİLERİ";
+            this.gridBand2.Columns.Add(this.colKapaliAlan);
+            this.gridBand2.Columns.Add(this.colIsletmeAlani);
+            this.gridBand2.Columns.Add(this.colOfisAlani);
+            this.gridBand2.Columns.Add(this.colAcikAlan);
+            this.gridBand2.Columns.Add(this.colKWAEnerji);
+            this.gridBand2.Columns.Add(this.colKatsayisi);
+            this.gridBand2.Columns.Add(this.VincVarmi);
+            this.gridBand2.Columns.Add(this.colVincAciklama);
+            this.gridBand2.Name = "gridBand2";
+            this.gridBand2.VisibleIndex = 1;
+            this.gridBand2.Width = 600;
             // 
             // colKapaliAlan
             // 
@@ -361,6 +452,188 @@
             this.colVincAciklama.StatusBarKisaYol = null;
             this.colVincAciklama.StatusBarKisaYolAciklama = null;
             this.colVincAciklama.Visible = true;
+            // 
+            // gridBand3
+            // 
+            this.gridBand3.Caption = "İLAN BİLGİLERİ";
+            this.gridBand3.Columns.Add(this.colSahibinden);
+            this.gridBand3.Columns.Add(this.colSahibindenLink);
+            this.gridBand3.Columns.Add(this.colIlanVarmi);
+            this.gridBand3.Columns.Add(this.colHepsiEmlak);
+            this.gridBand3.Columns.Add(this.colHepsiEmlakLink);
+            this.gridBand3.Columns.Add(this.colBuradaYapiLink);
+            this.gridBand3.Columns.Add(this.colBuradaYapi);
+            this.gridBand3.Columns.Add(this.colDepoFabrikaLink);
+            this.gridBand3.Columns.Add(this.colDepoFabrika);
+            this.gridBand3.Columns.Add(this.colZingatLink);
+            this.gridBand3.Columns.Add(this.colZingat);
+            this.gridBand3.Name = "gridBand3";
+            this.gridBand3.VisibleIndex = 2;
+            this.gridBand3.Width = 825;
+            // 
+            // colSahibinden
+            // 
+            this.colSahibinden.Caption = "Sahibinden";
+            this.colSahibinden.FieldName = "Sahibinden";
+            this.colSahibinden.Name = "colSahibinden";
+            this.colSahibinden.OptionsColumn.AllowEdit = false;
+            this.colSahibinden.StatusBarAciklama = null;
+            this.colSahibinden.StatusBarKisaYol = null;
+            this.colSahibinden.StatusBarKisaYolAciklama = null;
+            this.colSahibinden.Visible = true;
+            // 
+            // colSahibindenLink
+            // 
+            this.colSahibindenLink.Caption = "Sahibinden Link";
+            this.colSahibindenLink.FieldName = "SahibindenLink";
+            this.colSahibindenLink.Name = "colSahibindenLink";
+            this.colSahibindenLink.OptionsColumn.AllowEdit = false;
+            this.colSahibindenLink.StatusBarAciklama = null;
+            this.colSahibindenLink.StatusBarKisaYol = null;
+            this.colSahibindenLink.StatusBarKisaYolAciklama = null;
+            this.colSahibindenLink.Visible = true;
+            // 
+            // colIlanVarmi
+            // 
+            this.colIlanVarmi.Caption = "İlanda Mı?";
+            this.colIlanVarmi.FieldName = "IlanVarmi";
+            this.colIlanVarmi.Name = "colIlanVarmi";
+            this.colIlanVarmi.OptionsColumn.AllowEdit = false;
+            this.colIlanVarmi.StatusBarAciklama = null;
+            this.colIlanVarmi.StatusBarKisaYol = null;
+            this.colIlanVarmi.StatusBarKisaYolAciklama = null;
+            this.colIlanVarmi.Visible = true;
+            // 
+            // colHepsiEmlak
+            // 
+            this.colHepsiEmlak.Caption = "Hepsi Emlak";
+            this.colHepsiEmlak.FieldName = "HepsiEmlak";
+            this.colHepsiEmlak.Name = "colHepsiEmlak";
+            this.colHepsiEmlak.OptionsColumn.AllowEdit = false;
+            this.colHepsiEmlak.StatusBarAciklama = null;
+            this.colHepsiEmlak.StatusBarKisaYol = null;
+            this.colHepsiEmlak.StatusBarKisaYolAciklama = null;
+            this.colHepsiEmlak.Visible = true;
+            // 
+            // colHepsiEmlakLink
+            // 
+            this.colHepsiEmlakLink.Caption = "Hepsi Emlak Link";
+            this.colHepsiEmlakLink.FieldName = "HepsiEmlakLink";
+            this.colHepsiEmlakLink.Name = "colHepsiEmlakLink";
+            this.colHepsiEmlakLink.OptionsColumn.AllowEdit = false;
+            this.colHepsiEmlakLink.StatusBarAciklama = null;
+            this.colHepsiEmlakLink.StatusBarKisaYol = null;
+            this.colHepsiEmlakLink.StatusBarKisaYolAciklama = null;
+            this.colHepsiEmlakLink.Visible = true;
+            // 
+            // colBuradaYapiLink
+            // 
+            this.colBuradaYapiLink.Caption = "Burada Yapı Link";
+            this.colBuradaYapiLink.FieldName = "BuradaYapiLink";
+            this.colBuradaYapiLink.Name = "colBuradaYapiLink";
+            this.colBuradaYapiLink.OptionsColumn.AllowEdit = false;
+            this.colBuradaYapiLink.StatusBarAciklama = null;
+            this.colBuradaYapiLink.StatusBarKisaYol = null;
+            this.colBuradaYapiLink.StatusBarKisaYolAciklama = null;
+            this.colBuradaYapiLink.Visible = true;
+            // 
+            // colBuradaYapi
+            // 
+            this.colBuradaYapi.Caption = "Burada Yapı";
+            this.colBuradaYapi.FieldName = "BuradaYapi";
+            this.colBuradaYapi.Name = "colBuradaYapi";
+            this.colBuradaYapi.OptionsColumn.AllowEdit = false;
+            this.colBuradaYapi.StatusBarAciklama = null;
+            this.colBuradaYapi.StatusBarKisaYol = null;
+            this.colBuradaYapi.StatusBarKisaYolAciklama = null;
+            this.colBuradaYapi.Visible = true;
+            // 
+            // colDepoFabrikaLink
+            // 
+            this.colDepoFabrikaLink.Caption = "Depo Fabrika Link";
+            this.colDepoFabrikaLink.FieldName = "DepoFabrikaLink";
+            this.colDepoFabrikaLink.Name = "colDepoFabrikaLink";
+            this.colDepoFabrikaLink.OptionsColumn.AllowEdit = false;
+            this.colDepoFabrikaLink.StatusBarAciklama = null;
+            this.colDepoFabrikaLink.StatusBarKisaYol = null;
+            this.colDepoFabrikaLink.StatusBarKisaYolAciklama = null;
+            this.colDepoFabrikaLink.Visible = true;
+            // 
+            // colDepoFabrika
+            // 
+            this.colDepoFabrika.Caption = "Depo Fabrika";
+            this.colDepoFabrika.FieldName = "DepoFabrika";
+            this.colDepoFabrika.Name = "colDepoFabrika";
+            this.colDepoFabrika.OptionsColumn.AllowEdit = false;
+            this.colDepoFabrika.StatusBarAciklama = null;
+            this.colDepoFabrika.StatusBarKisaYol = null;
+            this.colDepoFabrika.StatusBarKisaYolAciklama = null;
+            this.colDepoFabrika.Visible = true;
+            // 
+            // colZingatLink
+            // 
+            this.colZingatLink.Caption = "Zingat Link";
+            this.colZingatLink.FieldName = "ZingatLink";
+            this.colZingatLink.Name = "colZingatLink";
+            this.colZingatLink.OptionsColumn.AllowEdit = false;
+            this.colZingatLink.StatusBarAciklama = null;
+            this.colZingatLink.StatusBarKisaYol = null;
+            this.colZingatLink.StatusBarKisaYolAciklama = null;
+            this.colZingatLink.Visible = true;
+            // 
+            // colZingat
+            // 
+            this.colZingat.Caption = "Zingat";
+            this.colZingat.FieldName = "Zingat";
+            this.colZingat.Name = "colZingat";
+            this.colZingat.OptionsColumn.AllowEdit = false;
+            this.colZingat.StatusBarAciklama = null;
+            this.colZingat.StatusBarKisaYol = null;
+            this.colZingat.StatusBarKisaYolAciklama = null;
+            this.colZingat.Visible = true;
+            // 
+            // gridBand4
+            // 
+            this.gridBand4.Caption = "gridBand4";
+            this.gridBand4.Columns.Add(this.colDanismanAdi);
+            this.gridBand4.Columns.Add(this.colPortfoyDurumu);
+            this.gridBand4.Columns.Add(this.colMusteriAdi);
+            this.gridBand4.Name = "gridBand4";
+            this.gridBand4.VisibleIndex = 3;
+            this.gridBand4.Width = 225;
+            // 
+            // colDanismanAdi
+            // 
+            this.colDanismanAdi.Caption = "Danışman";
+            this.colDanismanAdi.FieldName = "DanismanAdi";
+            this.colDanismanAdi.Name = "colDanismanAdi";
+            this.colDanismanAdi.OptionsColumn.AllowEdit = false;
+            this.colDanismanAdi.StatusBarAciklama = null;
+            this.colDanismanAdi.StatusBarKisaYol = null;
+            this.colDanismanAdi.StatusBarKisaYolAciklama = null;
+            this.colDanismanAdi.Visible = true;
+            // 
+            // colPortfoyDurumu
+            // 
+            this.colPortfoyDurumu.Caption = "Portföy Durumu";
+            this.colPortfoyDurumu.FieldName = "PortfoyDurumu";
+            this.colPortfoyDurumu.Name = "colPortfoyDurumu";
+            this.colPortfoyDurumu.OptionsColumn.AllowEdit = false;
+            this.colPortfoyDurumu.StatusBarAciklama = null;
+            this.colPortfoyDurumu.StatusBarKisaYol = null;
+            this.colPortfoyDurumu.StatusBarKisaYolAciklama = null;
+            this.colPortfoyDurumu.Visible = true;
+            // 
+            // colMusteriAdi
+            // 
+            this.colMusteriAdi.Caption = "Mal Sahibi";
+            this.colMusteriAdi.FieldName = "MusteriAdi";
+            this.colMusteriAdi.Name = "colMusteriAdi";
+            this.colMusteriAdi.OptionsColumn.AllowEdit = false;
+            this.colMusteriAdi.StatusBarAciklama = null;
+            this.colMusteriAdi.StatusBarKisaYol = null;
+            this.colMusteriAdi.StatusBarKisaYolAciklama = null;
+            this.colMusteriAdi.Visible = true;
             // 
             // colId
             // 
@@ -501,61 +774,6 @@
             this.colTasinmazNo.StatusBarKisaYolAciklama = null;
             this.colTasinmazNo.Visible = true;
             // 
-            // colIlAdi
-            // 
-            this.colIlAdi.Caption = "İl ";
-            this.colIlAdi.FieldName = "IlAdi";
-            this.colIlAdi.Name = "colIlAdi";
-            this.colIlAdi.OptionsColumn.AllowEdit = false;
-            this.colIlAdi.StatusBarAciklama = null;
-            this.colIlAdi.StatusBarKisaYol = null;
-            this.colIlAdi.StatusBarKisaYolAciklama = null;
-            this.colIlAdi.Visible = true;
-            // 
-            // colIlceAdi
-            // 
-            this.colIlceAdi.Caption = "İlçe ";
-            this.colIlceAdi.FieldName = "IlceAdi";
-            this.colIlceAdi.Name = "colIlceAdi";
-            this.colIlceAdi.OptionsColumn.AllowEdit = false;
-            this.colIlceAdi.StatusBarAciklama = null;
-            this.colIlceAdi.StatusBarKisaYol = null;
-            this.colIlceAdi.StatusBarKisaYolAciklama = null;
-            this.colIlceAdi.Visible = true;
-            // 
-            // colMahalle
-            // 
-            this.colMahalle.Caption = "Mahalle ";
-            this.colMahalle.FieldName = "Mahalle";
-            this.colMahalle.Name = "colMahalle";
-            this.colMahalle.OptionsColumn.AllowEdit = false;
-            this.colMahalle.StatusBarAciklama = null;
-            this.colMahalle.StatusBarKisaYol = null;
-            this.colMahalle.StatusBarKisaYolAciklama = null;
-            this.colMahalle.Visible = true;
-            // 
-            // colAda
-            // 
-            this.colAda.Caption = "Ada";
-            this.colAda.FieldName = "Ada";
-            this.colAda.Name = "colAda";
-            this.colAda.OptionsColumn.AllowEdit = false;
-            this.colAda.StatusBarAciklama = null;
-            this.colAda.StatusBarKisaYol = null;
-            this.colAda.StatusBarKisaYolAciklama = null;
-            this.colAda.Visible = true;
-            // 
-            // colParsel
-            // 
-            this.colParsel.Caption = "Parsel";
-            this.colParsel.FieldName = "Parsel";
-            this.colParsel.Name = "colParsel";
-            this.colParsel.OptionsColumn.AllowEdit = false;
-            this.colParsel.StatusBarAciklama = null;
-            this.colParsel.StatusBarKisaYol = null;
-            this.colParsel.StatusBarKisaYolAciklama = null;
-            this.colParsel.Visible = true;
-            // 
             // colAciklama
             // 
             this.colAciklama.Caption = "Açıklama";
@@ -567,177 +785,6 @@
             this.colAciklama.StatusBarKisaYolAciklama = null;
             this.colAciklama.Visible = true;
             // 
-            // colDanismanAdi
-            // 
-            this.colDanismanAdi.Caption = "Danışman";
-            this.colDanismanAdi.FieldName = "DanismanAdi";
-            this.colDanismanAdi.Name = "colDanismanAdi";
-            this.colDanismanAdi.OptionsColumn.AllowEdit = false;
-            this.colDanismanAdi.StatusBarAciklama = null;
-            this.colDanismanAdi.StatusBarKisaYol = null;
-            this.colDanismanAdi.StatusBarKisaYolAciklama = null;
-            this.colDanismanAdi.Visible = true;
-            // 
-            // colMusteriAdi
-            // 
-            this.colMusteriAdi.Caption = "Mal Sahibi";
-            this.colMusteriAdi.FieldName = "MusteriAdi";
-            this.colMusteriAdi.Name = "colMusteriAdi";
-            this.colMusteriAdi.OptionsColumn.AllowEdit = false;
-            this.colMusteriAdi.StatusBarAciklama = null;
-            this.colMusteriAdi.StatusBarKisaYol = null;
-            this.colMusteriAdi.StatusBarKisaYolAciklama = null;
-            this.colMusteriAdi.Visible = true;
-            // 
-            // colIlanVarmi
-            // 
-            this.colIlanVarmi.Caption = "İlanda Mı?";
-            this.colIlanVarmi.FieldName = "IlanVarmi";
-            this.colIlanVarmi.Name = "colIlanVarmi";
-            this.colIlanVarmi.OptionsColumn.AllowEdit = false;
-            this.colIlanVarmi.StatusBarAciklama = null;
-            this.colIlanVarmi.StatusBarKisaYol = null;
-            this.colIlanVarmi.StatusBarKisaYolAciklama = null;
-            this.colIlanVarmi.Visible = true;
-            // 
-            // colSahibinden
-            // 
-            this.colSahibinden.Caption = "Sahibinden";
-            this.colSahibinden.FieldName = "Sahibinden";
-            this.colSahibinden.Name = "colSahibinden";
-            this.colSahibinden.OptionsColumn.AllowEdit = false;
-            this.colSahibinden.StatusBarAciklama = null;
-            this.colSahibinden.StatusBarKisaYol = null;
-            this.colSahibinden.StatusBarKisaYolAciklama = null;
-            this.colSahibinden.Visible = true;
-            // 
-            // colSahibindenLink
-            // 
-            this.colSahibindenLink.Caption = "Sahibinden Link";
-            this.colSahibindenLink.FieldName = "SahibindenLink";
-            this.colSahibindenLink.Name = "colSahibindenLink";
-            this.colSahibindenLink.OptionsColumn.AllowEdit = false;
-            this.colSahibindenLink.StatusBarAciklama = null;
-            this.colSahibindenLink.StatusBarKisaYol = null;
-            this.colSahibindenLink.StatusBarKisaYolAciklama = null;
-            this.colSahibindenLink.Visible = true;
-            // 
-            // colHepsiEmlak
-            // 
-            this.colHepsiEmlak.Caption = "Hepsi Emlak";
-            this.colHepsiEmlak.FieldName = "HepsiEmlak";
-            this.colHepsiEmlak.Name = "colHepsiEmlak";
-            this.colHepsiEmlak.OptionsColumn.AllowEdit = false;
-            this.colHepsiEmlak.StatusBarAciklama = null;
-            this.colHepsiEmlak.StatusBarKisaYol = null;
-            this.colHepsiEmlak.StatusBarKisaYolAciklama = null;
-            this.colHepsiEmlak.Visible = true;
-            // 
-            // colHepsiEmlakLink
-            // 
-            this.colHepsiEmlakLink.Caption = "Hepsi Emlak Link";
-            this.colHepsiEmlakLink.FieldName = "HepsiEmlakLink";
-            this.colHepsiEmlakLink.Name = "colHepsiEmlakLink";
-            this.colHepsiEmlakLink.OptionsColumn.AllowEdit = false;
-            this.colHepsiEmlakLink.StatusBarAciklama = null;
-            this.colHepsiEmlakLink.StatusBarKisaYol = null;
-            this.colHepsiEmlakLink.StatusBarKisaYolAciklama = null;
-            this.colHepsiEmlakLink.Visible = true;
-            // 
-            // colZingat
-            // 
-            this.colZingat.Caption = "Zingat";
-            this.colZingat.FieldName = "Zingat";
-            this.colZingat.Name = "colZingat";
-            this.colZingat.OptionsColumn.AllowEdit = false;
-            this.colZingat.StatusBarAciklama = null;
-            this.colZingat.StatusBarKisaYol = null;
-            this.colZingat.StatusBarKisaYolAciklama = null;
-            this.colZingat.Visible = true;
-            // 
-            // colZingatLink
-            // 
-            this.colZingatLink.Caption = "Zingat Link";
-            this.colZingatLink.FieldName = "ZingatLink";
-            this.colZingatLink.Name = "colZingatLink";
-            this.colZingatLink.OptionsColumn.AllowEdit = false;
-            this.colZingatLink.StatusBarAciklama = null;
-            this.colZingatLink.StatusBarKisaYol = null;
-            this.colZingatLink.StatusBarKisaYolAciklama = null;
-            this.colZingatLink.Visible = true;
-            // 
-            // colBuradaYapi
-            // 
-            this.colBuradaYapi.Caption = "Burada Yapı";
-            this.colBuradaYapi.FieldName = "BuradaYapi";
-            this.colBuradaYapi.Name = "colBuradaYapi";
-            this.colBuradaYapi.OptionsColumn.AllowEdit = false;
-            this.colBuradaYapi.StatusBarAciklama = null;
-            this.colBuradaYapi.StatusBarKisaYol = null;
-            this.colBuradaYapi.StatusBarKisaYolAciklama = null;
-            this.colBuradaYapi.Visible = true;
-            // 
-            // colBuradaYapiLink
-            // 
-            this.colBuradaYapiLink.Caption = "Burada Yapı Link";
-            this.colBuradaYapiLink.FieldName = "BuradaYapiLink";
-            this.colBuradaYapiLink.Name = "colBuradaYapiLink";
-            this.colBuradaYapiLink.OptionsColumn.AllowEdit = false;
-            this.colBuradaYapiLink.StatusBarAciklama = null;
-            this.colBuradaYapiLink.StatusBarKisaYol = null;
-            this.colBuradaYapiLink.StatusBarKisaYolAciklama = null;
-            this.colBuradaYapiLink.Visible = true;
-            // 
-            // colDepoFabrika
-            // 
-            this.colDepoFabrika.Caption = "Depo Fabrika";
-            this.colDepoFabrika.FieldName = "DepoFabrika";
-            this.colDepoFabrika.Name = "colDepoFabrika";
-            this.colDepoFabrika.OptionsColumn.AllowEdit = false;
-            this.colDepoFabrika.StatusBarAciklama = null;
-            this.colDepoFabrika.StatusBarKisaYol = null;
-            this.colDepoFabrika.StatusBarKisaYolAciklama = null;
-            this.colDepoFabrika.Visible = true;
-            // 
-            // repositoryÜcret
-            // 
-            this.repositoryÜcret.AutoHeight = false;
-            this.repositoryÜcret.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryÜcret.DisplayFormat.FormatString = "c2";
-            this.repositoryÜcret.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.repositoryÜcret.MaskSettings.Set("mask", "c2");
-            this.repositoryÜcret.Name = "repositoryÜcret";
-            // 
-            // repositoryInt
-            // 
-            this.repositoryInt.AutoHeight = false;
-            this.repositoryInt.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryInt.Name = "repositoryInt";
-            // 
-            // colDepoFabrikaLink
-            // 
-            this.colDepoFabrikaLink.Caption = "Depo Fabrika Link";
-            this.colDepoFabrikaLink.FieldName = "DepoFabrikaLink";
-            this.colDepoFabrikaLink.Name = "colDepoFabrikaLink";
-            this.colDepoFabrikaLink.OptionsColumn.AllowEdit = false;
-            this.colDepoFabrikaLink.StatusBarAciklama = null;
-            this.colDepoFabrikaLink.StatusBarKisaYol = null;
-            this.colDepoFabrikaLink.StatusBarKisaYolAciklama = null;
-            this.colDepoFabrikaLink.Visible = true;
-            // 
-            // colPortfoyDurumu
-            // 
-            this.colPortfoyDurumu.Caption = "Portföy Durumu";
-            this.colPortfoyDurumu.FieldName = "PortfoyDurumu";
-            this.colPortfoyDurumu.Name = "colPortfoyDurumu";
-            this.colPortfoyDurumu.OptionsColumn.AllowEdit = false;
-            this.colPortfoyDurumu.StatusBarAciklama = null;
-            this.colPortfoyDurumu.StatusBarKisaYol = null;
-            this.colPortfoyDurumu.StatusBarKisaYolAciklama = null;
-            this.colPortfoyDurumu.Visible = true;
-            // 
             // colYetkiliOfis
             // 
             this.colYetkiliOfis.Caption = "Yetkili Ofis";
@@ -748,17 +795,6 @@
             this.colYetkiliOfis.StatusBarKisaYol = null;
             this.colYetkiliOfis.StatusBarKisaYolAciklama = null;
             this.colYetkiliOfis.Visible = true;
-            // 
-            // colKayitTarihi
-            // 
-            this.colKayitTarihi.Caption = "Kayıt Tarihi";
-            this.colKayitTarihi.FieldName = "KayitTarihi";
-            this.colKayitTarihi.Name = "colKayitTarihi";
-            this.colKayitTarihi.OptionsColumn.AllowEdit = false;
-            this.colKayitTarihi.StatusBarAciklama = null;
-            this.colKayitTarihi.StatusBarKisaYol = null;
-            this.colKayitTarihi.StatusBarKisaYolAciklama = null;
-            this.colKayitTarihi.Visible = true;
             // 
             // colIlanKayitTarihi
             // 
@@ -782,66 +818,6 @@
             this.colIlanCikisTarihi.StatusBarKisaYolAciklama = null;
             this.colIlanCikisTarihi.Visible = true;
             // 
-            // gridBand1
-            // 
-            this.gridBand1.Caption = "GENEL BİLGİLER";
-            this.gridBand1.Columns.Add(this.colKayitTarihi);
-            this.gridBand1.Columns.Add(this.colUcret);
-            this.gridBand1.Columns.Add(this.colIsyeriTipiAdi);
-            this.gridBand1.Columns.Add(this.colPortfoyTuru);
-            this.gridBand1.Columns.Add(this.colImarDurumu);
-            this.gridBand1.Columns.Add(this.colIlAdi);
-            this.gridBand1.Columns.Add(this.colIlceAdi);
-            this.gridBand1.Columns.Add(this.colMahalle);
-            this.gridBand1.Columns.Add(this.colAda);
-            this.gridBand1.Columns.Add(this.colParsel);
-            this.gridBand1.Name = "gridBand1";
-            this.gridBand1.VisibleIndex = 0;
-            this.gridBand1.Width = 750;
-            // 
-            // gridBand2
-            // 
-            this.gridBand2.Caption = "İŞYERİ BİLGİLERİ";
-            this.gridBand2.Columns.Add(this.colKapaliAlan);
-            this.gridBand2.Columns.Add(this.colIsletmeAlani);
-            this.gridBand2.Columns.Add(this.colOfisAlani);
-            this.gridBand2.Columns.Add(this.colAcikAlan);
-            this.gridBand2.Columns.Add(this.colKWAEnerji);
-            this.gridBand2.Columns.Add(this.colKatsayisi);
-            this.gridBand2.Columns.Add(this.VincVarmi);
-            this.gridBand2.Columns.Add(this.colVincAciklama);
-            this.gridBand2.Name = "gridBand2";
-            this.gridBand2.VisibleIndex = 1;
-            this.gridBand2.Width = 600;
-            // 
-            // gridBand3
-            // 
-            this.gridBand3.Caption = "İLAN BİLGİLERİ";
-            this.gridBand3.Columns.Add(this.colSahibinden);
-            this.gridBand3.Columns.Add(this.colSahibindenLink);
-            this.gridBand3.Columns.Add(this.colIlanVarmi);
-            this.gridBand3.Columns.Add(this.colHepsiEmlak);
-            this.gridBand3.Columns.Add(this.colHepsiEmlakLink);
-            this.gridBand3.Columns.Add(this.colBuradaYapiLink);
-            this.gridBand3.Columns.Add(this.colBuradaYapi);
-            this.gridBand3.Columns.Add(this.colDepoFabrikaLink);
-            this.gridBand3.Columns.Add(this.colDepoFabrika);
-            this.gridBand3.Columns.Add(this.colZingatLink);
-            this.gridBand3.Columns.Add(this.colZingat);
-            this.gridBand3.Name = "gridBand3";
-            this.gridBand3.VisibleIndex = 2;
-            this.gridBand3.Width = 825;
-            // 
-            // gridBand4
-            // 
-            this.gridBand4.Caption = "gridBand4";
-            this.gridBand4.Columns.Add(this.colDanismanAdi);
-            this.gridBand4.Columns.Add(this.colPortfoyDurumu);
-            this.gridBand4.Columns.Add(this.colMusteriAdi);
-            this.gridBand4.Name = "gridBand4";
-            this.gridBand4.VisibleIndex = 3;
-            this.gridBand4.Width = 225;
-            // 
             // IsyeriListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -858,8 +834,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryÜcret)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryInt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -913,8 +887,6 @@
         private UserControls.Controls.Grid.MyBandedGridColumn colBuradaYapi;
         private UserControls.Controls.Grid.MyBandedGridColumn colBuradaYapiLink;
         private UserControls.Controls.Grid.MyBandedGridColumn colDepoFabrika;
-        private DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit repositoryÜcret;
-        private DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit repositoryInt;
         private UserControls.Controls.Grid.MyBandedGridColumn colDepoFabrikaLink;
         private UserControls.Controls.Grid.MyBandedGridColumn colPortfoyDurumu;
         private UserControls.Controls.Grid.MyBandedGridColumn colYetkiliOfis;

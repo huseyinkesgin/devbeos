@@ -62,6 +62,10 @@ namespace AdnavcedSoftware.Data.Contexts
         public DbSet<OdemeMetodu> OdemeMetodu { get; set; }
         public DbSet<PersonelHarcama> PersonelHarcama { get; set; }
         public DbSet<YakitHarcama> YakitHarcama { get; set; }
+        public DbSet<HizmetTuru> HizmetTuru { get; set; }
+        public DbSet<Hizmet> Hizmet { get; set; }
+        public DbSet<IndirimTuru> IndirimTuru { get; set; }
+        public DbSet<Indirim> Indirim { get; set; }
     }
 
 

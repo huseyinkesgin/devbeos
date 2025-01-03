@@ -58,6 +58,8 @@
     <Compile Include="Functions\Converts.cs" />
     <Compile Include="Functions\GeneralFunctions.cs" />
     <Compile Include="Functions\ValidationFunctions.cs" />
+    <Compile Include="General\IndirimBll.cs" />
+    <Compile Include="General\IndirimTuruBll.cs" />
     <Compile Include="General\AracSinifBll.cs" />
     <Compile Include="General\AracBll.cs" />
     <Compile Include="General\BankaHesapBll.cs" />
@@ -67,6 +69,8 @@
     <Compile Include="General\GabariBll.cs" />
     <Compile Include="General\BankaBll.cs" />
     <Compile Include="General\ArsaBll.cs" />
+    <Compile Include="General\HizmetBll.cs" />
+    <Compile Include="General\HizmetTuruBll.cs" />
     <Compile Include="General\IsyeriBll.cs" />
     <Compile Include="General\MahalleBll.cs" />
     <Compile Include="General\ModelBll.cs" />

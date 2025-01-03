@@ -46,6 +46,7 @@
             DevExpress.XtraLayout.RowDefinition rowDefinition9 = new DevExpress.XtraLayout.RowDefinition();
             DevExpress.XtraLayout.RowDefinition rowDefinition10 = new DevExpress.XtraLayout.RowDefinition();
             this.myDataLayoutControl = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyDataLayoutControl();
+            this.txtMahalle = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyButtonEdit();
             this.txtOzelKod5 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyButtonEdit();
             this.txtOzelKod4 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyButtonEdit();
             this.txtOzelKod3 = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyButtonEdit();
@@ -103,11 +104,12 @@
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.txtMahalle = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyButtonEdit();
             this.layoutControlItem29 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resimMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myDataLayoutControl)).BeginInit();
             this.myDataLayoutControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMahalle.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOzelKod5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOzelKod4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOzelKod3.Properties)).BeginInit();
@@ -165,7 +167,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMahalle.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem29)).BeginInit();
             this.SuspendLayout();
             // 
@@ -227,6 +228,25 @@
             this.myDataLayoutControl.TabIndex = 0;
             this.myDataLayoutControl.Text = "myDataLayoutControl1";
             // 
+            // txtMahalle
+            // 
+            this.txtMahalle.EnterMoveNextControl = true;
+            this.txtMahalle.Id = null;
+            this.txtMahalle.Location = new System.Drawing.Point(85, 180);
+            this.txtMahalle.MenuManager = this.ribbonControl;
+            this.txtMahalle.Name = "txtMahalle";
+            this.txtMahalle.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtMahalle.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtMahalle.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.txtMahalle.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.txtMahalle.Size = new System.Drawing.Size(143, 20);
+            this.txtMahalle.StatusBarAciklama = null;
+            this.txtMahalle.StatusBarKisaYol = "F4 :";
+            this.txtMahalle.StatusBarKisaYolAciklama = null;
+            this.txtMahalle.StyleController = this.myDataLayoutControl;
+            this.txtMahalle.TabIndex = 6;
+            // 
             // txtOzelKod5
             // 
             this.txtOzelKod5.EnterMoveNextControl = true;
@@ -244,7 +264,7 @@
             this.txtOzelKod5.StatusBarKisaYol = "F4 :";
             this.txtOzelKod5.StatusBarKisaYolAciklama = null;
             this.txtOzelKod5.StyleController = this.myDataLayoutControl;
-            this.txtOzelKod5.TabIndex = 16;
+            this.txtOzelKod5.TabIndex = 24;
             // 
             // txtOzelKod4
             // 
@@ -263,7 +283,7 @@
             this.txtOzelKod4.StatusBarKisaYol = "F4 :";
             this.txtOzelKod4.StatusBarKisaYolAciklama = null;
             this.txtOzelKod4.StyleController = this.myDataLayoutControl;
-            this.txtOzelKod4.TabIndex = 15;
+            this.txtOzelKod4.TabIndex = 23;
             // 
             // txtOzelKod3
             // 
@@ -282,7 +302,7 @@
             this.txtOzelKod3.StatusBarKisaYol = "F4 :";
             this.txtOzelKod3.StatusBarKisaYolAciklama = null;
             this.txtOzelKod3.StyleController = this.myDataLayoutControl;
-            this.txtOzelKod3.TabIndex = 14;
+            this.txtOzelKod3.TabIndex = 22;
             // 
             // txtOzelKod2
             // 
@@ -301,7 +321,7 @@
             this.txtOzelKod2.StatusBarKisaYol = "F4 :";
             this.txtOzelKod2.StatusBarKisaYolAciklama = null;
             this.txtOzelKod2.StyleController = this.myDataLayoutControl;
-            this.txtOzelKod2.TabIndex = 13;
+            this.txtOzelKod2.TabIndex = 21;
             // 
             // txtOzelKod1
             // 
@@ -320,7 +340,7 @@
             this.txtOzelKod1.StatusBarKisaYol = "F4 :";
             this.txtOzelKod1.StatusBarKisaYolAciklama = null;
             this.txtOzelKod1.StyleController = this.myDataLayoutControl;
-            this.txtOzelKod1.TabIndex = 12;
+            this.txtOzelKod1.TabIndex = 20;
             // 
             // tglDurum
             // 
@@ -338,7 +358,7 @@
             this.tglDurum.Size = new System.Drawing.Size(77, 20);
             this.tglDurum.StatusBarAciklama = " Kartın kullanım durumunu seçiniz";
             this.tglDurum.StyleController = this.myDataLayoutControl;
-            this.tglDurum.TabIndex = 17;
+            this.tglDurum.TabIndex = 25;
             // 
             // txtKod
             // 
@@ -356,7 +376,7 @@
             this.txtKod.Size = new System.Drawing.Size(143, 20);
             this.txtKod.StatusBarAciklama = "Kod giriniz";
             this.txtKod.StyleController = this.myDataLayoutControl;
-            this.txtKod.TabIndex = 25;
+            this.txtKod.TabIndex = 26;
             // 
             // txtAciklama
             // 
@@ -370,7 +390,7 @@
             this.txtAciklama.Size = new System.Drawing.Size(143, 68);
             this.txtAciklama.StatusBarAciklama = "Açıklama Giriniz";
             this.txtAciklama.StyleController = this.myDataLayoutControl;
-            this.txtAciklama.TabIndex = 11;
+            this.txtAciklama.TabIndex = 12;
             // 
             // txtTiktok
             // 
@@ -384,7 +404,7 @@
             this.txtTiktok.Size = new System.Drawing.Size(143, 20);
             this.txtTiktok.StatusBarAciklama = null;
             this.txtTiktok.StyleController = this.myDataLayoutControl;
-            this.txtTiktok.TabIndex = 24;
+            this.txtTiktok.TabIndex = 19;
             // 
             // txtTwitter
             // 
@@ -398,7 +418,7 @@
             this.txtTwitter.Size = new System.Drawing.Size(143, 20);
             this.txtTwitter.StatusBarAciklama = null;
             this.txtTwitter.StyleController = this.myDataLayoutControl;
-            this.txtTwitter.TabIndex = 20;
+            this.txtTwitter.TabIndex = 15;
             // 
             // txtYoutube
             // 
@@ -412,7 +432,7 @@
             this.txtYoutube.Size = new System.Drawing.Size(143, 20);
             this.txtYoutube.StatusBarAciklama = null;
             this.txtYoutube.StyleController = this.myDataLayoutControl;
-            this.txtYoutube.TabIndex = 23;
+            this.txtYoutube.TabIndex = 18;
             // 
             // txtVk
             // 
@@ -426,7 +446,7 @@
             this.txtVk.Size = new System.Drawing.Size(143, 20);
             this.txtVk.StatusBarAciklama = null;
             this.txtVk.StyleController = this.myDataLayoutControl;
-            this.txtVk.TabIndex = 22;
+            this.txtVk.TabIndex = 17;
             // 
             // txtLinkedin
             // 
@@ -440,7 +460,7 @@
             this.txtLinkedin.Size = new System.Drawing.Size(143, 20);
             this.txtLinkedin.StatusBarAciklama = null;
             this.txtLinkedin.StyleController = this.myDataLayoutControl;
-            this.txtLinkedin.TabIndex = 21;
+            this.txtLinkedin.TabIndex = 16;
             // 
             // txtFirma
             // 
@@ -459,7 +479,7 @@
             this.txtFirma.StatusBarKisaYol = "F4 :";
             this.txtFirma.StatusBarKisaYolAciklama = null;
             this.txtFirma.StyleController = this.myDataLayoutControl;
-            this.txtFirma.TabIndex = 10;
+            this.txtFirma.TabIndex = 11;
             // 
             // txtInstagram
             // 
@@ -473,7 +493,7 @@
             this.txtInstagram.Size = new System.Drawing.Size(143, 20);
             this.txtInstagram.StatusBarAciklama = null;
             this.txtInstagram.StyleController = this.myDataLayoutControl;
-            this.txtInstagram.TabIndex = 19;
+            this.txtInstagram.TabIndex = 14;
             // 
             // txtFacebook
             // 
@@ -487,7 +507,7 @@
             this.txtFacebook.Size = new System.Drawing.Size(143, 20);
             this.txtFacebook.StatusBarAciklama = null;
             this.txtFacebook.StyleController = this.myDataLayoutControl;
-            this.txtFacebook.TabIndex = 18;
+            this.txtFacebook.TabIndex = 13;
             // 
             // txtWebsitesi
             // 
@@ -501,7 +521,7 @@
             this.txtWebsitesi.Size = new System.Drawing.Size(143, 20);
             this.txtWebsitesi.StatusBarAciklama = null;
             this.txtWebsitesi.StyleController = this.myDataLayoutControl;
-            this.txtWebsitesi.TabIndex = 9;
+            this.txtWebsitesi.TabIndex = 10;
             // 
             // txtAdres
             // 
@@ -515,7 +535,7 @@
             this.txtAdres.Size = new System.Drawing.Size(393, 20);
             this.txtAdres.StatusBarAciklama = "Açıklama Giriniz";
             this.txtAdres.StyleController = this.myDataLayoutControl;
-            this.txtAdres.TabIndex = 6;
+            this.txtAdres.TabIndex = 7;
             // 
             // txtIlce
             // 
@@ -602,6 +622,9 @@
             this.txtTelefon.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.txtTelefon.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtTelefon.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtTelefon.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.None;
+            this.txtTelefon.Properties.Mask.EditMask = "0 (\\d?\\d?\\d?) \\d?\\d?\\d? \\d?\\d? \\d?\\d?";
+            this.txtTelefon.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Regular;
             this.txtTelefon.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
             this.txtTelefon.Properties.MaskSettings.Set("mask", "0 (\\d?\\d?\\d?) \\d?\\d?\\d? \\d?\\d? \\d?\\d?");
             this.txtTelefon.Properties.MaskSettings.Set("isAutoComplete", false);
@@ -610,7 +633,7 @@
             this.txtTelefon.Size = new System.Drawing.Size(143, 20);
             this.txtTelefon.StatusBarAciklama = "Telegon numarası giriniz";
             this.txtTelefon.StyleController = this.myDataLayoutControl;
-            this.txtTelefon.TabIndex = 7;
+            this.txtTelefon.TabIndex = 8;
             // 
             // txtEposta
             // 
@@ -620,6 +643,10 @@
             this.txtEposta.Name = "txtEposta";
             this.txtEposta.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtEposta.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtEposta.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.Strong;
+            this.txtEposta.Properties.Mask.EditMask = "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
+    "-])+)+";
+            this.txtEposta.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
             this.txtEposta.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
             this.txtEposta.Properties.MaskSettings.Set("allowBlankInput", true);
             this.txtEposta.Properties.MaskSettings.Set("mask", "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
@@ -630,7 +657,7 @@
             this.txtEposta.Size = new System.Drawing.Size(143, 20);
             this.txtEposta.StatusBarAciklama = "Eposta adresi giriniz";
             this.txtEposta.StyleController = this.myDataLayoutControl;
-            this.txtEposta.TabIndex = 8;
+            this.txtEposta.TabIndex = 9;
             // 
             // txtSoyad
             // 
@@ -1131,25 +1158,6 @@
             this.layoutControlItem11.Text = "Adresi";
             this.layoutControlItem11.TextSize = new System.Drawing.Size(61, 13);
             // 
-            // txtMahalle
-            // 
-            this.txtMahalle.EnterMoveNextControl = true;
-            this.txtMahalle.Id = null;
-            this.txtMahalle.Location = new System.Drawing.Point(85, 180);
-            this.txtMahalle.MenuManager = this.ribbonControl;
-            this.txtMahalle.Name = "txtMahalle";
-            this.txtMahalle.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.txtMahalle.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtMahalle.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.txtMahalle.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.txtMahalle.Size = new System.Drawing.Size(143, 20);
-            this.txtMahalle.StatusBarAciklama = null;
-            this.txtMahalle.StatusBarKisaYol = "F4 :";
-            this.txtMahalle.StatusBarKisaYolAciklama = null;
-            this.txtMahalle.StyleController = this.myDataLayoutControl;
-            this.txtMahalle.TabIndex = 26;
-            // 
             // layoutControlItem29
             // 
             this.layoutControlItem29.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
@@ -1175,8 +1183,10 @@
             this.Controls.SetChildIndex(this.ribbonControl, 0);
             this.Controls.SetChildIndex(this.myDataLayoutControl, 0);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resimMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myDataLayoutControl)).EndInit();
             this.myDataLayoutControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtMahalle.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOzelKod5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOzelKod4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOzelKod3.Properties)).EndInit();
@@ -1234,7 +1244,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMahalle.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem29)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

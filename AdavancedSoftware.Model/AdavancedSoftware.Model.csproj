@@ -59,6 +59,8 @@
     <Compile Include="Dto\BankaSubeDto.cs" />
     <Compile Include="Dto\FirmaDto.cs" />
     <Compile Include="Dto\ArsaDto.cs" />
+    <Compile Include="Dto\HizmetDto.cs" />
+    <Compile Include="Dto\IndirimDto.cs" />
     <Compile Include="Dto\IsyeriDto.cs" />
     <Compile Include="Dto\KasaDto.cs" />
     <Compile Include="Dto\YakitHarcamaDto.cs" />
@@ -83,8 +85,13 @@
     <Compile Include="Entities\Emsal.cs" />
     <Compile Include="Entities\Firma.cs" />
     <Compile Include="Entities\Gabari.cs" />
+    <Compile Include="Entities\Hizmet.cs" />
+    <Compile Include="Entities\HizmetTuru.cs" />
     <Compile Include="Entities\Il.cs" />
     <Compile Include="Entities\Arsa.cs" />
+    <Compile Include="Entities\Indirim.cs" />
+    <Compile Include="Entities\IndiriminUygulanacagiHizmetBilgileri.cs" />
+    <Compile Include="Entities\IndirimTuru.cs" />
     <Compile Include="Entities\Isyeri.cs" />
     <Compile Include="Entities\Mahalle.cs" />
     <Compile Include="Entities\Model.cs" />

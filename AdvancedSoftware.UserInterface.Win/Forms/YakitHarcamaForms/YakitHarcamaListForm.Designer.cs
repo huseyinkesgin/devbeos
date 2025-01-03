@@ -137,10 +137,10 @@
             this.tablo.OptionsPrint.PrintFooter = false;
             this.tablo.OptionsPrint.PrintGroupFooter = false;
             this.tablo.OptionsView.ColumnAutoWidth = false;
+            this.tablo.OptionsView.GroupFooterShowMode = DevExpress.XtraGrid.Views.Grid.GroupFooterShowMode.VisibleAlways;
             this.tablo.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
             this.tablo.OptionsView.RowAutoHeight = true;
             this.tablo.OptionsView.ShowAutoFilterRow = true;
-            this.tablo.OptionsView.ShowFooter = true;
             this.tablo.OptionsView.ShowGroupPanel = false;
             this.tablo.OptionsView.ShowViewCaption = true;
             this.tablo.StatusBarAciklama = null;
@@ -205,8 +205,6 @@
             this.colLitre.StatusBarAciklama = null;
             this.colLitre.StatusBarKisaYol = null;
             this.colLitre.StatusBarKisaYolAciklama = null;
-            this.colLitre.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "Litre", "n2")});
             this.colLitre.Visible = true;
             this.colLitre.Width = 100;
             // 
@@ -221,8 +219,6 @@
             this.colTutar.StatusBarAciklama = null;
             this.colTutar.StatusBarKisaYol = null;
             this.colTutar.StatusBarKisaYolAciklama = null;
-            this.colTutar.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "Tutar", "n2")});
             this.colTutar.Visible = true;
             this.colTutar.Width = 120;
             // 

@@ -8,7 +8,11 @@ using AdvancedSoftware.UserInterface.Win.Forms.DepartmanForms;
 using AdvancedSoftware.UserInterface.Win.Forms.EmsalForms;
 using AdvancedSoftware.UserInterface.Win.Forms.FirmaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.GabariForms;
+using AdvancedSoftware.UserInterface.Win.Forms.HizmetForms;
+using AdvancedSoftware.UserInterface.Win.Forms.HizmetTuruForms;
 using AdvancedSoftware.UserInterface.Win.Forms.ImarBilgisiForms;
+using AdvancedSoftware.UserInterface.Win.Forms.IndirimForms;
+using AdvancedSoftware.UserInterface.Win.Forms.IndirimTuruForms;
 using AdvancedSoftware.UserInterface.Win.Forms.IptalNedeniForms;
 using AdvancedSoftware.UserInterface.Win.Forms.IsıtmaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.IsyeriForms;
@@ -116,7 +120,18 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
                 ShowListForms<PersonelHarcamaListForm>.ShowListForm(KartTuru.PersonelHarcama);
             if (e.Item == btnYakitHarcama)
                 ShowListForms<YakitHarcamaListForm>.ShowListForm(KartTuru.YakitHarcama);
-           
+            if (e.Item == btnHizmetTuru)
+                ShowListForms<HizmetTuruListForm>.ShowListForm(KartTuru.HizmetTuru);
+            if (e.Item == btnHizmet)
+                ShowListForms<HizmetListForm>.ShowListForm(KartTuru.Hizmet);
+            if (e.Item == btnIndirimTuru)
+                ShowListForms<IndirimTuruListForm>.ShowListForm(KartTuru.IndirimTuru);
+            if (e.Item == btnIndirim)
+                ShowListForms<IndirimListForm>.ShowListForm(KartTuru.Indirim);
+            {
+                
+            }
+
 
         }
 

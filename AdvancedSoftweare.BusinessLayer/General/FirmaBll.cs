@@ -35,7 +35,18 @@ namespace AdvancedSoftweare.BusinessLayer.General
                 IlAdi = x.Il.IlAdi,
                 IlceId = x.IlceId,
                 IlceAdi = x.Ilce.IlceAdi,
+                MahalleId = x.MahalleId,
+                MahalleAdi = x.Mahalle.MahalleAdi,
                 Adres = x.Adres,
+                Websitesi = x.Websitesi,
+                Facebook = x.Facebook,
+                Twitter = x.Twitter,
+                Instagram = x.Instagram,
+                Linkedin = x.Linkedin,
+                VK = x.VK,
+                Youtube = x.Youtube,
+                Tiktok = x.Tiktok,
+                Aciklama = x.Aciklama,
                 Durum = x.Durum,
             });
         }
@@ -57,6 +68,7 @@ namespace AdvancedSoftweare.BusinessLayer.General
                 Eposta = x.Eposta,
                 IlAdi = x.Il.IlAdi,
                 IlceAdi = x.Ilce.IlceAdi,
+                MahalleAdi = x.Mahalle.MahalleAdi,
                 Adres = x.Adres,
                 Websitesi = x.Websitesi,
                 Facebook = x.Facebook,
@@ -66,6 +78,8 @@ namespace AdvancedSoftweare.BusinessLayer.General
                 VK = x.VK,
                 Youtube = x.Youtube,
                 Tiktok = x.Tiktok,
+                Aciklama = x.Aciklama,
+                
             }).OrderBy(x => x.Kod).ToList();
         }
      

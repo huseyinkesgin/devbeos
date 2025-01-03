@@ -53,6 +53,7 @@
             this.colFacebook = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colTwitter = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colLinkedin = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
+            this.colMahalleAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablo)).BeginInit();
@@ -118,6 +119,7 @@
             this.colKepAdresi,
             this.colIlAdi,
             this.colIlceAdi,
+            this.colMahalleAdi,
             this.colAdres,
             this.colEposta,
             this.colTelefon,
@@ -402,6 +404,18 @@
             this.colLinkedin.Visible = true;
             this.colLinkedin.VisibleIndex = 19;
             // 
+            // colMahalleAdi
+            // 
+            this.colMahalleAdi.Caption = "Mahalle";
+            this.colMahalleAdi.FieldName = "MahalleAdi";
+            this.colMahalleAdi.Name = "colMahalleAdi";
+            this.colMahalleAdi.OptionsColumn.AllowEdit = false;
+            this.colMahalleAdi.StatusBarAciklama = null;
+            this.colMahalleAdi.StatusBarKisaYol = null;
+            this.colMahalleAdi.StatusBarKisaYolAciklama = null;
+            this.colMahalleAdi.Visible = true;
+            this.colMahalleAdi.VisibleIndex = 20;
+            // 
             // FirmaListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -449,5 +463,6 @@
         private UserControls.Controls.Grid.MyGridColumn colFacebook;
         private UserControls.Controls.Grid.MyGridColumn colTwitter;
         private UserControls.Controls.Grid.MyGridColumn colLinkedin;
+        private UserControls.Controls.Grid.MyGridColumn colMahalleAdi;
     }
 }

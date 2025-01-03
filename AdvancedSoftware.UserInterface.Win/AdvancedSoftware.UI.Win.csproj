@@ -240,6 +240,30 @@
     <Compile Include="Forms\GabariForms\GabariListForm.Designer.cs">
       <DependentUpon>GabariListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\HizmetForms\HizmetEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HizmetForms\HizmetEditForm.Designer.cs">
+      <DependentUpon>HizmetEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HizmetForms\HizmetListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HizmetForms\HizmetListForm.Designer.cs">
+      <DependentUpon>HizmetListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HizmetTuruForms\HizmetTuruEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HizmetTuruForms\HizmetTuruEditForm.Designer.cs">
+      <DependentUpon>HizmetTuruEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HizmetTuruForms\HizmetTuruListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HizmetTuruForms\HizmetTuruListForm.Designer.cs">
+      <DependentUpon>HizmetTuruListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ImarBilgisiForms\ImarBilgisiEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -251,6 +275,30 @@
     </Compile>
     <Compile Include="Forms\ImarBilgisiForms\ImarBilgisiListForm.Designer.cs">
       <DependentUpon>ImarBilgisiListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IndirimForms\IndirimEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IndirimForms\IndirimEditForm.Designer.cs">
+      <DependentUpon>IndirimEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IndirimForms\IndirimListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IndirimForms\IndirimListForm.Designer.cs">
+      <DependentUpon>IndirimListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IndirimTuruForms\IndirimTuruEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IndirimTuruForms\IndirimTuruEditForm.Designer.cs">
+      <DependentUpon>IndirimTuruEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IndirimTuruForms\IndirimTuruListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IndirimTuruForms\IndirimTuruListForm.Designer.cs">
+      <DependentUpon>IndirimTuruListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\IptalNedeniForms\IptalNedeniEditForm.cs">
       <SubType>Form</SubType>
@@ -620,6 +668,12 @@
     <Compile Include="UserControls\Controls\Navigators\SmallNavigator.Designer.cs">
       <DependentUpon>SmallNavigator.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UserControl\Base\BaseTablo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControl\Base\BaseTablo.Designer.cs">
+      <DependentUpon>BaseTablo.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\AltyapiForms\AltyapiEditForm.resx">
       <DependentUpon>AltyapiEditForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -692,11 +746,35 @@
     <EmbeddedResource Include="Forms\GabariForms\GabariListForm.resx">
       <DependentUpon>GabariListForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HizmetForms\HizmetEditForm.resx">
+      <DependentUpon>HizmetEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HizmetForms\HizmetListForm.resx">
+      <DependentUpon>HizmetListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HizmetTuruForms\HizmetTuruEditForm.resx">
+      <DependentUpon>HizmetTuruEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HizmetTuruForms\HizmetTuruListForm.resx">
+      <DependentUpon>HizmetTuruListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ImarBilgisiForms\ImarBilgisiEditForm.resx">
       <DependentUpon>ImarBilgisiEditForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ImarBilgisiForms\ImarBilgisiListForm.resx">
       <DependentUpon>ImarBilgisiListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IndirimForms\IndirimEditForm.resx">
+      <DependentUpon>IndirimEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IndirimForms\IndirimListForm.resx">
+      <DependentUpon>IndirimListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IndirimTuruForms\IndirimTuruEditForm.resx">
+      <DependentUpon>IndirimTuruEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IndirimTuruForms\IndirimTuruListForm.resx">
+      <DependentUpon>IndirimTuruListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\IptalNedeniForms\IptalNedeniEditForm.resx">
       <DependentUpon>IptalNedeniEditForm.cs</DependentUpon>
@@ -852,6 +930,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Controls\Navigators\SmallNavigator.resx">
       <DependentUpon>SmallNavigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControl\Base\BaseTablo.resx">
+      <DependentUpon>BaseTablo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

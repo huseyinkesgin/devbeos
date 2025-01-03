@@ -62,6 +62,8 @@
             this.btnArac = new DevExpress.XtraBars.BarButtonItem();
             this.btnOdemeMetodu = new DevExpress.XtraBars.BarButtonItem();
             this.btnPersonelHarcama = new DevExpress.XtraBars.BarButtonItem();
+            this.btnHizmetTuru = new DevExpress.XtraBars.BarButtonItem();
+            this.btnHizmet = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageOfis = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -85,6 +87,9 @@
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.btnKargoFirmasi = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.btnIndirimTuru = new DevExpress.XtraBars.BarButtonItem();
+            this.btnIndirim = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).BeginInit();
             this.SuspendLayout();
@@ -125,9 +130,13 @@
             this.btnAracSinif,
             this.btnArac,
             this.btnOdemeMetodu,
-            this.btnPersonelHarcama});
+            this.btnPersonelHarcama,
+            this.btnHizmetTuru,
+            this.btnHizmet,
+            this.btnIndirimTuru,
+            this.btnIndirim});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 43;
+            this.ribbonControl.MaxItemId = 47;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPageOfis,
@@ -374,6 +383,18 @@
             this.btnPersonelHarcama.ImageOptions.LargeImage = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.bouser_32x32;
             this.btnPersonelHarcama.Name = "btnPersonelHarcama";
             // 
+            // btnHizmetTuru
+            // 
+            this.btnHizmetTuru.Caption = "Hizmet Türü";
+            this.btnHizmetTuru.Id = 43;
+            this.btnHizmetTuru.Name = "btnHizmetTuru";
+            // 
+            // btnHizmet
+            // 
+            this.btnHizmet.Caption = "Hizmet Listesi";
+            this.btnHizmet.Id = 44;
+            this.btnHizmet.Name = "btnHizmet";
+            // 
             // ribbonPageOfis
             // 
             this.ribbonPageOfis.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -478,7 +499,8 @@
             // 
             this.ribbonPageDiger.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup9,
-            this.ribbonPageGroup10});
+            this.ribbonPageGroup10,
+            this.ribbonPageGroup14});
             this.ribbonPageDiger.Name = "ribbonPageDiger";
             this.ribbonPageDiger.Text = "DİĞER";
             // 
@@ -492,6 +514,8 @@
             this.ribbonPageGroup10.ItemLinks.Add(this.btnIptalNedeni);
             this.ribbonPageGroup10.ItemLinks.Add(this.btnMarka);
             this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem3);
+            this.ribbonPageGroup10.ItemLinks.Add(this.btnHizmetTuru);
+            this.ribbonPageGroup10.ItemLinks.Add(this.btnHizmet);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
             // 
             // ribbonPageRaporlar
@@ -527,6 +551,25 @@
             this.btnKargoFirmasi.Caption = "Kargo Firmaları";
             this.btnKargoFirmasi.Id = 1;
             this.btnKargoFirmasi.Name = "btnKargoFirmasi";
+            // 
+            // ribbonPageGroup14
+            // 
+            this.ribbonPageGroup14.ItemLinks.Add(this.btnIndirimTuru);
+            this.ribbonPageGroup14.ItemLinks.Add(this.btnIndirim);
+            this.ribbonPageGroup14.Name = "ribbonPageGroup14";
+            this.ribbonPageGroup14.Text = "ribbonPageGroup14";
+            // 
+            // btnIndirimTuru
+            // 
+            this.btnIndirimTuru.Caption = "İndirim Türü";
+            this.btnIndirimTuru.Id = 45;
+            this.btnIndirimTuru.Name = "btnIndirimTuru";
+            // 
+            // btnIndirim
+            // 
+            this.btnIndirim.Caption = "İndirim Listesi";
+            this.btnIndirim.Id = 46;
+            this.btnIndirim.Name = "btnIndirim";
             // 
             // AnaForm
             // 
@@ -605,5 +648,10 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup12;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup13;
+        private DevExpress.XtraBars.BarButtonItem btnHizmetTuru;
+        private DevExpress.XtraBars.BarButtonItem btnHizmet;
+        private DevExpress.XtraBars.BarButtonItem btnIndirimTuru;
+        private DevExpress.XtraBars.BarButtonItem btnIndirim;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup14;
     }
 }

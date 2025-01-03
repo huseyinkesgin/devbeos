@@ -175,6 +175,7 @@
     <Compile Include="Enums\DosyaTuru.cs" />
     <Compile Include="Enums\EkUcretler.cs" />
     <Compile Include="Enums\EvetHayir.cs" />
+    <Compile Include="Enums\HizmetTipi.cs" />
     <Compile Include="Enums\ImarDurumu.cs" />
     <Compile Include="Enums\IsyeriTapuTipi.cs" />
     <Compile Include="Enums\MedeniDurum.cs" />

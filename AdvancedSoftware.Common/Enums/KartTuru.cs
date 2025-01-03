@@ -115,6 +115,18 @@ namespace AdvancedSoftware.Common.Enums
         [Description("YAKIT HARCAMA KARTI")]
         YakitHarcama = 37,
 
+        [Description("HIZMET TURU KARTI")]
+        HizmetTuru = 38,
+
+        [Description("HIZMET KARTI")]
+        Hizmet = 39,
+
+        [Description("INDIRIM TURU KARTI")]
+        IndirimTuru = 40,
+
+        [Description("INDIRIM KARTI")]
+        Indirim = 41,
+
 
 
 

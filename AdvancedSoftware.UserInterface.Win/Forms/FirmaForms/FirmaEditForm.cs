@@ -41,6 +41,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.FirmaForms
             txtFirmaAdi.Text = entity.FirmaAdi;
             txtFaturaAdi.Text = entity.FaturaAdi;
             txtVergiDairesi.Text = entity.VergiDairesi;
+            txtVergiNo.Text = entity.VergiNo;
             txtIlce.Text = entity.VergiNo;
             txtMersisNo.Text = entity.MersisNo;
             txtKepAdresi.Text = entity.KepAdresi;
@@ -48,10 +49,11 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.FirmaForms
             txtIl.Text = entity.IlAdi;
             txtIlce.Id = entity.IlceId;
             txtIlce.Text = entity.IlceAdi;
-            txtIlce.Text = entity.IlceAdi;
+            txtMahalle.Id = entity.MahalleId;
+            txtMahalle.Text = entity.MahalleAdi;
             txtAdres.Text = entity.Adres;
-            txtEposta.Text = entity.Telefon;
-            txtTelefon.Text = entity.Eposta;
+            txtEposta.Text = entity.Eposta;
+            txtTelefon.Text = entity.Telefon;
             txtWebsitesi.Text = entity.Websitesi;
             txtFacebook.Text = entity.Facebook;
             txtTwitter.Text = entity.Twitter;
@@ -79,9 +81,10 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.FirmaForms
                 KepAdresi = txtKepAdresi.Text,
                 IlId = Convert.ToInt64(txtIl.Id),
                 IlceId = Convert.ToInt64(txtIlce.Id),
+                MahalleId = Convert.ToInt64(txtMahalle.Id),
                 Adres = txtAdres.Text,
-                Telefon = txtEposta.Text,
-                Eposta = txtTelefon.Text,
+                Telefon = txtTelefon.Text,
+                Eposta = txtEposta.Text,
                 Websitesi = txtWebsitesi.Text,
                 Facebook = txtFacebook.Text,
                 Twitter = txtTwitter.Text,
@@ -90,7 +93,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.FirmaForms
                 VK = txtVk.Text,
                 Youtube = txtYoutube.Text,
                 Tiktok = txtTiktok.Text,
-                Aciklama = txtAdres.Text,
+                Aciklama = txtAciklama.Text,
                 Durum = tglDurum.IsOn,
             };
             ButonEnabledDurumu();
@@ -106,6 +109,8 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.FirmaForms
                     sec.Sec(txtIl);
                 else if (sender == txtIlce)
                     sec.Sec(txtIlce, txtIl);
+                else if (sender == txtMahalle)
+                    sec.Sec(txtMahalle, txtIlce);
         }
 
         protected override void Control_EnabledChange(object sender, EventArgs e)
@@ -113,6 +118,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.FirmaForms
             if (sender != txtIl)
                 return;
             txtIl.ControlEnabledChange(txtIlce);
+            txtIl.ControlEnabledChange(txtMahalle);
 
         }
     }

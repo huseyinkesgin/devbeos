@@ -1,10 +1,10 @@
-﻿using System.ComponentModel;
-using System.Windows.Forms;
+﻿using DevExpress.XtraEditors;
+using System.ComponentModel;
 
 namespace AdvancedSoftware.UserInterface.Win.UserControls.Controls.Navigators
 {
     [ToolboxItem(true)]
-    public partial class SmallNavigator : UserControl
+    public partial class SmallNavigator : XtraUserControl
     {
         public SmallNavigator()
         {

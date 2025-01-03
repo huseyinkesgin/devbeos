@@ -68,6 +68,8 @@
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.txtSoyad = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyButtonEdit();
+            this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.resimMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myDataLayoutControl)).BeginInit();
@@ -98,6 +100,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSoyad.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -112,11 +116,12 @@
             this.ribbonControl.SearchEditItem.EditWidth = 150;
             this.ribbonControl.SearchEditItem.Id = -5000;
             this.ribbonControl.SearchEditItem.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
-            this.ribbonControl.Size = new System.Drawing.Size(358, 135);
+            this.ribbonControl.Size = new System.Drawing.Size(498, 135);
             this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             // 
             // myDataLayoutControl
             // 
+            this.myDataLayoutControl.Controls.Add(this.txtSoyad);
             this.myDataLayoutControl.Controls.Add(this.txtOdemeMetodu);
             this.myDataLayoutControl.Controls.Add(this.tglDurum);
             this.myDataLayoutControl.Controls.Add(this.txtAciklama);
@@ -134,7 +139,7 @@
             this.myDataLayoutControl.Name = "myDataLayoutControl";
             this.myDataLayoutControl.OptionsFocus.EnableAutoTabOrder = false;
             this.myDataLayoutControl.Root = this.Root;
-            this.myDataLayoutControl.Size = new System.Drawing.Size(358, 305);
+            this.myDataLayoutControl.Size = new System.Drawing.Size(498, 305);
             this.myDataLayoutControl.TabIndex = 0;
             this.myDataLayoutControl.Text = "myDataLayoutControl1";
             // 
@@ -184,7 +189,7 @@
             this.txtAciklama.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtAciklama.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtAciklama.Properties.MaxLength = 500;
-            this.txtAciklama.Size = new System.Drawing.Size(263, 41);
+            this.txtAciklama.Size = new System.Drawing.Size(403, 41);
             this.txtAciklama.StatusBarAciklama = "Açıklama Giriniz";
             this.txtAciklama.StyleController = this.myDataLayoutControl;
             this.txtAciklama.TabIndex = 9;
@@ -289,6 +294,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtTarih.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtTarih.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret;
             this.txtTarih.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.DateTimeMaskManager));
             this.txtTarih.Properties.MaskSettings.Set("useAdvancingCaret", true);
             this.txtTarih.Size = new System.Drawing.Size(105, 20);
@@ -389,7 +395,8 @@
             this.layoutControlItem7,
             this.layoutControlItem8,
             this.layoutControlItem9,
-            this.layoutControlItem11});
+            this.layoutControlItem11,
+            this.layoutControlItem13});
             this.Root.LayoutMode = DevExpress.XtraLayout.Utils.LayoutMode.Table;
             this.Root.Name = "Root";
             columnDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
@@ -436,7 +443,7 @@
             rowDefinition9,
             rowDefinition10,
             rowDefinition11});
-            this.Root.Size = new System.Drawing.Size(358, 305);
+            this.Root.Size = new System.Drawing.Size(498, 305);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem1
@@ -485,7 +492,7 @@
             this.layoutControlItem10.Name = "layoutControlItem10";
             this.layoutControlItem10.OptionsTableLayoutItem.ColumnSpan = 3;
             this.layoutControlItem10.OptionsTableLayoutItem.RowIndex = 10;
-            this.layoutControlItem10.Size = new System.Drawing.Size(338, 45);
+            this.layoutControlItem10.Size = new System.Drawing.Size(478, 45);
             this.layoutControlItem10.Text = "Açıklama";
             this.layoutControlItem10.TextSize = new System.Drawing.Size(59, 13);
             // 
@@ -582,15 +589,47 @@
             this.layoutControlItem11.Location = new System.Drawing.Point(230, 0);
             this.layoutControlItem11.Name = "layoutControlItem11";
             this.layoutControlItem11.OptionsTableLayoutItem.ColumnIndex = 2;
-            this.layoutControlItem11.Size = new System.Drawing.Size(108, 24);
+            this.layoutControlItem11.Size = new System.Drawing.Size(248, 24);
             this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem11.TextVisible = false;
+            // 
+            // txtSoyad
+            // 
+            this.txtSoyad.EnterMoveNextControl = true;
+            this.txtSoyad.Id = null;
+            this.txtSoyad.Location = new System.Drawing.Point(313, 36);
+            this.txtSoyad.MenuManager = this.ribbonControl;
+            this.txtSoyad.Name = "txtSoyad";
+            this.txtSoyad.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtSoyad.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtSoyad.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.txtSoyad.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.txtSoyad.Size = new System.Drawing.Size(173, 20);
+            this.txtSoyad.StatusBarAciklama = null;
+            this.txtSoyad.StatusBarKisaYol = "F4 :";
+            this.txtSoyad.StatusBarKisaYolAciklama = "Seçim Yap";
+            this.txtSoyad.StyleController = this.myDataLayoutControl;
+            this.txtSoyad.TabIndex = 12;
+            // 
+            // layoutControlItem13
+            // 
+            this.layoutControlItem13.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.layoutControlItem13.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem13.Control = this.txtSoyad;
+            this.layoutControlItem13.Location = new System.Drawing.Point(230, 24);
+            this.layoutControlItem13.Name = "layoutControlItem13";
+            this.layoutControlItem13.OptionsTableLayoutItem.ColumnIndex = 2;
+            this.layoutControlItem13.OptionsTableLayoutItem.RowIndex = 1;
+            this.layoutControlItem13.Size = new System.Drawing.Size(248, 24);
+            this.layoutControlItem13.Text = "Soyad";
+            this.layoutControlItem13.TextSize = new System.Drawing.Size(59, 13);
             // 
             // YakitHarcamaEditForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(358, 464);
+            this.ClientSize = new System.Drawing.Size(498, 464);
             this.Controls.Add(this.myDataLayoutControl);
             this.IconOptions.ShowIcon = false;
             this.MinimumSize = new System.Drawing.Size(360, 465);
@@ -628,6 +667,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSoyad.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -661,5 +702,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
+        private UserControls.Controls.MyButtonEdit txtSoyad;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
     }
 }

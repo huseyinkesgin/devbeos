@@ -34,6 +34,8 @@ namespace AdavancedSoftware.Model.Entities
 
         [ZorunluAlan("İlçe", "txtIlce")]
         public long IlceId { get; set; }
+        [ZorunluAlan("Mahalle", "txtMahalle")]
+        public long MahalleId { get; set; }
 
         public string Adres { get; set; }
 
@@ -51,7 +53,8 @@ namespace AdavancedSoftware.Model.Entities
 
         public Il Il { get; set; }
         public Ilce Ilce { get; set; }
+        public Mahalle Mahalle { get; set; }
 
-       
+
     }
 }

@@ -306,7 +306,8 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
 
         //private void Tablo_CustomDrawFooterCell(object sender, FooterCellCustomDrawEventArgs e)
         //{
-        //    if (!Tablo.OptionsView.ShowFooter) return;
+        //    if (!Tablo.OptionsView.ShowFooter)
+        //        return;
         //    if (e.Column.Summary.Count > 0)
         //        e.Appearance.TextOptions.HAlignment = e.Column.ColumnEdit.Appearance.HAlignment;
         //}

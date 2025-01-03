@@ -11,6 +11,7 @@ namespace AdavancedSoftware.Model.Dto
     {
         public string AracPlakaNo { get; set; }
         public string PersonelAdi { get; set; }
+        public string PersonelSoyadi { get; set; }
         public string OdemeMetoduAdi { get; set; }
         public string KasaAdi { get; set; }
     }
@@ -19,6 +20,7 @@ namespace AdavancedSoftware.Model.Dto
     {
         public string AracPlakaNo { get; set; }
         public string PersonelAdi { get; set; }
+        public string PersonelSoyadi { get; set; }
         public string OdemeMetoduAdi { get; set; }
         public string KasaAdi { get; set; }
         public DateTime Tarih { get; set; }

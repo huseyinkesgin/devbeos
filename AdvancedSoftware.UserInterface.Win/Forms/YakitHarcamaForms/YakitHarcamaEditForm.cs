@@ -44,6 +44,8 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.YakitHarcamaForms
             txtArac.Text = entity.AracPlakaNo;
             txtPersonel.Id = entity.PersonelId;
             txtPersonel.Text = entity.PersonelAdi;
+            txtSoyad.Id = entity.PersonelId;
+            txtSoyad.Text = entity.PersonelSoyadi;
             txtOdemeMetodu.Id = entity.OdemeMetoduId;
             txtOdemeMetodu.Text = entity.OdemeMetoduAdi;
             txtKasa.Id = entity.KasaId;
@@ -92,6 +94,9 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.YakitHarcamaForms
                     sec.Sec(txtPersonel);
                 else if (sender == txtOdemeMetodu)
                     sec.Sec(txtOdemeMetodu);
+                else if (sender == txtSoyad)
+                    sec.Sec(txtSoyad);
+
         }
     }
 }
