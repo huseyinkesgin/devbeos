@@ -61,6 +61,7 @@
     <Compile Include="Dto\ArsaDto.cs" />
     <Compile Include="Dto\HizmetDto.cs" />
     <Compile Include="Dto\IndirimDto.cs" />
+    <Compile Include="Dto\IndiriminUygulanacagiHizmetBilgileriDto.cs" />
     <Compile Include="Dto\IsyeriDto.cs" />
     <Compile Include="Dto\KasaDto.cs" />
     <Compile Include="Dto\YakitHarcamaDto.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Entities\Base\BaseEntityDurum.cs" />
     <Compile Include="Entities\Base\BaseHareketEntity.cs" />
     <Compile Include="Entities\Base\Interfaces\IBaseEntity.cs" />
+    <Compile Include="Entities\Base\Interfaces\IBaseHareketEntity.cs" />
     <Compile Include="Entities\Departman.cs" />
     <Compile Include="Entities\DokumParametreleri.cs" />
     <Compile Include="Entities\Donem.cs" />

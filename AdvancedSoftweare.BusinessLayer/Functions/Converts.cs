@@ -1,5 +1,6 @@
 ﻿using AdavancedSoftware.Model.Entities.Base.Interfaces;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace AdvancedSoftweare.BusinessLayer.Functions
@@ -22,5 +23,11 @@ namespace AdvancedSoftweare.BusinessLayer.Functions
             }
             return hedef;
         }
+
+        public static IEnumerable<TTarget> EntityListConvert<TTarget>(this IEnumerable<IBaseEntity> source)
+        {
+            return source?.Select(x => x.EntityConvert<TTarget>()).ToList();
+        }
+        
     }
 }

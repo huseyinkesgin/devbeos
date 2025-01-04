@@ -1,6 +1,6 @@
 ﻿namespace AdvancedSoftware.UserInterface.Win.UserControls.Controls.Navigators
 {
-    partial class InsUptNavigator
+    partial class AddUptNavigator
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(insUptNavigator));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddUptNavigator));
             this.Navigator = new DevExpress.XtraEditors.ControlNavigator();
             this.imageCollection = new DevExpress.Utils.ImageCollection(this.components);
             this.dpıAwareImageCollection1 = new DevExpress.Utils.DPIAwareImageCollection(this.components);
@@ -57,7 +57,6 @@
             this.Navigator.Size = new System.Drawing.Size(530, 24);
             this.Navigator.TabIndex = 0;
             this.Navigator.Text = "controlNavigator1";
-
             // 
             // imageCollection
             // 
@@ -78,12 +77,12 @@
             this.dpıAwareImageCollection1.Owner = this;
             this.dpıAwareImageCollection1.Stream = ((DevExpress.Utils.DPIAwareImageCollectionStreamer)(resources.GetObject("dpıAwareImageCollection1.Stream")));
             // 
-            // insUptNavigator
+            // AddUptNavigator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.Navigator);
-            this.Name = "insUptNavigator";
+            this.Name = "AddUptNavigator";
             this.Size = new System.Drawing.Size(530, 24);
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpıAwareImageCollection1)).EndInit();

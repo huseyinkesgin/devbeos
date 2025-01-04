@@ -650,11 +650,11 @@
     <Compile Include="UserControls\Controls\MyToogleSwitch.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="UserControls\Controls\Navigators\InsUptNavigator.cs">
+    <Compile Include="UserControls\Controls\Navigators\AddUptNavigator.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Controls\Navigators\InsUptNavigator.Designer.cs">
-      <DependentUpon>InsUptNavigator.cs</DependentUpon>
+    <Compile Include="UserControls\Controls\Navigators\AddUptNavigator.Designer.cs">
+      <DependentUpon>AddUptNavigator.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Controls\Navigators\LongNavigator.cs">
       <SubType>UserControl</SubType>
@@ -922,8 +922,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserControls\Controls\Navigators\InsUptNavigator.resx">
-      <DependentUpon>InsUptNavigator.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\Controls\Navigators\AddUptNavigator.resx">
+      <DependentUpon>AddUptNavigator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Controls\Navigators\LongNavigator.resx">
       <DependentUpon>LongNavigator.cs</DependentUpon>
