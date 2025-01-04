@@ -36,6 +36,9 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
         protected internal BaseEntity SelectedEntity;     
         protected internal long? SeciliGelecekId;
         protected internal IList<long> ListeDisiTutulacakKayitlar;
+        protected internal SelectRowFunctions RowSelect;
+        protected internal bool EklenebilecekEntityVar = false;
+        protected internal IList<BaseEntity> SelectedEntities;
 
 
 

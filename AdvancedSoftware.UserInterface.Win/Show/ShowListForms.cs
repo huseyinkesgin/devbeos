@@ -56,7 +56,10 @@ namespace AdvancedSoftware.UserInterface.Win.Show
                 frm.ListeDisiTutulacakKayitlar = listeDisiTutulacakKayitlar;
                 frm.MultiSelect = multiSelect;
                 frm.Yukle();
-                frm.ShowDialog();
+                frm.RowSelect = new Functions.SelectRowFunctions(frm.Tablo);
+
+                if (frm.EklenebilecekEntityVar)
+                    frm.ShowDialog();
 
                 return frm.DialogResult == DialogResult.OK ? frm.SelectedEntities : null;
             }

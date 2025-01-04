@@ -13,9 +13,6 @@ using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AdvancedSoftware.UserInterface.Win.Functions
@@ -24,51 +21,17 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
     {
         private GridView _tablo;
         private GridColumn _column;
-        private readonly IList<BaseEntity> _selectedRows;
         private RepositoryItemCheckEdit _checkEdit;
+        private readonly IList<BaseEntity> _selectedRows;
+       
 
-        public SelectRowFunctions(GridView tablo, GridColumn column)
+        public SelectRowFunctions(GridView tablo)
         {
             _tablo = tablo;
             _selectedRows = new List<BaseEntity>();
 
             RemoveEvents();
             AddEvents(tablo);
-        }
-
-        public int SelectedRowCount => _selectedRows.Count;
-      
-
-       
-
-        public BaseEntity GetSelectedRow(int index)
-        {
-            return _selectedRows[index];
-        }
-
-        public IList<BaseEntity> GetSelectedRows()
-        {
-            return _selectedRows;
-        }
-
-        public int GetSelectedRowIndex(BaseEntity entity)
-        {
-            return _selectedRows.IndexOf(entity);
-        }
-
-        public bool IsRowSelected(int rowHandle)
-        {
-            var row = _tablo.GetRow<BaseEntity>(rowHandle);
-            return GetSelectedRowIndex(row) >= -1;
-        }
-
-        public void SelectAll()
-        {
-            _selectedRows.Clear();
-            for (int i = 0; i < _tablo.DataRowCount; i++)
-                _selectedRows.Add(_tablo.GetRow<BaseEntity>(i));
-
-            Update();
         }
 
         private void Update()
@@ -85,7 +48,8 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
 
         private void SelectRow(int rowHandle, bool select)
         {
-            if (IsRowSelected(rowHandle) == select) return;
+            if (IsRowSelected(rowHandle) == select)
+                return;
 
             var row = _tablo.GetRow<BaseEntity>(rowHandle);
 
@@ -99,8 +63,9 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
 
         public void RowSelection(int rowHandle)
         {
-           if (!_tablo.IsDataRow(rowHandle)) return;
-           SelectRow(rowHandle,!IsRowSelected(rowHandle));
+            if (!_tablo.IsDataRow(rowHandle))
+                return;
+            SelectRow(rowHandle, !IsRowSelected(rowHandle));
         }
 
         private void AddEvents(GridView tablo)
@@ -138,11 +103,33 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
             _tablo.RowStyle += Tablo_RowStyle;
         }
 
+        private void RemoveEvents()
+        {
+            if (_tablo == null)
+                return;
+            _column?.Dispose();
+
+            if (_checkEdit != null)
+            {
+                _tablo.GridControl.RepositoryItems.Remove(_checkEdit);
+                _checkEdit.Dispose();
+            }
+
+            _tablo.Click -= Tablo_Click;
+            _tablo.CustomDrawColumnHeader -= Tablo_CustomDrawColumnHeader;
+            _tablo.CustomUnboundColumnData -= Tablo_CustomUnboundColumnData;
+            _tablo.KeyDown -= Tablo_KeyDown;
+            _tablo.RowStyle -= Tablo_RowStyle;
+
+            _tablo = null;
+        }
+
         private void CheckBoxEkle(GraphicsCache cache, Rectangle r, bool check)
         {
             var info = (CheckEditViewInfo)_checkEdit.CreateViewInfo();
             var painter = (CheckEditPainter)_checkEdit.CreatePainter();
-            if (info == null) return;
+            if (info == null)
+                return;
             info.EditValue = check;
             info.Bounds = r;
             info.CalcViewInfo(cache.Graphics);
@@ -150,6 +137,44 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
             painter?.Draw(arg);
         }
 
+
+
+        public int SelectedRowCount => _selectedRows.Count;
+      
+
+       
+
+        public BaseEntity GetSelectedRow(int index)
+        {
+            return _selectedRows[index];
+        }
+
+        public IList<BaseEntity> GetSelectedRows()
+        {
+            return _selectedRows;
+        }
+
+        public int GetSelectedRowIndex(BaseEntity entity)
+        {
+            return _selectedRows.IndexOf(entity);
+        }
+
+        public bool IsRowSelected(int rowHandle)
+        {
+            var row = _tablo.GetRow<BaseEntity>(rowHandle);
+            return GetSelectedRowIndex(row) >= -1;
+        }
+
+        public void SelectAll()
+        {
+            _selectedRows.Clear();
+            for (int i = 0; i < _tablo.DataRowCount; i++)
+                _selectedRows.Add(_tablo.GetRow<BaseEntity>(i));
+
+            Update();
+        }
+
+       
         private void Tablo_Click(object sender, EventArgs e)
         {
             var point = _tablo.GridControl.PointToClient(Control.MousePosition);
@@ -189,23 +214,25 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
 
         private void Tablo_CustomUnboundColumnData(object sender, CustomColumnDataEventArgs e)
         {
-            throw new NotImplementedException();
+            if (e.Column != _column)
+                return;
+            e.Value = IsRowSelected(_tablo.GetRowHandle(e.ListSourceRowIndex));
         }
 
         private void Tablo_KeyDown(object sender, KeyEventArgs e)
         {
-            throw new NotImplementedException();
+            if (e.KeyCode != Keys.Space) return;
+            RowSelection(_tablo.FocusedRowHandle);
         }
 
         private void Tablo_RowStyle(object sender, RowStyleEventArgs e)
         {
-            throw new NotImplementedException();
+           if (!IsRowSelected(e.RowHandle)) return;
+            e.Appearance.BackColor = SystemColors.Highlight;
+            e.Appearance.ForeColor = SystemColors.HighlightText;
         }
 
       
-        private void RemoveEvents()
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }
