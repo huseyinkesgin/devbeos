@@ -557,6 +557,7 @@
     <Compile Include="Functions\GeneralFunctions.cs" />
     <Compile Include="Functions\SelectFunctions.cs" />
     <Compile Include="Functions\SelectPictureFunctions.cs" />
+    <Compile Include="Functions\SelectRowFunctions.cs" />
     <Compile Include="Functions\TablePrintingFunctions.cs" />
     <Compile Include="GenelForms\AnaForm.cs">
       <SubType>Form</SubType>
@@ -673,6 +674,12 @@
     </Compile>
     <Compile Include="UserControls\UserControl\Base\BaseTablo.Designer.cs">
       <DependentUpon>BaseTablo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl\IndirimEditFormTable\IndiriminUygulanacagiHizmetlerTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControl\IndirimEditFormTable\IndiriminUygulanacagiHizmetlerTable.Designer.cs">
+      <DependentUpon>IndiriminUygulanacagiHizmetlerTable.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Forms\AltyapiForms\AltyapiEditForm.resx">
       <DependentUpon>AltyapiEditForm.cs</DependentUpon>
@@ -933,6 +940,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UserControl\Base\BaseTablo.resx">
       <DependentUpon>BaseTablo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControl\IndirimEditFormTable\IndiriminUygulanacagiHizmetlerTable.resx">
+      <DependentUpon>IndiriminUygulanacagiHizmetlerTable.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -1219,6 +1229,10 @@
     <ProjectReference Include="..\AdavancedSoftware.Model\AdavancedSoftware.Model.csproj">
       <Project>{A2463B18-EA05-4015-8A11-42B098E2C0CB}</Project>
       <Name>AdavancedSoftware.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AdnavcedSoftware.Data\AdvancedSoftware.Data.csproj">
+      <Project>{D793B643-5812-448A-8BEC-BBE499344D71}</Project>
+      <Name>AdvancedSoftware.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\AdvancedSoftware.Common\AdvancedSoftware.Common.csproj">
       <Project>{FB7BF120-E0FF-440F-8D72-5233B98AAAC9}</Project>

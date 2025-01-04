@@ -1,4 +1,5 @@
 ﻿using AdavancedSoftware.Model.Entities.Base;
+using AdavancedSoftware.Model.Entities.Base.Interfaces;
 using AdvancedSoftware.Common.Enums;
 using AdvancedSoftware.UserInterface.Win.Forms.BaseForms;
 using System;
@@ -44,6 +45,20 @@ namespace AdvancedSoftware.UserInterface.Win.Show
                 frm.ShowDialog();
 
                 return frm.DialogResult == DialogResult.OK ? frm.SelectedEntity : null;
+            }
+        }
+
+        public static IEnumerable<IBaseEntity> ShowDialogListForm(KartTuru kartTuru, IList<long> listeDisiTutulacakKayitlar, bool multiSelect, params object[] prm)
+        {
+            //Yetki Kontrolü
+            using (var frm = (TForm)Activator.CreateInstance(typeof(TForm), prm))
+            {
+                frm.ListeDisiTutulacakKayitlar = listeDisiTutulacakKayitlar;
+                frm.MultiSelect = multiSelect;
+                frm.Yukle();
+                frm.ShowDialog();
+
+                return frm.DialogResult == DialogResult.OK ? frm.SelectedEntities : null;
             }
         }
     }

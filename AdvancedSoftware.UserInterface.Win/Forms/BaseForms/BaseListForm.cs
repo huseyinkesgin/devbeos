@@ -13,6 +13,7 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Views.Base;
 using DevExpress.XtraGrid.Views.Grid;
 using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
@@ -24,16 +25,19 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
         private bool _tabloSablonKayitEdilecek;
         protected IBaseFormShow FormShow;
         protected KartTuru BaseKartTuru;
-        protected internal GridView Tablo;
         protected bool AktifKartlariGoster = true;
-        protected internal bool AktifPasifButonGoster = false;
-        protected internal bool MultiSelect;
-        protected internal BaseEntity SelectedEntity;
         protected IBaseBll Bll;
         protected ControlNavigator Navigator;
-        protected internal long? SeciliGelecekId;
         protected BarItem[] ShowItems;
         protected BarItem[] HideItems;
+        protected internal GridView Tablo;
+        protected internal bool AktifPasifButonGoster = false;
+        protected internal bool MultiSelect;
+        protected internal BaseEntity SelectedEntity;     
+        protected internal long? SeciliGelecekId;
+        protected internal IList<long> ListeDisiTutulacakKayitlar;
+
+
 
 
         public BaseListForm()

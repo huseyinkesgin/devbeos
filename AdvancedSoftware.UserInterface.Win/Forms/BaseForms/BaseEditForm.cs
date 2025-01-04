@@ -210,8 +210,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
         protected internal virtual IBaseEntity ReturnEntity() { return null; }
         protected internal virtual void ButonEnabledDurumu()
         {
-            if (!IsLoaded)
-                return;
+            if (!IsLoaded) return;
             GeneralFunctions.ButtonEnabledDurumu(btnYeni, btnKaydet, btnGeriAl, btnSil, OldEntity, CurrentEntity);
 
         }

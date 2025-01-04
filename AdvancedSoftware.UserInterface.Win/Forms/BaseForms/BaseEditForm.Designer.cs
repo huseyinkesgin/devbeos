@@ -71,12 +71,12 @@
             this.btnUygula = new DevExpress.XtraBars.BarButtonItem();
             this.btnYazdir = new DevExpress.XtraBars.BarButtonItem();
             this.btnBaskiOnizleme = new DevExpress.XtraBars.BarButtonItem();
+            this.btnResimEkle = new DevExpress.XtraBars.BarButtonItem();
+            this.btnREsimSil = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.btnResimEkle = new DevExpress.XtraBars.BarButtonItem();
-            this.btnREsimSil = new DevExpress.XtraBars.BarButtonItem();
             this.resimMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.resimMenu)).BeginInit();
@@ -89,6 +89,7 @@
             this.ribbonControl.ExpandCollapseItem.Id = 0;
             this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl.ExpandCollapseItem,
+            this.ribbonControl.SearchEditItem,
             this.btnYeni,
             this.btnKaydet,
             this.btnGeriAl,
@@ -101,7 +102,6 @@
             this.btnUygula,
             this.btnYazdir,
             this.btnBaskiOnizleme,
-            this.ribbonControl.SearchEditItem,
             this.btnResimEkle,
             this.btnREsimSil});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
@@ -288,6 +288,22 @@
             this.btnBaskiOnizleme.SuperTip = superToolTip7;
             this.btnBaskiOnizleme.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             // 
+            // btnResimEkle
+            // 
+            this.btnResimEkle.Caption = "Resim Ekle";
+            this.btnResimEkle.Id = 13;
+            this.btnResimEkle.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.add_16x16;
+            this.btnResimEkle.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.Insert);
+            this.btnResimEkle.Name = "btnResimEkle";
+            // 
+            // btnREsimSil
+            // 
+            this.btnREsimSil.Caption = "Resim Sil";
+            this.btnREsimSil.Id = 14;
+            this.btnREsimSil.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.close_16x16;
+            this.btnREsimSil.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.Delete);
+            this.btnREsimSil.Name = "btnREsimSil";
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -323,22 +339,6 @@
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "ribbonPage2";
             // 
-            // btnResimEkle
-            // 
-            this.btnResimEkle.Caption = "Resim Ekle";
-            this.btnResimEkle.Id = 13;
-            this.btnResimEkle.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.add_16x16;
-            this.btnResimEkle.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.Insert);
-            this.btnResimEkle.Name = "btnResimEkle";
-            // 
-            // btnREsimSil
-            // 
-            this.btnREsimSil.Caption = "Resim Sil";
-            this.btnREsimSil.Id = 14;
-            this.btnREsimSil.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.close_16x16;
-            this.btnREsimSil.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.Delete);
-            this.btnREsimSil.Name = "btnREsimSil";
-            // 
             // resimMenu
             // 
             this.resimMenu.ItemLinks.Add(this.btnResimEkle);
@@ -372,9 +372,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
         protected internal DevExpress.XtraBars.BarStaticItem statusBarAciklama;
-        private DevExpress.XtraBars.BarStaticItem statusBarKisaYolAciklama;
         protected DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl;
-        protected DevExpress.XtraBars.BarStaticItem statusBarKisaYol;
         protected DevExpress.XtraBars.BarButtonItem btnKaydet;
         protected DevExpress.XtraBars.BarButtonItem btnGeriAl;
         protected DevExpress.XtraBars.BarButtonItem btnSil;
@@ -387,5 +385,7 @@
         private DevExpress.XtraBars.BarButtonItem btnResimEkle;
         private DevExpress.XtraBars.BarButtonItem btnREsimSil;
         protected DevExpress.XtraBars.PopupMenu resimMenu;
+        protected internal DevExpress.XtraBars.BarStaticItem statusBarKisaYolAciklama;
+        protected internal DevExpress.XtraBars.BarStaticItem statusBarKisaYol;
     }
 }
