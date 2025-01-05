@@ -80,6 +80,7 @@
     <Compile Include="General\KasaBll.cs" />
     <Compile Include="General\FirmaBll.cs" />
     <Compile Include="General\OdemeMetoduBll.cs" />
+    <Compile Include="General\PortfoyBll.cs" />
     <Compile Include="General\YakitHarcamaBll.cs" />
     <Compile Include="General\PersonelHarcamaBll.cs" />
     <Compile Include="General\PersonelBll.cs" />

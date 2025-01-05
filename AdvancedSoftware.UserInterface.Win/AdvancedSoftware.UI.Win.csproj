@@ -480,6 +480,18 @@
     <Compile Include="Forms\PersonelHarcamaForms\PersonelHarcamaListForm.Designer.cs">
       <DependentUpon>PersonelHarcamaListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\PortfoyForms\PortfoyEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PortfoyForms\PortfoyEditForm.Designer.cs">
+      <DependentUpon>PortfoyEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PortfoyForms\PortfoyListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PortfoyForms\PortfoyListForm.Designer.cs">
+      <DependentUpon>PortfoyListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\PortfoyTipiForms\PortfoyTipiEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -872,6 +884,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PersonelHarcamaForms\PersonelHarcamaListForm.resx">
       <DependentUpon>PersonelHarcamaListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PortfoyForms\PortfoyEditForm.resx">
+      <DependentUpon>PortfoyEditForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PortfoyTipiForms\PortfoyTipiEditForm.resx">
       <DependentUpon>PortfoyTipiEditForm.cs</DependentUpon>

@@ -48,5 +48,6 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.UserControl.IndirimEdi
                 };
                 source.Add(row);
             }
+        }
     }
 }
