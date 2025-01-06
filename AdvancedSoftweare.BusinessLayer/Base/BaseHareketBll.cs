@@ -18,10 +18,13 @@ namespace AdvancedSoftweare.BusinessLayer.Base
 {
     public class BaseHareketBll<T, TContext> : IBaseBll where T : BaseHareketEntity where TContext : DbContext
     {
-        private readonly Control _ctrl;
+        #region Veriables
+
         private IUnitOfWork<T> _uow;
 
-       
+        #endregion
+
+
 
         protected IQueryable<TResult> List<TResult>(Expression<Func<T, bool>> filter, Expression<Func<T, TResult>> selector)
         {
@@ -32,8 +35,8 @@ namespace AdvancedSoftweare.BusinessLayer.Base
         protected bool Insert(IList<BaseHareketEntity> entities)
         {
             GeneralFunctions.CreateUnitOfWork<T, TContext>(ref _uow);
-           _uow.Rep.Insert(entities.EntityListConvert<T>());
 
+           _uow.Rep.Insert(entities.EntityListConvert<T>());
             return _uow.Save();
         }
 
@@ -53,11 +56,10 @@ namespace AdvancedSoftweare.BusinessLayer.Base
             return _uow.Save();
         }
 
-        #region Dispase
+        #region Dispose
 
         public void Dispose()
         {
-            _ctrl?.Dispose();
             _uow.Dispose();
         }
 

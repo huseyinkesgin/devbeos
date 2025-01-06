@@ -190,6 +190,8 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
             if (_formSablonKayitEdilecek)
                 Name.FormSablonKaydet(Left, Top, Width, Height, WindowState);
         }
+
+      
         protected virtual void FiltreUygula() { }
        
         protected virtual void BaskiOnizleme() { }
@@ -206,6 +208,8 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
         }
         protected virtual void NesneyiKontrollereBagla() { }
         protected virtual void GuncelNesneOlustur() { }
+
+        protected virtual void TabloYukle() { }
         protected internal virtual void Yukle() { }
         protected internal virtual IBaseEntity ReturnEntity() { return null; }
         protected internal virtual void ButonEnabledDurumu()

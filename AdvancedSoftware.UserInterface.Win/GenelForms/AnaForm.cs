@@ -38,12 +38,15 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
 {
     public partial class AnaForm : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-       public static long DonemId = 1;
+        public static long DonemId = 1;
         public static string DonemAdi = "2024";
-       public static long SubeId = 1;
+        public static long SubeId = 1;
         public static string SubeAdi = "Merkez";
 
-        //public static DateTime YerGostermeTarihi = new DateTime(2024,12,20);
+        public static DateTime HizmetBaslamaTarihi = new DateTime(2025,01,01);
+        public static DateTime HizmetBitisTarihi = new DateTime(2026, 01, 01);
+        public static bool GunTarihininOncesineHizmetBaslamaTarihiGirilebilir = true;
+        public static bool GunTarihininSonrasinaHizmetBaslamaTarihiGirilebilir = true;
 
         public AnaForm()
         {

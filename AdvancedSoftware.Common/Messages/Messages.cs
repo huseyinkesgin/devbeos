@@ -63,5 +63,10 @@ namespace AdvancedSoftware.Common.Messages
         {
             return EvetSeciliEvetHayir($"İlgili Tablo, {dosyaFormati} olarak Dısarı Aktarılacaktır.Onaylıyor musunuz?", "Aktarım Onay");
         }
+
+        public static void KartBulunamadiMesaji(string kartTuru)
+        {
+            UyariMesaji($"İşlem Yapılabilcek {kartTuru} Bulunamadı.");
+        }
     }
 }

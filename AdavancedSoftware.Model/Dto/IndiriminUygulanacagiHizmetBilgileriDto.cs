@@ -1,13 +1,10 @@
 ﻿using AdavancedSoftware.Model.Entities;
 using AdavancedSoftware.Model.Entities.Base.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AdavancedSoftware.Model.Dto
 {
+    [NotMapped]
     public class IndiriminUygulanacagiHizmetBilgileriL : IndiriminUygulanacagiHizmetBilgileri, IBaseHareketEntity
     {
         public string HizmetAdi { get; set; }

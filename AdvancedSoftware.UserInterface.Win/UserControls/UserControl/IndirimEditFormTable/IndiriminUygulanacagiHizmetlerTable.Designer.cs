@@ -30,10 +30,10 @@
         {
             this.grid = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridControl();
             this.tablo = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridView();
-            this.ColHizmetAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
+            this.colHizmetAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colIndirimTutari = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
-            this.colIndirimOrani = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.repositoryTutar = new DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit();
+            this.colIndirimOrani = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.repositoryOran = new DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
@@ -41,6 +41,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryTutar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryOran)).BeginInit();
             this.SuspendLayout();
+            // 
+            // addUptNavigator
+            // 
+            this.addUptNavigator.Location = new System.Drawing.Point(0, 272);
+            this.addUptNavigator.Size = new System.Drawing.Size(594, 24);
             // 
             // grid
             // 
@@ -67,7 +72,7 @@
             this.tablo.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
             this.tablo.Appearance.ViewCaption.Options.UseForeColor = true;
             this.tablo.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.ColHizmetAdi,
+            this.colHizmetAdi,
             this.colIndirimTutari,
             this.colIndirimOrani});
             this.tablo.GridControl = this.grid;
@@ -82,7 +87,6 @@
             this.tablo.OptionsView.ColumnAutoWidth = false;
             this.tablo.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
             this.tablo.OptionsView.RowAutoHeight = true;
-            this.tablo.OptionsView.ShowAutoFilterRow = true;
             this.tablo.OptionsView.ShowGroupPanel = false;
             this.tablo.OptionsView.ShowViewCaption = true;
             this.tablo.StatusBarAciklama = null;
@@ -90,21 +94,21 @@
             this.tablo.StatusBarKisaYolAciklama = null;
             this.tablo.ViewCaption = "İNDİRİMİN UYGULANACAĞI HİZMETLER";
             // 
-            // ColHizmetAdi
+            // colHizmetAdi
             // 
-            this.ColHizmetAdi.Caption = "Hizmet Adı";
-            this.ColHizmetAdi.FieldName = "HizmetAdi";
-            this.ColHizmetAdi.Name = "ColHizmetAdi";
-            this.ColHizmetAdi.OptionsColumn.AllowEdit = false;
-            this.ColHizmetAdi.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.False;
-            this.ColHizmetAdi.OptionsFilter.AllowAutoFilter = false;
-            this.ColHizmetAdi.OptionsFilter.AllowFilter = false;
-            this.ColHizmetAdi.StatusBarAciklama = null;
-            this.ColHizmetAdi.StatusBarKisaYol = null;
-            this.ColHizmetAdi.StatusBarKisaYolAciklama = null;
-            this.ColHizmetAdi.Visible = true;
-            this.ColHizmetAdi.VisibleIndex = 0;
-            this.ColHizmetAdi.Width = 181;
+            this.colHizmetAdi.Caption = "Hizmet Adı";
+            this.colHizmetAdi.FieldName = "HizmetAdi";
+            this.colHizmetAdi.Name = "colHizmetAdi";
+            this.colHizmetAdi.OptionsColumn.AllowEdit = false;
+            this.colHizmetAdi.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.False;
+            this.colHizmetAdi.OptionsFilter.AllowAutoFilter = false;
+            this.colHizmetAdi.OptionsFilter.AllowFilter = false;
+            this.colHizmetAdi.StatusBarAciklama = null;
+            this.colHizmetAdi.StatusBarKisaYol = null;
+            this.colHizmetAdi.StatusBarKisaYolAciklama = null;
+            this.colHizmetAdi.Visible = true;
+            this.colHizmetAdi.VisibleIndex = 0;
+            this.colHizmetAdi.Width = 181;
             // 
             // colIndirimTutari
             // 
@@ -121,6 +125,18 @@
             this.colIndirimTutari.Visible = true;
             this.colIndirimTutari.VisibleIndex = 1;
             this.colIndirimTutari.Width = 123;
+            // 
+            // repositoryTutar
+            // 
+            this.repositoryTutar.AutoHeight = false;
+            this.repositoryTutar.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryTutar.DisplayFormat.FormatString = "c2";
+            this.repositoryTutar.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.repositoryTutar.EditFormat.FormatString = "c2";
+            this.repositoryTutar.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.repositoryTutar.MaskSettings.Set("mask", "c2");
+            this.repositoryTutar.Name = "repositoryTutar";
             // 
             // colIndirimOrani
             // 
@@ -140,28 +156,16 @@
             this.colIndirimOrani.VisibleIndex = 2;
             this.colIndirimOrani.Width = 148;
             // 
-            // repositoryTutar
-            // 
-            this.repositoryTutar.AutoHeight = false;
-            this.repositoryTutar.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryTutar.DisplayFormat.FormatString = "c2";
-            this.repositoryTutar.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.repositoryTutar.EditFormat.FormatString = "c2";
-            this.repositoryTutar.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.repositoryTutar.MaskSettings.Set("mask", "c2");
-            this.repositoryTutar.Name = "repositoryTutar";
-            // 
             // repositoryOran
             // 
             this.repositoryOran.AutoHeight = false;
             this.repositoryOran.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryOran.DisplayFormat.FormatString = "P0";
+            this.repositoryOran.DisplayFormat.FormatString = "n0";
             this.repositoryOran.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.repositoryOran.EditFormat.FormatString = "P0";
+            this.repositoryOran.EditFormat.FormatString = "n0";
             this.repositoryOran.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.repositoryOran.MaskSettings.Set("mask", "P0");
+            this.repositoryOran.MaskSettings.Set("mask", "n0");
             this.repositoryOran.Name = "repositoryOran";
             this.repositoryOran.UseMaskAsDisplayFormat = true;
             // 
@@ -172,6 +176,7 @@
             this.Controls.Add(this.grid);
             this.Name = "IndiriminUygulanacagiHizmetlerTable";
             this.Size = new System.Drawing.Size(594, 296);
+            this.Controls.SetChildIndex(this.addUptNavigator, 0);
             this.Controls.SetChildIndex(this.grid, 0);
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
@@ -184,13 +189,12 @@
         }
 
         #endregion
-
-        private Controls.Grid.MyGridControl grid;
         private Controls.Grid.MyGridView tablo;
-        private Controls.Grid.MyGridColumn ColHizmetAdi;
+        private Controls.Grid.MyGridColumn colHizmetAdi;
         private Controls.Grid.MyGridColumn colIndirimTutari;
         private DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit repositoryTutar;
         private Controls.Grid.MyGridColumn colIndirimOrani;
         private DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit repositoryOran;
+        protected Controls.Grid.MyGridControl grid;
     }
 }

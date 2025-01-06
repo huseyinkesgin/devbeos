@@ -1,6 +1,7 @@
 ﻿using AdavancedSoftware.Model.Entities;
 using AdavancedSoftware.Model.Entities.Base;
 using AdvancedSoftware.Common.Enums;
+using AdvancedSoftware.Common.Messages;
 using AdvancedSoftware.UserInterface.Win.Forms.FiltreForms;
 using AdvancedSoftware.UserInterface.Win.Functions;
 using AdvancedSoftware.UserInterface.Win.GenelForms;
@@ -83,7 +84,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
             barEnterAciklama.Visibility = IsMdiChild ? BarItemVisibility.Never : BarItemVisibility.Always;
             btnAktifPasifKayit.Visibility = AktifPasifButonGoster ? BarItemVisibility.Always : !IsMdiChild ? BarItemVisibility.Never : BarItemVisibility.Always;
 
-            //TODO: BURADAKİ KOD İŞLEVİNİ GÖRMÜYOR. GÜNCELLENECEK
+     
             ShowItems?.ForEach(x => x.Visibility = BarItemVisibility.Always);
             HideItems?.ForEach(x => x.Visibility = BarItemVisibility.Never);
 
@@ -142,12 +143,19 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
 
             Listele();
         }
-        private void SelectEntity()
+        protected virtual void SelectEntity()
         {
             if (MultiSelect)
             {
-                //güncellenecek
+               SelectedEntities = new List<BaseEntity>();
+                if (RowSelect.SelectedRowCount == 0)
+                {
+                    Messages.KartSecmemeUyariMesaji();
+                    return;
+                }
+                SelectedEntities = RowSelect.GetSelectedRows();
             }
+          
             else
                 SelectedEntity = Tablo.GetRow<BaseEntity>();
 

@@ -31,13 +31,13 @@
             this.components = new System.ComponentModel.Container();
             this.addUptNavigator = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Navigators.AddUptNavigator();
             this.popupMenu = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.btnHaraketEkle = new DevExpress.XtraBars.BarButtonItem();
+            this.btnHaraketSil = new DevExpress.XtraBars.BarButtonItem();
             this.barManager = new DevExpress.XtraBars.BarManager(this.components);
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.btnHaraketEkle = new DevExpress.XtraBars.BarButtonItem();
-            this.btnHaraketSil = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager)).BeginInit();
             this.SuspendLayout();
@@ -57,6 +57,22 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.btnHaraketSil)});
             this.popupMenu.Manager = this.barManager;
             this.popupMenu.Name = "popupMenu";
+            // 
+            // btnHaraketEkle
+            // 
+            this.btnHaraketEkle.Caption = "Haraket Ekle";
+            this.btnHaraketEkle.Id = 0;
+            this.btnHaraketEkle.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.add_16x16;
+            this.btnHaraketEkle.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.Insert));
+            this.btnHaraketEkle.Name = "btnHaraketEkle";
+            // 
+            // btnHaraketSil
+            // 
+            this.btnHaraketSil.Caption = "Haraket Sil";
+            this.btnHaraketSil.Id = 1;
+            this.btnHaraketSil.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.deletefooter_16x16;
+            this.btnHaraketSil.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.Delete));
+            this.btnHaraketSil.Name = "btnHaraketSil";
             // 
             // barManager
             // 
@@ -102,22 +118,6 @@
             this.barDockControlRight.Manager = this.barManager;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 287);
             // 
-            // btnHaraketEkle
-            // 
-            this.btnHaraketEkle.Caption = "Haraket Ekle";
-            this.btnHaraketEkle.Id = 0;
-            this.btnHaraketEkle.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.add_16x16;
-            this.btnHaraketEkle.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.Insert));
-            this.btnHaraketEkle.Name = "btnHaraketEkle";
-            // 
-            // btnHaraketSil
-            // 
-            this.btnHaraketSil.Caption = "Haraket Sil";
-            this.btnHaraketSil.Id = 1;
-            this.btnHaraketSil.ImageOptions.Image = global::AdvancedSoftware.UserInterface.Win.Properties.Resources.deletefooter_16x16;
-            this.btnHaraketSil.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.Delete));
-            this.btnHaraketSil.Name = "btnHaraketSil";
-            // 
             // BaseTablo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -137,8 +137,6 @@
         }
 
         #endregion
-
-        private Controls.Navigators.AddUptNavigator addUptNavigator;
         protected DevExpress.XtraBars.PopupMenu popupMenu;
         private DevExpress.XtraBars.BarButtonItem btnHaraketEkle;
         private DevExpress.XtraBars.BarButtonItem btnHaraketSil;
@@ -147,5 +145,6 @@
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
+        protected internal Controls.Navigators.AddUptNavigator addUptNavigator;
     }
 }

@@ -175,7 +175,8 @@
             this.btnWordDosyasi,
             this.btnPdfDosyasi,
             this.btnTxtDosyasi,
-            this.btnBagliKartlar});
+            this.btnBagliKartlar,
+            this.ribbonControl.SearchEditItem});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl.MaxItemId = 42;
             this.ribbonControl.Name = "ribbonControl";

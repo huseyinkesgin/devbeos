@@ -48,8 +48,7 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
 
         private void SelectRow(int rowHandle, bool select)
         {
-            if (IsRowSelected(rowHandle) == select)
-                return;
+            if (IsRowSelected(rowHandle) == select) return;
 
             var row = _tablo.GetRow<BaseEntity>(rowHandle);
 
@@ -63,15 +62,13 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
 
         public void RowSelection(int rowHandle)
         {
-            if (!_tablo.IsDataRow(rowHandle))
-                return;
+            if (!_tablo.IsDataRow(rowHandle)) return;
             SelectRow(rowHandle, !IsRowSelected(rowHandle));
         }
 
         private void AddEvents(GridView tablo)
         {
-            if (_tablo == null)
-                return;
+            if (tablo == null) return;
             _selectedRows.Clear();
             _tablo = tablo;
 
@@ -105,8 +102,7 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
 
         private void RemoveEvents()
         {
-            if (_tablo == null)
-                return;
+            if (_tablo == null) return;
             _column?.Dispose();
 
             if (_checkEdit != null)
@@ -128,8 +124,7 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
         {
             var info = (CheckEditViewInfo)_checkEdit.CreateViewInfo();
             var painter = (CheckEditPainter)_checkEdit.CreatePainter();
-            if (info == null)
-                return;
+            if (info == null) return;
             info.EditValue = check;
             info.Bounds = r;
             info.CalcViewInfo(cache.Graphics);
@@ -154,21 +149,23 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
             return _selectedRows;
         }
 
-        public int GetSelectedRowIndex(BaseEntity entity)
+        public int GetSelectedRowIndex(BaseEntity row)
         {
-            return _selectedRows.IndexOf(entity);
+            return _selectedRows.IndexOf(row);
         }
 
         public bool IsRowSelected(int rowHandle)
         {
             var row = _tablo.GetRow<BaseEntity>(rowHandle);
-            return GetSelectedRowIndex(row) >= -1;
+            return GetSelectedRowIndex(row) > -1;
         }
 
         public void SelectAll()
         {
             _selectedRows.Clear();
+
             for (int i = 0; i < _tablo.DataRowCount; i++)
+                  
                 _selectedRows.Add(_tablo.GetRow<BaseEntity>(i));
 
             Update();
@@ -191,21 +188,17 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
                         SelectAll();
                 }
                 else if (info.InRowCell)
-                {
                     RowSelection(info.RowHandle);
-                }
             }
 
             else if (info.InRow)
-            {
                 RowSelection(info.RowHandle);
-            }
         }
 
         private void Tablo_CustomDrawColumnHeader(object sender, ColumnHeaderCustomDrawEventArgs e)
         {
-           if (e.Column != _column)
-                return;
+           if (e.Column != _column) return;
+
             e.Info.InnerElements.Clear();
             e.Painter.DrawObject(e.Info);
             CheckBoxEkle(e.Cache, e.Bounds,SelectedRowCount == _tablo.DataRowCount);
@@ -214,8 +207,7 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
 
         private void Tablo_CustomUnboundColumnData(object sender, CustomColumnDataEventArgs e)
         {
-            if (e.Column != _column)
-                return;
+            if (e.Column != _column) return;
             e.Value = IsRowSelected(_tablo.GetRowHandle(e.ListSourceRowIndex));
         }
 

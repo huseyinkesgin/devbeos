@@ -4,11 +4,11 @@ using AdvancedSoftware.Common.Enums;
 using AdvancedSoftware.Common.Messages;
 using AdvancedSoftware.UserInterface.Win.UserControls.Controls;
 using DevExpress.XtraBars;
-using DevExpress.XtraBars.Docking.Paint;
 using DevExpress.XtraGrid.Views.Base;
 using DevExpress.XtraGrid.Views.Grid;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Drawing.Printing;
@@ -42,8 +42,7 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
 
         public static T GetRow<T>(this GridView tablo, int rowHandle)
         {
-            if (tablo.FocusedRowHandle > -1)
-                return (T)tablo.GetRow(rowHandle);
+            if (tablo.FocusedRowHandle > -1) return (T)tablo.GetRow(rowHandle);
                 Messages.KartSecmemeUyariMesaji();
 
             return default(T);
@@ -79,6 +78,17 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
         {
             var veriDegisimYeri = VeriDegisimYeriGetir(oldEntity, currentEntity);
             var butonEnabledDurumu = veriDegisimYeri == VeriDegisimYeri.Alan;
+
+            btnKaydet.Enabled = butonEnabledDurumu;
+            btnGeriAl.Enabled = butonEnabledDurumu;
+            btnYeni.Enabled = !butonEnabledDurumu;
+            btnSil.Enabled = !butonEnabledDurumu;
+        }
+
+        public static void ButtonEnabledDurumu<T>(BarButtonItem btnYeni, BarButtonItem btnKaydet, BarButtonItem btnGeriAl, BarButtonItem btnSil, T oldEntity, T currentEntity, bool tableValueChanged)
+        {
+            var veriDegisimYeri = tableValueChanged ? VeriDegisimYeri.Tablo : VeriDegisimYeriGetir(oldEntity, currentEntity);
+            var butonEnabledDurumu = veriDegisimYeri == VeriDegisimYeri.Alan || veriDegisimYeri == VeriDegisimYeri.Tablo;
 
             btnKaydet.Enabled = butonEnabledDurumu;
             btnGeriAl.Enabled = butonEnabledDurumu;
@@ -241,8 +251,13 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
                 e.Visible = false;
                 e.Handled = true;
             }
-    }
+        }
 
-       
+        public static BindingList<T> ToBindingList<T>(this IEnumerable<BaseHareketEntity> list)
+        {
+            return new BindingList<T>((IList<T>)list);
+        }
+
+
     }
 }

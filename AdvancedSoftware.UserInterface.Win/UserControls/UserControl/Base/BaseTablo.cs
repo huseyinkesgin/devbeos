@@ -4,7 +4,6 @@ using AdvancedSoftware.UserInterface.Win.Functions;
 using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Views.Grid;
-
 using AdvancedSoftware.UserInterface.Win.Forms.BaseForms;
 using System.Windows.Forms;
 using System;
@@ -36,6 +35,8 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.UserControl.Base
             InitializeComponent();
         }
 
+        #region KontrolEdildi
+
         protected void Eventsload()
         {
             //Buton events
@@ -58,7 +59,6 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.UserControl.Base
 
         }
 
-       
 
         protected internal void Yukle()
         {
@@ -69,9 +69,8 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.UserControl.Base
             SablonYukle();
             Listele();
             ButonGizleGoster();
-           // Tablo_LostFocus(Tablo,EventArgs.Empty);
+            //Tablo_LostFocus(Tablo, EventArgs.Empty);
         }
-
         private void SablonKaydet()
         {
            if (_tabloSablonKayitEdilecek)
@@ -90,7 +89,6 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.UserControl.Base
             HideItems?.ForEach(x => x.Visibility = BarItemVisibility.Never);
         }
 
-
         protected virtual void HareketEkle() { }
 
         protected virtual void HareketSil() 
@@ -108,6 +106,141 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.UserControl.Base
             TableValueChanged = durum;
             OwnerForm.ButonEnabledDurumu();
         }
+
+        protected internal virtual bool HataliGiris() { return false; }
+
+        private void Button_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Cursor.Current = Cursors.WaitCursor;
+
+            if (e.Item == btnHaraketEkle)
+            {
+                HareketEkle();
+            }
+            else if (e.Item == btnHaraketSil)
+            {
+                HareketSil();
+            }
+
+            Cursor.Current = DefaultCursor;
+
+        }
+
+        private void Navigator_ButtonClick(object sender, NavigatorButtonClickEventArgs e)
+        {
+            if (e.Button == addUptNavigator.Navigator.Buttons.Append)
+            {
+                HareketEkle();
+            }
+            else if (e.Button == addUptNavigator.Navigator.Buttons.Remove)
+            {
+                HareketSil();
+            }
+            //if (e.Button == addUptNavigator.Navigator.Buttons.Append || e.Button == addUptNavigator.Navigator.Buttons.Remove)
+            //    e.Handled = true;
+
+        }
+
+        private void Tablo_CellValueChanged(object sender, CellValueChangedEventArgs e)
+        {
+            if (_isLoaded)
+                return;
+
+            var entity = Tablo.GetRow<IBaseHareketEntity>();
+
+            if (!entity.Insert)
+                entity.Update = true;
+
+            ButonEnabledDurumu(true);
+        }
+
+        private void Tablo_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (popupMenu == null)
+                return;
+
+            btnHaraketSil.Enabled = Tablo.DataRowCount > 0;
+
+            e.SagMenuGoster(popupMenu);
+        }
+
+        private void Tablo_GotFocus(object sender, EventArgs e)
+        {
+            OwnerForm.statusBarKisaYol.Visibility = BarItemVisibility.Always;
+            OwnerForm.statusBarKisaYolAciklama.Visibility = BarItemVisibility.Always;
+
+            OwnerForm.statusBarAciklama.Caption = ((IStatusBarAciklama)sender).StatusBarAciklama;
+            OwnerForm.statusBarKisaYol.Caption = ((IStatusBarKisaYol)sender).StatusBarKisaYol;
+            OwnerForm.statusBarKisaYolAciklama.Caption = ((IStatusBarKisaYol)sender).StatusBarKisaYolAciklama;
+        }
+
+        private void Tablo_LostFocus(object sender, EventArgs e)
+        {
+            OwnerForm.statusBarKisaYol.Visibility = BarItemVisibility.Never;
+            OwnerForm.statusBarKisaYolAciklama.Visibility = BarItemVisibility.Never;
+        }
+        private void Tablo_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+                case Keys.Escape:
+                    if (Tablo.IsEditorFocused)
+                        addUptNavigator.Navigator.Buttons.DoClick(addUptNavigator.Navigator.Buttons.CancelEdit);
+                    else
+                        OwnerForm.Close();
+                    break;
+
+                case Keys.Tab:
+                case Keys.Left:
+                case Keys.Right:
+                case Keys.Up:
+                case Keys.Down:
+                    addUptNavigator.Navigator.Buttons.DoClick(addUptNavigator.Navigator.Buttons.EndEdit);
+                    break;
+                case Keys.Insert when e.Shift:
+                    HareketEkle();
+                    break;
+                case Keys.Delete when e.Shift:
+                    HareketSil();
+                    break;
+
+            }
+        }
+
+
+        private void Tablo_FocusedColumnChanged(object sender, FocusedColumnChangedEventArgs e)
+        {
+            if (OwnerForm == null) return;
+
+            OwnerForm.statusBarKisaYol.Visibility = BarItemVisibility.Never;
+            OwnerForm.statusBarKisaYolAciklama.Visibility = BarItemVisibility.Never;
+
+            if (!e.FocusedColumn.OptionsColumn.AllowEdit)
+                Tablo_GotFocus(sender, null);
+
+            else if (((IStatusBarKisaYol)e.FocusedColumn).StatusBarKisaYol != null)
+            {
+                OwnerForm.statusBarKisaYol.Visibility = BarItemVisibility.Always;
+                OwnerForm.statusBarKisaYolAciklama.Visibility = BarItemVisibility.Always;
+
+                OwnerForm.statusBarAciklama.Caption = ((IStatusBarAciklama)sender).StatusBarAciklama;
+                OwnerForm.statusBarKisaYol.Caption = ((IStatusBarKisaYol)sender).StatusBarKisaYol;
+                OwnerForm.statusBarKisaYolAciklama.Caption = ((IStatusBarKisaYol)sender).StatusBarKisaYolAciklama;
+            }
+
+            else if (((IStatusBarKisaYol)e.FocusedColumn).StatusBarAciklama != null)
+                OwnerForm.statusBarKisaYolAciklama.Caption = ((IStatusBarKisaYol)sender).StatusBarKisaYolAciklama;
+
+        }
+
+
+        private void Tablo_SablonChanged(object sender, EventArgs e)
+        {
+            _tabloSablonKayitEdilecek = true;
+            SablonKaydet();
+        }
+
+        #endregion
 
         protected internal bool Kaydet()
         {
@@ -142,138 +275,12 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.UserControl.Base
             return true;
         }
 
-        private void Button_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            Cursor.Current = Cursors.WaitCursor;
-
-            if (e.Item == btnHaraketEkle)
-            {
-                HareketEkle();
-            }
-            else if (e.Item == btnHaraketSil)
-            {
-                HareketSil();
-            }
-
-            Cursor.Current = DefaultCursor;
-
-        }
-
     
 
-        private void Navigator_ButtonClick(object sender, NavigatorButtonClickEventArgs e)
-        {
-            if (e.Button == addUptNavigator.Navigator.Buttons.Append)
-            {
-                HareketEkle();
-            }
-            else if (e.Button == addUptNavigator.Navigator.Buttons.Remove)
-            {
-                HareketSil();
-            }
-            //else if (e.Button == addUptNavigator.Navigator.Buttons.Append || e.Button == addUptNavigator.Navigator.Buttons.Remove)
-            //{
-            //    e.Handled = true;
-            //}
-        }
+      
 
-        private void Tablo_CellValueChanged(object sender, CellValueChangedEventArgs e)
-        {
-            if (_isLoaded) return;
+      
 
-            var entity = Tablo.GetRow<IBaseHareketEntity>();
-
-            if (!entity.Insert)
-                entity.Update = true;
-
-            ButonEnabledDurumu(true);
-        }
-
-        private void Tablo_MouseUp(object sender, MouseEventArgs e)
-        {
-            if (popupMenu == null)
-                return;
-
-            btnHaraketSil.Enabled = Tablo.DataRowCount > 0;
-
-            e.SagMenuGoster(popupMenu);
-        }
-
-        private void Tablo_GotFocus(object sender, EventArgs e)
-        {
-            OwnerForm.statusBarKisaYol.Visibility = BarItemVisibility.Always;
-            OwnerForm.statusBarKisaYolAciklama.Visibility = BarItemVisibility.Always;
-
-            OwnerForm.statusBarAciklama.Caption = ((IStatusBarAciklama)sender).StatusBarAciklama;
-            OwnerForm.statusBarKisaYol.Caption = ((IStatusBarKisaYol)sender).StatusBarKisaYol;
-            OwnerForm.statusBarKisaYolAciklama.Caption = ((IStatusBarKisaYol)sender).StatusBarKisaYolAciklama;
-        }
-
-
-        private void Tablo_LostFocus(object sender, EventArgs e)
-        {
-            OwnerForm.statusBarKisaYol.Visibility = BarItemVisibility.Never;
-            OwnerForm.statusBarKisaYolAciklama.Visibility = BarItemVisibility.Never;
-        }
-
-
-        private void Tablo_KeyDown(object sender, KeyEventArgs e)
-        {
-            switch (e.KeyCode)
-            {
-                case Keys.Escape:
-                    if (Tablo.IsEditorFocused)
-                        addUptNavigator.Navigator.Buttons.DoClick(addUptNavigator.Navigator.Buttons.CancelEdit);
-                    else
-                        OwnerForm.Close();
-                    break;
-
-                case Keys.Tab:
-                case Keys.Left:
-                case Keys.Right:
-                case Keys.Up:
-                case Keys.Down:
-                    addUptNavigator.Navigator.Buttons.DoClick(addUptNavigator.Navigator.Buttons.EndEdit);
-                    break;
-                case Keys.Insert when e.Shift:
-                    HareketEkle();
-                    break;
-                case Keys.Delete when e.Shift:
-                    HareketSil();
-                    break;
-
-            }
-        }
-
-
-        private void Tablo_FocusedColumnChanged(object sender, FocusedColumnChangedEventArgs e)
-        {
-            OwnerForm.statusBarKisaYol.Visibility = BarItemVisibility.Never;
-            OwnerForm.statusBarKisaYolAciklama.Visibility = BarItemVisibility.Never;
-
-            if (!e.FocusedColumn.OptionsColumn.AllowEdit)
-                Tablo_GotFocus(sender, null);
-
-            else if (((IStatusBarKisaYol)e.FocusedColumn).StatusBarKisaYol != null)
-            {
-                OwnerForm.statusBarKisaYol.Visibility = BarItemVisibility.Always;
-                OwnerForm.statusBarKisaYolAciklama.Visibility = BarItemVisibility.Always;
-
-                OwnerForm.statusBarAciklama.Caption = ((IStatusBarAciklama)sender).StatusBarAciklama;
-                OwnerForm.statusBarKisaYol.Caption = ((IStatusBarKisaYol)sender).StatusBarKisaYol;
-                OwnerForm.statusBarKisaYolAciklama.Caption = ((IStatusBarKisaYol)sender).StatusBarKisaYolAciklama;
-            }
-
-            else if (((IStatusBarKisaYol)e.FocusedColumn).StatusBarAciklama != null)
-                OwnerForm.statusBarKisaYolAciklama.Caption = ((IStatusBarKisaYol)sender).StatusBarKisaYolAciklama;
-
-        }
-
-        private void Tablo_SablonChanged(object sender, EventArgs e)
-        {
-            _tabloSablonKayitEdilecek = true;
-            SablonKaydet();
-        }
 
     }
 

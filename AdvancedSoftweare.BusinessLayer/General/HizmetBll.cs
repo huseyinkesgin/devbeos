@@ -12,7 +12,7 @@ using System.Linq;
 
 namespace AdvancedSoftweare.BusinessLayer.General
 {
-    public class HizmetBll : BaseGenelBll<Hizmet>, IBaseGenelBll, IBaseCommonBll
+    public class HizmetBll : BaseGenelBll<Hizmet>,  IBaseCommonBll
     {
         public HizmetBll() : base(KartTuru.Hizmet) { }
 
@@ -31,6 +31,7 @@ namespace AdvancedSoftweare.BusinessLayer.General
                 BaslangicTarihi = x.BaslangicTarihi,
                 BitisTarihi = x.BitisTarihi,
                 Ucret = x.Ucret,
+                SubeId = x.SubeId,
                 Aciklama = x.Aciklama,
                 Durum = x.Durum,
             });
@@ -44,7 +45,9 @@ namespace AdvancedSoftweare.BusinessLayer.General
                 Id = x.Id,
                 Kod = x.Kod,
                 HizmetAdi = x.HizmetAdi,
+                HizmetTuruId = x.HizmetTuruId,
                 HizmetTuruAdi = x.HizmetTuru.HizmetTuruAdi,
+                HizmetTipi = x.HizmetTuru.HizmetTipi,
                 BaslangicTarihi = x.BaslangicTarihi,
                 BitisTarihi = x.BitisTarihi,
                 Ucret = x.Ucret,

@@ -29,6 +29,7 @@ namespace AdvancedSoftweare.BusinessLayer.General
                 IndirimTuruId = x.IndirimTuruId,
                 IndirimTuruAdi = x.IndirimTuru.IndirimTuruAdi,
                 Aciklama = x.Aciklama,
+                SubeId = x.SubeId,
                 Durum = x.Durum,
             });
         }

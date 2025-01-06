@@ -8,7 +8,7 @@ namespace AdavancedSoftware.Model.Entities
 {
     public class Hizmet : BaseEntityDurum
     {
-        [Index("IX_Kod", IsUnique = true)]
+        [Index("IX_Kod", IsUnique = false)]
         public override string Kod { get; set; }
 
         [Required, StringLength(50), ZorunluAlan("Hizmet Adı", "txtHizmetAdi")]
@@ -29,6 +29,9 @@ namespace AdavancedSoftware.Model.Entities
         [StringLength(500)]
         public string Aciklama { get; set; }
 
+        public  long SubeId { get; set; }
+
         public HizmetTuru HizmetTuru { get; set; }
+        public Sube Sube { get; set; }
     }
 }

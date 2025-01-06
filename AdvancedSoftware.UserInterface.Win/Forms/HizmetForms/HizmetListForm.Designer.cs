@@ -29,20 +29,33 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HizmetListForm));
+            this.ustPanel = new DevExpress.XtraEditors.PanelControl();
+            this.txtHizmetBaslamaTarihi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.MyDateEdit();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.longNavigator = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Navigators.longNavigator();
             this.grid = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridControl();
             this.tablo = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridView();
             this.colId = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colKod = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
+            this.HizmetTuruId = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colHizmetAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colHizmetTuruAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colBaslangicTarihi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colBitisTarihi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colUcret = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colAciklama = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
+            this.repositoryTarih = new DevExpress.XtraEditors.Repository.RepositoryItemDateEdit();
+            this.repositoryTutar = new DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ustPanel)).BeginInit();
+            this.ustPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHizmetBaslamaTarihi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHizmetBaslamaTarihi.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryTarih)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryTarih.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryTutar)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -64,23 +77,71 @@
             this.btnGonder.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGonder.ImageOptions.Image")));
             this.btnGonder.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnGonder.ImageOptions.LargeImage")));
             // 
+            // ustPanel
+            // 
+            this.ustPanel.Controls.Add(this.txtHizmetBaslamaTarihi);
+            this.ustPanel.Controls.Add(this.labelControl1);
+            this.ustPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ustPanel.Location = new System.Drawing.Point(0, 135);
+            this.ustPanel.Name = "ustPanel";
+            this.ustPanel.Size = new System.Drawing.Size(911, 35);
+            this.ustPanel.TabIndex = 2;
+            // 
+            // txtHizmetBaslamaTarihi
+            // 
+            this.txtHizmetBaslamaTarihi.EditValue = null;
+            this.txtHizmetBaslamaTarihi.EnterMoveNextControl = true;
+            this.txtHizmetBaslamaTarihi.Location = new System.Drawing.Point(113, 6);
+            this.txtHizmetBaslamaTarihi.MenuManager = this.ribbonControl;
+            this.txtHizmetBaslamaTarihi.Name = "txtHizmetBaslamaTarihi";
+            this.txtHizmetBaslamaTarihi.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.False;
+            this.txtHizmetBaslamaTarihi.Properties.Appearance.Options.UseTextOptions = true;
+            this.txtHizmetBaslamaTarihi.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.txtHizmetBaslamaTarihi.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtHizmetBaslamaTarihi.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtHizmetBaslamaTarihi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtHizmetBaslamaTarihi.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtHizmetBaslamaTarihi.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret;
+            this.txtHizmetBaslamaTarihi.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.DateTimeMaskManager));
+            this.txtHizmetBaslamaTarihi.Properties.MaskSettings.Set("useAdvancingCaret", true);
+            this.txtHizmetBaslamaTarihi.Size = new System.Drawing.Size(100, 20);
+            this.txtHizmetBaslamaTarihi.StatusBarAciklama = null;
+            this.txtHizmetBaslamaTarihi.StatusBarKisaYol = "F4 :";
+            this.txtHizmetBaslamaTarihi.StatusBarKisaYolAciklama = "Tarih Seç :";
+            this.txtHizmetBaslamaTarihi.TabIndex = 1;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
+            this.labelControl1.Location = new System.Drawing.Point(23, 9);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(75, 13);
+            this.labelControl1.TabIndex = 0;
+            this.labelControl1.Text = "Başlama Tarihi :";
+            // 
             // longNavigator
             // 
             this.longNavigator.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.longNavigator.Location = new System.Drawing.Point(0, 471);
             this.longNavigator.Name = "longNavigator";
             this.longNavigator.Size = new System.Drawing.Size(911, 24);
-            this.longNavigator.TabIndex = 2;
+            this.longNavigator.TabIndex = 3;
             // 
             // grid
             // 
             this.grid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grid.Location = new System.Drawing.Point(0, 135);
+            this.grid.Location = new System.Drawing.Point(0, 170);
             this.grid.MainView = this.tablo;
             this.grid.MenuManager = this.ribbonControl;
             this.grid.Name = "grid";
-            this.grid.Size = new System.Drawing.Size(911, 336);
-            this.grid.TabIndex = 3;
+            this.grid.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryTarih,
+            this.repositoryTutar});
+            this.grid.Size = new System.Drawing.Size(911, 301);
+            this.grid.TabIndex = 4;
             this.grid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.tablo});
             // 
@@ -97,6 +158,7 @@
             this.tablo.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colId,
             this.colKod,
+            this.HizmetTuruId,
             this.colHizmetAdi,
             this.colHizmetTuruAdi,
             this.colBaslangicTarihi,
@@ -121,7 +183,7 @@
             this.tablo.StatusBarAciklama = null;
             this.tablo.StatusBarKisaYol = null;
             this.tablo.StatusBarKisaYolAciklama = null;
-            this.tablo.ViewCaption = "HİZMET LİSTESİ";
+            this.tablo.ViewCaption = "HİZMETLER";
             // 
             // colId
             // 
@@ -148,9 +210,20 @@
             this.colKod.Visible = true;
             this.colKod.VisibleIndex = 0;
             // 
+            // HizmetTuruId
+            // 
+            this.HizmetTuruId.Caption = "HizmetTuruId";
+            this.HizmetTuruId.FieldName = "HizmetTuruId";
+            this.HizmetTuruId.Name = "HizmetTuruId";
+            this.HizmetTuruId.OptionsColumn.AllowEdit = false;
+            this.HizmetTuruId.OptionsColumn.ShowInCustomizationForm = false;
+            this.HizmetTuruId.StatusBarAciklama = null;
+            this.HizmetTuruId.StatusBarKisaYol = null;
+            this.HizmetTuruId.StatusBarKisaYolAciklama = null;
+            // 
             // colHizmetAdi
             // 
-            this.colHizmetAdi.Caption = "Hizmet";
+            this.colHizmetAdi.Caption = "Hizmet Adı";
             this.colHizmetAdi.FieldName = "HizmetAdi";
             this.colHizmetAdi.Name = "colHizmetAdi";
             this.colHizmetAdi.OptionsColumn.AllowEdit = false;
@@ -159,11 +232,11 @@
             this.colHizmetAdi.StatusBarKisaYolAciklama = null;
             this.colHizmetAdi.Visible = true;
             this.colHizmetAdi.VisibleIndex = 1;
-            this.colHizmetAdi.Width = 150;
+            this.colHizmetAdi.Width = 200;
             // 
             // colHizmetTuruAdi
             // 
-            this.colHizmetTuruAdi.Caption = "Hizmet Türü";
+            this.colHizmetTuruAdi.Caption = "Hizmet Türü Adı";
             this.colHizmetTuruAdi.FieldName = "HizmetTuruAdi";
             this.colHizmetTuruAdi.Name = "colHizmetTuruAdi";
             this.colHizmetTuruAdi.OptionsColumn.AllowEdit = false;
@@ -176,7 +249,10 @@
             // 
             // colBaslangicTarihi
             // 
-            this.colBaslangicTarihi.Caption = "Başlangıç Tarihi";
+            this.colBaslangicTarihi.AppearanceCell.Options.UseTextOptions = true;
+            this.colBaslangicTarihi.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colBaslangicTarihi.Caption = "Başlama Tarihi";
+            this.colBaslangicTarihi.ColumnEdit = this.repositoryTarih;
             this.colBaslangicTarihi.FieldName = "BaslangicTarihi";
             this.colBaslangicTarihi.Name = "colBaslangicTarihi";
             this.colBaslangicTarihi.OptionsColumn.AllowEdit = false;
@@ -185,11 +261,14 @@
             this.colBaslangicTarihi.StatusBarKisaYolAciklama = null;
             this.colBaslangicTarihi.Visible = true;
             this.colBaslangicTarihi.VisibleIndex = 3;
-            this.colBaslangicTarihi.Width = 90;
+            this.colBaslangicTarihi.Width = 120;
             // 
             // colBitisTarihi
             // 
+            this.colBitisTarihi.AppearanceCell.Options.UseTextOptions = true;
+            this.colBitisTarihi.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.colBitisTarihi.Caption = "Bitiş Tarihi";
+            this.colBitisTarihi.ColumnEdit = this.repositoryTarih;
             this.colBitisTarihi.FieldName = "BitisTarihi";
             this.colBitisTarihi.Name = "colBitisTarihi";
             this.colBitisTarihi.OptionsColumn.AllowEdit = false;
@@ -198,11 +277,12 @@
             this.colBitisTarihi.StatusBarKisaYolAciklama = null;
             this.colBitisTarihi.Visible = true;
             this.colBitisTarihi.VisibleIndex = 4;
-            this.colBitisTarihi.Width = 90;
+            this.colBitisTarihi.Width = 120;
             // 
             // colUcret
             // 
             this.colUcret.Caption = "Ücret";
+            this.colUcret.ColumnEdit = this.repositoryTutar;
             this.colUcret.FieldName = "Ucret";
             this.colUcret.Name = "colUcret";
             this.colUcret.OptionsColumn.AllowEdit = false;
@@ -211,7 +291,7 @@
             this.colUcret.StatusBarKisaYolAciklama = null;
             this.colUcret.Visible = true;
             this.colUcret.VisibleIndex = 5;
-            this.colUcret.Width = 100;
+            this.colUcret.Width = 120;
             // 
             // colAciklama
             // 
@@ -226,6 +306,28 @@
             this.colAciklama.VisibleIndex = 6;
             this.colAciklama.Width = 400;
             // 
+            // repositoryTarih
+            // 
+            this.repositoryTarih.AutoHeight = false;
+            this.repositoryTarih.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryTarih.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryTarih.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret;
+            this.repositoryTarih.Name = "repositoryTarih";
+            // 
+            // repositoryTutar
+            // 
+            this.repositoryTutar.AutoHeight = false;
+            this.repositoryTutar.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryTutar.DisplayFormat.FormatString = "c";
+            this.repositoryTutar.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.repositoryTutar.EditFormat.FormatString = "c";
+            this.repositoryTutar.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.repositoryTutar.MaskSettings.Set("mask", "c");
+            this.repositoryTutar.Name = "repositoryTutar";
+            // 
             // HizmetListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -233,15 +335,25 @@
             this.ClientSize = new System.Drawing.Size(911, 519);
             this.Controls.Add(this.grid);
             this.Controls.Add(this.longNavigator);
+            this.Controls.Add(this.ustPanel);
             this.IconOptions.ShowIcon = false;
             this.Name = "HizmetListForm";
             this.Text = "HİZMET KARTLARI";
             this.Controls.SetChildIndex(this.ribbonControl, 0);
+            this.Controls.SetChildIndex(this.ustPanel, 0);
             this.Controls.SetChildIndex(this.longNavigator, 0);
             this.Controls.SetChildIndex(this.grid, 0);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ustPanel)).EndInit();
+            this.ustPanel.ResumeLayout(false);
+            this.ustPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHizmetBaslamaTarihi.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHizmetBaslamaTarihi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryTarih.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryTarih)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryTutar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,16 +361,22 @@
 
         #endregion
 
+        private DevExpress.XtraEditors.PanelControl ustPanel;
+        private UserControls.Controls.MyDateEdit txtHizmetBaslamaTarihi;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
         private UserControls.Controls.Navigators.longNavigator longNavigator;
         private UserControls.Controls.Grid.MyGridControl grid;
         private UserControls.Controls.Grid.MyGridView tablo;
         private UserControls.Controls.Grid.MyGridColumn colId;
         private UserControls.Controls.Grid.MyGridColumn colKod;
+        private UserControls.Controls.Grid.MyGridColumn HizmetTuruId;
         private UserControls.Controls.Grid.MyGridColumn colHizmetAdi;
         private UserControls.Controls.Grid.MyGridColumn colHizmetTuruAdi;
         private UserControls.Controls.Grid.MyGridColumn colBaslangicTarihi;
         private UserControls.Controls.Grid.MyGridColumn colBitisTarihi;
         private UserControls.Controls.Grid.MyGridColumn colUcret;
         private UserControls.Controls.Grid.MyGridColumn colAciklama;
+        private DevExpress.XtraEditors.Repository.RepositoryItemDateEdit repositoryTarih;
+        private DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit repositoryTutar;
     }
 }

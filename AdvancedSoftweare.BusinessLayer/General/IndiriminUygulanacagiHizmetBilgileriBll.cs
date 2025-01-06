@@ -6,6 +6,7 @@ using AdvancedSoftweare.BusinessLayer.Base;
 using AdvancedSoftweare.BusinessLayer.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 
 namespace AdvancedSoftweare.BusinessLayer.General
@@ -21,8 +22,9 @@ namespace AdvancedSoftweare.BusinessLayer.General
                 HizmetId = x.HizmetId,
                 HizmetAdi = x.Hizmet.HizmetAdi,
                 IndirimTutari = x.IndirimTutari,
-                IndirimOrani = x.IndirimOrani
-            });
+                IndirimOrani = x.IndirimOrani,
+                SubeId = x.SubeId
+            }).ToList();
         }
     }
 }

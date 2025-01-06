@@ -1,6 +1,8 @@
 ﻿using AdavancedSoftware.Model.Dto;
 using AdvancedSoftware.Common.Enums;
 using AdvancedSoftware.UserInterface.Win.Forms.HizmetForms;
+using AdvancedSoftware.UserInterface.Win.Functions;
+using AdvancedSoftware.UserInterface.Win.GenelForms;
 using AdvancedSoftware.UserInterface.Win.Show;
 using AdvancedSoftware.UserInterface.Win.UserControls.UserControl.Base;
 using AdvancedSoftweare.BusinessLayer.Functions;
@@ -22,7 +24,7 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.UserControl.IndirimEdi
 
         protected override void Listele()
         {
-            tablo.GridControl.DataSource = ((IndiriminUygulanacagiHizmetBilgileriBll)Bll).List(x => x.IndirimId == OwnerForm.Id);
+            tablo.GridControl.DataSource = ((IndiriminUygulanacagiHizmetBilgileriBll)Bll).List(x => x.IndirimId == OwnerForm.Id);//.ToBindingList<IndiriminUygulanacagiHizmetBilgileriL>();
         }
 
         protected override void HareketEkle()
@@ -32,8 +34,7 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.UserControl.IndirimEdi
 
             var entities = ShowListForms<HizmetListForm>.ShowDialogListForm(KartTuru.Hizmet, ListeDisiTutulacakKayitlar, true).EntityListConvert<HizmetL>();
 
-            if (entities == null)
-                return;
+            if (entities == null) return;
 
             foreach (var entity in entities)
             {
@@ -44,9 +45,25 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.UserControl.IndirimEdi
                     HizmetAdi = entity.HizmetAdi,
                     IndirimTutari = 0,
                     IndirimOrani = 0,
-                    Insert = true
+                    SubeId = AnaForm.SubeId,
+                    Insert = true,
+
                 };
                 source.Add(row);
             }
+
+            tablo.Focus();
+            tablo.RefreshDataSource();
+            tablo.FocusedRowHandle = tablo.DataRowCount -1;
+            tablo.FocusedColumn = colIndirimTutari;
+
+            ButonEnabledDurumu(true);
+
+        }
+
+        protected internal override bool HataliGiris()
+        {
+            return base.HataliGiris();
+        }
     }
 }

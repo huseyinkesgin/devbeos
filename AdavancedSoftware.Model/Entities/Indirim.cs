@@ -23,8 +23,10 @@ namespace AdavancedSoftware.Model.Entities
 
         [StringLength(500)]
         public string Aciklama { get; set; }
+        public long SubeId { get; set; }
 
 
         public IndirimTuru IndirimTuru { get; set; }
+        public Sube Sube { get; set; }
     }
 }

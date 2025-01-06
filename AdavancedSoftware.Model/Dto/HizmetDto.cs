@@ -1,5 +1,6 @@
 ﻿using AdavancedSoftware.Model.Entities;
 using AdavancedSoftware.Model.Entities.Base;
+using AdvancedSoftware.Common.Enums;
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -15,9 +16,12 @@ namespace AdavancedSoftware.Model.Dto
     {
         public string Kod { get; set; }
         public string HizmetAdi { get; set; }
+        public long HizmetTuruId { get; set; }
         public string HizmetTuruAdi { get; set; }
+        public HizmetTipi HizmetTipi { get; set; }
         public DateTime BaslangicTarihi { get; set; }
         public DateTime BitisTarihi { get; set; }
+      
         public decimal Ucret { get; set; }
         public string Aciklama { get; set; }
     }
