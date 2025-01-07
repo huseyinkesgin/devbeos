@@ -64,6 +64,7 @@
     <Compile Include="Dto\IndiriminUygulanacagiHizmetBilgileriDto.cs" />
     <Compile Include="Dto\IsyeriDto.cs" />
     <Compile Include="Dto\KasaDto.cs" />
+    <Compile Include="Dto\PortfoyDto.cs" />
     <Compile Include="Dto\YakitHarcamaDto.cs" />
     <Compile Include="Dto\PersonelDto.cs" />
     <Compile Include="Dto\MusteriDto.cs" />
@@ -114,6 +115,7 @@
     <Compile Include="Entities\OzelKod.cs" />
     <Compile Include="Entities\Personel.cs" />
     <Compile Include="Entities\PersonelHarcama.cs" />
+    <Compile Include="Entities\Portfoy.cs" />
     <Compile Include="Entities\PortfoyTipi.cs" />
     <Compile Include="Entities\Sozlesme.cs" />
     <Compile Include="Entities\Sube.cs" />

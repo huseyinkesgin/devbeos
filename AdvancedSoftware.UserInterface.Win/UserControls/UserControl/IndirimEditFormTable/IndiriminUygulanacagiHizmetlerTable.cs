@@ -24,7 +24,7 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.UserControl.IndirimEdi
 
         protected override void Listele()
         {
-            tablo.GridControl.DataSource = ((IndiriminUygulanacagiHizmetBilgileriBll)Bll).List(x => x.IndirimId == OwnerForm.Id);//.ToBindingList<IndiriminUygulanacagiHizmetBilgileriL>();
+            tablo.GridControl.DataSource = ((IndiriminUygulanacagiHizmetBilgileriBll)Bll).List(x => x.IndirimId == OwnerForm.Id).ToBindingList<IndiriminUygulanacagiHizmetBilgileriL>();
         }
 
         protected override void HareketEkle()
@@ -52,6 +52,7 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.UserControl.IndirimEdi
                 source.Add(row);
             }
 
+
             tablo.Focus();
             tablo.RefreshDataSource();
             tablo.FocusedRowHandle = tablo.DataRowCount -1;
@@ -64,6 +65,7 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.UserControl.IndirimEdi
         protected internal override bool HataliGiris()
         {
             return base.HataliGiris();
+
         }
     }
 }

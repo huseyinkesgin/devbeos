@@ -127,6 +127,9 @@ namespace AdvancedSoftware.Common.Enums
         [Description("INDIRIM KARTI")]
         Indirim = 41,
 
+        [Description("PORTFOY KARTI")]
+        Portfoy = 42,
+
 
 
 
