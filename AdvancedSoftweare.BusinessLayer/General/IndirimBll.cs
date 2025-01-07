@@ -12,7 +12,7 @@ using System.Linq;
 
 namespace AdvancedSoftweare.BusinessLayer.General
 {
-    public class IndirimBll : BaseGenelBll<Indirim>, IBaseGenelBll, IBaseCommonBll
+    public class IndirimBll : BaseGenelBll<Indirim>,  IBaseCommonBll
     {
         public IndirimBll() : base(KartTuru.Indirim) { }
 

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AdavancedSoftware.Model.Entities
 {
-    [NotMapped]
+   
     public class IndiriminUygulanacagiHizmetBilgileri : BaseHareketEntity
     {
         public long IndirimId { get; set; }
