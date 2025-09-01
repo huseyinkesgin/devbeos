@@ -27,6 +27,8 @@ namespace AdavancedSoftware.Model.Entities
 
         public OzelKod OzelKod1 { get; set; }
         public OzelKod OzelKod2 { get; set; }
+        [InverseProperty("Banka")]
+        public ICollection<BankaSube> BankaSube { get; set; }
 
     }
 }

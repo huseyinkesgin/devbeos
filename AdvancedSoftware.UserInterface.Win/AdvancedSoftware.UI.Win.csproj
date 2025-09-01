@@ -360,6 +360,12 @@
     <Compile Include="Forms\MahalleForms\MahalleListForm.Designer.cs">
       <DependentUpon>MahalleListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\MalSahibiForms\MalSahibiEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MalSahibiForms\MalSahibiEditForm.Designer.cs">
+      <DependentUpon>MalSahibiEditForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MarkaForms\MarkaEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -824,6 +830,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MahalleForms\MahalleListForm.resx">
       <DependentUpon>MahalleListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MalSahibiForms\MalSahibiEditForm.resx">
+      <DependentUpon>MalSahibiEditForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MarkaForms\MarkaEditForm.resx">
       <DependentUpon>MarkaEditForm.cs</DependentUpon>

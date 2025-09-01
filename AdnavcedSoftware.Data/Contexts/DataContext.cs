@@ -25,6 +25,12 @@ namespace AdnavcedSoftware.Data.Contexts
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
             modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();
+
+            modelBuilder.Entity<Il>().HasMany(x => x.Ilce).WithRequired(x => x.Il).WillCascadeOnDelete(true);
+            modelBuilder.Entity<Ilce>().HasMany(x => x.Mahalle).WithRequired(x => x.Ilce).WillCascadeOnDelete(true);
+            modelBuilder.Entity<Banka>().HasMany(x => x.BankaSube).WithRequired(x => x.Banka).WillCascadeOnDelete(true);
+            modelBuilder.Entity<Indirim>().HasMany(x => x.IndiriminUygulanacagiHizmetBilgileri).WithRequired(x => x.Indirim).WillCascadeOnDelete(true);
+            modelBuilder.Entity<Marka>().HasMany(x => x.Model).WithRequired(x => x.Marka).WillCascadeOnDelete(true);
         }
 
         public DbSet<Il> Il { get; set; }

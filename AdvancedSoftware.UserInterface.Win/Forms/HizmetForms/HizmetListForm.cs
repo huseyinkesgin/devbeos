@@ -34,7 +34,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.HizmetForms
 
             }
 
-            _filter = x => !ListeDisiTutulacakKayitlar.Contains(x.Id) && x.Durum == AktifKartlariGoster && x.SubeId == AnaForm.SubeId;
+            _filter = x => !ListeDisiTutulacakKayitlar.Contains(x.Id) &&  x.SubeId == AnaForm.SubeId;
         }
 
 

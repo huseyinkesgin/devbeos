@@ -16,7 +16,7 @@ using System.Windows.Forms;
 
 namespace AdvancedSoftweare.BusinessLayer.Base
 {
-    public class BaseHareketBll<T, TContext> : IBaseBll where T : BaseHareketEntity where TContext : DbContext
+    public class BaseHareketBll<T, TContext> : IBaseBll, IBaseHareketGenelBll where T : BaseHareketEntity where TContext : DbContext
     {
         #region Veriables
 
@@ -32,7 +32,7 @@ namespace AdvancedSoftweare.BusinessLayer.Base
             return _uow.Rep.Select(filter, selector);
         }
 
-        protected bool Insert(IList<BaseHareketEntity> entities)
+        public bool Insert(IList<BaseHareketEntity> entities)
         {
             GeneralFunctions.CreateUnitOfWork<T, TContext>(ref _uow);
 
@@ -40,7 +40,7 @@ namespace AdvancedSoftweare.BusinessLayer.Base
             return _uow.Save();
         }
 
-        protected bool Update(IList<BaseHareketEntity> entities)
+        public bool Update(IList<BaseHareketEntity> entities)
         {
             GeneralFunctions.CreateUnitOfWork<T, TContext>(ref _uow);
            
@@ -48,7 +48,7 @@ namespace AdvancedSoftweare.BusinessLayer.Base
             return _uow.Save();
         }
 
-        protected bool Delete(IList<BaseHareketEntity> entities)
+        public bool Delete(IList<BaseHareketEntity> entities)
         {
             GeneralFunctions.CreateUnitOfWork<T, TContext>(ref _uow);
 

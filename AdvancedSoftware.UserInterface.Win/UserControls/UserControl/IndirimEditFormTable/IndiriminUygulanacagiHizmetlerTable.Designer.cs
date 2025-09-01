@@ -89,9 +89,9 @@
             this.tablo.OptionsView.RowAutoHeight = true;
             this.tablo.OptionsView.ShowGroupPanel = false;
             this.tablo.OptionsView.ShowViewCaption = true;
-            this.tablo.StatusBarAciklama = null;
-            this.tablo.StatusBarKisaYol = null;
-            this.tablo.StatusBarKisaYolAciklama = null;
+            this.tablo.StatusBarAciklama = "Bu indirimin uygulanacağı hizmet kartlarını seçiniz";
+            this.tablo.StatusBarKisaYol = "Shift+Insert";
+            this.tablo.StatusBarKisaYolAciklama = "Hizmet Kartı Ekle";
             this.tablo.ViewCaption = "İNDİRİMİN UYGULANACAĞI HİZMETLER";
             // 
             // colHizmetAdi
@@ -119,9 +119,9 @@
             this.colIndirimTutari.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.False;
             this.colIndirimTutari.OptionsFilter.AllowAutoFilter = false;
             this.colIndirimTutari.OptionsFilter.AllowFilter = false;
-            this.colIndirimTutari.StatusBarAciklama = null;
-            this.colIndirimTutari.StatusBarKisaYol = null;
-            this.colIndirimTutari.StatusBarKisaYolAciklama = null;
+            this.colIndirimTutari.StatusBarAciklama = "İndirim Tutarı giriniz";
+            this.colIndirimTutari.StatusBarKisaYol = "F4 :";
+            this.colIndirimTutari.StatusBarKisaYolAciklama = "Hesap Makinesi";
             this.colIndirimTutari.Visible = true;
             this.colIndirimTutari.VisibleIndex = 1;
             this.colIndirimTutari.Width = 123;
@@ -149,7 +149,7 @@
             this.colIndirimOrani.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.False;
             this.colIndirimOrani.OptionsFilter.AllowAutoFilter = false;
             this.colIndirimOrani.OptionsFilter.AllowFilter = false;
-            this.colIndirimOrani.StatusBarAciklama = null;
+            this.colIndirimOrani.StatusBarAciklama = "İndirim Oranını Giriniz";
             this.colIndirimOrani.StatusBarKisaYol = null;
             this.colIndirimOrani.StatusBarKisaYolAciklama = null;
             this.colIndirimOrani.Visible = true;
@@ -161,11 +161,16 @@
             this.repositoryOran.AutoHeight = false;
             this.repositoryOran.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryOran.DisplayFormat.FormatString = "n0";
+            this.repositoryOran.DisplayFormat.FormatString = "P";
             this.repositoryOran.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.repositoryOran.EditFormat.FormatString = "n0";
+            this.repositoryOran.EditFormat.FormatString = "P";
             this.repositoryOran.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.repositoryOran.MaskSettings.Set("mask", "n0");
+            this.repositoryOran.MaskSettings.Set("mask", "P");
+            this.repositoryOran.MaxValue = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
             this.repositoryOran.Name = "repositoryOran";
             this.repositoryOran.UseMaskAsDisplayFormat = true;
             // 

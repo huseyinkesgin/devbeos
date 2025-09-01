@@ -69,7 +69,7 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.UserControl.Base
             SablonYukle();
             Listele();
             ButonGizleGoster();
-            //Tablo_LostFocus(Tablo, EventArgs.Empty);
+            Tablo_LostFocus(Tablo, EventArgs.Empty);
         }
         private void SablonKaydet()
         {
@@ -136,15 +136,14 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.UserControl.Base
             {
                 HareketSil();
             }
-            //if (e.Button == addUptNavigator.Navigator.Buttons.Append || e.Button == addUptNavigator.Navigator.Buttons.Remove)
-            //    e.Handled = true;
+            if (e.Button == addUptNavigator.Navigator.Buttons.Append || e.Button == addUptNavigator.Navigator.Buttons.Remove)
+                e.Handled = true;
 
         }
 
         private void Tablo_CellValueChanged(object sender, CellValueChangedEventArgs e)
         {
-            if (_isLoaded)
-                return;
+            if (!_isLoaded) return;
 
             var entity = Tablo.GetRow<IBaseHareketEntity>();
 
@@ -223,13 +222,13 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.UserControl.Base
                 OwnerForm.statusBarKisaYol.Visibility = BarItemVisibility.Always;
                 OwnerForm.statusBarKisaYolAciklama.Visibility = BarItemVisibility.Always;
 
-                OwnerForm.statusBarAciklama.Caption = ((IStatusBarAciklama)sender).StatusBarAciklama;
-                OwnerForm.statusBarKisaYol.Caption = ((IStatusBarKisaYol)sender).StatusBarKisaYol;
-                OwnerForm.statusBarKisaYolAciklama.Caption = ((IStatusBarKisaYol)sender).StatusBarKisaYolAciklama;
+                OwnerForm.statusBarAciklama.Caption = ((IStatusBarAciklama)e.FocusedColumn).StatusBarAciklama;
+                OwnerForm.statusBarKisaYol.Caption = ((IStatusBarKisaYol)e.FocusedColumn).StatusBarKisaYol;
+                OwnerForm.statusBarKisaYolAciklama.Caption = ((IStatusBarKisaYol)e.FocusedColumn).StatusBarKisaYolAciklama;
             }
 
             else if (((IStatusBarKisaYol)e.FocusedColumn).StatusBarAciklama != null)
-                OwnerForm.statusBarKisaYolAciklama.Caption = ((IStatusBarKisaYol)sender).StatusBarKisaYolAciklama;
+                OwnerForm.statusBarAciklama.Caption = ((IStatusBarKisaYol)e.FocusedColumn).StatusBarAciklama;
 
         }
 
@@ -244,6 +243,8 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.UserControl.Base
 
         protected internal bool Kaydet()
         {
+            addUptNavigator.Navigator.Buttons.DoClick(addUptNavigator.Navigator.Buttons.EndEdit);
+
             var source = Tablo.DataController.ListSource;
 
             var insert = source.Cast<IBaseHareketEntity>().Where(x => x.Insert && !x.Delete).Cast<BaseHareketEntity>().ToList();

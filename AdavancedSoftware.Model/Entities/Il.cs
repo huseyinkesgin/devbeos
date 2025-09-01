@@ -1,5 +1,6 @@
 ﻿using AdavancedSoftware.Model.Attributes;
 using AdavancedSoftware.Model.Entities.Base;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -15,5 +16,8 @@ namespace AdavancedSoftware.Model.Entities
 
         [StringLength(500)]
         public string Aciklama { get; set; }
+
+        [InverseProperty("Il")]
+        public ICollection<Ilce> Ilce { get; set; }
     }
 }

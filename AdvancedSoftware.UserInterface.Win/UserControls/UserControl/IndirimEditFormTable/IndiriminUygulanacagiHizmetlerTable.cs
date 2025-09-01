@@ -1,5 +1,6 @@
 ﻿using AdavancedSoftware.Model.Dto;
 using AdvancedSoftware.Common.Enums;
+using AdvancedSoftware.Common.Messages;
 using AdvancedSoftware.UserInterface.Win.Forms.HizmetForms;
 using AdvancedSoftware.UserInterface.Win.Functions;
 using AdvancedSoftware.UserInterface.Win.GenelForms;
@@ -32,7 +33,7 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.UserControl.IndirimEdi
             var source = tablo.DataController.ListSource;
             ListeDisiTutulacakKayitlar = source.Cast<IndiriminUygulanacagiHizmetBilgileriL>().Where(x => !x.Delete).Select(x => x.HizmetId).ToList();
 
-            var entities = ShowListForms<HizmetListForm>.ShowDialogListForm(KartTuru.Hizmet, ListeDisiTutulacakKayitlar, true).EntityListConvert<HizmetL>();
+            var entities = ShowListForms<HizmetListForm>.ShowDialogListForm(KartTuru.Hizmet, ListeDisiTutulacakKayitlar, true,false).EntityListConvert<HizmetL>();
 
             if (entities == null) return;
 
@@ -64,8 +65,22 @@ namespace AdvancedSoftware.UserInterface.Win.UserControls.UserControl.IndirimEdi
 
         protected internal override bool HataliGiris()
         {
-            return base.HataliGiris();
+            if (!TableValueChanged) return false;
 
+            for (int i = 0; i < tablo.DataRowCount; i++)
+            {
+                var entity = tablo.GetRow<IndiriminUygulanacagiHizmetBilgileriL>(i);
+
+                if (entity.IndirimTutari == 0 || entity.IndirimOrani == 0) continue;
+                {
+                    tablo.Focus();
+                    tablo.FocusedRowHandle = i;
+                    Messages.HataMesaji("İndirim Tutarı veya İndirim Oranı alanlarından birininde değeri 0'dan büyük olmalıdır.");
+                    return true;
+                }
+            }
+
+            return false;
         }
     }
 }
