@@ -85,6 +85,7 @@
     <Compile Include="General\PersonelHarcamaBll.cs" />
     <Compile Include="General\PersonelBll.cs" />
     <Compile Include="General\MusteriBll.cs" />
+    <Compile Include="General\MusteriTalepBll.cs" />
     <Compile Include="General\SubeBll.cs" />
     <Compile Include="General\DonemBll.cs" />
     <Compile Include="General\IsitmaBll.cs" />

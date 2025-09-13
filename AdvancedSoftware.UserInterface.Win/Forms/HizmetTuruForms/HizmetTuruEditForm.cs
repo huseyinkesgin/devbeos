@@ -15,7 +15,6 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.HizmetTuruForms
 
             DataLayoutControl = myDataLayoutControl;
             Bll = new HizmetTuruBll(myDataLayoutControl);
-            txtHizmetTipi.Properties.Items.AddRange(EnumFunctions.GetEnumDescriptionList<HizmetTipi>());
             BaseKartTuru = KartTuru.HizmetTuru;
             EventsLoad();
         }
@@ -38,7 +37,6 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.HizmetTuruForms
 
             txtKod.Text = entity.Kod;
             txtHizmetTuruAdi.Text = entity.HizmetTuruAdi;
-            txtHizmetTipi.SelectedItem = entity.HizmetTipi.ToName();
             txtAciklama.Text = entity.Aciklama;
             tglDurum.IsOn = entity.Durum;
         }
@@ -50,7 +48,6 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.HizmetTuruForms
                 Id = Id,
                 Kod = txtKod.Text,
                 HizmetTuruAdi = txtHizmetTuruAdi.Text,
-                HizmetTipi = txtHizmetTipi.Text.GetEnum<HizmetTipi>(),
                 Aciklama = txtAciklama.Text,
                 Durum = tglDurum.IsOn,
             };

@@ -7,6 +7,7 @@ using AdvancedSoftware.UserInterface.Win.Forms.BankaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.BankaSubeForms;
 using AdvancedSoftware.UserInterface.Win.Forms.DepartmanForms;
 using AdvancedSoftware.UserInterface.Win.Forms.FirmaForms;
+using AdvancedSoftware.UserInterface.Win.Forms.HizmetForms;
 using AdvancedSoftware.UserInterface.Win.Forms.HizmetTuruForms;
 using AdvancedSoftware.UserInterface.Win.Forms.IndirimTuruForms;
 using AdvancedSoftware.UserInterface.Win.Forms.IsıtmaForms;
@@ -354,6 +355,28 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
                         {
                             _btnEdit.Id = entity.Id;
                             _btnEdit.EditValue = entity.HizmetTuruAdi;
+                        }
+                    }
+                    break;
+
+                case "txtHizmet":
+                    {
+                        var entity = (Hizmet)ShowListForms<HizmetListForm>.ShowDialogListForm(KartTuru.Hizmet, _btnEdit.Id);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.HizmetAdi;
+                        }
+                    }
+                    break;
+
+                case "txtSorumluPersonel":
+                    {
+                        var entity = (Personel)ShowListForms<PersonelListForm>.ShowDialogListForm(KartTuru.Personel, _btnEdit.Id);
+                        if (entity != null)
+                        {
+                            _btnEdit.Id = entity.Id;
+                            _btnEdit.EditValue = entity.Ad;
                         }
                     }
                     break;

@@ -30,7 +30,6 @@ namespace AdvancedSoftweare.BusinessLayer.General
                 HizmetTuruAdi = x.HizmetTuru.HizmetTuruAdi,
                 BaslangicTarihi = x.BaslangicTarihi,
                 BitisTarihi = x.BitisTarihi,
-                Ucret = x.Ucret,
                 SubeId = x.SubeId,
                 Aciklama = x.Aciklama,
                 Durum = x.Durum,
@@ -47,10 +46,8 @@ namespace AdvancedSoftweare.BusinessLayer.General
                 HizmetAdi = x.HizmetAdi,
                 HizmetTuruId = x.HizmetTuruId,
                 HizmetTuruAdi = x.HizmetTuru.HizmetTuruAdi,
-                HizmetTipi = x.HizmetTuru.HizmetTipi,
                 BaslangicTarihi = x.BaslangicTarihi,
                 BitisTarihi = x.BitisTarihi,
-                Ucret = x.Ucret,
                 Aciklama = x.Aciklama,
             }).OrderBy(x => x.Kod).ToList();
         }

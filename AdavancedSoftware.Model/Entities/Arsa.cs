@@ -25,8 +25,8 @@ namespace AdavancedSoftware.Model.Entities
 
         [Required, StringLength(10), ZorunluAlan("Arsa M²", "txtArsaM2")]
         public decimal ArsaM2 { get; set; }
-        public decimal Emsal { get; set; }
-        public decimal Gabari { get; set; }
+        public long EmsalId { get; set; }
+        public long GabariId { get; set; }
 
         public VarYok? Takas { get; set; } = VarYok.Yok;
         public KrediyeUygunluk KrediyeUygunluk { get; set; } = KrediyeUygunluk.Bilinmiyor;
@@ -53,8 +53,6 @@ namespace AdavancedSoftware.Model.Entities
         public string SahibindenLink { get; set; }
         public string HepsiEmlak { get; set; }
         public string HepsiEmlakLink { get; set; }
-        public string Zingat { get; set; }
-        public string ZingatLink { get; set; }
         public string BuradaYapı { get; set; }
         public string BuradaYapıLink { get; set; }
         public string ArsaBurada { get; set; }
@@ -95,6 +93,8 @@ namespace AdavancedSoftware.Model.Entities
         public Il Il { get; set; }
         public Ilce Ilce { get; set; }
         public Mahalle Mahalle { get; set; }
+        public Emsal Emsal { get; set; }
+        public Gabari Gabari { get; set; }
         public Musteri Musteri { get; set; }
         public Personel Danisman { get; set; }
         public OzelKod OzelKod1 { get; set; }

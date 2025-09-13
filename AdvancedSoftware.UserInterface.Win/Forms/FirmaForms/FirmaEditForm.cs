@@ -26,6 +26,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.FirmaForms
             OldEntity = BaseIslemTuru == IslemTuru.EntityInsert ? new FirmaS() : ((FirmaBll)Bll).Single(FilterFunctions.Filter<Firma>(Id));
             NesneyiKontrollereBagla();
 
+
             if (BaseIslemTuru != IslemTuru.EntityInsert)
                 return;
             Id = BaseIslemTuru.IdOlustur(OldEntity);
@@ -42,7 +43,6 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.FirmaForms
             txtFaturaAdi.Text = entity.FaturaAdi;
             txtVergiDairesi.Text = entity.VergiDairesi;
             txtVergiNo.Text = entity.VergiNo;
-            txtIlce.Text = entity.VergiNo;
             txtMersisNo.Text = entity.MersisNo;
             txtKepAdresi.Text = entity.KepAdresi;
             txtIl.Id = entity.IlId;
@@ -59,7 +59,6 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.FirmaForms
             txtTwitter.Text = entity.Twitter;
             txtInstagram.Text = entity.Instagram;
             txtLinkedin.Text = entity.Linkedin;
-            txtTwitter.Text = entity.Twitter;
             txtVk.Text = entity.VK;
             txtYoutube.Text = entity.Youtube;
             txtTiktok.Text = entity.Tiktok;

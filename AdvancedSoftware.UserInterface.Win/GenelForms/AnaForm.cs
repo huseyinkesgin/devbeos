@@ -20,7 +20,7 @@ using AdvancedSoftware.UserInterface.Win.Forms.KasaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MarkaForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MusteriBilgiForms;
 using AdvancedSoftware.UserInterface.Win.Forms.MusteriForms;
-using AdvancedSoftware.UserInterface.Win.Forms.MusteriGrupForms;
+using AdvancedSoftware.UserInterface.Win.Forms.MusteriTalepForms;
 using AdvancedSoftware.UserInterface.Win.Forms.OdemeTuru;
 using AdvancedSoftware.UserInterface.Win.Forms.OfisForms;
 using AdvancedSoftware.UserInterface.Win.Forms.PersonelForms;
@@ -131,6 +131,8 @@ namespace AdvancedSoftware.UserInterface.Win.GenelForms
                 ShowListForms<IndirimTuruListForm>.ShowListForm(KartTuru.IndirimTuru);
             if (e.Item == btnIndirim)
                 ShowListForms<IndirimListForm>.ShowListForm(KartTuru.Indirim);
+            if (e.Item == btnMusteriTalep)
+                ShowListForms<MusteriTalepListForm>.ShowListForm(KartTuru.MusteriTalep);
             {
                 
             }

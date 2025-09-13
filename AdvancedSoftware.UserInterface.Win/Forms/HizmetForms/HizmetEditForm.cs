@@ -46,7 +46,6 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.HizmetForms
             txtHizmetTuru.Text = entity.HizmetTuruAdi;
             txtBaslangicTarihi.DateTime = entity.BaslangicTarihi;
             txtBitisTarihi.DateTime = entity.BitisTarihi;
-            txtUcret.Value = entity.Ucret;
             txtAciklama.Text = entity.Aciklama;
             tglDurum.IsOn = entity.Durum;
         }
@@ -61,7 +60,6 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.HizmetForms
                 HizmetTuruId =Convert.ToInt64(txtHizmetTuru.Id),
                 BaslangicTarihi = txtBaslangicTarihi.DateTime.Date,
                 BitisTarihi = txtBitisTarihi.DateTime.Date,
-                Ucret = txtUcret.Value,
                 SubeId = AnaForm.SubeId,
                 Aciklama = txtAciklama.Text,
                 Durum = tglDurum.IsOn,

@@ -16,6 +16,8 @@ using DevExpress.XtraGrid.Views.Grid;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Menu;
+using BarItem = DevExpress.XtraBars.BarItem;
 
 namespace AdvancedSoftware.UserInterface.Win.Forms.BaseForms
 {

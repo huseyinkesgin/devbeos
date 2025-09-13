@@ -15,7 +15,7 @@ namespace AdavancedSoftware.Model.Entities
         public string HizmetTuruAdi { get; set; }
 
       
-        public HizmetTipi HizmetTipi { get; set; } = HizmetTipi.Kiralik;
+        //public HizmetTipi HizmetTipi { get; set; } = HizmetTipi.Telefon;
 
         [StringLength(500)]
         public string Aciklama { get; set; }

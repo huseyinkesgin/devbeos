@@ -7,6 +7,7 @@ using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraPrinting;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 using System.Xml;
@@ -137,83 +138,114 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
             if (Messages.TabloExportMesaj(dosyaFormati) != DialogResult.Yes)
                 return;
 
-            if (!Directory.Exists(Application.StartupPath + @"Temp"))
-                Directory.CreateDirectory(Application.StartupPath + @"\Temp");
+            // İndirilenler klasörünü kullan
+            var indirilenlerKlasoru = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads");
 
-            var dosyaAdi = Guid.NewGuid().ToString();
-            var filePath = $@"{Application.StartupPath}\Temp\{dosyaAdi}";
+            if (!Directory.Exists(indirilenlerKlasoru))
+                Directory.CreateDirectory(indirilenlerKlasoru);
 
-            switch (dosyaTuru)
+            var dosyaAdi = $"Export_{DateTime.Now:yyyyMMdd_HHmmss}";
+            var filePath = Path.Combine(indirilenlerKlasoru, dosyaAdi);
+
+            try
             {
-                case DosyaTuru.ExcelStandart:
+                switch (dosyaTuru)
                 {
-                    var opt = new XlsxExportOptionsEx
+                    case DosyaTuru.ExcelStandart:
+                        {
+                            var opt = new XlsxExportOptionsEx
+                            {
+                                ExportType = DevExpress.Export.ExportType.Default,
+                                SheetName = excelSayfaAdi,
+                                TextExportMode = TextExportMode.Text,
+                            };
+
+                            filePath = filePath + ".xlsx";
+                            tablo.ExportToXlsx(filePath, opt);
+                        }
+                        break;
+
+                    case DosyaTuru.ExcelFormatli:
+                        {
+                            var opt = new XlsxExportOptionsEx
+                            {
+                                ExportType = DevExpress.Export.ExportType.WYSIWYG,
+                                SheetName = excelSayfaAdi,
+                                TextExportMode = TextExportMode.Text,
+                            };
+
+                            filePath = filePath + ".xlsx";
+                            tablo.ExportToXlsx(filePath, opt);
+                        }
+                        break;
+
+                    case DosyaTuru.ExcelFormatsiz:
+                        {
+                            var opt = new CsvExportOptionsEx
+                            {
+                                ExportType = DevExpress.Export.ExportType.WYSIWYG,
+                                TextExportMode = TextExportMode.Text,
+                            };
+                            filePath = filePath + ".csv";
+                            tablo.ExportToCsv(filePath, opt);
+                        }
+                        break;
+
+                    case DosyaTuru.WordDosyasi:
+                        {
+                            filePath = filePath + ".rtf";
+                            tablo.ExportToRtf(filePath);
+                        }
+                        break;
+
+                    case DosyaTuru.PdfDosyasi:
+                        {
+                            filePath = filePath + ".pdf";
+                            tablo.ExportToPdf(filePath);
+                        }
+                        break;
+
+                    case DosyaTuru.TxtDosyasi:
+                        {
+                            var opt = new TextExportOptions
+                            {
+                                TextExportMode = TextExportMode.Text,
+                            };
+
+                            filePath = filePath + ".txt";
+                            tablo.ExportToText(filePath);
+                        }
+                        break;
+                }
+
+                // Dosya başarıyla oluşturulduktan sonra kullanıcıya sor ve aç
+                if (File.Exists(filePath))
+                {
+                    var result = MessageBox.Show(
+                        $"Dosya başarıyla kaydedildi:\n{filePath}\n\nDosyayı açmak ister misiniz?",
+                        "Export Başarılı",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Information);
+
+                    if (result == DialogResult.Yes)
                     {
-                        ExportType = DevExpress.Export.ExportType.Default,
-                        SheetName = excelSayfaAdi,
-                        TextExportMode = TextExportMode.Text,
-                    };
-
-                    filePath = filePath + ".Xlsx";
-                    tablo.ExportToXlsx(filePath, opt);
+                        try
+                        {
+                            Process.Start(filePath);
+                        }
+                        catch (Exception ex)
+                        {
+                            // Dosya açılamazsa klasörü aç
+                            MessageBox.Show($"Dosya açılamadı: {ex.Message}\nKlasör açılıyor...", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            Process.Start("explorer.exe", $"/select,\"{filePath}\"");
+                        }
+                    }
                 }
-                break;
-
-                case DosyaTuru.ExcelFormatli:
-                {
-                    var opt = new XlsxExportOptionsEx
-                    {
-                        ExportType = DevExpress.Export.ExportType.WYSIWYG,
-                        SheetName = excelSayfaAdi,
-                        TextExportMode = TextExportMode.Text,
-                    };
-
-                    filePath = filePath + ".Xlsx";
-                    tablo.ExportToXlsx(filePath, opt);
-                }
-                break;
-
-                case DosyaTuru.ExcelFormatsiz:
-                {
-                    var opt = new CsvExportOptionsEx
-                    {
-                        ExportType = DevExpress.Export.ExportType.WYSIWYG,
-                        TextExportMode = TextExportMode.Text,
-                    };
-                    filePath = filePath + ".Csv";
-                    tablo.ExportToCsv(filePath, opt);
-                }
-                break;
-
-                case DosyaTuru.WordDosyasi:
-                {
-                    filePath = filePath + ".Rtf";
-                    tablo.ExportToRtf(filePath);
-                };
-                break;
-
-                case DosyaTuru.PdfDosyasi:
-                {
-                    filePath = filePath + ".Pdf";
-                    tablo.ExportToPdf(filePath);
-                }
-                break;
-
-                case DosyaTuru.TxtDosyasi:
-                {
-                    var opt = new TextExportOptions
-                    {
-                        TextExportMode = TextExportMode.Text,
-                    };
-
-                    filePath = filePath + ".Txt";
-                    tablo.ExportToText(filePath);
-                }
-                break;
-
-
             }
-
+            catch (Exception ex)
+            {
+                Messages.HataMesaji($"Export işlemi sırasında hata oluştu: {ex.Message}");
+            }
         }
-    }   
+    }
 }

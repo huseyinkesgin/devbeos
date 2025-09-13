@@ -18,11 +18,9 @@ namespace AdavancedSoftware.Model.Dto
         public string HizmetAdi { get; set; }
         public long HizmetTuruId { get; set; }
         public string HizmetTuruAdi { get; set; }
-        public HizmetTipi HizmetTipi { get; set; }
         public DateTime BaslangicTarihi { get; set; }
         public DateTime BitisTarihi { get; set; }
       
-        public decimal Ucret { get; set; }
         public string Aciklama { get; set; }
     }
 }

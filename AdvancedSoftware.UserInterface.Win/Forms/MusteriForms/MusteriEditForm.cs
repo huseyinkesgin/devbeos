@@ -45,6 +45,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.MusteriForms
             txtKategori.Text = entity.KategoriAdi;
             txtAd.Text = entity.Ad;
             txtSoyad.Text = entity.Soyad;
+            txtTcKimlikNo.Text = entity.TcKimlikNo;
             txtEposta.Text = entity.Eposta;
             txtTelefon.Text = entity.Telefon;
             txtIl.Id = entity.IlId;
@@ -88,6 +89,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.MusteriForms
                 KategoriId = txtKategori.Id,
                 Ad = txtAd.Text,
                 Soyad = txtSoyad.Text,
+                TcKimlikNo = txtTcKimlikNo.Text,
                 Eposta = txtEposta.Text,
                 Telefon = txtTelefon.Text,
                 IlId = Convert.ToInt64(txtIl.Id),
@@ -155,7 +157,9 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.MusteriForms
 
         protected override void Control_EnabledChange(object sender, EventArgs e)
         {
-            if(!IsLoaded) return;
+
+            if (!IsLoaded)
+                return;
             if (sender != txtIl)
                 return;
             txtIl.ControlEnabledChange(txtIlce);

@@ -84,6 +84,9 @@ namespace AdvancedSoftware.DataAccessLayer.Base
 
         public IQueryable<TResult> Select<TResult>(Expression<Func<T, bool>> filter, Expression<Func<T, TResult>> selector)
         {
+            if (selector == null)
+                throw new ArgumentNullException(nameof(selector));
+                
             return filter == null ? _dbSet.Select(selector) : _dbSet.Where(filter).Select(selector);
         }
         #endregion

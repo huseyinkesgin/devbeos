@@ -27,6 +27,7 @@ namespace AdavancedSoftware.Model.Dto
         public string Ad { get; set; }
         public string Soyad { get; set; }
         public string Eposta { get; set; }
+        public string TcKimlikNo { get; set; }
         public string Telefon { get; set; }
         public string IlAdi { get; set; }
         public string IlceAdi { get; set; }

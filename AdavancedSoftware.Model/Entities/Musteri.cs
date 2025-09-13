@@ -17,7 +17,6 @@ namespace AdavancedSoftware.Model.Entities
         public override string Kod { get; set; }
 
         public MusteriTuru MusteriTuru { get; set; } = MusteriTuru.Bireysel;
-
         
         public long? KategoriId { get; set; }
 
@@ -25,6 +24,7 @@ namespace AdavancedSoftware.Model.Entities
         public string Ad { get; set; }
         [Required, StringLength(50), ZorunluAlan("Müşteri Soyadi", "txtSoyad")]
         public string Soyad { get; set; }
+        public string TcKimlikNo { get; set; }
         public string Eposta { get; set; }
         public string Telefon { get; set; }
 

@@ -64,6 +64,8 @@
             this.btnPersonelHarcama = new DevExpress.XtraBars.BarButtonItem();
             this.btnHizmetTuru = new DevExpress.XtraBars.BarButtonItem();
             this.btnHizmet = new DevExpress.XtraBars.BarButtonItem();
+            this.btnIndirimTuru = new DevExpress.XtraBars.BarButtonItem();
+            this.btnIndirim = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageOfis = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -81,15 +83,15 @@
             this.ribbonPageDiger = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageRaporlar = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.btnKargoFirmasi = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.btnIndirimTuru = new DevExpress.XtraBars.BarButtonItem();
-            this.btnIndirim = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.btnMusteriTalep = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).BeginInit();
             this.SuspendLayout();
@@ -134,9 +136,10 @@
             this.btnHizmetTuru,
             this.btnHizmet,
             this.btnIndirimTuru,
-            this.btnIndirim});
+            this.btnIndirim,
+            this.btnMusteriTalep});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 47;
+            this.ribbonControl.MaxItemId = 48;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPageOfis,
@@ -395,6 +398,18 @@
             this.btnHizmet.Id = 44;
             this.btnHizmet.Name = "btnHizmet";
             // 
+            // btnIndirimTuru
+            // 
+            this.btnIndirimTuru.Caption = "İndirim Türü";
+            this.btnIndirimTuru.Id = 45;
+            this.btnIndirimTuru.Name = "btnIndirimTuru";
+            // 
+            // btnIndirim
+            // 
+            this.btnIndirim.Caption = "İndirim Listesi";
+            this.btnIndirim.Id = 46;
+            this.btnIndirim.Name = "btnIndirim";
+            // 
             // ribbonPageOfis
             // 
             this.ribbonPageOfis.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -485,7 +500,8 @@
             // ribbonPageMusteri
             // 
             this.ribbonPageMusteri.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup7});
+            this.ribbonPageGroup7,
+            this.ribbonPageGroup15});
             this.ribbonPageMusteri.Name = "ribbonPageMusteri";
             this.ribbonPageMusteri.Text = "MÜSTERİ";
             // 
@@ -517,6 +533,13 @@
             this.ribbonPageGroup10.ItemLinks.Add(this.btnHizmetTuru);
             this.ribbonPageGroup10.ItemLinks.Add(this.btnHizmet);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
+            // 
+            // ribbonPageGroup14
+            // 
+            this.ribbonPageGroup14.ItemLinks.Add(this.btnIndirimTuru);
+            this.ribbonPageGroup14.ItemLinks.Add(this.btnIndirim);
+            this.ribbonPageGroup14.Name = "ribbonPageGroup14";
+            this.ribbonPageGroup14.Text = "ribbonPageGroup14";
             // 
             // ribbonPageRaporlar
             // 
@@ -552,24 +575,19 @@
             this.btnKargoFirmasi.Id = 1;
             this.btnKargoFirmasi.Name = "btnKargoFirmasi";
             // 
-            // ribbonPageGroup14
+            // ribbonPageGroup15
             // 
-            this.ribbonPageGroup14.ItemLinks.Add(this.btnIndirimTuru);
-            this.ribbonPageGroup14.ItemLinks.Add(this.btnIndirim);
-            this.ribbonPageGroup14.Name = "ribbonPageGroup14";
-            this.ribbonPageGroup14.Text = "ribbonPageGroup14";
+            this.ribbonPageGroup15.ItemLinks.Add(this.btnMusteriTalep);
+            this.ribbonPageGroup15.Name = "ribbonPageGroup15";
+            this.ribbonPageGroup15.Text = "ribbonPageGroup15";
             // 
-            // btnIndirimTuru
+            // btnMusteriTalep
             // 
-            this.btnIndirimTuru.Caption = "İndirim Türü";
-            this.btnIndirimTuru.Id = 45;
-            this.btnIndirimTuru.Name = "btnIndirimTuru";
-            // 
-            // btnIndirim
-            // 
-            this.btnIndirim.Caption = "İndirim Listesi";
-            this.btnIndirim.Id = 46;
-            this.btnIndirim.Name = "btnIndirim";
+            this.btnMusteriTalep.Caption = "Müsteri Talep";
+            this.btnMusteriTalep.Id = 47;
+            this.btnMusteriTalep.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
+            this.btnMusteriTalep.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.LargeImage")));
+            this.btnMusteriTalep.Name = "btnMusteriTalep";
             // 
             // AnaForm
             // 
@@ -653,5 +671,7 @@
         private DevExpress.XtraBars.BarButtonItem btnIndirimTuru;
         private DevExpress.XtraBars.BarButtonItem btnIndirim;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup14;
+        private DevExpress.XtraBars.BarButtonItem btnMusteriTalep;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup15;
     }
 }

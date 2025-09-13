@@ -12,7 +12,7 @@ namespace AdavancedSoftware.Model.Entities
         [Index("IX_Kod", IsUnique = true)]
         public override string Kod { get; set; }
 
-        [Required, StringLength(50), ZorunluAlan("Araç Plaka", "txtAracPlaka")]
+        [Required, StringLength(50), ZorunluAlan("Araç Plaka", "txtPlakaNo")]
         public string PlakaNo { get; set; }
         public DateTime IlkTescilTarihi { get; set; } = DateTime.Now;
         public string TescilSiraNo { get; set; }

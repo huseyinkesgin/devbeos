@@ -64,10 +64,12 @@
     <Compile Include="Dto\IndiriminUygulanacagiHizmetBilgileriDto.cs" />
     <Compile Include="Dto\IsyeriDto.cs" />
     <Compile Include="Dto\KasaDto.cs" />
+    <Compile Include="Dto\MusterininHizmetleriDto.cs" />
     <Compile Include="Dto\PortfoyDto.cs" />
     <Compile Include="Dto\YakitHarcamaDto.cs" />
     <Compile Include="Dto\PersonelDto.cs" />
     <Compile Include="Dto\MusteriDto.cs" />
+    <Compile Include="Dto\MusteriTalepDto.cs" />
     <Compile Include="Dto\OfisDto.cs" />
     <Compile Include="Dto\PersonelHarcamaDto.cs" />
     <Compile Include="Entities\Altyapi.cs" />
@@ -109,6 +111,8 @@
     <Compile Include="Entities\Marka.cs" />
     <Compile Include="Entities\Musteri.cs" />
     <Compile Include="Entities\MusteriBilgi.cs" />
+    <Compile Include="Entities\MusterininHizmetleri.cs" />
+    <Compile Include="Entities\MusteriTalep.cs" />
     <Compile Include="Entities\Kategori.cs" />
     <Compile Include="Entities\OdemeMetodu.cs" />
     <Compile Include="Entities\Ofis.cs" />

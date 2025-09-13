@@ -1,12 +1,13 @@
-﻿using AdavancedSoftware.Model.Attributes;
-using AdavancedSoftware.Model.Entities.Base;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using AdavancedSoftware.Model.Entities.Base;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using AdvancedSoftware.Common.Enums;
+using AdavancedSoftware.Model.Attributes;
 
 namespace AdavancedSoftware.Model.Entities
 {
-    public class Kategori : BaseEntity
+    public class Kategori : BaseEntityDurum
     {
         [Index("IX_Kod", IsUnique = false)]
         public override string Kod { get; set; }

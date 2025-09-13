@@ -35,7 +35,6 @@
             this.colId = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colKod = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colHizmetTuruAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
-            this.colHizmetTipi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colAciklama = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
@@ -95,7 +94,6 @@
             this.colId,
             this.colKod,
             this.colHizmetTuruAdi,
-            this.colHizmetTipi,
             this.colAciklama});
             this.tablo.GridControl = this.grid;
             this.tablo.Name = "tablo";
@@ -155,19 +153,6 @@
             this.colHizmetTuruAdi.VisibleIndex = 1;
             this.colHizmetTuruAdi.Width = 169;
             // 
-            // colHizmetTipi
-            // 
-            this.colHizmetTipi.Caption = "Hizmet Tipi";
-            this.colHizmetTipi.FieldName = "HizmetTipi";
-            this.colHizmetTipi.Name = "colHizmetTipi";
-            this.colHizmetTipi.OptionsColumn.AllowEdit = false;
-            this.colHizmetTipi.StatusBarAciklama = null;
-            this.colHizmetTipi.StatusBarKisaYol = null;
-            this.colHizmetTipi.StatusBarKisaYolAciklama = null;
-            this.colHizmetTipi.Visible = true;
-            this.colHizmetTipi.VisibleIndex = 2;
-            this.colHizmetTipi.Width = 146;
-            // 
             // colAciklama
             // 
             this.colAciklama.Caption = "Açıklama";
@@ -178,7 +163,7 @@
             this.colAciklama.StatusBarKisaYol = null;
             this.colAciklama.StatusBarKisaYolAciklama = null;
             this.colAciklama.Visible = true;
-            this.colAciklama.VisibleIndex = 3;
+            this.colAciklama.VisibleIndex = 2;
             this.colAciklama.Width = 285;
             // 
             // HizmetTuruListForm
@@ -210,7 +195,6 @@
         private UserControls.Controls.Grid.MyGridColumn colId;
         private UserControls.Controls.Grid.MyGridColumn colKod;
         private UserControls.Controls.Grid.MyGridColumn colHizmetTuruAdi;
-        private UserControls.Controls.Grid.MyGridColumn colHizmetTipi;
         private UserControls.Controls.Grid.MyGridColumn colAciklama;
     }
 }

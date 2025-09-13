@@ -2,7 +2,7 @@
 
 namespace AdvancedSoftware.Common.Enums
 {
-    public enum KartTuru: byte
+    public enum KartTuru : byte
     {
         [Description("IL KARTI")]
         Il = 1,
@@ -129,6 +129,9 @@ namespace AdvancedSoftware.Common.Enums
 
         [Description("PORTFOY KARTI")]
         Portfoy = 42,
+
+        [Description("MUSTERI TALEP KARTI")]
+        MusteriTalep = 43,
 
 
 

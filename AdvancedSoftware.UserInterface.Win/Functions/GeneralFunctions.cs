@@ -71,6 +71,8 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
                 else if (!currentValue.Equals(oldValue))
                     return VeriDegisimYeri.Alan;
             }
+
+
             return VeriDegisimYeri.VeriDegisimiYok;
         }
 
@@ -147,11 +149,13 @@ namespace AdvancedSoftware.UserInterface.Win.Functions
         {
             switch (prmEdit)
             {
-
                 case MyButtonEdit edt:
                     edt.Enabled = baseEdit.Id.HasValue && baseEdit.Id > 0;
-                    edt.Id = null;
-                    edt.EditValue = null;
+                    if (!edt.Enabled)
+                    {
+                        edt.Id = null;
+                        edt.EditValue = null;
+                    }
                     break;
             }
         }

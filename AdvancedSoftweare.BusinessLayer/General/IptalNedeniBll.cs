@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace AdvancedSoftweare.BusinessLayer.General
 {
-    public class IptalNedeniBll : BaseGenelBll<IptalNedeni>, IBaseGenelBll, IBaseCommonBll
+    public class IptalNedeniBll : BaseGenelBll<AdavancedSoftware.Model.Entities.IptalNedeni>, IBaseGenelBll, IBaseCommonBll
     {
         public IptalNedeniBll() : base(KartTuru.IptalNedeni) { }
 

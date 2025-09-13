@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace AdvancedSoftweare.BusinessLayer.General
 {
-    public class KategoriBll : BaseGenelBll<Kategori>, IBaseGenelBll, IBaseCommonBll
+    public class KategoriBll : BaseGenelBll<Kategori>, IBaseCommonBll
     {
         public KategoriBll():base(KartTuru.Kategori) { }
 

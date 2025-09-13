@@ -23,8 +23,6 @@ namespace AdavancedSoftware.Model.Entities
         [Column(TypeName = "date")]
         public DateTime BitisTarihi { get; set; } = DateTime.Now;
 
-        [Column(TypeName = "money")]
-        public decimal Ucret { get; set; } = 0;
 
         [StringLength(500)]
         public string Aciklama { get; set; }

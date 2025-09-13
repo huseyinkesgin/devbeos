@@ -27,7 +27,7 @@ namespace AdvancedSoftware.Common.Enums
         SitAlanı = 8,
         [Description("TURİSTİK TESİS ALANI")]
         TuristikTesis = 9,
-        [Description("DİĞER")]
+        [Description("DİĞER TARIM")]
         Diger = 10
 
     }

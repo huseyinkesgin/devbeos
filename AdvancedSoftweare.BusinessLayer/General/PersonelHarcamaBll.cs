@@ -15,7 +15,7 @@ namespace AdvancedSoftweare.BusinessLayer.General
 {
     public class PersonelHarcamaBll : BaseGenelBll<PersonelHarcama>, IBaseGenelBll, IBaseCommonBll
     {
-        public PersonelHarcamaBll(): base(KartTuru.PersonelHarcama) { }
+        public PersonelHarcamaBll() : base(KartTuru.PersonelHarcama) { }
 
         public PersonelHarcamaBll(Control ctrl) : base(ctrl, KartTuru.PersonelHarcama) { }
 
@@ -25,6 +25,7 @@ namespace AdvancedSoftweare.BusinessLayer.General
             return BaseSingle(filter, x => new PersonelHarcamaS
             {
                 Id = x.Id,
+                Kod = x.Kod,
                 PersonelId = x.PersonelId,
                 PersonelAdi = x.Personel.Ad,
                 OdemeMetoduId = x.OdemeMetoduId,
@@ -41,16 +42,16 @@ namespace AdvancedSoftweare.BusinessLayer.General
                 Durum = x.Durum,
 
             });
-           
+
         }
 
-       
+
         public override IEnumerable<BaseEntity> List(Expression<Func<PersonelHarcama, bool>> filter)
         {
             return BaseList(filter, x => new PersonelHarcamaL
             {
                 Id = x.Id,
-                Kod =x.Kod,
+                Kod = x.Kod,
                 PersonelAdi = x.Personel.Ad,
                 OdemeMetoduAdi = x.OdemeMetodu.OdemeMetoduAdi,
                 KasaAdi = x.Kasa.KasaAdi,
@@ -61,8 +62,8 @@ namespace AdvancedSoftweare.BusinessLayer.General
                 BelgeNo = x.BelgeNo,
                 Aciklama = x.Aciklama,
             }).OrderBy(x => x.Kod).ToList();
-           
+
         }
-     
+
     }
 }

@@ -1,13 +1,13 @@
 using AdavancedSoftware.Model.Entities;
 using AdnavcedSoftware.Data.DataContextMigraitons;
- 
+
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 
 
 namespace AdnavcedSoftware.Data.Contexts
 {
-    public class DataContext : BaseDbContext<DataContext, Configuration >
+    public class DataContext : BaseDbContext<DataContext, Configuration>
     {
 
         public DataContext()
@@ -15,7 +15,7 @@ namespace AdnavcedSoftware.Data.Contexts
             Configuration.LazyLoadingEnabled = false;
         }
 
-        public DataContext(string connectionString) : base(connectionString) 
+        public DataContext(string connectionString) : base(connectionString)
         {
             Configuration.LazyLoadingEnabled = false;
         }
@@ -76,6 +76,7 @@ namespace AdnavcedSoftware.Data.Contexts
         public DbSet<IndiriminUygulanacagiHizmetBilgileri> IndiriminUygulanacagiHizmetBilgileri { get; set; }
 
         public DbSet<Portfoy> Portfoy { get; set; }
+        public DbSet<MusteriTalep> MusteriTalep { get; set; }
     }
 
 

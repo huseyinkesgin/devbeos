@@ -33,8 +33,11 @@
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
     </Reference>
+    <Reference Include="DevExpress.CodeConverter.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.CodeParser.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
     </Reference>
+    <Reference Include="DevExpress.Dashboard.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v22.2.Win, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
     </Reference>
     <Reference Include="DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -52,6 +55,11 @@
     </Reference>
     <Reference Include="DevExpress.Docs.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
     </Reference>
+    <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.PivotGrid.Web.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.PivotGrid.Win.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Reports.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Win.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Images.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
     </Reference>
     <Reference Include="DevExpress.Office.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
@@ -133,6 +141,7 @@
     </Reference>
     <Reference Include="DevExpress.XtraScheduler.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
     </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v22.2.Core.Desktop, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraScheduler.v22.2.Extensions, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
     </Reference>
     <Reference Include="DevExpress.XtraScheduler.v22.2.GoogleCalendar, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
@@ -177,6 +186,7 @@
     <Compile Include="Enums\EvetHayir.cs" />
     <Compile Include="Enums\HizmetTipi.cs" />
     <Compile Include="Enums\ImarDurumu.cs" />
+    <Compile Include="Enums\TalepIptalNedeni.cs" />
     <Compile Include="Enums\IsyeriTapuTipi.cs" />
     <Compile Include="Enums\MedeniDurum.cs" />
     <Compile Include="Enums\IlanVarmi.cs" />
@@ -189,13 +199,17 @@
     <Compile Include="Enums\KrediyeUygunluk.cs" />
     <Compile Include="Enums\KullanimDurumu.cs" />
     <Compile Include="Enums\MusteriTuru.cs" />
+    <Compile Include="Enums\OncelikSeviyesi.cs" />
     <Compile Include="Enums\OdemeTipi.cs" />
     <Compile Include="Enums\OzelKodTuru.cs" />
     <Compile Include="Enums\PersonelDurumu.cs" />
     <Compile Include="Enums\PortfoyDurumu.cs" />
     <Compile Include="Enums\PortfoyTuru.cs" />
     <Compile Include="Enums\RaporuKagidaSigdirmaTuru.cs" />
+    <Compile Include="Enums\RedNedeni.cs" />
     <Compile Include="Enums\SozlesmeTuru.cs" />
+    <Compile Include="Enums\TalepDurumu.cs" />
+    <Compile Include="Enums\TalepTuru.cs" />
     <Compile Include="Enums\VarYok.cs" />
     <Compile Include="Enums\VeriDegisimYeri.cs" />
     <Compile Include="Enums\VincVarmi.cs" />
@@ -210,6 +224,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

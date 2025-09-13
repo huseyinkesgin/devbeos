@@ -41,11 +41,10 @@
             this.colHizmetAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colHizmetTuruAdi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.colBaslangicTarihi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
-            this.colBitisTarihi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
-            this.colUcret = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
-            this.colAciklama = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.repositoryTarih = new DevExpress.XtraEditors.Repository.RepositoryItemDateEdit();
+            this.colBitisTarihi = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             this.repositoryTutar = new DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit();
+            this.colAciklama = new AdvancedSoftware.UserInterface.Win.UserControls.Controls.Grid.MyGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ustPanel)).BeginInit();
             this.ustPanel.SuspendLayout();
@@ -163,7 +162,6 @@
             this.colHizmetTuruAdi,
             this.colBaslangicTarihi,
             this.colBitisTarihi,
-            this.colUcret,
             this.colAciklama});
             this.tablo.GridControl = this.grid;
             this.tablo.Name = "tablo";
@@ -263,6 +261,16 @@
             this.colBaslangicTarihi.VisibleIndex = 3;
             this.colBaslangicTarihi.Width = 120;
             // 
+            // repositoryTarih
+            // 
+            this.repositoryTarih.AutoHeight = false;
+            this.repositoryTarih.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryTarih.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryTarih.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret;
+            this.repositoryTarih.Name = "repositoryTarih";
+            // 
             // colBitisTarihi
             // 
             this.colBitisTarihi.AppearanceCell.Options.UseTextOptions = true;
@@ -279,43 +287,6 @@
             this.colBitisTarihi.VisibleIndex = 4;
             this.colBitisTarihi.Width = 120;
             // 
-            // colUcret
-            // 
-            this.colUcret.Caption = "Ücret";
-            this.colUcret.ColumnEdit = this.repositoryTutar;
-            this.colUcret.FieldName = "Ucret";
-            this.colUcret.Name = "colUcret";
-            this.colUcret.OptionsColumn.AllowEdit = false;
-            this.colUcret.StatusBarAciklama = null;
-            this.colUcret.StatusBarKisaYol = null;
-            this.colUcret.StatusBarKisaYolAciklama = null;
-            this.colUcret.Visible = true;
-            this.colUcret.VisibleIndex = 5;
-            this.colUcret.Width = 120;
-            // 
-            // colAciklama
-            // 
-            this.colAciklama.Caption = "Açıklama";
-            this.colAciklama.FieldName = "Aciklama";
-            this.colAciklama.Name = "colAciklama";
-            this.colAciklama.OptionsColumn.AllowEdit = false;
-            this.colAciklama.StatusBarAciklama = null;
-            this.colAciklama.StatusBarKisaYol = null;
-            this.colAciklama.StatusBarKisaYolAciklama = null;
-            this.colAciklama.Visible = true;
-            this.colAciklama.VisibleIndex = 6;
-            this.colAciklama.Width = 400;
-            // 
-            // repositoryTarih
-            // 
-            this.repositoryTarih.AutoHeight = false;
-            this.repositoryTarih.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryTarih.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryTarih.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret;
-            this.repositoryTarih.Name = "repositoryTarih";
-            // 
             // repositoryTutar
             // 
             this.repositoryTutar.AutoHeight = false;
@@ -327,6 +298,19 @@
             this.repositoryTutar.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.repositoryTutar.MaskSettings.Set("mask", "c");
             this.repositoryTutar.Name = "repositoryTutar";
+            // 
+            // colAciklama
+            // 
+            this.colAciklama.Caption = "Açıklama";
+            this.colAciklama.FieldName = "Aciklama";
+            this.colAciklama.Name = "colAciklama";
+            this.colAciklama.OptionsColumn.AllowEdit = false;
+            this.colAciklama.StatusBarAciklama = null;
+            this.colAciklama.StatusBarKisaYol = null;
+            this.colAciklama.StatusBarKisaYolAciklama = null;
+            this.colAciklama.Visible = true;
+            this.colAciklama.VisibleIndex = 5;
+            this.colAciklama.Width = 400;
             // 
             // HizmetListForm
             // 
@@ -374,7 +358,6 @@
         private UserControls.Controls.Grid.MyGridColumn colHizmetTuruAdi;
         private UserControls.Controls.Grid.MyGridColumn colBaslangicTarihi;
         private UserControls.Controls.Grid.MyGridColumn colBitisTarihi;
-        private UserControls.Controls.Grid.MyGridColumn colUcret;
         private UserControls.Controls.Grid.MyGridColumn colAciklama;
         private DevExpress.XtraEditors.Repository.RepositoryItemDateEdit repositoryTarih;
         private DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit repositoryTutar;

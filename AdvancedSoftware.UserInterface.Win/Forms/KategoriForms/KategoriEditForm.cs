@@ -44,6 +44,7 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.MusteriGrupForms
             txtKod.Text = entity.Kod;
             txtKategoriAdi.Text = entity.KategoriAdi;
             txtAciklama.Text = entity.Aciklama;
+            tglDurum.IsOn = entity.Durum;
 
         }
 
@@ -57,6 +58,8 @@ namespace AdvancedSoftware.UserInterface.Win.Forms.MusteriGrupForms
                 KategoriTuru = _kategoriTuru,
                 KartTuru = _kategoriKartTuru,
                 Aciklama = txtAciklama.Text,
+                Durum = tglDurum.IsOn,
+
 
             };
             ButonEnabledDurumu();
